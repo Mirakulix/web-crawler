@@ -1,0 +1,93 @@
+Titel: Connect Wi-Fi
+URL: https://docs.grassfish.com/docs/connect-wi-fi-hw02200
+Zeitpunkt: 2025-07-17 18:42:08
+==================================================
+
+This article describes how to connect a HW02200 device to your Wi-Fi network. Prerequisites Ensure that you meet the following prerequisites: HW02200 connected to power and a monitor Keyboard with F keys (We recommend Logitech K400.) Connect the device to Wi-Fi To connect the device to Wi-Fi, perform the following steps: Connect the keyboard to one of the device’s USB ports. Press F10 on the keyboard. On Logitech K400, press FN and F10 simultaneously. In the Screen Orientation window, click on SAVE AND CONTINUE . In the Configure your system window, click on Network . In the Network & internet window, enable Wi-Fi . Click on Wi-Fi to add your Wi-Fi network. Wait while the system searches for your network. Click on your Wi-Fi network. Enter your Wi-Fi password. Note that the keyboard setting on the device is set to English by default. Optionally, select Show password to check your password. Click on CONNECT . Click on the Back arrow to return to system configuration. Alternatively, wait five seconds to be redirected automatically. Click on CONTINUE . Click in the window or press a key to restart the player. The device is now connected to your Wi-Fi network.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/manage-android-settings]
+[Next|https://docs.grassfish.com/docs/disable-f-keys]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/connect-wi-fi-hw02200]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/connect-wi-fi-hw02200-image-qfrcpmpt.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/connect-wi-fi-hw02200-image-qfrcpmpt.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A06Z&se=2025-07-17T16%3A53%3A06Z&sr=c&sp=r&sig=K9doDpfjjBVuIiWsGyr0P2cngNKjKcHTeaZEsTleyn8%3D
+Alt-Text: Ein Bild, das Elektronik, Tastatur, Eingabegerät, peripher enthält.  Automatisch generierte Beschreibung
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/connect-wi-fi-hw02200-image-h9h7jl1w.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/connect-wi-fi-hw02200-image-h9h7jl1w.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A06Z&se=2025-07-17T16%3A53%3A06Z&sr=c&sp=r&sig=K9doDpfjjBVuIiWsGyr0P2cngNKjKcHTeaZEsTleyn8%3D
+Alt-Text: Ein Bild, das Text, Screenshot, Design enthält.  Automatisch generierte Beschreibung
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/connect-wi-fi-hw02200-image-9pbikz29.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/connect-wi-fi-hw02200-image-9pbikz29.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A06Z&se=2025-07-17T16%3A53%3A06Z&sr=c&sp=r&sig=K9doDpfjjBVuIiWsGyr0P2cngNKjKcHTeaZEsTleyn8%3D
+Alt-Text: Ein Bild, das Text, Screenshot, Schrift, Zahl enthält.  Automatisch generierte Beschreibung
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/connect-wi-fi-hw02200-image-u2wz6wnq.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/connect-wi-fi-hw02200-image-u2wz6wnq.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A06Z&se=2025-07-17T16%3A53%3A06Z&sr=c&sp=r&sig=K9doDpfjjBVuIiWsGyr0P2cngNKjKcHTeaZEsTleyn8%3D
+Alt-Text: Ein Bild, das Text, Screenshot, Software enthält.  Automatisch generierte Beschreibung
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/connect-wi-fi-hw02200-image-jo6o78uq.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/connect-wi-fi-hw02200-image-jo6o78uq.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A06Z&se=2025-07-17T16%3A53%3A06Z&sr=c&sp=r&sig=K9doDpfjjBVuIiWsGyr0P2cngNKjKcHTeaZEsTleyn8%3D
+Alt-Text: Ein Bild, das Text, Reihe, Zahl, Screenshot enthält.  Automatisch generierte Beschreibung
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/connect-wi-fi-hw02200-image-6t6mc2w3.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/connect-wi-fi-hw02200-image-6t6mc2w3.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A06Z&se=2025-07-17T16%3A53%3A06Z&sr=c&sp=r&sig=K9doDpfjjBVuIiWsGyr0P2cngNKjKcHTeaZEsTleyn8%3D
+Alt-Text: Ein Bild, das Text, Screenshot, Reihe, Diagramm enthält.  Automatisch generierte Beschreibung
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/connect-wi-fi-hw02200-image-hqocqefy.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/connect-wi-fi-hw02200-image-hqocqefy.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A06Z&se=2025-07-17T16%3A53%3A06Z&sr=c&sp=r&sig=K9doDpfjjBVuIiWsGyr0P2cngNKjKcHTeaZEsTleyn8%3D
+Alt-Text: Ein Bild, das Text, Screenshot, Schrift, Reihe enthält.  Automatisch generierte Beschreibung
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/connect-wi-fi-hw02200-image-a0tmbc5d.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/connect-wi-fi-hw02200-image-a0tmbc5d.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A06Z&se=2025-07-17T16%3A53%3A06Z&sr=c&sp=r&sig=K9doDpfjjBVuIiWsGyr0P2cngNKjKcHTeaZEsTleyn8%3D
+Alt-Text: Ein Bild, das Text, Screenshot, Schrift, Design enthält.  Automatisch generierte Beschreibung
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/connect-wi-fi-hw02200-image-33f4j4g5.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/connect-wi-fi-hw02200-image-33f4j4g5.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A06Z&se=2025-07-17T16%3A53%3A06Z&sr=c&sp=r&sig=K9doDpfjjBVuIiWsGyr0P2cngNKjKcHTeaZEsTleyn8%3D
+Alt-Text: Ein Bild, das Text, Screenshot, Design enthält.  Automatisch generierte Beschreibung
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A06Z&se=2025-07-17T16%3A57%3A06Z&sr=c&sp=r&sig=cDX2yfjxEXrSdITwb8pKLLCypDuQUC4hLjcOvc3iTxA%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A06Z&se=2025-07-17T16%3A57%3A06Z&sr=c&sp=r&sig=cDX2yfjxEXrSdITwb8pKLLCypDuQUC4hLjcOvc3iTxA%3D
+
+Quelle: https://docs.grassfish.com/docs/connect-wi-fi-hw02200

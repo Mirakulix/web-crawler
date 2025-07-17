@@ -1,0 +1,49 @@
+Titel: HTTP status codes
+URL: https://docs.grassfish.com/apidocs/http-status-codes
+Zeitpunkt: 2025-07-17 18:38:05
+==================================================
+
+Review the following table to learn more about status codes that the API returns. HTTP status code Name Description 200 OK Your request was successful. 201 Created Your request was successful. The resource was created. 204 No content Your request was successful. The response doesn’t requires any content. This occurs frequently, for example, with PUT or DELETE requests. 400 Bad request The server can’t process the request. This is usually due to a client-side error, such as an incorrect URL in the request. 401 Unauthorized The server requires authentication to process the request. In this case, the client usually provided no or incorrect credentials. 403 Access denied The server denies access, because the client doesn’t have the required access rights. 404 Not found The server can’t find the requested resource. This can be due to a broken link, incorrect URL, or because resources were moved or deleted. 409 Conflict There’s a conflict between the request and the current state of the target resource. Multiple users may be attempting to access the target resource at the same time, or the resource version may differ between the client and server. 500 Unexpected error An unexpected error has occurred on the server which prevents the request from being executed. This can happen, for example, if there’s a problem with the server itself. Troubleshooting If you receive an error response, the following steps can help you identify and solve the issue: Ensure that the syntax and content of your request is correct. Check whether the requested address (URL) is correct. Ensure that you have sufficient user permissions in IXM One. Check whether your parameters are correct. For example, double-check the ID you specified in your request. Check the state of the resource in your request. For example, the spot you want to delete could be in use or the player whose InitBox you want to start is already initialized. Check whether the resource in your request has been removed or renamed. Clear the browser cache and cookies.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[Documentation|https://docs.grassfish.com]
+[Player MQTT API|https://webhelp.grassfish.tv/pluginIPC/]
+[Player REST API|https://webhelp.grassfish.tv/ClientWebservices_API/]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish-api/en|https://docs.grassfish.com/grassfish-api/en]
+[Prev|https://docs.grassfish.com/apidocs/http-requests]
+[Next|https://docs.grassfish.com/apidocs/get-ids]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/apidocs/http-status-codes]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A38%3A04Z&se=2025-07-17T16%3A53%3A04Z&sr=c&sp=r&sig=EBnvvGnJ%2BkHSh35cLrNEpLCcFZgGTmbDxA6XJHKXI6s%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A38%3A04Z&se=2025-07-17T16%3A53%3A04Z&sr=c&sp=r&sig=EBnvvGnJ%2BkHSh35cLrNEpLCcFZgGTmbDxA6XJHKXI6s%3D
+
+Quelle: https://docs.grassfish.com/apidocs/http-status-codes

@@ -1,0 +1,61 @@
+Titel: Upload and play the spot
+URL: https://docs.grassfish.com/docs/upload-and-play-the-spot
+Zeitpunkt: 2025-07-17 18:36:10
+==================================================
+
+Once you’ve zipped the spot in the format spotname.asc.zip, you can upload it to IXM One like any other spot via the upload manager. Create variants of an HTML Wizard spot If you activate the feature Allow variants (public) for the spot, users can create variants of the HTML Wizard spot. These variants can be edited independently of the main spot and modified with values and media. The same website package is always accessed in the background to display the variant; a new JSON file is created for each variant. Update an existing HTML Wizard spot As soon as the data structure in the JSON file is changed, the HTML Wizard spot updating task must be performed with special care. If any features are added, removed, or edited, the spot and all variants of it are upgraded with the best matching of new and old features the next time the respective variant/spot is opened. It’s important for this that the feature SpotIdentifier is not changed. Play the spot When the spot is played, first the JSON data is loaded and transferred to the spot via a JavaScript method invocation. This should have no relevance for the HTML Wizard spot playback in the HTML Wizard, in a preview, or on the player. The different environmental parameters are abstracted from the file ascInterface.html by the HTML Wizard spot. The file ascInterface.html is the link between the playback container and the spot. The playback container can be either a player, the preview, the HTML Wizard, or the browser for debugging. The file ascInterface.html has two tasks: It processes links to media depending on the playback container, so the spot doesn’t have to care which environment it will be played in. It scales the spot into the split screen, provided that width and height have been specified. Playback in the preview Playing the spot in IXM One preview does not differ essentially from playing on the player, however, some data and player services might not be visible. The preview allows interactive spots to be controlled by the operator. Play back on the player For playback on the player, the file ascInterface.html is also invoked again to load the HTML Wizard spot. Before that, it transcribes the paths for the media to the corresponding local paths of the player. The following information is provided as URL parameters for the file ascInterface.html or the spot: callerType Announces to the file ascInterface.html in which playback container it will be invoked. The CallerType is forwarded to the spot, if the latter wants to access special player interfaces that would not work in the HTML Wizard or in the preview. CallerTypes: AscEditor (display in the HTML Wizard) Preview (for the online preview in IXM One) Thumbnail (for the thumbnail creation in IXM One) Debug (for spot developers) QTPlayer WindowsPlayer AndroidPlayer SOCPlayer WebOSPlayer BrightSignPlayer siid The spot instance ID is a unique number to identify a spot in a playlist. Even if the same spot occurs twice in a playlist, the two are distinguishable by the siid. The siid is important for the spot if UDC data has to be loaded. bgcolor The background color of the playlist is transferred to the file ascInterface.html so that the background is colored accordingly. This is visible only if the spot is scaled and has a different aspect ratio to the playback container. This feature is not relevant for the spot, because you can make the background color of the spot configurable via the HTML Wizard or can also be hard coded in the spot. duration The duration for which the spot is played. With a duration of 0, the playback container waits until the spot finishes on its own. Upon expiry of the duration, the file ascInterface.html terminates the spot. This feature is therefore of no relevance for the spot. webserviceRoot Root path for all player web services. The path and port are configurable depending on the player. Example: http://localhost:9090/ Playback on the development computer Playback on an ordinary PC can simplify the development of HTML Wizard spots. To do so, you need the file ascInterface.html which you can find on the server via the following path and save locally via the browser: http://domain/gv2/gf/GFWebHtml/asc/ascinterface/ascinterface.html To test the spot under player-like conditions you can invoke it as follows by way of the file ascInterface.html: http://localhost/GFWeb/app/asc/ascInterface/ascInterface.html?site=../myProject/index.html&spotDataPath=../myProject/ascData.json&callerType=Debug&debug=true ../myProject is the path to your HTML directory, however, the JSON file can also be stored in a different place than the index.html (for example, to avoid amending the default values in the JSON file in the HTML directory for testing). debug With the debug parameter, you can switch on the debug console. The console outputs the spot logs and displays the play/stop buttons for testing the playback functionality of the spot in the preview and HTML Wizard. The spot should be programmed in a way that play and stop can be execute
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/integrate-the-gfwizardbase]
+[Next|https://docs.grassfish.com/docs/create-linked-lists]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/upload-and-play-the-spot]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/html-wizard-spots-image-fjxzj51w.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/html-wizard-spots-image-fjxzj51w.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A10Z&se=2025-07-17T16%3A49%3A10Z&sr=c&sp=r&sig=42GeWNHJ1tq%2BYM%2B3CxyD2pUA0z3V%2BAo0EBu9PCFlMaI%3D
+Alt-Text: A picture containing text, screenshot, rectangle, design  Description automatically generated
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A10Z&se=2025-07-17T16%3A51%3A10Z&sr=c&sp=r&sig=c5DM7SedusH%2BG6Z%2BtDkT8K8A9VPmN%2FNsyZR8EyqEObk%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A10Z&se=2025-07-17T16%3A51%3A10Z&sr=c&sp=r&sig=c5DM7SedusH%2BG6Z%2BtDkT8K8A9VPmN%2FNsyZR8EyqEObk%3D
+
+Quelle: https://docs.grassfish.com/docs/upload-and-play-the-spot

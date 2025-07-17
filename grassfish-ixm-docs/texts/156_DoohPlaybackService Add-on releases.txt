@@ -1,0 +1,57 @@
+Titel: DoohPlaybackService Add-on releases
+URL: https://docs.grassfish.com/docs/doohplaybackservice-add-on-releases
+Zeitpunkt: 2025-07-17 18:40:36
+==================================================
+
+Get the latest version Please contact your Grassfish account manager to get the latest version. DoohPlaybackService Add-on Version 2.9.2 New features With this version, we’ve implemented the following new features: New standard value We've updated the default value of the setting Dooh.SspLiveTagKey from ADV_Segments to AdvSegments at the stakeholder's request. DoohPlaybackService Add-on Version 2.9.1 New features With this version, we’ve implemented the following new features: Safe guard We’ve implemented a safe guard in the DOOHPlaybackService add-on that checks whether processes with the same name are already running at startup. This allows us to: Prevent duplicate AdServing API requests. Stabilize system behavior in the event of system crashes. Improve overall performance and reduce the load on the AdServing API. DoohPlaybackService Add-on Version 2.9 New features With this version, we’ve implemented the following new features: Security update To fix security vulnerabilities of earlier versions, we’ve updated NuGet packages. .NET upgrade With this version, we’ve updated DoohPlaybackAddon project to .NET 8. DoohPlaybackService Add-on Version 2.8.0 - 2.8.1 New features With this version, we’ve implemented the following new features: Live tags and impressions enhancements We’ve made improvements to live tag handling and impressions. Linux ARM64 support As of this version, linux-arm64 architecture is supported. Logging improvements We’ve enhanced debug logging throughout the application. It’s now displayed whether debug logging is activated and we’ve removed redundant or unnecessary logging statements. Resolved issues We’ve fixed an issue where live tags were bypassing the cooldown mechanism. DoohPlaybackService Add-on Version 2.7.3 New features With this version, we’ve implemented the following new features: Logging enhancements We’ve improved logging messages for clarity and replaced certain log separators for consistency. Resolved issues We’ve fixed issues where the calculation of the last target playback could be stuck on previous days and adjusted reference times to ensure accurate scheduling. In addition, we’ve added debug logging for better visibility into playback calculations. To fix the live tag replacement logic, they can now be replaced by null or another spot when appropriate. This prevents non-live tags from being incorrectly placed due to recalculations, while ensuring that calculation of the last target playback remains consistent. DoohPlaybackService Add-on Version 2.7.2 Resolved issues We’ve fixed an issue where the interval of spot instances wasn't saved correctly, leading to inconsistent playback schedules. DoohPlaybackService Add-on Version 2.7.1 New features With this version, we’ve implemented the following new features: Synchronized media viewer content We’ve implemented synchronization of media viewer content in the DoohPlaybackService add-on. This ensures that the displayed content aligns with the audience's preferences and behaviors and enhances dynamic content adaptation based on real-time data. Added ScreenNr for screen-specific SSP categories We’ve added the ScreenNr to support screen-specific SSP categories. This enhances targeting capabilities for multi-screen setups and improves compatibility with external SSPs. DoohPlaybackService Add-on Version 2.6.0 New features With this version, we’ve implemented the following new features: UDC importer changes We’ve adapted the DoohPlaybackService add-on to updates in the UDC importer, for example to adapt data processing to updated UDC data structures. DoohPlaybackService Add-on Version 2.5.0 - 2.5.1 New features With this version, we’ve implemented the following new features: Playback logic enhancements As of version 2.5.1, we’ve implemented and improved the following playback methods which provide powerful tools to optimize ad delivery, improve audience engagement, and meet contractual obligations: SoV (Share of Voice): ensures equitable distribution of ad playtime among different advertisers based on agreed shares. Playback: manages scheduling and execution of ad content playback. Frequency: controls how often a particular ad runs within a given time frame. Live Tags: allow dynamic content changes based on real-time data or triggers. Resolved issues We’ve fixed an issue where negative target playback times were generated. We’ve fixed an issue with handling exceptions when retrieving UDC data, returning null and managing it accordingly. We’ve fixed playback distribution issues. Hotfix 2.5.0-hotfix.1 includes the following improvements: The pauseSync property in the plannedSpots MQTT request object is now set to false by default. Compatibility with player synchronization mechanisms is now ensured. DoohPlaybackService Add-on Version 2.3.0 - 2.3.1 New features With this version, we’ve implemented the following new features: Thread-safe access to PlaytimesDb To prevent potential race conditions when accessing the database, we’ve improved the stability of the playtime reporting mechanism. Logging enhancements The product version is now logged on startup for better traceability. Additionally, we’ve improved error logging to include exception details. Upgrade to .NET Core 3.1 To improve performance and security, we’ve upgraded the DoohPlaybackService framework. This also ensures compatibility with newer libraries and dependencies. Resolved issues We’ve fixed an issue that occurred when the URI port was used for player connections. DoohPlaybackService Add-on Version 2.1.0 New features With this version, we’ve implemented the following new features: SSP playback through SSP proxy As of this version, the add-on can handle SSP (Supply-Side Platform) playbacks via a proxy. To make this possible, we’ve implemented configurations to support the new SSP communication flow and ensured compatibility with external advertising platforms. DoohPlaybackService Add-on Version 1.0.0 - 1.1.0 New features The first versions included the following features, enhancements, and fixes: Initial DOOH version release The first versions of the DoohPlaybackService contained the foundation for all later improvements and features, including the following: Foundational features for Digital Out-of-Home (DOOH) advertising Live tag support in UDC importer and player add-on Enhancements and fixes The first versions included the following enhancements and fixes: Extended UDC data handling and mapping Improved live tag responsiveness and handling of multiple daily entries Fixed issues related to filler content playback and validity considerations
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/adserving-api-releases]
+[Next|https://docs.grassfish.com/docs/oidc]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/doohplaybackservice-add-on-releases]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A40%3A34Z&se=2025-07-17T16%3A55%3A34Z&sr=c&sp=r&sig=Qgg%2B2WPNqjQTFrC9UEIIVTS1QdRl9JcamgMRJKlRcF0%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A40%3A34Z&se=2025-07-17T16%3A55%3A34Z&sr=c&sp=r&sig=Qgg%2B2WPNqjQTFrC9UEIIVTS1QdRl9JcamgMRJKlRcF0%3D
+
+Quelle: https://docs.grassfish.com/docs/doohplaybackservice-add-on-releases

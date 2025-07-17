@@ -1,0 +1,60 @@
+Titel: Initialize serial screen control
+URL: https://docs.grassfish.com/docs/initializing-serial-screen-control-rs232v-com
+Zeitpunkt: 2025-07-17 18:43:09
+==================================================
+
+The Android Player supports serial screen control via RS232 or USB to Serial Adaptors (Virtual Com). Note The serial device requires permission the first time the player is started: The permission applies only to this device. The USB-to-serial adapter must be connected. Our players are tested with USB to RS232 adapters with FTDI and Prolific chipset. Although more drivers are included, these are the most common devices. To initialize serial screen control, perform the following steps: Before turning on the player, connect all cables and the USB-to-serial adapter. Connect the device to the power supply and begin the boot process. When the player starts, a pop-up window will appear asking you to grant permission for the USB-to-serial adapter. Select Always open GF Player when USB2.0-Ser! is connected and click OK . If the pop-up appears again, repeat this step until the player starts. The player now controls the monitor via a serial connection once the correct display configuration has been transferred from the IXM One's display management.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/overlay]
+[Next|https://docs.grassfish.com/docs/navigate-the-overlay]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/initializing-serial-screen-control-rs232v-com]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/initializing-serial-screen-control-rs232v-com-image-8xilcwy5.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/initializing-serial-screen-control-rs232v-com-image-8xilcwy5.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A43%3A08Z&se=2025-07-17T16%3A54%3A08Z&sr=c&sp=r&sig=9XiB8%2BtucoU8yVBIiR621SDFVZ3uOXZSOSJ%2BiXIyFks%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A43%3A08Z&se=2025-07-17T16%3A58%3A08Z&sr=c&sp=r&sig=pBgz27AMqfqAmEWd32QdD3ucsPybUdasBCeXMJzg1FU%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A43%3A08Z&se=2025-07-17T16%3A58%3A08Z&sr=c&sp=r&sig=pBgz27AMqfqAmEWd32QdD3ucsPybUdasBCeXMJzg1FU%3D
+
+Quelle: https://docs.grassfish.com/docs/initializing-serial-screen-control-rs232v-com

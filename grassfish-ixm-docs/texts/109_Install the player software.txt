@@ -1,0 +1,61 @@
+Titel: Install the player software
+URL: https://docs.grassfish.com/docs/install-the-player-software
+Zeitpunkt: 2025-07-17 18:38:33
+==================================================
+
+To install the Grassfish Windows Player software, perform the following steps: Place the installation package in any folder on the player PC. Double-click on the installer file. This opens the Grassfish Player Setup Wizard. To start the setup process, click Next . In the License Agreement window, select I accept the license . Click Next . If needed, change the default directories for the installation in the Installation directory window: Select Customize installation directory and enter a new path or browse. Select Customize data directory and enter a new path or browse. Note The default directories for the program files are not write-protected. Use the custom installation directory C:\Program Files\GVClient and the custom data directory C:\ProgramData\GVClient to get default Windows directory rights for your Grassfish installation. These rights normally include write protection for the program directory. Click Next . In the Windows specific configuration window, select an installation type: Presentation Software doesn’t start automatically upon system start Launch via desktop or start menu icon No changes to system preferences Installs the Grassfish software and all services (you must start services manually) Installs required third-party software Reversible You can simply uninstall the Grassfish software. Basic Software starts automatically upon system start-up Changes system preferences Installs the Grassfish software and all services (services are started automatically) Installs required third-party software Reversible You can simply uninstall the Grassfish software. Full Complete player installation Exclusive usage as Grassfish player Installs the Grassfish software and all services (services are started automatically) Installs required third-party software Adapts desktop settings Sets energy options Deactivates various services Irreversible If you want to use the PCs for other purposes later, you must reinstall the operating system. Exception: Windows allows you to specify recovery points if you’ve configured it accordingly. Optionally, enable or disable the following options if they’re available for your selected installation type: Option Description Installation type Enable autologon Specify the username and password of the user that is automatically logged in when the system starts. The user must already exist in the Windows system. Note that the Grassfish installer can’t verify the correctness of the data you enter. Basic Full Disable Windows Security Dialog Disable all options in the Windows login menu (locking, changing users, signing off, changing passwords, Task Manager). Full Disable Windows Explorer Disable the Windows Explorer shell (taskbar, Start menu, desktop, etc.). Full Click Next . Click Install to start the installation. In the subsequent dialog, click Yes to allow the app to make changes. The player software installation starts and adjusts the operating system. Once the installation is completed successfully, you can initialize the player.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/windows-player-install]
+[Next|https://docs.grassfish.com/docs/initialize-the-player]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/install-the-player-software]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/install-the-player-software-image-3yky864f.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/install-the-player-software-image-3yky864f.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A38%3A32Z&se=2025-07-17T16%3A49%3A32Z&sr=c&sp=r&sig=1vgzsFeXiM%2FqMV0lD6G3n%2FfgAycWXnCup6zzer79Jdg%3D
+Alt-Text: Ein Bild, das Text enthält. Automatisch generierte Beschreibung
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A38%3A32Z&se=2025-07-17T16%3A53%3A32Z&sr=c&sp=r&sig=Y7j6mDe%2BaTHO7jxoHwhYekR9qtpTUJf7wBKJizJmMww%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A38%3A32Z&se=2025-07-17T16%3A53%3A32Z&sr=c&sp=r&sig=Y7j6mDe%2BaTHO7jxoHwhYekR9qtpTUJf7wBKJizJmMww%3D
+
+Quelle: https://docs.grassfish.com/docs/install-the-player-software

@@ -1,0 +1,76 @@
+Titel: Change the provisioning URL
+URL: https://docs.grassfish.com/grassfish/docs/change-provisioning-url
+Zeitpunkt: 2025-07-17 18:41:51
+==================================================
+
+You can change the provisioning server URL during or after initializing your player. This may be necessary, for example, if you use your own provisioning server. There are two ways to do this: Change the URL via a configuration file Edit the URL in the InitBox Change the URL via configuration file To change the URL, perform the following steps: Use a text editor to create a file named provisioning.conf . In the configuration file, enter the URL of your custom provisioning server. Save the file in the Android installation package folder. Open the script file Install_gf_Tools_from_Android_[version]-on.bat . Add the following command to copy the file to the Android device: adb push provisioning.conf /sdcard/Download/GF/config/ Save your changes and close the file. Edit the URL in the InitBox You can also edit the provisioning server URL once you’ve installed and configured the Android Player. The player automatically opens the InitBox where you can do the following: In the InitBox, click EDIT next to Provisioning host . Enter you custom URL. Continue the initialization , to connect player and server.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/replace-a-player]
+[Next|https://docs.grassfish.com/docs/synchronize-players]
+[Change the URL via a configuration file|https://docs.grassfish.com/grassfish/docs/change-provisioning-url]
+[Edit the URL in the InitBox|https://docs.grassfish.com/grassfish/docs/change-provisioning-url]
+[Continue the initialization|https://docs.grassfish.com/docs/connect-player-and-server]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/grassfish/docs/change-provisioning-url]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1751440975435.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1751440975435.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A50Z&se=2025-07-17T16%3A52%3A50Z&sr=c&sp=r&sig=PCSVB979S5egOJpnAwXC9VOtFZ2BDRk%2BQZ79XS6KeEk%3D
+Alt-Text: Image of the config file with custom provisioning server URL.
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1751440859170.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1751440859170.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A50Z&se=2025-07-17T16%3A52%3A50Z&sr=c&sp=r&sig=PCSVB979S5egOJpnAwXC9VOtFZ2BDRk%2BQZ79XS6KeEk%3D
+Alt-Text: Image of Android installation package with config file.
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1751441335916.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1751441335916.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A50Z&se=2025-07-17T16%3A52%3A50Z&sr=c&sp=r&sig=PCSVB979S5egOJpnAwXC9VOtFZ2BDRk%2BQZ79XS6KeEk%3D
+Alt-Text: Image of the provisioning adb command in the Android Player script.
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Bild (6).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Bild (6).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A50Z&se=2025-07-17T16%3A52%3A50Z&sr=c&sp=r&sig=PCSVB979S5egOJpnAwXC9VOtFZ2BDRk%2BQZ79XS6KeEk%3D
+Alt-Text: Image of the custom provisioning server URL in the dialog.
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A50Z&se=2025-07-17T16%3A56%3A50Z&sr=c&sp=r&sig=XlBx3thJB3tMCTHsiLvZoNSpUHkbEe9DcsnzAo6KEfM%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A50Z&se=2025-07-17T16%3A56%3A50Z&sr=c&sp=r&sig=XlBx3thJB3tMCTHsiLvZoNSpUHkbEe9DcsnzAo6KEfM%3D
+
+Quelle: https://docs.grassfish.com/grassfish/docs/change-provisioning-url

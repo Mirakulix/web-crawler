@@ -1,0 +1,58 @@
+Titel: Install DOOH
+URL: https://docs.grassfish.com/docs/install-dooh
+Zeitpunkt: 2025-07-17 18:41:21
+==================================================
+
+The following articles describe how to install and configure Digital Out of Home (DOOH) in a Grassfish system. Grassfish's DOOH Platform module supports you in the sales process of advertising spaces in a flexible and transparent way. It facilitates client and content management, guides you through the complete booking workflow from start to finish, helps manage pricing, and supports you with a clear overview of sold and free ad spaces in your network. As an alternative to the DOOH Platform module, you can use DOOH Lite which is an extension to the Grassfish IXM One for the Windows and Linux Player. With DOOH Lite, you can create DOOH playlists and add bookings by dragging and dropping a spot into a playlist. You can edit your booking properties via the spot instance properties. How to install DOOH The following articles provide step-by-step instructions for the installation and configuration of DOOH. They cover the server configuration, IXM One configuration, and player configuration. Perform all steps that are relevant for your system and skip the others. For example, if you don’t use the Android Player, you can skip the Android Player article. System requirements The following table indicates the system requirements for all possible components in the DOOH setup. Ensure that you meet the requirements of all components that are relevant for your system. For example, if you use the Android Player ensure that you have IXM One and Grassfish Server version 11.14.0 or later. Product Version Additional information IXM One 11.11.0 or later You must have admin access. Grassfish Server 11.11.0 or later Android Player 11.14.0 or later The Android Player requires IXM One and Grassfish Server version 11.14.0 or later. Windows or Linux Player 11.11.0 or later DOOH add-on (DoohPlaybackService) 2.3.0 or later You need this add-on for the Windows & Linux Player. The Android Player doesn’t require this add-on. To get the DOOH add-on installation package, please contact your Grassfish account manager. UDC importer (DOOHPlayBackImporter) 2.2.0 or later .NET 6.0 If you've already installed the Grassfish Server via the installer and installed a web service on it, there’s no need to install .NET. If not, install the Windows Hosting Bundle manually from https://dotnet.microsoft.com/en-us/download/dotnet/6.0
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/how-dooh-and-ssp-work]
+[Next|https://docs.grassfish.com/docs/configure-server]
+[https://dotnet.microsoft.com/en-us/download/dotnet/6.0|https://dotnet.microsoft.com/en-us/download/dotnet/6.0]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/install-dooh]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A19Z&se=2025-07-17T16%3A56%3A19Z&sr=c&sp=r&sig=w4Q3qhy3%2BJwAC42cBXWr1kCAEWH24ORE%2F9dvfqVl4DM%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A19Z&se=2025-07-17T16%3A56%3A19Z&sr=c&sp=r&sig=w4Q3qhy3%2BJwAC42cBXWr1kCAEWH24ORE%2F9dvfqVl4DM%3D
+
+Quelle: https://docs.grassfish.com/docs/install-dooh

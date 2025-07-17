@@ -1,0 +1,83 @@
+Titel: Set up IXM One
+URL: https://docs.grassfish.com/docs/ixm-platform-setup
+Zeitpunkt: 2025-07-17 18:41:48
+==================================================
+
+To play SSP content, you need to create and configure a program scheme, playlist, and spot group in IXM One. Prerequisites for multiple SSPs If you want to play spots provided by multiple SSPs, note the following additional information: The SSP admin user must have permission for all SSP playlists and spot groups. We recommend creating a separate SSP playlist for each SSP provider. You can control which SSP spots are downloaded to which player by creating and assigning categories. Create an SSP spot group To create the spot group, perform the following steps: In IXM One, go to Content > Playlist . To create a new spot group, click on the + in the Spot groups pane. In the Create new Spot group window, enter a name for your SSP spot group. As Type , select Spot group . Specify all other spot group settings as required. Click Save to save your changes. Create playlists To play SSP content, you need to create the following playlists: A playlist for your SSP spots. A playlist with standard content. Since the SSP playlist typically doesn't take up the entire playlist time, the system inserts standard spots as filler. A DOOH playlist, which you can either fill with DOOH spots or leave empty. This playlist is required to trigger the DOOHPlayback add-on which is required for SSP too. Create an SSP playlist The system will download media files from the SSP and upload them to your SSP playlist as spots. To create an SSP playlist, perform the following steps: In IXM One, go to Channels > Program scheme . To create an SSP playlist, click New . In the Create playlist window, enter a name for your SSP playlist. As Playlist logic , select Default . Specify all other playlist settings as required. Click Save to save your changes. Create a standard playlist To create the standard playlist which contains filler spots, perform the following steps: In IXM One, go to Channels > Program scheme . To create the standard playlist, click New . In the Create playlist window, enter a name for your standard playlist. As Playlist logic , select Default . Specify all other playlist settings as required. Click Save to save your changes. Add spots to the standard playlist To play standard spots as fillers, you must add them to the standard playlist. To do so, perform the following steps: In IXM One, go to Content > Playlist . Select the standard playlist. Drag and drop your standard spots from the Selectable spots pane onto the Content of playlist pane. Create the DOOH playlist To create the DOOH playlist, perform the following steps: Go to Channels > Programm scheme . In the Available playlists pane, click New . In the Create playlist window, enter a name for your playlist. As Playlist logic , select DOOH . Specify all other settings as needed. Click Save to save your changes. Assign the playlists to a program scheme To play any of your playlists, you must assign them to a program scheme. To do so, perform the following steps: In IXM One, go to Channels > Program scheme . To create a new program scheme, click on the + button. In the Create program scheme window, enter a name for your program scheme. Select Event playlists . Specify all other program scheme settings as required. Click Save to save your changes. To assign the standard playlist to the program scheme, drag and drop it onto the Standard playlists panel. To assign the SSP playlist, drag and drop it onto the Event playlists panel. To assign the DOOH playlist, drag and drop it onto the Event playlists panel. Configure playlist properties You must configure the properties of your SSP and standard playlists to specify when they should run. Configure SSP playlist properties Your SSP playlist is an event playlist. That means, you can specify an event that will trigger it. To do so, perform the following steps: In IXM One, go to Channels > Program scheme . In the Event playlists panel, hover over the SSP playlist and select the menu icon. This opens the Edit playlist properties window. Switch to the Event properties tab and select the following settings: As Event type , select Once by ID . As Start event , specify SSP . Click Save to save your changes. Configure standard playlist properties You must configure the standard playlist to ensure that SSP spots are played in-between standard filler spots. Otherwise, the standard playlist will be played through in one go. To do so, perform the following steps: In IXM One, go to Channels > Program scheme . In the Standard playlists panel, hover over the standard playlist and select the menu icon. Alternatively, double-click on it. In the Edit playlist properties window, switch to the Extras tab. Select Prioritize programmatic advertisements . Configure all other playlist properties as needed. Click Save to save your changes. Create and assign an SSP category With the help of categories, the system can distribute content directly to selected players. You must create an SSP category in IXM One and assign it to the locations or players that you want to play SSP content. Create the SSP category To create a category for SSP, perform the following steps: In IXM One, go to Administration > Content > Categories . To create a new category, click on the + in the bottom right corner. In the New category window, enter the name of the category. For example, SSP. Optionally, select Selectable to allow location users to assign categories. That means to add content to a player on an individual basis. Assign permissions as required. Click Save to save your changes. Assign the SSP category You must assign the SSP category to all locations or players that you want to play SSP content. To do so, perform the following steps: In IXM One, go to Channels > Location . Double-click on the location or player that you want to play SSP content. Switch to the Categories tab. Drag and drop the SSP category from Available to Assigned . Click Save to save your changes. Assign the category to all locations or players that you want to play SSP content.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/install-ssp]
+[Next|https://docs.grassfish.com/docs/configure-server-ssp]
+[DOOH|https://docs.grassfish.com/docs/dooh]
+[DOOHPlayback add-on|https://docs.grassfish.com/docs/configure-winlin-player-ssp]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/ixm-platform-setup]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image%283%29.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image%283%29.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A39%3A39Z&se=2025-07-17T16%3A53%3A39Z&sr=c&sp=r&sig=tGd%2BGFIDU4AXtT61nybcOQVqZDlVk4J42pPVUs05Eh0%3D
+Alt-Text: image.png
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image%284%29.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image%284%29.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A39%3A39Z&se=2025-07-17T16%3A53%3A39Z&sr=c&sp=r&sig=tGd%2BGFIDU4AXtT61nybcOQVqZDlVk4J42pPVUs05Eh0%3D
+Alt-Text: image.png
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/dooh_playlist-configure.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/dooh_playlist-configure.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A39%3A39Z&se=2025-07-17T16%3A53%3A39Z&sr=c&sp=r&sig=tGd%2BGFIDU4AXtT61nybcOQVqZDlVk4J42pPVUs05Eh0%3D
+Alt-Text: Playlist logic setting set to DOOH
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image%285%29.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image%285%29.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A39%3A39Z&se=2025-07-17T16%3A53%3A39Z&sr=c&sp=r&sig=tGd%2BGFIDU4AXtT61nybcOQVqZDlVk4J42pPVUs05Eh0%3D
+Alt-Text: image.png
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/ssp_programmatic.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/ssp_programmatic.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A39%3A39Z&se=2025-07-17T16%3A53%3A39Z&sr=c&sp=r&sig=tGd%2BGFIDU4AXtT61nybcOQVqZDlVk4J42pPVUs05Eh0%3D
+Alt-Text: image.png
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image%287%29.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image%287%29.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A39%3A39Z&se=2025-07-17T16%3A53%3A39Z&sr=c&sp=r&sig=tGd%2BGFIDU4AXtT61nybcOQVqZDlVk4J42pPVUs05Eh0%3D
+Alt-Text: image.png
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A39%3A39Z&se=2025-07-17T16%3A54%3A39Z&sr=c&sp=r&sig=OHlctbZ31TfP2cz%2Fx8pDCXEO7X0fHALR0UAtPI50elA%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A39%3A39Z&se=2025-07-17T16%3A54%3A39Z&sr=c&sp=r&sig=OHlctbZ31TfP2cz%2Fx8pDCXEO7X0fHALR0UAtPI50elA%3D
+
+Quelle: https://docs.grassfish.com/docs/ixm-platform-setup

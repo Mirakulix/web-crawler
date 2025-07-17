@@ -1,0 +1,66 @@
+Titel: Use player functions
+URL: https://docs.grassfish.com/docs/use-player-functions
+Zeitpunkt: 2025-07-17 18:38:38
+==================================================
+
+You can use multiple functions when you work with the Grassfish Windows Player: Keyboard shortcuts Status window Additional functions Use keyboard shortcuts You can use the following keyboard shortcuts while the player is running: Key Function F1 Enable/Disable the mouse pointer. F2 Display/Hide information about the current spot. F3 Display/Hide information about the current playlist. F8 Display/Hide the status window. F10 Launch the InitBox. You may have to enter the daily password if this is specified in the player configuration. F11 Open a terminal (PowerShell). You may have to enter the daily password if this is specified in the player configuration. F12 Close the player and overseer and display the desktop. You may have to enter the daily password if this is specified in the player configuration. ESC Hide the window and password prompt. Pos1 Jump to the start of the current spot. End Jump to five seconds before the end of the current spot. Arrow left Rewind five seconds. Arrow right Fast forward five seconds. Open the status window Press F8 to display player information in the status window. The status window is divided into five panes that contain different information. Pane Content Pane 1 Version of the player software Date and time Box ID Information about the Grassfish server Time zone Information about the screen Pane 2 Status of the connection to the server Status of the Grassfish services Status of the serial connection of the screens Pane 3 System resources of the player PC Pane 4 Live tags used Pane 5 Data downloaded from the Grassfish server to the player. Note that you must press F8 again to display this pane. Use additional functions You can use the following additional functions when you work with the Grassfish Windows Player: Restart the player When you close the player, this also stops the Overseer service. To restart the player, start the Overseer service. Create a diagnostic file Run the command troubleshoot.bat to generate a diagnostic file comprising logs, player data, settings and more in ZIP format. If necessary, you can send this file to Grassfish support. The diagnostic file is located at C:\GVClient\data\cache\troubleshoot . Reset the player Run the command boxreset.bat to reset and initialize the player. The full path is C:\GVClient\tools\current\bin\boxreset.bat . Uninstall the player software You can uninstall the Grassfish Player in the Windows Control Panel. Note You can only uninstall the installation types Basic and Presentation. View log files The log files for all player services are located at C:\GVClient\data\logs\ and stored in the format ddmmyyyy for each service. You can open the files with any text editor.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/initialize-the-player]
+[Next|https://docs.grassfish.com/docs/player-services-and-modules-win]
+[Keyboard shortcuts|https://docs.grassfish.com/grassfish/docs/use-player-functions]
+[Status window|https://docs.grassfish.com/grassfish/docs/use-player-functions]
+[Additional functions|https://docs.grassfish.com/grassfish/docs/use-player-functions]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/use-player-functions]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/use-player-functions-image-sk99hhgf.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/use-player-functions-image-sk99hhgf.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A38%3A37Z&se=2025-07-17T16%3A49%3A37Z&sr=c&sp=r&sig=UdF%2F8SQ0u9NZtxqtrg2wuDQIKJsXAtRFrDEEbbXUUzU%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/use-player-functions-image-kpzplw0r.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/use-player-functions-image-kpzplw0r.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A38%3A37Z&se=2025-07-17T16%3A49%3A37Z&sr=c&sp=r&sig=UdF%2F8SQ0u9NZtxqtrg2wuDQIKJsXAtRFrDEEbbXUUzU%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A38%3A37Z&se=2025-07-17T16%3A53%3A37Z&sr=c&sp=r&sig=dOYEXZ8J6YVDtlwC3PMpkxBeNqFDDCDag4uegYq%2FhyY%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A38%3A37Z&se=2025-07-17T16%3A53%3A37Z&sr=c&sp=r&sig=dOYEXZ8J6YVDtlwC3PMpkxBeNqFDDCDag4uegYq%2FhyY%3D
+
+Quelle: https://docs.grassfish.com/docs/use-player-functions

@@ -1,0 +1,58 @@
+Titel: Install the Tizen Player
+URL: https://docs.grassfish.com/grassfish/docs/install-the-tizen-player
+Zeitpunkt: 2025-07-17 18:40:29
+==================================================
+
+This article describes how to install the Grassfish Player on Samsung Tizen devices. Prerequisites Before you begin the installation, ensure that your meet the following requirements: You’ve uploaded the Tizen JavaScript player software to the backend of the server. We recommend creating a Tizen directory in the www directory of the backend server. You’ve configured the Touch Point with IXM One: The Samsung Tizen serial number serves as the . You can find it on both the device and the packaging. Both 14- and 15-digit serial numbers are supported. Install the player You must install the player on the device and initialize and configure both the Tizen OS and the Grassfish Player software. To do so, perform the following steps: Remove the device from its packaging and set it up on an appropriate stand or mount. Connect the power cord and the network cable if you don’t use WiFi. Power on the device. Depending on your screen, perform one of the following steps: For a first-time installation, select your preferred language using the arrow keys on the remote and press Enter to confirm. For a screen that has been used before, go to Menu > System > Start Setup . As installation type, select Basic Setup . Press Enter to confirm. As display orientation, select Landscape or Portrait . Press Enter to confirm. Note that you must set the same orientation on the player and in the screen layout in the IXM One. Disable the auto power off option by selecting Off. Press Enter to confirm. Wait for the successful check of the network connection. If you use WiFi or an internet proxy, specify the network setting details. Under Play via , select URL Launcher . Press Enter to confirm. Enter the URL for downloading the player software that you’ve installed before ( see prerequisites ). Press Done and Enter to confirm. You can skip Connect to RM Server . The Grassfish player doesn’t require this functionality. Enter the current date and time press Next . Note that HTTPS connections only work with the correct date and time. Click on Done to complete the basic setup process. In the main menu, select URL Launcher to load the Grassfish Player software. The Grassfish Player starts. From now on, it’ll start automatically on the monitor whenever powered on. Note Wait until the player has completed loading the assigned content. When you turn the screen off, it’ll automatically turn on again unless you disable this function in the player configuration in the IXM One. Test the installation The upload of the Tizen player software leads to a URL for downloading the Grassfish Player from the backend server, such as https://example.com/tizen . To test your Tizen server installation, open the following website: https://example.com/tizen/sssp_config.xml . The screen will open the same URL.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/tizen-player]
+[Next|https://docs.grassfish.com/docs/add-ons]
+[see prerequisites|https://docs.grassfish.com/grassfish/docs/install-the-tizen-player]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/grassfish/docs/install-the-tizen-player]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A40%3A28Z&se=2025-07-17T16%3A55%3A28Z&sr=c&sp=r&sig=nJ%2BYFS0F3KGaoTJISCZL4DCoBWOSF5gIVmpuDQLV7sY%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A40%3A28Z&se=2025-07-17T16%3A55%3A28Z&sr=c&sp=r&sig=nJ%2BYFS0F3KGaoTJISCZL4DCoBWOSF5gIVmpuDQLV7sY%3D
+
+Quelle: https://docs.grassfish.com/grassfish/docs/install-the-tizen-player

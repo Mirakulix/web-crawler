@@ -1,0 +1,69 @@
+Titel: Customize fonts
+URL: https://docs.grassfish.com/docs/en/customize-fonts
+Zeitpunkt: 2025-07-17 18:35:51
+==================================================
+
+To use your own fonts in the HTML Composer and HTML Wizard, you need to import them into IXM One. Prerequisites Ensure that you meet the following prerequisites to import fonts: You must be a server administrator to import fonts. Your fonts must be web fonts that can be displayed by the browser. The fonts must be compatible with as many browsers as possible. The minimum requirement is compatibility with Chrome as well as Webkit because these browsers are used for playback on most players. If a font requires multiple character sets, the fonts must be split into multiple parts which means multiple font files. Note Font display may vary depending on the operating system and the browser. Test your fonts on different devices after uploading them to the Grassfish system. Create the ZIP file To import fonts into IXM One, you must create a ZIP file that contains a style file (style.css), a font information file (fonts.json), and the corresponding font files. The ZIP archive must have the extension .font.zip . Within the ZIP file, you can create your own file structure to save your fonts. However, ensure that the corresponding path to the fonts within the ZIP file is specified correctly in the style.css file. Configure the style file The style.css file is a text file that provides the browser with information about the font. Each new font requires a corresponding font entry. @font-face { src: <url>; font-family: <family-name>; font-weight: <weight>; font-style: <style>; } In the file, you must specify all of the following properties: Property Description Range Example <url> Specify the path to the font file within the ZIP archive. - 'fonts/NotoSans-Regular.ttf' <family-name> Specify the name of the font - 'Noto Sans' <weight> Specify the weight of the font. "normal", "bold", "100", "200", "300", "400", "500", "600", "700", "800", "900" "normal" <style> Specify the font style. "normal", "italic", "oblique" "normal" Example: Noto Sans font @font-face { font-family: "Noto Sans"; src: url("fonts/NotoSans-Regular.ttf"); font-weight: 400; font-style: normal; } @font-face { font-family: "Noto Sans"; src: url("fonts/NotoSans-Bold.ttf"); font-weight: 700; font-style: normal; } @font-face { font-family: "Noto Sans"; src: url("fonts/NotoSans-Italic.ttf"); font-weight: 400; font-style: italic; } @font-face { font-family: "Noto Sans"; src: url("fonts/NotoSans-BoldItalic.ttf"); font-weight: 700; font-style: italic; } Configure the font information file The fonts.json file provides information about the font to IXM One. It must have the following structure: { "DisplayName": <display-name>, "FontFamily": <font-family>, "CharacterSets": { <character-set-name>: { "DisplayName": <display-name>, "FontFamily": <font-family> }, <character-set-name>: { "DisplayName": <display-name>, "FontFamily": <font-family> } In the file, you must specify all of the following properties: Property Description Example <display-name> Specify the name of the font and the typeset within IXM One. 'fonts/NotoSans-Regular.ttf' <font-family> Specify the name of the font and the typeset within IXM One. In IXM One, the font is registered via the font name. If you import fonts with the same name, the system updates the existing fonts. 'Noto Sans' <character-set-name> Specify the typeset. This is required for the classification of the standard typeset. Character sets are optional and recommended for global character support such as Chinese characters. In this case, font files can be very large in size. 'normal' Additional fonts for unavailable characters If an integrated font doesn't contain all required characters such as Chinese characters, you can integrate a second font that provides the missing characters. Both fonts must be available in the font folder of the system. To specify which characters should be used, use the unicode-range in the style.css file. Example: Combi Font In this example, the first characters (numbers and punctuation) come from the font Roboto Mono and all others from Noto Serif. Entries in the style.css file: Entries in the fonts.json file: Import the fonts To import fonts into IXM One, copy the ZIP file into the uploadFonts folder of the customer on the server. When you add a font for the first time, we recommend to test it in the HTML Wizard and HTML Composer. We recommend to not remove previously imported fonts from the system. Specify default values You can specify standard values for character spacing and font size for each font. To do so, perform the following steps: Navigate to the configuration files on the server at: \GVServer2\www\gv2\gf\GFWebHtmlCustomer\ Open one of the following the folders: 00000 : edit configurations for the entire server, which means for all customers. 000xxx : edit customer-specific settings. xxx is the customer ID. Open the config.json file in your folder with a text editor like Notepad++. Go to asc > composer > defaults > fonts . Change the following values: fontFamily : use the same as in the font.json file in the respective .font.zip file. letterSpacing : specify the character spacing in pixel. fontSize : specify the font size in pixel. Save your changes and close the file. CSS CSS "font":{ "Lobster GF":{ "letterSpacing": 0px, "fontSize": 22px, "paddingTopPercent ": 20 }, "Roboto GF":{ "letterSpacing": 50px, "fontSize": 12px, "paddingTopPercent ": 50 } } Example: Cormorant Garamond_serif_OFL fonts.json: JSON JSON { "DisplayName": "Cormorant Garamond", "FontFamily": "Cormorant Garamond", "CharacterSets": { } } style.css: CSS CSS @font-face { font-family: "Cormorant Garamond"; src: url("fonts/CormorantGaramond-Regular.ttf"); } @font-face { font-family: "Cormorant Garamond"; src: url("fonts/CormorantGaramond-Bold.ttf"); font-weight: bold; } @font-face { font-family: "Cormorant Garamond"; src: url("fonts/CormorantGaramond-Italic.ttf"); font-style: italic; } @font-face { font-family: "Cormorant Garamond"; src: url("fonts/CormorantGaramond-BoldItalic.ttf"); font-weight: bold; font-style: italic; }
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/customize-terms-of-use]
+[Next|https://docs.grassfish.com/docs/configure-password-reset]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/en/customize-fonts]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/fonts2.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/fonts2.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A50Z&se=2025-07-17T16%3A48%3A50Z&sr=c&sp=r&sig=5Nyv1fCAxjzpPHuJY5Xzz9yPKqaA37Xvp4BnQt2%2BK08%3D
+Alt-Text: fonts2
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/fonts3.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/fonts3.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A50Z&se=2025-07-17T16%3A48%3A50Z&sr=c&sp=r&sig=5Nyv1fCAxjzpPHuJY5Xzz9yPKqaA37Xvp4BnQt2%2BK08%3D
+Alt-Text: fonts3
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/fonts1.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/fonts1.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A50Z&se=2025-07-17T16%3A48%3A50Z&sr=c&sp=r&sig=5Nyv1fCAxjzpPHuJY5Xzz9yPKqaA37Xvp4BnQt2%2BK08%3D
+Alt-Text: fonts1
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A50Z&se=2025-07-17T16%3A50%3A50Z&sr=c&sp=r&sig=WNCpmsuVCiBkCKXAyOIV%2BGQcAZwMInAjDBTYaM6Ypeg%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A50Z&se=2025-07-17T16%3A50%3A50Z&sr=c&sp=r&sig=WNCpmsuVCiBkCKXAyOIV%2BGQcAZwMInAjDBTYaM6Ypeg%3D
+
+Quelle: https://docs.grassfish.com/docs/en/customize-fonts

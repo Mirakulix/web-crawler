@@ -1,0 +1,61 @@
+Titel: Initialize players
+URL: https://docs.grassfish.com/docs/player-provisioning-website
+Zeitpunkt: 2025-07-17 18:37:53
+==================================================
+
+Initializing the player is an important part of the setup. Initializing means creating a connection between the player and IXM One. You can do this using the classic InitBox or the generic provisioning website. The website simplifies the initialization process. It allows you to initialize the player without using a keyboard and it enables offsite player initialization. The provisioning website also provides an option to easily replace a player. Access to the provisioning website New player software is shipped with provisioning enabled by default. However, if the technician has a keyboard connected, they can easily switch to manual installation. Player support You can use the provisioning website with the following players: Player Support Windows & Linux Player Supported Android Player Supported Tizen Player Not supported Initialize the player The provisioning website guides you through the player initialization in a few simple steps. However, before you begin initialization, review the following prerequisites and determine which installation mode is right for you. Prerequisites Ensure that you meet the following requirements before you begin the initialization: You’ve added the player in IXM One. You know the player’s Box-ID as entered in IXM One. You know the name of the IXM One application and the user credentials. You know the customer-specific URL of the provisioning website. Note The initialization may require direct interaction with the player. Some actions like replacing a player require a box reset on the player itself. Select the installation mode You can select one of the following installation modes: Advanced install : requires an IXM One login. The advanced install allows you to adjust the time zone, language, and rotation of the screen. You’ll also see a summary of player data stored in IXM One. Quick install : doesn’t require an IXM One login. The quick install provides a quick installation process without adjusting the player or any additional information. You must enable quick install in the master.config file first. Replace player : requires an IXM One login. Replacing a player allows you to replace the existing player and to adjust the time zone, language, and rotation of the screen on the new player. Every player has a unique Box-ID that identifies it, for example, during the initialization. You can check the Box-ID when you access the player in IXM.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/how-to-guides-1]
+[Next|https://docs.grassfish.com/docs/advanced-install]
+[Advanced install|https://docs.grassfish.com/docs/advanced-install]
+[Quick install|https://docs.grassfish.com/docs/quick-install]
+[enable quick install in the master.config file|https://docs.grassfish.com/docs/player-quick-install]
+[Replace player|https://docs.grassfish.com/docs/replace-a-player]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/player-provisioning-website]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A37%3A52Z&se=2025-07-17T16%3A52%3A52Z&sr=c&sp=r&sig=tuiqQk6LyP0kIWOZVBgGVSOi%2FArrD%2FqY2PfEe9xm%2Fvk%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A37%3A52Z&se=2025-07-17T16%3A52%3A52Z&sr=c&sp=r&sig=tuiqQk6LyP0kIWOZVBgGVSOi%2FArrD%2FqY2PfEe9xm%2Fvk%3D
+
+Quelle: https://docs.grassfish.com/docs/player-provisioning-website

@@ -1,0 +1,50 @@
+Titel: HTTP requests
+URL: https://docs.grassfish.com/apidocs/http-requests
+Zeitpunkt: 2025-07-17 18:38:03
+==================================================
+
+The API is the intermediary between IXM One and the web server. When you use the API, you initiate an API call that tells IXM One to do something. IXM One, in turn, uses the API to ask the web server to do something. The API call that you make is essentially an HTTP request that allows you to either access a resource on the server or to send data to the server. HTTP methods The HTTP method is a command that tells the server what to do. You can use the following HTTP methods in your requests to the API: HTTP method Description GET Retrieve a single item or a list of items. POST Create an item. PUT Update an item. DELETE Delete an item. Header parameters Your requests to the API must contain header parameters . Specifying these parameters allows you to transmit additional information for security, such as the API key or session ID for authorization . Path parameters Your requests also contain path parameters. Path parameters are variable parts of a URL that point to a specific resource. A URL can contain multiple path parameters, such as an API version or the unique ID of an item. URL The URL consists of at least a base API endpoint, followed by the API version and the plural name of the resource. Example : HTTP request GET /v{version}/Spots URL https://api.grassfish.tv/v1.15/Spots Depending on the request, more parameters can be added to the URL, such as IDs and names of resources and child resources. Example : HTTP request GET /v{version}/PlaylistVersions/{playlistVersionId}/Items/{itemId} URL https://api.grassfish.tv/v1.15/PlaylistVersions/23787/Items/65243
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[Documentation|https://docs.grassfish.com]
+[Player MQTT API|https://webhelp.grassfish.tv/pluginIPC/]
+[Player REST API|https://webhelp.grassfish.tv/ClientWebservices_API/]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish-api/en|https://docs.grassfish.com/grassfish-api/en]
+[Prev|https://docs.grassfish.com/apidocs/authorization]
+[Next|https://docs.grassfish.com/apidocs/http-status-codes]
+[authorization|https://docs.grassfish.com/apidocs/authorization]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/apidocs/http-requests]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A38%3A02Z&se=2025-07-17T16%3A53%3A02Z&sr=c&sp=r&sig=Bl3YU8Qha7wQq3e5jE%2BSkFCf%2F1U%2FAQ3sQdpa8cdE5dI%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A38%3A02Z&se=2025-07-17T16%3A53%3A02Z&sr=c&sp=r&sig=Bl3YU8Qha7wQq3e5jE%2BSkFCf%2F1U%2FAQ3sQdpa8cdE5dI%3D
+
+Quelle: https://docs.grassfish.com/apidocs/http-requests

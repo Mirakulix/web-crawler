@@ -1,0 +1,58 @@
+Titel: Set cleanup of deleted bookings
+URL: https://docs.grassfish.com/docs/set-datagateway-cleanup
+Zeitpunkt: 2025-07-17 18:31:10
+==================================================
+
+By default, DataGateway regularly cleans up deleted bookings and booking items. It removes deleted bookings from the following tables: dooh.Bookings dooh.BookingItems dooh.SpotInstances dooh.BookingItemScreens dooh.BookingItemAnalogScreens dooh.BookingItemHandlingCosts dooh.BookingItemCategoryGroups dooh.BookingItemTags dooh.SalesPeople dooh.Printouts The cleanup happens during the scheduled maintenance period and after the deleted bookings have been retained for a configurable period of time. To configure the cleanup, perform the following steps: Open the master.config file on the server with a text editor like Notepad++. Under DataGateway , configure the following settings: Set the value of Maintenance.DoohBookingCleanupBatchSize to the number of items to delete. Set the value of Maintenance.DoohBookingCleanupEnabled to false if you want to disable the cleanup. The default value is true . Set the value of Maintenance.MaxDaysForDeletedBookingsToKeep to the maximum number of days for which you want to keep deleted bookings. The minimum is 1 day. Save your changes and close the file. <appSettings type="DataGateway"> <add key="Maintenance.DoohBookingCleanupBatchSize" value="500" /> <add key="Maintenance.DoohBookingCleanupEnabled" value="true" /> <add key="Maintenance.MaxDaysForDeletedBookingsToKeep" value="90" /> </appSettings>
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/time-datagateway-maintenance]
+[Next|https://docs.grassfish.com/docs/enable-detailed-spot-statistics]
+[scheduled maintenance period|https://docs.grassfish.com/docs/time-datagateway-maintenance]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/set-datagateway-cleanup]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A31%3A09Z&se=2025-07-17T16%3A46%3A09Z&sr=c&sp=r&sig=KnZZhjqanMqjwSWdadMiU5P5d0HeUTTyl8Y4FKHDBMM%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A31%3A09Z&se=2025-07-17T16%3A46%3A09Z&sr=c&sp=r&sig=KnZZhjqanMqjwSWdadMiU5P5d0HeUTTyl8Y4FKHDBMM%3D
+
+Quelle: https://docs.grassfish.com/docs/set-datagateway-cleanup

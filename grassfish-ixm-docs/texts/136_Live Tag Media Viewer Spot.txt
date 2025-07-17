@@ -1,0 +1,67 @@
+Titel: Live Tag Media Viewer Spot
+URL: https://docs.grassfish.com/docs/live-tag-media-viewer-spot
+Zeitpunkt: 2025-07-17 18:39:36
+==================================================
+
+With the Live Tag Media Viewer spot, you can add up to 100 media files to one spot and specify different live tags for each of them. As an example, let’s say you have a screen in a shop window in Vienna. You want to adjust the display of content to the current weather in this location, so that spots may pique the interest of passers-by. Your player is connected to a weather forecast system and you’ve created live tags for different types of weather: sunny, rainy, and cloudy. You want the player to always play the right spot for the current conditions: If the weather data says that it’s sunny outside, the player displays advertisements for sunglasses. That is, spots with the live tag “sunny”. If the weather data says that it’s rainy outside, the player displays advertisements for umbrellas. That is, spots with the live tag “rainy”. If the weather data says that it’s cloudy outside, the player displays neutral spots. That is, spots with the live tag “cloudy”. What are live tags? Live tags are special tags that affect the spot playout at runtime. They’re activated and deactivated through (local) web services. This process is triggered by an attached external system that calls the player's web services. Such external systems are, for example, sensors, camera images, external dynamic data like weather forecasts, or external events. The player can be configured to display specific spots that have live tags assigned to them which match the current conditions. For example, you can use a sensor and live tags to display specific advertisements if a female person is standing in front of a screen. What are categories? As of spot version 1.1.0, you can also use categories instead of live tags. Categories allow you to specify which spots are played. You can assign categories to specific players, playlists, and spots. Players with assigned categories only play content that matches their category. Note Please contact Grassfish for information on how to get this solution. Requirements Before you configure the spot, ensure that you meet the following requirements: You need admin rights in IXM One to create live tags and categories. You may need a UDC importer to access live tag data such as weather data. Which UDC importer you need, depends on which kind of data you use. Upload the spot Upload the Live Tag Media Viewer spot to IXM One. To do so, perform the following steps: In IXM One, go to Content > Playlist . In the spot groups pane, select your spot group. In the Selectable spots pane, click on New . Select Upload spots . Upload the Live Tag Media Viewer spot in one of the following ways: Drag and drop the ZIP file into the upload manager window. Click on Add data , select the ZIP file from your files and click on Open . Click on the Play icon to start the upload. Once the upload has finished, click on Close to close the upload manager. Configure the spot To configure the Live Tag Media Viewer spot, perform the following steps: In IXM One, go to Content > Playlist . In the Spot groups pane, select your spot group. In the Selectable spots pane, hover over the Live Tag Media Viewer spot and select Edit content . Alternatively, double-click on it. Under spot , specify the Spot duration . Ensure that the spot duration corresponds with other spots that you want to display and the media display duration. Optionally, select Background and choose a background color. In the Elements pane, click on Media elements . Under Media elements , click on the + to add a media element. You can add up to 100 media elements. To add a media file, click on the Edit icon and Add medium . In the Select media file dialog, select a media group. In the Selectable media pane, perform one of the following actions: Select an available media file and click Select . Click on Upload to upload a new media file to select. Under Values , click in the text field and specify a live tag or category for this media element. Note the following limitations: The live tag key is ignored, only the value is compared. An empty value can’t match any live tag. If no live tag matches, the first media element is displayed. If multiple media have the same value, they’re played one by one. To add more values, click Add new text . Repeat steps 3 through 8 to add more media elements and values. Optionally, use the up and down arrows to change the media element order. Note that the spot displays all media elements that match the current live tag in sequence. Once you’ve added all media elements and live tags, select Options in the Elements pane. Under Image display duration , specify how long each media file is displayed in seconds. Note that this only applies to images. Videos are displayed for their duration. As Type , select Live tag or Category . This corresponds to the values that you added to your media elements. Optionally, use Mock value to test individual cases in the HTML Wizard. For example, if the spot has the values Day1 , Day2 , and Day3 you can simulate the playout by entering Day1;Day2;Day3 . Use a semicolon ; to separate multiple values. Note In the HMTL Wizard preview all media elements are played in sequence regardless of live tags. The spot displays all media that match the current live tag or the specified category in sequence. If none matches, it displays the first media file. Use the spot for advertisement Note To create an advertisement with the Live Tag Media Viewer spot, you must use a DOOH product that uses live tags as its content distribution method. To play the spot, you must create a DOOH booking item that contains it. To do so, perform the following steps: In IXM One, go to DOOH > Booking . In the Bookings panel, click on New . In the Create new booking dialog, click on New . In the Edit booking item for product dialog, select your product and specify the booking details as needed. In the spot section, click on Select from spot group . In the Select spot dialog, select your Live Tag Media Viewer spot and click Select . Switch to the Tags tab. In the Live Tags section, select the available live tags that you want to use. Configure all other booking settings as needed. Click Save and Close . UDC stands for Universal Data Controller. The UDC importer imports external data into the IXM system. UDC plugins specify which data should be imported and how it should be transformed for use by spots and players.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/daytime-media-viewer-spot]
+[Next|https://docs.grassfish.com/docs/planned-media-viewer-spot]
+[UDC importer|https://docs.vertiseit.com/docs/html-spot-udc-connector]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/live-tag-media-viewer-spot]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/upload_LTMV_spot.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/upload_LTMV_spot.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A39%3A35Z&se=2025-07-17T16%3A54%3A35Z&sr=c&sp=r&sig=BJefd0UNCV9lJE1NaaNDEPYy0mqfJAap4ZKL109yruM%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/LTMV(1).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/LTMV(1).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A39%3A35Z&se=2025-07-17T16%3A54%3A35Z&sr=c&sp=r&sig=BJefd0UNCV9lJE1NaaNDEPYy0mqfJAap4ZKL109yruM%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/LTMV_2.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/LTMV_2.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A39%3A35Z&se=2025-07-17T16%3A54%3A35Z&sr=c&sp=r&sig=BJefd0UNCV9lJE1NaaNDEPYy0mqfJAap4ZKL109yruM%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A39%3A35Z&se=2025-07-17T16%3A54%3A35Z&sr=c&sp=r&sig=BJefd0UNCV9lJE1NaaNDEPYy0mqfJAap4ZKL109yruM%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A39%3A35Z&se=2025-07-17T16%3A54%3A35Z&sr=c&sp=r&sig=BJefd0UNCV9lJE1NaaNDEPYy0mqfJAap4ZKL109yruM%3D
+
+Quelle: https://docs.grassfish.com/docs/live-tag-media-viewer-spot

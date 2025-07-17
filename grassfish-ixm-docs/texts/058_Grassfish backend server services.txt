@@ -1,0 +1,57 @@
+Titel: Grassfish backend server services
+URL: https://docs.grassfish.com/docs/grassfish-backend-server-services
+Zeitpunkt: 2025-07-17 18:36:05
+==================================================
+
+This article explains the functions of the Grassfish backend server services. Data Calculator Data Calculator recalculates the XML playlist files. It registers each relevant modification by a user in IXM One and recalculates the corresponding playlists. The playlists are saved on the server in the following directory: <Grassfish-RootDir>\data\<customer.id >\playlists Additionally, Data Calculator calculates modified data like playlists, content files, and data files to be transferred to corresponding players. This information is recorded in the MS SQL database. Standard service name GV2 DC Service directory <Grassfish-RootDir>\DataCalculator Log file <Grassfish-RootDir>\log\DataCalculator Interfaces Access to the MS SQL database Access to the central file share Universal Data Controller Universal Data Controller (UDC) is a service for the import of external, customer-specific data. The actual import is carried out via plug-ins that are hosted in the following directory: <Grassfish RootDir>\UdcService\Plugins Standard service name GV2 DC Service directory <Grassfish-RootDir>\UdcService Log file <Grassfish-RootDir>\log\UDC Interfaces Access to the MS SQL database Access to the central file share If applicable, access to customer-specific import interfaces. For example, for file imports from a separate FTP directory or requests via external web interfaces. Media Handler Media Handler is relevant for the creation of thumbnails and previews, exporting playlists, and converting spots to videos. Standard service name GV2 DC Service directory <Grassfish-RootDir>\MediaHandler Log file <Grassfish-RootDir>\log\MediaHandler Interfaces Access to the MS SQL database Access to the central file share Reporting Gateway Reporting Gateway imports and processes report-specific data. The application is optional but it’s a mandatory requirement for several dashboard widgets. Standard service name GV2 DC Service directory <Grassfish-RootDir>\ReportingGateway Log file <Grassfish-RootDir>\log\ReportingGateway Interfaces Access to the MS SQL database Grassfish live database Grassfish reporting database Access to the central file share If applicable, access to customer-specific import interfaces. For example, for file imports from a separate FTP directory or requests via external web interfaces. Licensing service The licensing service communicates with the Grassfish Licensing Server and provides the functions required for automatic license update and billing. Standard service name GV2 LicensingService Service directory <Grassfish-RootDir>\LicensingService Log file <Grassfish-RootDir>\log\LicensingService Interfaces Access to MS SQL database Access to central file share
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/server]
+[Next|https://docs.grassfish.com/docs/players]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/grassfish-backend-server-services]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A05Z&se=2025-07-17T16%3A51%3A05Z&sr=c&sp=r&sig=bFs%2Fm5Gj0Ly5VUXZgufBx0ovK%2Bg8Oi9JXUtRsjIu0NU%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A05Z&se=2025-07-17T16%3A51%3A05Z&sr=c&sp=r&sig=bFs%2Fm5Gj0Ly5VUXZgufBx0ovK%2Bg8Oi9JXUtRsjIu0NU%3D
+
+Quelle: https://docs.grassfish.com/docs/grassfish-backend-server-services

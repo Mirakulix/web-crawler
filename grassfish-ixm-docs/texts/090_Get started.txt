@@ -1,0 +1,49 @@
+Titel: Get started
+URL: https://docs.grassfish.com/apidocs/get-started
+Zeitpunkt: 2025-07-17 18:37:47
+==================================================
+
+Follow this quick tutorial to make your first API call . In this tutorial, you’ll log a user into IXM One to retrieve their session ID . Prerequisites For the tutorial, you need an IXM One account and the user credentials. Retrieve your session ID To retrieve your session ID, perform the following steps: Access the IXM One API. Go to Users > Log a user into the system . In the body, enter your IXM One application name, username, and password. Optionally, enter your Application GUID . If you don’t have one, just leave it as is. Check the response to retrieve your session ID. An API call or API request is a message to a server that requests an API to provide a service or information. When you're logged in, you get a session ID that you can use for authorization. The session ID is connected to a user including their rights and permissions. A standalone application can be identified by a globally unique identifier (GUID). If you are unsure, ask your administrator whether your application requires an application GUID upon login.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[Documentation|https://docs.grassfish.com]
+[Player MQTT API|https://webhelp.grassfish.tv/pluginIPC/]
+[Player REST API|https://webhelp.grassfish.tv/ClientWebservices_API/]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish-api/en|https://docs.grassfish.com/grassfish-api/en]
+[Prev|https://docs.grassfish.com/apidocs/get-ids]
+[Next|https://docs.grassfish.com/apidocs/api-glossary]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/apidocs/get-started]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A37%3A46Z&se=2025-07-17T16%3A52%3A46Z&sr=c&sp=r&sig=6RyrZ1pXfy%2BSAjKDa2JAVTN68mUzbn9ojx9GBZi2cxI%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A37%3A46Z&se=2025-07-17T16%3A52%3A46Z&sr=c&sp=r&sig=6RyrZ1pXfy%2BSAjKDa2JAVTN68mUzbn9ojx9GBZi2cxI%3D
+
+Quelle: https://docs.grassfish.com/apidocs/get-started

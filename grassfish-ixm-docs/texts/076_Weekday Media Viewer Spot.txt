@@ -1,0 +1,63 @@
+Titel: Weekday Media Viewer Spot
+URL: https://docs.grassfish.com/docs/weekday-media-viewer-spot
+Zeitpunkt: 2025-07-17 18:36:56
+==================================================
+
+With the Weekday Media Viewer spot, you can specify one image or video for each day of the week. That means, you can select seven media files and the system plays them on the day of the week that you assigned them to. As an example, let’s say you have screens in a hotel that provides conference rooms to companies during the work week. You want to adjust the display of content in the following way: Monday through Friday, the player displays a different video each day. Each video informs viewers about the scheduled conferences and events on the current day. Saturday through Sunday, the player displays hotel advertisement videos for regular guests. Note Please contact Grassfish for information on how to get this solution. Upload the spot Upload the Weekday Media Viewer spot to the IXM One. To do so, perform the following steps: In the IXM One, go to Content > Playlist . In the Spot groups pane, select your spot group. In the Selectable spots pane, click on New . Select Upload spots . Upload the Weekday Media Viewer spot in one of the following ways: Drag and drop the ZIP file into the upload manager window. Click on Add data , select the ZIP file from your files and click on Open . Click on the Play icon to start the upload. Once the upload has finished, click on Close to close the upload manager. Configure the spot To configure your spot in the HTML Wizard, perform the following steps: In the IXM One, go to Content > Playlist . In the Spot groups pane, select your spot group. In the Selectable spots pane, hover over the Weekday Media Viewer spot and select Edit content . Alternatively, double-click on it. Under Spot , select the Resolution from the dropdown menu. Specify the Spot duration . Ensure that the spot duration corresponds with other spots that you want to display and the media display duration. Optionally, select Background and choose a background color. Click on Media . Select a day and click on Add medium . In the Select media file dialog, select a media group. In the Selectable media pane, perform one of the following actions: Select an available media file and click Select . Click on Upload to upload a new media file to select. Repeat steps 8 through 10 for every day that you want to add a media file to. Once you’ve added all media elements, select Options in the Elements pane. Under Playback duration for images [sec] , specify how long each media file is displayed in seconds. Note that this only applies to images. Videos are displayed for their duration. Under Player , click Select to select the player that you want to display the spot. Optionally, use Mock weekday to test the playout on individual days in the HTML Wizard. To finish the spot configuration, click Save and Close . Note If you haven't added a media file for the current day, the system automatically plays the first available medium from the media list. Use the spot for advertisement To create an advertisement with the Weekday Media Viewer spot, you must create a DOOH booking item. To do so, perform the following steps: In the IXM One, go to DOOH > Booking . In the Bookings panel, click on New . In the Edit booking item for product window, specify the booking details. In the Spot section, click on Select from spot group . Select your Weekday Media Viewer spot. This opens the HTML Wizard. In the HTML Wizard, configure the spot further if needed. Once you’ve finished, click Save and Close to close the HTML Wizard. To save the booking item, click Save .
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/random-media-viewer-spot]
+[Next|https://docs.grassfish.com/docs/widgets]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/weekday-media-viewer-spot]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/upload_WMV_spot.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/upload_WMV_spot.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A55Z&se=2025-07-17T16%3A48%3A55Z&sr=c&sp=r&sig=6Oc3kKvjoYen1m9XfYZEhmDuAsnvYN1uC0RwEi71Z0Y%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/WMV_spot.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/WMV_spot.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A55Z&se=2025-07-17T16%3A48%3A55Z&sr=c&sp=r&sig=6Oc3kKvjoYen1m9XfYZEhmDuAsnvYN1uC0RwEi71Z0Y%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A55Z&se=2025-07-17T16%3A51%3A55Z&sr=c&sp=r&sig=GDdxft%2BNmY8mikVNViRK83ctYm7s7fqWqBJh7PgyJjE%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A55Z&se=2025-07-17T16%3A51%3A55Z&sr=c&sp=r&sig=GDdxft%2BNmY8mikVNViRK83ctYm7s7fqWqBJh7PgyJjE%3D
+
+Quelle: https://docs.grassfish.com/docs/weekday-media-viewer-spot

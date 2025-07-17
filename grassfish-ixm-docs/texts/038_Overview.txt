@@ -1,0 +1,48 @@
+Titel: Overview
+URL: https://docs.grassfish.com/apidocs/overview
+Zeitpunkt: 2025-07-17 18:32:02
+==================================================
+
+The IXM One API allows you to create services that can interact with IXM One. Use the API Our API offers you a wide range of functions that you can use to perform a variety of actions, such as: Managing your content by creating new categories, locations, or media groups in IXM One. Keeping track of your system by querying a list of your playlists, spot occurrences, or assigned tags. Managing your players and their assignments. Managing users and controlling who's logged in. Performing status tests or querying the memory usage of the web server. Learn more Take a look at the following articles and our API references for a complete list of all available endpoints and detailed descriptions of how to use them. API means application programming interface. An API consist of multiple definitions and protocols for developing and integrating application software. An API is an interface that allows independent applications to communicate with each other and exchange data.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[Documentation|https://docs.grassfish.com]
+[Player MQTT API|https://webhelp.grassfish.tv/pluginIPC/]
+[Player REST API|https://webhelp.grassfish.tv/ClientWebservices_API/]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish-api/en|https://docs.grassfish.com/grassfish-api/en]
+[Next|https://docs.grassfish.com/apidocs/authorization]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/apidocs/overview]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A32%3A02Z&se=2025-07-17T16%3A47%3A02Z&sr=c&sp=r&sig=8bgtANtfFGA%2BtzGAwF0lCs7KJkYBOhG4Z7EnXb0aRMc%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A32%3A02Z&se=2025-07-17T16%3A47%3A02Z&sr=c&sp=r&sig=8bgtANtfFGA%2BtzGAwF0lCs7KJkYBOhG4Z7EnXb0aRMc%3D
+
+Quelle: https://docs.grassfish.com/apidocs/overview

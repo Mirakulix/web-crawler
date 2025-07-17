@@ -1,0 +1,1318 @@
+{
+  "base_url": "https://extranet.grassfish.tv/site/index.php/content",
+  "crawl_timestamp": "2025-07-17 16:19:22",
+  "single_pdf_created": false,
+  "statistics": {
+    "processed": 7,
+    "errors": 1,
+    "images_downloaded": 19,
+    "pagination_links_found": 1,
+    "total_links_found": 7,
+    "skipped_external": 169,
+    "skipped_invalid": 84,
+    "login_pages_found": 2,
+    "login_attempts": 1,
+    "login_successes": 1
+  },
+  "groups": {
+    "/site/index.php": [
+      {
+        "url": "https://extranet.grassfish.tv/site/index.php/content",
+        "title": "Solutions & Widgets",
+        "content": "",
+        "images": [],
+        "links": [
+          [
+            "Customer portal",
+            "https://extranet.grassfish.tv/site/"
+          ],
+          [
+            "News",
+            "https://extranet.grassfish.tv/site/index.php/ct-menu-item-1"
+          ],
+          [
+            "IXM One",
+            "https://docs.grassfish.com/docs/ixm-one"
+          ],
+          [
+            "IXM - Basic module",
+            "https://docs.grassfish.com/docs/ixm-one-releases"
+          ],
+          [
+            "IXM - DOOH & SSP module",
+            "https://docs.grassfish.com/docs/release-notes-dooh-and-ssp"
+          ],
+          [
+            "Solutions & Widgets",
+            "https://extranet.grassfish.tv/site/index.php/content"
+          ],
+          [
+            "DEV - spot development",
+            "https://extranet.grassfish.tv/site/index.php/content/dev-spot-development"
+          ],
+          [
+            "Solution - phidgetboard integration",
+            "https://docs.grassfish.com/docs/phidgetboard-integration"
+          ],
+          [
+            "Solution - player synchronisation",
+            "https://docs.grassfish.com/docs/synchronize-players"
+          ],
+          [
+            "Solution - second screen add-on",
+            "https://docs.grassfish.com/docs/install-second-screen-add-on"
+          ],
+          [
+            "Simple widgets",
+            "https://extranet.grassfish.tv/site/index.php/content/solutions"
+          ],
+          [
+            "Advanced widgets",
+            "https://docs.grassfish.com/docs/widgets"
+          ],
+          [
+            "Player",
+            "https://docs.grassfish.com/docs/players"
+          ],
+          [
+            "Player - Linux & Windows",
+            "https://extranet.grassfish.tv/site/index.php/player/player-qt"
+          ],
+          [
+            "Player - Android",
+            "https://docs.grassfish.com/docs/release-notes-android-player"
+          ],
+          [
+            "Player - JavaScript (Tizen, WebOS)",
+            "https://extranet.grassfish.tv/site/index.php/player/player-javascript"
+          ],
+          [
+            "Player - Windows Vintage",
+            "https://extranet.grassfish.tv/site/index.php/player/player-windows-vintage"
+          ],
+          [
+            "Server",
+            "https://extranet.grassfish.tv/site/index.php/server"
+          ],
+          [
+            "Password List",
+            "https://extranet.grassfish.tv/site/index.php/password-list-new"
+          ],
+          [
+            "Hardware",
+            "https://docs.grassfish.com/docs/hardware-1"
+          ],
+          [
+            "End of Life",
+            "https://docs.grassfish.com/docs/check-end-of-support"
+          ],
+          [
+            "Edit User profile",
+            "https://extranet.grassfish.tv/site/index.php/edit-user-profile"
+          ],
+          [
+            "Home",
+            "https://extranet.grassfish.tv/site/index.php"
+          ],
+          [
+            "Documentation",
+            "https://docs.grassfish.com/docs/date-time-widget"
+          ],
+          [
+            "Download DateTime Spot v1.0.4",
+            "https://extranet.grassfish.tv/site/extranet_files/_Software_Spots/Widgets/DateTimeSpot_v1.0.4.asc.zip"
+          ],
+          [
+            "Documentation",
+            "https://docs.grassfish.com/docs/ticker-widget"
+          ],
+          [
+            "Download TickerSpot v1.0.1",
+            "https://extranet.grassfish.tv/site/extranet_files/_Software_Spots/Widgets/TickerSpot_v1.0.1.asc.zip"
+          ],
+          [
+            "Documentation",
+            "https://docs.grassfish.com/docs/image-slider-widget"
+          ],
+          [
+            "Download Image Slider Spot v1.0.2",
+            "https://extranet.grassfish.tv/site/extranet_files/_Software_Spots/Widgets/ImageSliderSpot_v1.0.2.asc.zip"
+          ],
+          [
+            "Documentation",
+            "https://docs.grassfish.com/docs/shapes-widget"
+          ],
+          [
+            "Shapes Spot",
+            "https://extranet.grassfish.tv/site/extranet_files/_Software_Spots/Widgets/gf-shape-spot_v1.0.1.asc.zip"
+          ],
+          [
+            "Shapes Spot",
+            "https://extranet.grassfish.tv/site/extranet_files/_Software_Spots/Widgets/ShapeSpot_v1.0.1.asc.zip"
+          ]
+        ],
+        "file_path": "collection/https_extranet_grassfish_tv_site_index_php_content/texts/001_Solutions & Widgets.txt",
+        "pdf_path": "collection/https_extranet_grassfish_tv_site_index_php_content/001_Solutions & Widgets.pdf",
+        "timestamp": "2025-07-17 16:19:09"
+      },
+      {
+        "url": "https://extranet.grassfish.tv/site/index.php/content/dev-spot-development",
+        "title": "DEV - spot development",
+        "content": "",
+        "images": [],
+        "links": [
+          [
+            "Customer portal",
+            "https://extranet.grassfish.tv/site/"
+          ],
+          [
+            "News",
+            "https://extranet.grassfish.tv/site/index.php/ct-menu-item-1"
+          ],
+          [
+            "IXM One",
+            "https://docs.grassfish.com/docs/ixm-one"
+          ],
+          [
+            "IXM - Basic module",
+            "https://docs.grassfish.com/docs/ixm-one-releases"
+          ],
+          [
+            "IXM - DOOH & SSP module",
+            "https://docs.grassfish.com/docs/release-notes-dooh-and-ssp"
+          ],
+          [
+            "Solutions & Widgets",
+            "https://extranet.grassfish.tv/site/index.php/content"
+          ],
+          [
+            "DEV - spot development",
+            "https://extranet.grassfish.tv/site/index.php/content/dev-spot-development"
+          ],
+          [
+            "Solution - phidgetboard integration",
+            "https://docs.grassfish.com/docs/phidgetboard-integration"
+          ],
+          [
+            "Solution - player synchronisation",
+            "https://docs.grassfish.com/docs/synchronize-players"
+          ],
+          [
+            "Solution - second screen add-on",
+            "https://docs.grassfish.com/docs/install-second-screen-add-on"
+          ],
+          [
+            "Simple widgets",
+            "https://extranet.grassfish.tv/site/index.php/content/solutions"
+          ],
+          [
+            "Advanced widgets",
+            "https://docs.grassfish.com/docs/widgets"
+          ],
+          [
+            "Player",
+            "https://docs.grassfish.com/docs/players"
+          ],
+          [
+            "Player - Linux & Windows",
+            "https://extranet.grassfish.tv/site/index.php/player/player-qt"
+          ],
+          [
+            "Player - Android",
+            "https://docs.grassfish.com/docs/release-notes-android-player"
+          ],
+          [
+            "Player - JavaScript (Tizen, WebOS)",
+            "https://extranet.grassfish.tv/site/index.php/player/player-javascript"
+          ],
+          [
+            "Player - Windows Vintage",
+            "https://extranet.grassfish.tv/site/index.php/player/player-windows-vintage"
+          ],
+          [
+            "Server",
+            "https://extranet.grassfish.tv/site/index.php/server"
+          ],
+          [
+            "Password List",
+            "https://extranet.grassfish.tv/site/index.php/password-list-new"
+          ],
+          [
+            "Hardware",
+            "https://docs.grassfish.com/docs/hardware-1"
+          ],
+          [
+            "End of Life",
+            "https://docs.grassfish.com/docs/check-end-of-support"
+          ],
+          [
+            "Edit User profile",
+            "https://extranet.grassfish.tv/site/index.php/edit-user-profile"
+          ],
+          [
+            "Home",
+            "https://extranet.grassfish.tv/site/index.php"
+          ],
+          [
+            "Solutions & Widgets",
+            "https://extranet.grassfish.tv/site/index.php/content"
+          ],
+          [
+            "HTML Spots Developer Manual",
+            "https://docs.grassfish.com/docs/html-spot-development"
+          ],
+          [
+            "Client Webservices (EN)",
+            "https://extranet.grassfish.tv/site/extranet_files/SpotDevelopment/Manuals/Grassfish%20Client%20Webservices%20(EN).pdf"
+          ],
+          [
+            "Client Webservices (DE)",
+            "https://extranet.grassfish.tv/site/extranet_files/SpotDevelopment/Manuals/Grassfish%20Client%20Webservices%20(DE).pdf"
+          ],
+          [
+            "HTML Spot UDC-Connector",
+            "https://docs.grassfish.com/docs/html-spot-udc-connector"
+          ],
+          [
+            "Training website",
+            "https://extranet.grassfish.tv/site/extranet_files/SpotDevelopment/Manuals/TrainingsWebsite/asc-training_v2.0.6.zip"
+          ],
+          [
+            "Spots",
+            "https://extranet.grassfish.tv/site/extranet_files/SpotDevelopment/Manuals/TrainingsWebsite/asc_training_spots.zip"
+          ],
+          [
+            "gfWizardBase.js (2.1.0.0)",
+            "https://extranet.grassfish.tv/site/extranet_files/SpotDevelopment/Libs/gfWizardBase/src/gfWizardBase.js"
+          ],
+          [
+            "gfSpotBase.js (2.0.2.0)",
+            "https://extranet.grassfish.tv/site/extranet_files/SpotDevelopment/Libs/gfSpotBase/src/gfSpotBase.js"
+          ],
+          [
+            "gfUdcConnector.js (1.2.1.0)",
+            "https://extranet.grassfish.tv/site/extranet_files/SpotDevelopment/Libs/gfUdcConnector/src/gfUdcConnector.js"
+          ],
+          [
+            "ascInterface.html",
+            "https://extranet.grassfish.tv/site/extranet_files/SpotDevelopment/Libs/ascInterface.html"
+          ],
+          [
+            "Demo Spot (2.1.5)",
+            "https://extranet.grassfish.tv/site/extranet_files/SpotDevelopment/HtmlWizardSpots/DemoSpot_v2.1.5.asc.zip"
+          ],
+          [
+            "SpotBase Spot (2.0.1.1)",
+            "https://extranet.grassfish.tv/site/extranet_files/SpotDevelopment/HtmlWizardSpots/GfSpotBase_v2_0_1_1.html.zip"
+          ]
+        ],
+        "file_path": "collection/https_extranet_grassfish_tv_site_index_php_content/texts/003_DEV - spot development.txt",
+        "pdf_path": "collection/https_extranet_grassfish_tv_site_index_php_content/003_DEV - spot development.pdf",
+        "timestamp": "2025-07-17 16:19:14"
+      },
+      {
+        "url": "https://extranet.grassfish.tv/site/index.php/content/solutions",
+        "title": "Simple widgets",
+        "content": "",
+        "images": [],
+        "links": [
+          [
+            "Customer portal",
+            "https://extranet.grassfish.tv/site/"
+          ],
+          [
+            "News",
+            "https://extranet.grassfish.tv/site/index.php/ct-menu-item-1"
+          ],
+          [
+            "IXM One",
+            "https://docs.grassfish.com/docs/ixm-one"
+          ],
+          [
+            "IXM - Basic module",
+            "https://docs.grassfish.com/docs/ixm-one-releases"
+          ],
+          [
+            "IXM - DOOH & SSP module",
+            "https://docs.grassfish.com/docs/release-notes-dooh-and-ssp"
+          ],
+          [
+            "Solutions & Widgets",
+            "https://extranet.grassfish.tv/site/index.php/content"
+          ],
+          [
+            "DEV - spot development",
+            "https://extranet.grassfish.tv/site/index.php/content/dev-spot-development"
+          ],
+          [
+            "Solution - phidgetboard integration",
+            "https://docs.grassfish.com/docs/phidgetboard-integration"
+          ],
+          [
+            "Solution - player synchronisation",
+            "https://docs.grassfish.com/docs/synchronize-players"
+          ],
+          [
+            "Solution - second screen add-on",
+            "https://docs.grassfish.com/docs/install-second-screen-add-on"
+          ],
+          [
+            "Simple widgets",
+            "https://extranet.grassfish.tv/site/index.php/content/solutions"
+          ],
+          [
+            "Advanced widgets",
+            "https://docs.grassfish.com/docs/widgets"
+          ],
+          [
+            "Player",
+            "https://docs.grassfish.com/docs/players"
+          ],
+          [
+            "Player - Linux & Windows",
+            "https://extranet.grassfish.tv/site/index.php/player/player-qt"
+          ],
+          [
+            "Player - Android",
+            "https://docs.grassfish.com/docs/release-notes-android-player"
+          ],
+          [
+            "Player - JavaScript (Tizen, WebOS)",
+            "https://extranet.grassfish.tv/site/index.php/player/player-javascript"
+          ],
+          [
+            "Player - Windows Vintage",
+            "https://extranet.grassfish.tv/site/index.php/player/player-windows-vintage"
+          ],
+          [
+            "Server",
+            "https://extranet.grassfish.tv/site/index.php/server"
+          ],
+          [
+            "Password List",
+            "https://extranet.grassfish.tv/site/index.php/password-list-new"
+          ],
+          [
+            "Hardware",
+            "https://docs.grassfish.com/docs/hardware-1"
+          ],
+          [
+            "End of Life",
+            "https://docs.grassfish.com/docs/check-end-of-support"
+          ],
+          [
+            "Edit User profile",
+            "https://extranet.grassfish.tv/site/index.php/edit-user-profile"
+          ],
+          [
+            "Home",
+            "https://extranet.grassfish.tv/site/index.php"
+          ],
+          [
+            "Solutions & Widgets",
+            "https://extranet.grassfish.tv/site/index.php/content"
+          ],
+          [
+            "Documentation",
+            "https://docs.grassfish.com/docs/date-time-widget"
+          ],
+          [
+            "Download DateTime Spot v1.0.4",
+            "https://extranet.grassfish.tv/site/extranet_files/_Software_Spots/Widgets/DateTimeSpot_v1.0.4.asc.zip"
+          ],
+          [
+            "Documentation",
+            "https://docs.grassfish.com/docs/ticker-widget"
+          ],
+          [
+            "Download TickerSpot v1.0.1",
+            "https://extranet.grassfish.tv/site/extranet_files/_Software_Spots/Widgets/TickerSpot_v1.0.1.asc.zip"
+          ],
+          [
+            "Documentation",
+            "https://docs.grassfish.com/docs/image-slider-widget"
+          ],
+          [
+            "Download Image Slider Spot v1.0.2",
+            "https://extranet.grassfish.tv/site/extranet_files/_Software_Spots/Widgets/ImageSliderSpot_v1.0.2.asc.zip"
+          ],
+          [
+            "Documentation",
+            "https://docs.grassfish.com/docs/shapes-widget"
+          ],
+          [
+            "Shapes Spot",
+            "https://extranet.grassfish.tv/site/extranet_files/_Software_Spots/Widgets/gf-shape-spot_v1.0.1.asc.zip"
+          ],
+          [
+            "Shapes Spot",
+            "https://extranet.grassfish.tv/site/extranet_files/_Software_Spots/Widgets/ShapeSpot_v1.0.1.asc.zip"
+          ]
+        ],
+        "file_path": "collection/https_extranet_grassfish_tv_site_index_php_content/texts/004_Simple widgets.txt",
+        "pdf_path": "collection/https_extranet_grassfish_tv_site_index_php_content/004_Simple widgets.pdf",
+        "timestamp": "2025-07-17 16:19:16"
+      },
+      {
+        "url": "https://extranet.grassfish.tv/site/index.php/ct-menu-item-1",
+        "title": "Welcome to the Grassfish Extranet",
+        "content": "",
+        "images": [],
+        "links": [
+          [
+            "Customer portal",
+            "https://extranet.grassfish.tv/site/"
+          ],
+          [
+            "News",
+            "https://extranet.grassfish.tv/site/index.php/ct-menu-item-1"
+          ],
+          [
+            "IXM One",
+            "https://docs.grassfish.com/docs/ixm-one"
+          ],
+          [
+            "IXM - Basic module",
+            "https://docs.grassfish.com/docs/ixm-one-releases"
+          ],
+          [
+            "IXM - DOOH & SSP module",
+            "https://docs.grassfish.com/docs/release-notes-dooh-and-ssp"
+          ],
+          [
+            "Solutions & Widgets",
+            "https://extranet.grassfish.tv/site/index.php/content"
+          ],
+          [
+            "DEV - spot development",
+            "https://extranet.grassfish.tv/site/index.php/content/dev-spot-development"
+          ],
+          [
+            "Solution - phidgetboard integration",
+            "https://docs.grassfish.com/docs/phidgetboard-integration"
+          ],
+          [
+            "Solution - player synchronisation",
+            "https://docs.grassfish.com/docs/synchronize-players"
+          ],
+          [
+            "Solution - second screen add-on",
+            "https://docs.grassfish.com/docs/install-second-screen-add-on"
+          ],
+          [
+            "Simple widgets",
+            "https://extranet.grassfish.tv/site/index.php/content/solutions"
+          ],
+          [
+            "Advanced widgets",
+            "https://docs.grassfish.com/docs/widgets"
+          ],
+          [
+            "Player",
+            "https://docs.grassfish.com/docs/players"
+          ],
+          [
+            "Player - Linux & Windows",
+            "https://extranet.grassfish.tv/site/index.php/player/player-qt"
+          ],
+          [
+            "Player - Android",
+            "https://docs.grassfish.com/docs/release-notes-android-player"
+          ],
+          [
+            "Player - JavaScript (Tizen, WebOS)",
+            "https://extranet.grassfish.tv/site/index.php/player/player-javascript"
+          ],
+          [
+            "Player - Windows Vintage",
+            "https://extranet.grassfish.tv/site/index.php/player/player-windows-vintage"
+          ],
+          [
+            "Server",
+            "https://extranet.grassfish.tv/site/index.php/server"
+          ],
+          [
+            "Password List",
+            "https://extranet.grassfish.tv/site/index.php/password-list-new"
+          ],
+          [
+            "Hardware",
+            "https://docs.grassfish.com/docs/hardware-1"
+          ],
+          [
+            "End of Life",
+            "https://docs.grassfish.com/docs/check-end-of-support"
+          ],
+          [
+            "Edit User profile",
+            "https://extranet.grassfish.tv/site/index.php/edit-user-profile"
+          ],
+          [
+            "Home",
+            "https://extranet.grassfish.tv/site/index.php"
+          ],
+          [
+            "Click to read the latest news in the Grassfish Help Center",
+            "https://docs.grassfish.com/docs/news"
+          ],
+          [
+            "Download full report",
+            "https://extranet.grassfish.tv/site/extranet_files/Grassfish_Qt_Linux_Player_PenTest_v2.10.pdf"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/ixm-one-releases"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-dooh-and-ssp"
+          ],
+          [
+            "Release Notes",
+            "https://extranet.grassfish.tv/site/index.php/player/player-qt"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-android-player"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-android-player"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/ixm-platform-releases"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/ixm-platform-releases"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-dooh-and-ssp"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/ixm-platform-releases"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-android-player"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-android-player"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-android-player"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-dooh-and-ssp"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/ixm-platform-releases"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-android-player"
+          ],
+          [
+            "Release Notes",
+            "https://extranet.grassfish.tv/site/index.php/player/player-qt"
+          ],
+          [
+            "Release Notes",
+            "https://extranet.grassfish.tv/site/index.php/player/player-qt"
+          ],
+          [
+            "Release Notes",
+            "https://extranet.grassfish.tv/site/index.php/player/player-qt"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-dooh-and-ssp"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/ixm-platform-releases"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-android-player"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-android-player"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-dooh-and-ssp"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/ixm-platform-releases"
+          ],
+          [
+            "Release Notes",
+            "https://extranet.grassfish.tv/site/index.php/player/player-qt"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-dooh-and-ssp"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/ixm-platform-releases"
+          ],
+          [
+            "Release Notes",
+            "https://extranet.grassfish.tv/site/index.php/cms/ixm-dooh-ssp"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/ixm-platform-releases"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-android-player"
+          ],
+          [
+            "Release Notes",
+            "https://extranet.grassfish.tv/site/index.php/player/player-qt"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-android-player"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-dooh-and-ssp"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/ixm-platform-releases"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-dooh-and-ssp"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/ixm-platform-releases"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-android-player"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/ixm-platform-releases"
+          ],
+          [
+            "Release Notes",
+            "https://extranet.grassfish.tv/site/index.php/player/player-qt"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-android-player"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-android-player"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-dooh-and-ssp"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/ixm-platform-releases"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-android-player"
+          ],
+          [
+            "Release Notes",
+            "https://extranet.grassfish.tv/site/index.php/player/player-qt"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-dooh-and-ssp"
+          ],
+          [
+            "Release Notes",
+            "https://extranet.grassfish.tv/site/index.php/player/player-qt"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-android-player"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/ixm-platform-releases"
+          ],
+          [
+            "Release Notes",
+            "https://extranet.grassfish.tv/site/index.php/cms/online-user-manual"
+          ],
+          [
+            "Release Notes",
+            "https://extranet.grassfish.tv/site/index.php/cms/ixm-dooh-ssp"
+          ],
+          [
+            "Release Notes",
+            "https://extranet.grassfish.tv/site/index.php/player/player-javascript"
+          ],
+          [
+            "Release Notes",
+            "https://extranet.grassfish.tv/site/index.php/cms/online-user-manual"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-dooh-and-ssp"
+          ],
+          [
+            "Release Notes",
+            "https://extranet.grassfish.tv/site/index.php/player/player-javascript"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-android-player"
+          ],
+          [
+            "Release Notes",
+            "https://extranet.grassfish.tv/site/index.php/player/player-javascript"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/ixm-platform-releases"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-dooh-and-ssp"
+          ],
+          [
+            "Release Notes",
+            "https://extranet.grassfish.tv/site/index.php/cms/online-user-manual"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-dooh-and-ssp"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-android-player"
+          ],
+          [
+            "Release Notes",
+            "https://extranet.grassfish.tv/site/index.php/player/player-qt"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/ixm-platform-releases"
+          ],
+          [
+            "Release Notes",
+            "https://extranet.grassfish.tv/site/index.php/player/player-qt"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/ixm-platform-releases"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-dooh-and-ssp"
+          ],
+          [
+            "Release Notes",
+            "https://extranet.grassfish.tv/site/index.php/player/player-javascript"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-android-player"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-android-player"
+          ],
+          [
+            "Release Notes",
+            "https://docs.grassfish.com/docs/release-notes-dooh-and-ssp"
+          ],
+          [
+            "https://docs.grassfish.com/docs/release-notes-dooh-and-ssp",
+            "https://docs.grassfish.com/docs/release-notes-dooh-and-ssp"
+          ],
+          [
+            "More information",
+            "https://extranet.grassfish.tv/site/index.php/content/customer-count-control"
+          ],
+          [
+            "LINK",
+            "https://extranet.grassfish.tv/site/index.php/player/player-windows-vintage"
+          ],
+          [
+            "LINK",
+            "https://extranet.grassfish.tv/site/index.php/player/player-windows-vintage"
+          ],
+          [
+            "LINK",
+            "https://extranet.grassfish.tv/site/index.php/player/player-windows-vintage"
+          ],
+          [
+            "LINK",
+            "https://extranet.grassfish.tv/site/index.php/player/player-javascript"
+          ],
+          [
+            "LINK",
+            "https://extranet.grassfish.tv/site/index.php/player/player-qt"
+          ],
+          [
+            "LINK",
+            "https://extranet.grassfish.tv/site/index.php/player/player-javascript"
+          ]
+        ],
+        "file_path": "collection/https_extranet_grassfish_tv_site_index_php_content/texts/002_Welcome to the Grassfish Extranet.txt",
+        "pdf_path": "collection/https_extranet_grassfish_tv_site_index_php_content/002_Welcome to the Grassfish Extranet.pdf",
+        "timestamp": "2025-07-17 16:19:10"
+      },
+      {
+        "url": "https://extranet.grassfish.tv/site/index.php/edit-user-profile",
+        "title": "Edit User profile",
+        "content": "",
+        "images": [],
+        "links": [
+          [
+            "Customer portal",
+            "https://extranet.grassfish.tv/site/"
+          ],
+          [
+            "News",
+            "https://extranet.grassfish.tv/site/index.php/ct-menu-item-1"
+          ],
+          [
+            "IXM One",
+            "https://docs.grassfish.com/docs/ixm-one"
+          ],
+          [
+            "IXM - Basic module",
+            "https://docs.grassfish.com/docs/ixm-one-releases"
+          ],
+          [
+            "IXM - DOOH & SSP module",
+            "https://docs.grassfish.com/docs/release-notes-dooh-and-ssp"
+          ],
+          [
+            "Solutions & Widgets",
+            "https://extranet.grassfish.tv/site/index.php/content"
+          ],
+          [
+            "DEV - spot development",
+            "https://extranet.grassfish.tv/site/index.php/content/dev-spot-development"
+          ],
+          [
+            "Solution - phidgetboard integration",
+            "https://docs.grassfish.com/docs/phidgetboard-integration"
+          ],
+          [
+            "Solution - player synchronisation",
+            "https://docs.grassfish.com/docs/synchronize-players"
+          ],
+          [
+            "Solution - second screen add-on",
+            "https://docs.grassfish.com/docs/install-second-screen-add-on"
+          ],
+          [
+            "Simple widgets",
+            "https://extranet.grassfish.tv/site/index.php/content/solutions"
+          ],
+          [
+            "Advanced widgets",
+            "https://docs.grassfish.com/docs/widgets"
+          ],
+          [
+            "Player",
+            "https://docs.grassfish.com/docs/players"
+          ],
+          [
+            "Player - Linux & Windows",
+            "https://extranet.grassfish.tv/site/index.php/player/player-qt"
+          ],
+          [
+            "Player - Android",
+            "https://docs.grassfish.com/docs/release-notes-android-player"
+          ],
+          [
+            "Player - JavaScript (Tizen, WebOS)",
+            "https://extranet.grassfish.tv/site/index.php/player/player-javascript"
+          ],
+          [
+            "Player - Windows Vintage",
+            "https://extranet.grassfish.tv/site/index.php/player/player-windows-vintage"
+          ],
+          [
+            "Server",
+            "https://extranet.grassfish.tv/site/index.php/server"
+          ],
+          [
+            "Password List",
+            "https://extranet.grassfish.tv/site/index.php/password-list-new"
+          ],
+          [
+            "Hardware",
+            "https://docs.grassfish.com/docs/hardware-1"
+          ],
+          [
+            "End of Life",
+            "https://docs.grassfish.com/docs/check-end-of-support"
+          ],
+          [
+            "Edit User profile",
+            "https://extranet.grassfish.tv/site/index.php/edit-user-profile"
+          ],
+          [
+            "Home",
+            "https://extranet.grassfish.tv/site/index.php"
+          ],
+          [
+            "Cancel",
+            "https://extranet.grassfish.tv/site/index.php/edit-user-profile/profile"
+          ]
+        ],
+        "file_path": "collection/https_extranet_grassfish_tv_site_index_php_content/texts/007_Edit User profile.txt",
+        "pdf_path": "collection/https_extranet_grassfish_tv_site_index_php_content/007_Edit User profile.pdf",
+        "timestamp": "2025-07-17 16:19:21"
+      },
+      {
+        "url": "https://extranet.grassfish.tv/site/index.php/password-list-new",
+        "title": "Password List",
+        "content": "",
+        "images": [],
+        "links": [
+          [
+            "Customer portal",
+            "https://extranet.grassfish.tv/site/"
+          ],
+          [
+            "News",
+            "https://extranet.grassfish.tv/site/index.php/ct-menu-item-1"
+          ],
+          [
+            "IXM One",
+            "https://docs.grassfish.com/docs/ixm-one"
+          ],
+          [
+            "IXM - Basic module",
+            "https://docs.grassfish.com/docs/ixm-one-releases"
+          ],
+          [
+            "IXM - DOOH & SSP module",
+            "https://docs.grassfish.com/docs/release-notes-dooh-and-ssp"
+          ],
+          [
+            "Solutions & Widgets",
+            "https://extranet.grassfish.tv/site/index.php/content"
+          ],
+          [
+            "DEV - spot development",
+            "https://extranet.grassfish.tv/site/index.php/content/dev-spot-development"
+          ],
+          [
+            "Solution - phidgetboard integration",
+            "https://docs.grassfish.com/docs/phidgetboard-integration"
+          ],
+          [
+            "Solution - player synchronisation",
+            "https://docs.grassfish.com/docs/synchronize-players"
+          ],
+          [
+            "Solution - second screen add-on",
+            "https://docs.grassfish.com/docs/install-second-screen-add-on"
+          ],
+          [
+            "Simple widgets",
+            "https://extranet.grassfish.tv/site/index.php/content/solutions"
+          ],
+          [
+            "Advanced widgets",
+            "https://docs.grassfish.com/docs/widgets"
+          ],
+          [
+            "Player",
+            "https://docs.grassfish.com/docs/players"
+          ],
+          [
+            "Player - Linux & Windows",
+            "https://extranet.grassfish.tv/site/index.php/player/player-qt"
+          ],
+          [
+            "Player - Android",
+            "https://docs.grassfish.com/docs/release-notes-android-player"
+          ],
+          [
+            "Player - JavaScript (Tizen, WebOS)",
+            "https://extranet.grassfish.tv/site/index.php/player/player-javascript"
+          ],
+          [
+            "Player - Windows Vintage",
+            "https://extranet.grassfish.tv/site/index.php/player/player-windows-vintage"
+          ],
+          [
+            "Server",
+            "https://extranet.grassfish.tv/site/index.php/server"
+          ],
+          [
+            "Password List",
+            "https://extranet.grassfish.tv/site/index.php/password-list-new"
+          ],
+          [
+            "Hardware",
+            "https://docs.grassfish.com/docs/hardware-1"
+          ],
+          [
+            "End of Life",
+            "https://docs.grassfish.com/docs/check-end-of-support"
+          ],
+          [
+            "Edit User profile",
+            "https://extranet.grassfish.tv/site/index.php/edit-user-profile"
+          ],
+          [
+            "Home",
+            "https://extranet.grassfish.tv/site/index.php"
+          ]
+        ],
+        "file_path": "collection/https_extranet_grassfish_tv_site_index_php_content/texts/006_Password List.txt",
+        "pdf_path": "collection/https_extranet_grassfish_tv_site_index_php_content/006_Password List.pdf",
+        "timestamp": "2025-07-17 16:19:19"
+      },
+      {
+        "url": "https://extranet.grassfish.tv/site/index.php/server",
+        "title": "Server",
+        "content": "",
+        "images": [],
+        "links": [
+          [
+            "Customer portal",
+            "https://extranet.grassfish.tv/site/"
+          ],
+          [
+            "News",
+            "https://extranet.grassfish.tv/site/index.php/ct-menu-item-1"
+          ],
+          [
+            "IXM One",
+            "https://docs.grassfish.com/docs/ixm-one"
+          ],
+          [
+            "IXM - Basic module",
+            "https://docs.grassfish.com/docs/ixm-one-releases"
+          ],
+          [
+            "IXM - DOOH & SSP module",
+            "https://docs.grassfish.com/docs/release-notes-dooh-and-ssp"
+          ],
+          [
+            "Solutions & Widgets",
+            "https://extranet.grassfish.tv/site/index.php/content"
+          ],
+          [
+            "DEV - spot development",
+            "https://extranet.grassfish.tv/site/index.php/content/dev-spot-development"
+          ],
+          [
+            "Solution - phidgetboard integration",
+            "https://docs.grassfish.com/docs/phidgetboard-integration"
+          ],
+          [
+            "Solution - player synchronisation",
+            "https://docs.grassfish.com/docs/synchronize-players"
+          ],
+          [
+            "Solution - second screen add-on",
+            "https://docs.grassfish.com/docs/install-second-screen-add-on"
+          ],
+          [
+            "Simple widgets",
+            "https://extranet.grassfish.tv/site/index.php/content/solutions"
+          ],
+          [
+            "Advanced widgets",
+            "https://docs.grassfish.com/docs/widgets"
+          ],
+          [
+            "Player",
+            "https://docs.grassfish.com/docs/players"
+          ],
+          [
+            "Player - Linux & Windows",
+            "https://extranet.grassfish.tv/site/index.php/player/player-qt"
+          ],
+          [
+            "Player - Android",
+            "https://docs.grassfish.com/docs/release-notes-android-player"
+          ],
+          [
+            "Player - JavaScript (Tizen, WebOS)",
+            "https://extranet.grassfish.tv/site/index.php/player/player-javascript"
+          ],
+          [
+            "Player - Windows Vintage",
+            "https://extranet.grassfish.tv/site/index.php/player/player-windows-vintage"
+          ],
+          [
+            "Server",
+            "https://extranet.grassfish.tv/site/index.php/server"
+          ],
+          [
+            "Password List",
+            "https://extranet.grassfish.tv/site/index.php/password-list-new"
+          ],
+          [
+            "Hardware",
+            "https://docs.grassfish.com/docs/hardware-1"
+          ],
+          [
+            "End of Life",
+            "https://docs.grassfish.com/docs/check-end-of-support"
+          ],
+          [
+            "Edit User profile",
+            "https://extranet.grassfish.tv/site/index.php/edit-user-profile"
+          ],
+          [
+            "Home",
+            "https://extranet.grassfish.tv/site/index.php"
+          ],
+          [
+            "Customize colors, logo, background",
+            "https://docs.grassfish.com/docs/customize-colors-logo-background"
+          ],
+          [
+            "Customize fonts",
+            "https://docs.grassfish.com/docs/customize-fonts"
+          ],
+          [
+            "Download standard fonts (ZIP)",
+            "https://extranet.grassfish.tv/site/extranet_files/DS%20Manager%20Pro/DS%20Manager%20Pro%20-%20Standard%20Fonts/Standard_fonts_19_04_2018.zip"
+          ],
+          [
+            "Grassfish backend server services",
+            "https://docs.grassfish.com/docs/grassfish-backend-server-services"
+          ],
+          [
+            "Note that all available hotfixes mustbe installed in the correct order startingwith hotifx 1.",
+            "https://docs.grassfish.com/docs/grassfish-backend-server-services"
+          ],
+          [
+            "Download 12.0.0 server version",
+            "https://supportdata.grassfish.tv/software/server/Grassfish%20IXM%20Server%2012.0.0.zip"
+          ],
+          [
+            "Download 11.18.1 server version",
+            "https://supportdata.grassfish.tv/software/server/Grassfish%20IXM%20Server%2011.18.1.zip"
+          ],
+          [
+            "https://docs.grassfish.com/docs/grassfish-backend-server-services",
+            "https://docs.grassfish.com/docs/grassfish-backend-server-services"
+          ],
+          [
+            "Download 11.17.2 server version",
+            "https://supportdata.grassfish.tv/software/server/Grassfish%20IXM%20Server%2011.17.2.zip"
+          ],
+          [
+            "https://docs.grassfish.com/docs/grassfish-backend-server-services",
+            "https://docs.grassfish.com/docs/grassfish-backend-server-services"
+          ],
+          [
+            "Download 11.16.2 server version",
+            "https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.16.2.zip"
+          ],
+          [
+            "https://docs.grassfish.com/docs/grassfish-backend-server-services",
+            "https://docs.grassfish.com/docs/grassfish-backend-server-services"
+          ],
+          [
+            "Download 11.16.1 server version",
+            "https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.16.1.zip"
+          ],
+          [
+            "https://docs.grassfish.com/docs/grassfish-backend-server-services",
+            "https://docs.grassfish.com/docs/grassfish-backend-server-services"
+          ],
+          [
+            "Download 11.15.3 server version",
+            "https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.15.3.zip"
+          ],
+          [
+            "Download 11.15.2 server version",
+            "https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.15.2.zip"
+          ],
+          [
+            "Download 11.15.1 server version",
+            "https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.15.1.zip"
+          ],
+          [
+            "Download 11.15.0 server version",
+            "https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.15.0.zip"
+          ],
+          [
+            "Download 11.15.0 Hotfix 1",
+            "https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.15.0%20Hotfix%201.zip"
+          ],
+          [
+            "Download 11.15.0 Hotfix 2",
+            "https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.15.0%20Hotfix%202.zip"
+          ],
+          [
+            "Download 11.14.2 server version",
+            "https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.14.2.zip"
+          ],
+          [
+            "Download 11.14.2 Hotfix 1",
+            "https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.14.2%20Hotfix%201.zip"
+          ],
+          [
+            "Download 11.14.2 Hotfix 2",
+            "https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.14.2%20Hotfix%202.zip"
+          ],
+          [
+            "GFServer_11.14.1",
+            "https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.14.1%20incl.%20Hotfix%202.zip"
+          ],
+          [
+            "https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.14.1%20incl.%20Hotfix%201_2.zip",
+            "https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.14.1%20incl.%20Hotfix%201_2.zip"
+          ],
+          [
+            "GFServer_11.13.x",
+            "https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.13.4.zip"
+          ],
+          [
+            "GFServer_11.12.x",
+            "https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.12.5.zip"
+          ],
+          [
+            "GFServer_11.11.0",
+            "https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.11.0.zip"
+          ],
+          [
+            "Global UDC Plugins (12/2021) (ZIP)",
+            "https://supportdata.grassfish.tv/software/server/udc/GrassfishUDC_2112.zip"
+          ],
+          [
+            "Server Timezone Settings (12/2021) (ZIP)",
+            "https://supportdata.grassfish.tv/software/server/serverenhancements/gblTimezones_2021e.zip"
+          ]
+        ],
+        "file_path": "collection/https_extranet_grassfish_tv_site_index_php_content/texts/005_Server.txt",
+        "pdf_path": "collection/https_extranet_grassfish_tv_site_index_php_content/005_Server.pdf",
+        "timestamp": "2025-07-17 16:19:17"
+      }
+    ]
+  }
+}

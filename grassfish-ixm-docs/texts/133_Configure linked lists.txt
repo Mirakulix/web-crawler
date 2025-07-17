@@ -1,0 +1,66 @@
+Titel: Configure linked lists
+URL: https://docs.grassfish.com/grassfish/docs/create-linked-lists
+Zeitpunkt: 2025-07-17 18:39:28
+==================================================
+
+As a spot developer, you can configure a spot with linked lists that are dynamically populated based on the values ​​of other lists. This means dependent dropdown lists, where selecting items from one list affects the available options in another. The lists are dynamically populated with information from a webservice. All you need is the webservice’s URL. Note Learn more about creating dropdown lists in HTML Wizard spots . Best practices Before you configure your linked lists, note the following recommendations: Specify the dependencies of each linked list correctly, so it can fetch the right data. Verify that the API endpoints (URLs) return the expected data format. Initialize linked list values ​​to zero and handle cases where dependent data may not be available. Configure linked lists To create linked lists, perform the following steps: Specify the spot element with the following parameters: Setting Description Id Specify the ID of the element. The ID must be unique. Example: marketLinkedList DataType Specify the type of data that the element contains. Example: linkedList DisplayName Specify the display name of the element. This name appears in the HTML Wizard. Example: Market Configure each list in the element with the following parameters: Setting Description Id Specify the ID of the list. The ID must be unique. Example: market DisplayName Specify the display name of the list. This name appears in the HTML Wizard. Example: Market Url Specify the URL of the webservice (API endpoint) that provides data for the list items. Example: https://example.com/markets Dependencies Specify the IDs of other lists that this list depends on, separated by commas. Example: ["market", "modelGroup"] Response Use the response mapping to extract the correct data from the API response. Example Entry Specify the entry point in the API response where the list items are located. Example Mapping Specify the following settings to map the response data to the list item properties: Id : field name for the item’s ID. Value : field name for the item’s name. Name : field name for the item’s display name. Example Value Initialize the value field to hold the selected values for each linked list. Optionally, use null . Options Set additional options like Required . Example configuration Each spot configuration is specified in a JSON structure. The following example is a configuration snippet with linked lists: { "Document": { "Elements": [ { "Id": "marketLinkedList", "DataType": "linkedList", "DisplayName": "Market", "Lists": [ { "Id": "market", "DisplayName": "Market", "Url": "https://example.com/markets", "Dependencies": [], "Response": { "Entry": "", "Mapping": { "Id": "market", "Value": "market", "Name": "market" } } } ], "Value": { "market": null }, "Options": { "Required": true } }, { "Id": "modelRange", "DataType": "linkedList", "DisplayName": "Model Range", "Lists": [ { "Id": "modelGroup", "DisplayName": "Model Group", "Url": "https://example.com/markets/{market}", "Dependencies": ["market"], "Response": { "Entry": "ranges", "Mapping": { "Id": "id", "Value": "name", "Name": "name" } } }, { "Id": "subModelGroup", "DisplayName": "Sub Model Group", "Url": "https://example.com/markets/{market}/ranges/{modelGroup}", "Dependencies": ["market", "modelGroup"], "Response": { "Entry": "series", "Mapping": { "Id": "id", "Value": "name", "Name": "name" } } } ], "Value": { "modelGroup": null, "subModelGroup": null }, "Options": { "Required": true } } ] } } What happens in the example? The example configures the following elements and linked lists: The element marketLinkedList contains one linked list: The linked list is called market . It fetches its items from https://example.com/markets . Since there are no dependencies, it can retrieve data independently from other lists. The element modelRange contains two linked lists: The first linked list is called modelGroup . It depends on the list market to fetch its items. The second linked list is called subModelGroup . It depends on the lists market and modelGroup to fetch its items. Example display In the HTML Wizard, list lements are displayed as follows:
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/upload-and-play-the-spot]
+[Next|https://docs.grassfish.com/docs/gfspotbase]
+[Learn more about creating dropdown lists in HTML Wizard spots|https://docs.grassfish.com/docs/en/specify-spot-information]
+[element|https://docs.grassfish.com/docs/specify-spot-information]
+[Example|https://docs.grassfish.com/grassfish/docs/create-linked-lists]
+[Example|https://docs.grassfish.com/grassfish/docs/create-linked-lists]
+[Example|https://docs.grassfish.com/grassfish/docs/create-linked-lists]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/grassfish/docs/create-linked-lists]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/html_wizard_spot_lists.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/html_wizard_spot_lists.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A39%3A27Z&se=2025-07-17T16%3A53%3A27Z&sr=c&sp=r&sig=dPZGSpmlYBoHDlo2N6wa3%2FthgWnFOmnC7RqDhoJv2po%3D
+Titel: html_wizard_spot_lists.png
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A39%3A27Z&se=2025-07-17T16%3A54%3A27Z&sr=c&sp=r&sig=jCcnUHFTWTuZ1W7XDVtuUbv6QQ1%2Bvs1fm7kOzu698Pk%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A39%3A27Z&se=2025-07-17T16%3A54%3A27Z&sr=c&sp=r&sig=jCcnUHFTWTuZ1W7XDVtuUbv6QQ1%2Bvs1fm7kOzu698Pk%3D
+
+Quelle: https://docs.grassfish.com/grassfish/docs/create-linked-lists

@@ -1,0 +1,61 @@
+Titel: Configure the Android Player
+URL: https://docs.grassfish.com/docs/configure-android-player
+Zeitpunkt: 2025-07-17 18:41:34
+==================================================
+
+Note If you use a different player, you can skip this chapter. To use DOOH on the Android Player, you must enable it for the individual player or the whole player configuration group. You can also configure DOOH-specific settings here. Enable DOOH To enable DOOH and configure DOOH settings, perform the following steps: In IXM One, go to the player configuration or the configuration group: For an individual player, go to Channels > Location . Double-click on your player and select Edit next to Configuration in the Edit player window. For a configuration group, go to Administration > Player > Configuration groups and double-click on the configuration group. In the Edit configuration group window, select Display extended modules . Under Modules , select DOOH . Under Settings , select Enable DOOH . Optionally, change the Cooldown minimum factor (percent) . That is the minimum factor before the same programmatic advertisement runs again. The system uses the minimum factor if there’s time available. Optionally, change the Cooldown maximum factor (percent) . That is the maximum factor before the same programmatic advertisement runs again. The system uses the maximum factor if there are a lot of advertisements to run. Optionally, change the Cooldown base period (seconds) . That is the base time before the same programmatic advertisement runs again. Optionally, enable Fill up with advertisements to fill available advertising time with random DOOH spots. This happens if there’s airtime left on the player and no other DOOH spot needs to be played back. Optionally, enable Allow the same ad to play back-to-back to allow the same advertisement to play consecutively. This can be useful, for example, if you only have one DOOH spot and don’t want the system to play too much filler content or nothing at all. Click Save to save your changes. Restart the player service or reboot the player for your changes to take effect.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/configure-winlin-player]
+[Next|https://docs.grassfish.com/docs/special-content-solutions]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/configure-android-player]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/android_dooh_advert.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/android_dooh_advert.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A34Z&se=2025-07-17T16%3A52%3A34Z&sr=c&sp=r&sig=VKISmfWZZ2YqcWH2ZTQAfEXF%2Fwf9AIYWS77wA414Iu4%3D
+Alt-Text: android_dooh_advert
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A34Z&se=2025-07-17T16%3A56%3A34Z&sr=c&sp=r&sig=5%2B9XxCuFdvwzq6gZijdxZz6wihDbgylXDX9RENEAbTs%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A34Z&se=2025-07-17T16%3A56%3A34Z&sr=c&sp=r&sig=5%2B9XxCuFdvwzq6gZijdxZz6wihDbgylXDX9RENEAbTs%3D
+
+Quelle: https://docs.grassfish.com/docs/configure-android-player

@@ -1,0 +1,57 @@
+Titel: Enable file cleaner
+URL: https://docs.grassfish.com/docs/enable-file-cleaner
+Zeitpunkt: 2025-07-17 18:30:52
+==================================================
+
+The continuous operation of the server accumulates usage data. Grassfish provides a file cleaner to delete this data and avoid filling up the server file system. To enable the file cleaner, perform the following steps: Navigate to the master.config file. Under appSettings , look for DataGateway . Set the value of FileCleaner:Enabled to true . Set the value of FileCleaner:IntervalSeconds to the desired number of seconds. Set the value of FileCleaner:ConfigFile to the file path of the filecleaner.xml file. Save your changes and close the file. <appSettings type="DataGateway"> <add key="FileCleaner:Enabled" value="true"/> <add key="FileCleaner:IntervalSeconds" value="120"/> <add key="FileCleaner:ConfigFile" value="\\grassfish.local\GFServers\configs\filecleaner.xml"/> </appSettings> Note If you upgrade from IXM One version 11.14 or earlier, you must migrate the configuration settings from DataSpots to DataGateway and update the keys and values. Clean up directories Note This feature requires IXM One version 12.0.0 or later. In addition to cleaning files, the file cleaner can also clean empty directories. In this case, the files are removed first and then any remaining empty directories are deleted. This makes for a cleaner and more organized directory structure and reduces unnecessary clutter. You can configure your custom cleanup settings in the filecleaner.xml file. Every cleanup setting requires a name and the following config parameters: extensions Required Default: string.Empty Specify wildcards for file extensions to search for during cleanup. Examples: *.log , *.jpg , * directory Required Default: string.Empty Specify the directory to search for files to clean. Use $id$ as a placeholder for a numeric ID. Examples: \\path\to\main\folder\log , \\path\to\main\folder\data\$id$\screenShot olderThanDays Optional Default: 30 Specify after how many days files are deleted. recursive Optional Default: false Set to true to scan sub-directories for files or empty directories to clean or delete them. deleteEmptySubDirectories Optional Default: false Set to true to delete empty sub-directories. Example: <?xml version="1.0" encoding="UTF-8" standalone="yes"?> <itemList> <item name="Serverlogs"> <extensions>*.log</extensions> <directory>\\path\to\main\folder\log</directory> <olderThanDays>10</olderThanDays> <recursive>true</recursive> </item> <item name="ClientLogs"> <extensions>*.log</extensions> <directory>\\path\to\main\folder\data\logs</directory> <olderThanDays>30</olderThanDays> <recursive>true</recursive> </item> <item name="DataTemp"> <extensions>*</extensions> <directory>\\path\to\main\folder\data\tmp</directory> <olderThanDays>5</olderThanDays> <recursive>true</recursive> </item> <item name="Export"> <extensions>*.csv</extensions> <directory>\\path\to\main\folder\data\export</directory> <olderThanDays>60</olderThanDays> <recursive>true</recursive> </item> <item name="Screenshots"> <extensions>*.jpg</extensions> <directory>\\path\to\main\folder\data\$id$\screenShot</directory> <olderThanDays>90</olderThanDays> <recursive>true</recursive> </item> <item name="TempData"> <extensions>*</extensions> <directory>C:\Users\ServiceUserDev\AppData\Local\Temp</directory> <olderThanDays>4</olderThanDays> <recursive>true</recursive> <deleteEmptySubDirectories>true</deleteEmptySubDirectories> </item> </itemList>
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/enable-swagger]
+[Next|https://docs.grassfish.com/docs/deploy-legacy-webservices-as-any-cpu]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/enable-file-cleaner]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A30%3A51Z&se=2025-07-17T16%3A45%3A51Z&sr=c&sp=r&sig=uc2ZfftvqBMxIipF4MMoehllWASfqxh2ApSWEr%2BXlag%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A30%3A51Z&se=2025-07-17T16%3A45%3A51Z&sr=c&sp=r&sig=uc2ZfftvqBMxIipF4MMoehllWASfqxh2ApSWEr%2BXlag%3D
+
+Quelle: https://docs.grassfish.com/docs/enable-file-cleaner

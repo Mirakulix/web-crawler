@@ -1,0 +1,57 @@
+Titel: Tizen Player
+URL: https://docs.grassfish.com/docs/tizen-player
+Zeitpunkt: 2025-07-17 18:38:18
+==================================================
+
+Samsung Tizen embedded media players are all-in-one playback devices combining both player and display functionality in one device. A cost-efficient, scalable, and reliable solution for digital signage networks. Grassfish complements Samsung Tizen players with extensive IXM One functionality, such as: Automatically distributing content across several screens and engage your target audience at the right moment and location. Designing, creating, and publishing playlists via drag and drop. Structuring your content using tags, meta information, or specific categories to address a collection of screens or individual players. Managing devices using monitoring and reporting tools. Making use of multi-tier architecture and extended user and rights management. Note Within a multi-device network, Samsung Tizen players can be operated simultaneously with other Grassfish supported players. System requirements Note the following system requirements: Hardware We support the following Samsung Tizen series fully or partially: QMR series QBR series QMxB series QHxB series QMxC series We’ve tested and officially support the following models: QM32R QM43R QM55R QM65R QM75R We’ve tested and officially supported the following models: QB13R QB24R The QMxB series uses Tizen 6.5 which is supported but still has compatibility issues. The QHxB series uses Tizen 6.5 which is supported but still has compatibility issues. The QMxC series uses Tizen 7.0 which is supported except for synchronization. Note You can update the firmware via Grassfish IXM One. Software The Grassfish Player software runs as a JavaScript application on Samsung Tizen embedded media players and enables you to manage your screen network using the familiar Grassfish IXM One interface. You need the following setup: Software Additional information Samsung Tizen embedded media player Make sure that you have all relevant accessories (cables, remote control, etc.). Network access with connection to Grassfish IXM One Tizen JavaScript player software Please contact Grassfish to obtain the software. Supported media We support the following media formats on Samsung Tizen: Video : H264, HEVC, VC-1, VP9, and others Media : MOV, MP4, MKV, WebM and others Image : JPEG, PNG and others Audio : MP3, AC-3, AAC, and others Streaming : HLS, Dash PDF HTML : for websites and dynamic content (limited) Local HTML Spots Composer Spots Playback and scheduling The following IXM One features are supported on Samsung Tizen: Daily operation management Date, time, weekday, and interval-dependent playback Assigning user groups, locations, or categories to content Screen power on/off and system reboot via IXM One Screen layouts in landscape and portrait mode Reporting and audit trail to track what has been shown where, when, and on which devices (proof of play) Monitoring devices and screen shots Auto notification UDC light (full functionality, limited disk space) Preloading spots (limited due to HW limits) Split screen layouts Priorities
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/player-services-and-modules-win]
+[Next|https://docs.grassfish.com/docs/install-the-tizen-player]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/tizen-player]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A38%3A17Z&se=2025-07-17T16%3A53%3A17Z&sr=c&sp=r&sig=wa7WIzaJyS0PfX5qJJiL25iOnnCIj%2BpE4JQqIOocYlA%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A38%3A17Z&se=2025-07-17T16%3A53%3A17Z&sr=c&sp=r&sig=wa7WIzaJyS0PfX5qJJiL25iOnnCIj%2BpE4JQqIOocYlA%3D
+
+Quelle: https://docs.grassfish.com/docs/tizen-player

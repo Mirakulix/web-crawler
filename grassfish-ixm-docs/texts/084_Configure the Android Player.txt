@@ -1,0 +1,71 @@
+Titel: Configure the Android Player
+URL: https://docs.grassfish.com/grassfish/docs/configure-android-player-ssp
+Zeitpunkt: 2025-07-17 18:37:28
+==================================================
+
+Note If you use a different player, you can skip this chapter. If you want to use SSP on your Android player, you need to enable and configure it for the individual player or the entire player configuration group. Before you do this, make sure you have read the following prerequisites. Prerequisites You can set an airtime ratio for SSP content on the player to specify how much airtime is used for SSP advertising, just as you can set airtime for DOOH. In total, the SSP airtime percentage and the DOOH airtime percentage must not exceed 100%. By default, SSP spot filling is enabled and SSP airtime is set to 0%. This means that unused DOOH airtime will be used for SSP when SSP spots are available regardless of SSP airtime. You can enable SPP with DOOH or enable SSP without DOOH . Enable SSP with DOOH To use both DOOH and SSP, perform the following steps to enable SSP: In the IXM One, go to the player configuration or configuration group: For an individual player, go to Channels > Location . Double-click on your player and select Edit next to Configuration in the Edit player window. For a configuration group, go to Administration > Player > Configuration groups and double-click on the configuration group. In the Edit configuration group window, select Display extended modules . Under Modules , select DOOH > SSP . Under Settings , select Enable SPP . Optionally, change the SSP load timeout (in ms) . If loading the SSP spot takes longer than the timeout, the system skips the spot. Optionally, change the SSP playback count . This specifies how many of the last spots are SSP spots ( example ). Optionally, change the SSP playback look behind . The system looks at the last specified number of spots to analyze whether the playout should be SSP ( example ). Set the SSP airtime ratio . Fill up DOOH airtime with SSP spots is turned on by default. You can turn it off if needed. Click Save to save your changes. Restart the player service or reboot the player for your changes to take effect. Enable SSP without DOOH To use only SSP without DOOH, perform the following steps to enable SSP: In the IXM One, go to the player configuration or configuration group: For an individual player, go to Channels > Location . Double-click on your player and select Edit next to Configuration in the Edit player dialog. For a configuration group, go to Administration > Player > Configuration groups and double-click on the configuration group. In the Edit configuration group window, select Display extended modules . Under Modules , select Player > SSP . Under Settings , select Enable SPP . Optionally, change the SSP load timeout (in ms) . If loading the SSP spot takes longer than the timeout, the system skips the spot. Optionally, change the SSP playback count . This specifies how many of the last spots should be SSP spots ( example ). Optionally, change the SSP playback look behind . The system looks at the last specified number of spots to analyze whether the next spot should be SSP ( example ). Set the SSP airtime ratio . Fill up DOOH airtime with SSP spots is turned on by default. You can turn it off if needed. Click Save to save your changes. Restart the player service or reboot the player for your changes to take effect. Example SSP configuration To have a maximum of 20% SSP played, specify the following values: sspPlaybackCount = 1 sspPlaybackLookBehind = 5 The player will check if an SSP spot was played among the last four spots. If not, it will try to play an SSP spot.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/configure-winlin-player-ssp]
+[Next|https://docs.grassfish.com/docs/specify-ssp-playout]
+[enable SPP with DOOH|https://docs.grassfish.com/grassfish/docs/configure-android-player-ssp]
+[enable SSP without DOOH|https://docs.grassfish.com/grassfish/docs/configure-android-player-ssp]
+[example|https://docs.grassfish.com/grassfish/docs/configure-android-player-ssp]
+[example|https://docs.grassfish.com/grassfish/docs/configure-android-player-ssp]
+[example|https://docs.grassfish.com/grassfish/docs/configure-android-player-ssp]
+[example|https://docs.grassfish.com/grassfish/docs/configure-android-player-ssp]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/grassfish/docs/configure-android-player-ssp]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/android_ssp.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/android_ssp.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A37%3A26Z&se=2025-07-17T16%3A49%3A26Z&sr=c&sp=r&sig=jjZGJQCBvStF5orK69wTvI6c7vvE1TULaLThzE%2Buq6Y%3D
+Alt-Text: Enable SSP settings on the Android Player.
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/android_ssp.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/android_ssp.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A37%3A26Z&se=2025-07-17T16%3A49%3A26Z&sr=c&sp=r&sig=jjZGJQCBvStF5orK69wTvI6c7vvE1TULaLThzE%2Buq6Y%3D
+Alt-Text: Enable SSP settings on the Android Player.
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A37%3A26Z&se=2025-07-17T16%3A52%3A26Z&sr=c&sp=r&sig=qXmk8qUb2NB3NEYYBSA8LUZQdBo62fPZZjTmZ%2B9RShA%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A37%3A26Z&se=2025-07-17T16%3A52%3A26Z&sr=c&sp=r&sig=qXmk8qUb2NB3NEYYBSA8LUZQdBo62fPZZjTmZ%2B9RShA%3D
+
+Quelle: https://docs.grassfish.com/grassfish/docs/configure-android-player-ssp

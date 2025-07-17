@@ -1,0 +1,69 @@
+Titel: Planned Media Viewer Spot
+URL: https://docs.grassfish.com/docs/planned-media-viewer-spot
+Zeitpunkt: 2025-07-17 18:37:01
+==================================================
+
+The Planned Media Viewer helps you handle complex DOOH campaigns with precise configuration options: Precision playback : easily set individual time frames for your media. Reliable fallback : ensure continuous playback and no empty screens with fallback media. Flexible scheduling : manage multiple media elements and schedules. Note Please contact Grassfish if you want to use this spot template. Upload the spot As a first step, upload the Planned Media Viewer spot to IXM One. To do so, perform the following steps: In IXM One, go to Content > Playlist . In the Spot groups pane, select your spot group. In the Selectable spots pane, click New . Select Upload spots . Upload the spot ZIP file in one of the following ways: Drag and drop the file into the upload manager window. Click on Add data , select the file from your files and click Open . Click to start the upload. Once the upload has finished, click Close to close the upload manager. Configure the spot To configure your spot in the HTML Wizard, perform the following steps: In IXM One, go to Content > Playlist . In the Spot groups pane, select your spot group. In the Selectable spots pane, hover over the Planned Media Viewer spot and select Edit content . Alternatively, double-click on it. Configure the following general spot options: Spot duration : specify how long the spot should play. Make sure that the spot duration of the spot, booking item, and media match. Background : select and choose a background color (optional). Player : select a player that should play the spot. Under Media elements , click + to add one or more media elements. Click and Add medium to add a media element. Set Date from and Date to to specify on which days the media displayed. Set Time from and Time to to specify at which times the media is displayed. Under Fallback media , click Add medium to add media that is displayed when no other media is available at specific dates or times. Under Options , set the following options: Playback mode : select Sequential to play the media in a specific order or Random to play the media in no specific order. Playback duration for images [sec] : specify how many seconds each image should be displayed. Enable reporting : select to include data about this spot in your DOOH playback reports. Once you’ve finished creating your spot, click Save and Close . Use the spot for advertisement You must create a DOOH booking item that contains the spot to play it. To do so, perform the following steps: In IXM One, go to DOOH > Booking . In the Bookings panel, click on New . In the Create new booking dialog, click on New . In the Edit booking item for product dialog, select your product and specify the booking details as needed. In the Spot section, click on Select from spot group . In the Select spot dialog, select your Planned Media Viewer spot and click Select . Configure all other booking settings as needed. Click Save and Close .
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/live-tag-media-viewer-spot]
+[Next|https://docs.grassfish.com/docs/random-media-viewer-spot]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/planned-media-viewer-spot]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/play_plannedmediaviewer.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/play_plannedmediaviewer.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A37%3A00Z&se=2025-07-17T16%3A49%3A00Z&sr=c&sp=r&sig=ksHZhJMf14IiE6SlaT9i1xIOb3UPHp6ZjJ66gLergw0%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/upload_plannedmediaviewer.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/upload_plannedmediaviewer.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A37%3A00Z&se=2025-07-17T16%3A49%3A00Z&sr=c&sp=r&sig=ksHZhJMf14IiE6SlaT9i1xIOb3UPHp6ZjJ66gLergw0%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1739954874471.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1739954874471.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A37%3A00Z&se=2025-07-17T16%3A49%3A00Z&sr=c&sp=r&sig=ksHZhJMf14IiE6SlaT9i1xIOb3UPHp6ZjJ66gLergw0%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/configure_plannedmediaviewer.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/configure_plannedmediaviewer.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A37%3A00Z&se=2025-07-17T16%3A49%3A00Z&sr=c&sp=r&sig=ksHZhJMf14IiE6SlaT9i1xIOb3UPHp6ZjJ66gLergw0%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A37%3A00Z&se=2025-07-17T16%3A52%3A00Z&sr=c&sp=r&sig=HkTzFTxxYONi6qkTrCL5vxtsICXukVOEJvAdPCsOJF0%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A37%3A00Z&se=2025-07-17T16%3A52%3A00Z&sr=c&sp=r&sig=HkTzFTxxYONi6qkTrCL5vxtsICXukVOEJvAdPCsOJF0%3D
+
+Quelle: https://docs.grassfish.com/docs/planned-media-viewer-spot

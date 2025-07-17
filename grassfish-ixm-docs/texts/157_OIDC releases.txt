@@ -1,0 +1,57 @@
+Titel: OIDC releases
+URL: https://docs.grassfish.com/docs/oidc
+Zeitpunkt: 2025-07-17 18:40:38
+==================================================
+
+OIDC - OpenID Connect 2.1 IXM One version This OIDC version requires IXM One version 11.16.0 to 11.18.1 or IXM One 12.0 or later. New features With this version, we’ve implemented the following new features: Improved error reporting We’ve improved error handling for invalid placeholders in URL templates — appends error description to the query string by default. Maintenance and refactoring This version includes the following maintenance and refactoring: Updated Serilog to v8.2.0 and disabled default console logging. Removed redundant docker-compose setup, added launchSettings.json, unified apphost/api secret ID, switched to async, added path base. Refactored Docker image and pipeline file, restored deleted env variable, minor syntax fixes. OIDC - OpenID Connect 2.1 IXM One version This OIDC version requires IXM One version 11.16.0 or later. New features With this version, we’ve implemented the following new features: Improved error handling To improve error handling, we've improved the descriptions and handling of access denial and error scenarios. Docker and modernization We’ve made updates to support Dockerized deployments using the latest .NET 8.0 version. In addition, we’ve introduced Bitbucket pipelines for automated Docker image builds and publishing. Documentation and configuration This version includes refinements to our README files for better onboarding and clarity. OIDC - OpenID Connect 2.0 IXM One version This OIDC version requires IXM One version 11.16.0 or later. New features With this version, we’ve implemented the following new features: Enhanced authentication flow To enhance the authentication flow, we’ve enhanced redirect parameters to improve security and flexibility. In addition, we’ve improved debugging and handling of potential errors during the authentication process. Infrastructure improvements With this release, we’ve updated dependencies to ensure compatibility with newer tools. Code quality enhancements To keep the code clean and maintainable, we’ve removed unused namespaces and settings. Furthermore, we’ve improved SonarCloud validation and test coverage. OIDC - OpenID Connect 1.0 New features With this version, we’ve implemented the following new features: Essential OIDC authentication and authorization mechanisms. Base setup for managing user sessions and access tokens.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/doohplaybackservice-add-on-releases]
+[Next|https://docs.grassfish.com/docs/player]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/oidc]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A40%3A37Z&se=2025-07-17T16%3A55%3A37Z&sr=c&sp=r&sig=cXjtimsZzOBq3OBHDGNKVsT6QKgTqsTWwzRqB%2FNOgA4%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A40%3A37Z&se=2025-07-17T16%3A55%3A37Z&sr=c&sp=r&sig=cXjtimsZzOBq3OBHDGNKVsT6QKgTqsTWwzRqB%2FNOgA4%3D
+
+Quelle: https://docs.grassfish.com/docs/oidc

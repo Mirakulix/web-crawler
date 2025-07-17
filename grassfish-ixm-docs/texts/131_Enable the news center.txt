@@ -1,0 +1,59 @@
+Titel: Enable the news center
+URL: https://docs.grassfish.com/docs/enable-news-center
+Zeitpunkt: 2025-07-17 18:39:22
+==================================================
+
+IXM One's news center is a central hub for creating, editing, and sending messages within IXM One and emails. Enable the news center Before you can use the news center, you must enable it in the master.config file. Perform the following steps: Open the master.config file. Set MessageCenterEnabled to true . Optionally, configure the SmtpWhiteList to specify which email addresses should receive messages from the news center. If you specify email addresses, emails from the message center are only sent to these people. Use a semicolon to separate multiple email addresses. Optionally, configure MessageCenterIntervalMinutes to specify how often the system checks for new messages. The default value is five minutes. Under MessageCenterSenderEmailAddress specify a sender address for messages from the news center. Optionally, configure MessageCenterCustomKeyForAdditionalEmail to specify an additional email address for messages from the news center. Under MessageCenterOfflineToleranceIntervalInHours specify how many hours after a player goes offline an offline message is created. The default value is 48 hours. Under MessageCenterOfflineRenotifyIntervalInHours specify the interval at which new offline messages are sent until the offline player is online again. The default value is 24 hours. Under MessageCenterOfflinePlayerReportCronschedule specify when and how often the offline player report is sent in minutes, hours, day of the month, month, day of the week. For more information on the format, visit the crontab guru website . Save your changes and close the file. <appSettings type="DataGateway"> <add key="MessageCenterEnabled" value="true" /> <add key="SmtpWhiteList" value="user1@mail.com;user2@mail.com"/> <add key="MessageCenterIntervalMinutes" value="5" /> <add key="MessageCenterSenderEmailAddress" value="from@mail.com" /> <add key="MessageCenterCustomKeyForAdditionalEmail" value="EMail" /> <!-- optional --> <!-- Player offline--> <add key="MessageCenterOfflineToleranceIntervalInHours" value="48" /> <add key="MessageCenterOfflineRenotifyIntervalInHours" value="24" /> <!-- Player offline Report--> <add key="MessageCenterOfflinePlayerReportCronschedule" value="00 11 * * 2" /> </appSettings> Configure SMTP settings Simple Mail Transfer Protocol (SMTP) settings are crucial for all email-related features of IXM One. To configure your SMTP settings, perform the following steps: Open the master.config file. Scroll to configurations . Set the following configurations: SmtpServer : specify your SMTP server. SmtpPort : specify the port. SmtpUser : specify your SMTP server username for authentication. SmtpPasword : specify your SMTP server password for authentication. SmtpDomain : specify your SMTP domain. SmtpEnableSsl : set to true to enable Secure Sockets Layer (SSL) protocol for emails. Otherwise, set it to false . SmtpEnableAutoEncryption : set to true to enable auto encryption for emails. Otherwise, set it to false . Save your changes and close the file. <configuration> <appSettings type="global"> <add key="SmtpServer" value="mail.grassfish.com" /> <add key="SmtpPort" value="587" /> <add key="SmtpUser" value="admin" /> <add key="SmtpPassword" value="password" /> <add key="SmtpDomain" value="grassfish" /> <add key="SmtpEnableSsl" value="true" /> <add key="SmtpEnableAutoEncryption" value="true" /> </appSettings> Configure user settings You can configure message settings based on the user type to determine who should receive which messages. To do so, perform the following steps: Open the config.json file. Set enableNotificationSubscriptionsForUserType to the user types that should be able to subscribe to notifications . Set one or all of the following values: Admin , StandardUser , LocationUser . Set enableLocationReceiveMessage to true to enable sending messages to the recipients entered at the location. Otherwise, set it to false . Set enablePlaylistReceiveMessage to enable sending messages about released playlists. Otherwise, set it to false . Set enableApprovalNotificationForUserType to enable sending messages about playlist approvals to specific user types. Use the following values: Admin , StandardUser , LocationUser . Set enableNewsCenterSettingsForUserType to the user types that should be able to access news center settings. Use the following values: Admin , StandardUser , LocationUser . Set enableSpotgroupNotificationForUserType to the user types that should receive spot group notifications. Use the following values: Admin , StandardUser , LocationUser . Set PlayerOfflineReport > message to true to disable the message type MonthlyPlayerReport within IXM One. That means, this message can only be sent as an email. Set routeToNewsCenterAfterCreateMessage to true to automatically load the news center after a message has been generated. Under notificationRefreshSeconds specify the refresh interval in which new received messages are checked. The default value is 60 seconds. Save your changes and close the file. { "cms": { "enableNotificationSubscriptionsForUserType": [ "Admin", "StandardUser", "LocationUser" ], "enableLocationReceiveMessage": true, "enablePlaylistReceiveMessage": true, "notification": { "enableApprovalNotificationForUserType": [ "Admin", "StandardUser", "LocationUser" ], "enableEmailMessageForUserType": [ "Admin", "StandardUser", "LocationUser" ], "enableNewsCenterSettingsForUserType": [ "Admin", "StandardUser", "LocationUser" ], "enableSpotgroupNotificationForUserType": [ "Admin", "StandardUser", "LocationUser" ], "hideSetting": { "PlayerOfflineReport": { "message": true } }, "routeToNewsCenterAfterCreateMessage": true }, "notificationRefreshSeconds": 60 } } Configure notification settings You can configure who user groups can send notifications to. To do so, perform the following steps: In IXM One, go to Administration > User groups . Under User group management , double click on the user group that you want to edit. Under Can send notifications to , select one of the following options: Nobody Only assigned user groups : drag and drop user groups from the Unassigned pane to the Assigned pane. Everybody Click on Save to save your changes. Configure subscriptions You can configure which messages you want to receive and in which way. To do so, perform the following steps: In IXM One, go to Dashboard > News center. Under Subscriptions , select or deselect the following options for each available message type: Message : select to receive messages within IXM One. E-mail : select to receive emails to the email address of your IXM One user account.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/enable-holiday-selection]
+[Next|https://docs.grassfish.com/docs/customize-colors-logo-background]
+[the crontab guru website|https://crontab.guru/]
+[subscribe to notifications|https://docs.grassfish.com/grassfish/docs/enable-news-center]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/enable-news-center]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A39%3A22Z&se=2025-07-17T16%3A54%3A22Z&sr=c&sp=r&sig=73Llq4BAdXYcfbOm8o%2FCtK1tE%2FGOyY7isb4ic659%2BrA%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A39%3A22Z&se=2025-07-17T16%3A54%3A22Z&sr=c&sp=r&sig=73Llq4BAdXYcfbOm8o%2FCtK1tE%2FGOyY7isb4ic659%2BrA%3D
+
+Quelle: https://docs.grassfish.com/docs/enable-news-center

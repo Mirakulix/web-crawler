@@ -1,0 +1,57 @@
+Titel: Enable tags
+URL: https://docs.grassfish.com/docs/enable-tags
+Zeitpunkt: 2025-07-17 18:35:56
+==================================================
+
+You can use different types of tags in IXM One to manage content and playback. For example, live tags can filter content according to live data such as weather data. To enable tags, perform the following steps: Navigate to the configuration files on the server at: GVServer2\www\gv2\gf\GFWebHtmlCustomer\ Open one of the following folders: 00000 : edit configurations for the entire server, which means for all customers. 000xxx : edit customer-specific settings. xxx is the customer ID. Open the config.json file in your folder with a text editor like Notepad++. Set the tags that you want to use to true : enableSOCTags : enable to keep spot content invisible until a specified time. enableLiveTags : enable to filter content on the player in real time, for example, based on weather data. enableSyncTags : enable for synchronized playback of leader and follower spots. enableMediaTags : enable to assign tags to media files. enableSpotTags : enable to assign tags to all instances of a spot. Save your changes and close the file. "cms": { "enableSOCTags": true, "enableLiveTags": true, "enableSyncTags": true, "enableMediaTags": true, "enableSpotTags": true, }
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/configure-password-reset]
+[Next|https://docs.grassfish.com/docs/enable-udc]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/enable-tags]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A55Z&se=2025-07-17T16%3A50%3A55Z&sr=c&sp=r&sig=Z91kgFyvG1Vf2nL6z5fVzFDi4ParEOuyeVyKgVzuFUo%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A55Z&se=2025-07-17T16%3A50%3A55Z&sr=c&sp=r&sig=Z91kgFyvG1Vf2nL6z5fVzFDi4ParEOuyeVyKgVzuFUo%3D
+
+Quelle: https://docs.grassfish.com/docs/enable-tags

@@ -1,0 +1,66 @@
+Titel: Configure the Windows or Linux Player
+URL: https://docs.grassfish.com/docs/configure-winlin-player-ssp
+Zeitpunkt: 2025-07-17 18:31:36
+==================================================
+
+Note If you use a different player, you can skip this chapter. Before you configure the Windows or Linux Player for DOOH, ensure that you meet the following requirements: You’ve installed the standard Windows Player or Linux Player . You’ve connected the player to IXM One. You’ve installed the latest config settings for the player on the server. Install the DOOH add-on To use SSP on the Windows or Linux Player, you must install the DoohPlaybackService add-on. You can install this add-on from the server via an update package or locally on the player. For information on the update package, please contact your Grassfish account manager. To install the add-on manually, perform the following steps: Store the installation package in any folder on the player. Open a command prompt as administrator. To install the package, run a bootstrap command. Enter the command that matches your player's operating system: For Windows, enter: C:\GVClient\tools\current\gfBootstrap\gfBootstrap [path to]\DoohPlaybackService_version_win-x64.zip For Linux, enter: sudo/opt/grassfish/tools/current/gfBootstrap/gfBootstrap [path to]/DoohPlaybackService_version_linux-x64.zip Restart the player service or reboot the player for your changes to take effect. Install Mosquitto for MQTT The add-on communicates with the Windows or Linux player via Message Queuing Telemetry Transport (MQTT). To do this, Mosquitto must be installed as a broker for the MQTT protocol. For the Linux Player, MQTT is already included in the installation package by default. For the Windows Player, you can install MQTT from the server via an update package or locally on the player: For information about the update package, please contact your Grassfish Account Manager. To manually install Mosquitto on Windows, open the mosquitto-1.6.9-install-windows-x64.exe file from the installation package and install it. Enable MQTT You must configure the player or its configuration group in IXM One to enable the connection to the MQTT broker. Perform the following steps: In IXM One, go to go to the player configuration or configuration group: For an individual player, go to Channels > Location . Double-click on your player and select Edit next to Configuration in the Edit player window. For a configuration group, go to Administration > Player > Configuration groups and double-click on the configuration group. In the Edit configuration group window, select Display extended modules . Configure the following settings: Under Common > Backend , select Enable connection to mqtt broker . Under Overseer > Tool , select Control installed mosquito service . Under Server , set accesslevel for servertoken to Standard or Full. Click Save to save your changes. Restart the player service or reboot the player for your changes to take effect. Enable SSP You must enable and configure SSP in the player configuration or configuration group. Before you do so, ensure that you read the following prerequisites. Prerequisites You can set an airtime ratio for SSP content on the player to specify how much airtime goes to SSP advertisements, just like you can set airtime for DOOH. In total, the SSP airtime percentage and DOOH airtime percentage must not exceed 100%. By default, filling up with SSP spots is enabled and SSP airtime is set to 0%. This means that unused DOOH airtime is used for SSP if SSP spots are available regardless of SSP airtime. To enable and configure SSP, perform the following steps: In IXM One, go to the player configuration or the configuration group: For an individual player, go to Channels > Location . Double-click on your player and select Edit next to Configuration in the Edit player dialog. For a configuration group, go to Administration > Player > Configuration groups and double-click on the configuration group. In the Edit configuration group window, select DOOH > SSP . In the Settings pane, select enable SPP . Optionally, change the timeout for SSP API requests (milliseconds) . If the SSP API request takes longer than the timeout, the system cancels it. Optionally, change the timespan to be considered for the SSP calculation(seconds) . If calculating the SSP spot playouts takes longer than the timeout, the system cancels it. Fill up DOOH airtime with SSP spots is turned on by default. You can turn it off if needed. Set the SSP airtime ratio . Click Save to save your changes. Restart the player service or reboot the player for your changes to take effect. Note If you use SSP without using DOOH, you must add an empty DOOH playlist as an event playlist to your program scheme.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/configure-ixm-one-ssp]
+[Next|https://docs.grassfish.com/docs/configure-android-player-ssp]
+[Windows Player|https://docs.grassfish.com/docs/win-player]
+[Linux Player|https://docs.grassfish.com/docs/linux-player]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/configure-winlin-player-ssp]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/configuration_group_edit.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/configuration_group_edit.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A31%3A35Z&se=2025-07-17T16%3A44%3A35Z&sr=c&sp=r&sig=UxcDs4NmH85uejbZQjJI%2Fm%2BpgA5QfFVZ6aUY2oUlgdk%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/qt_ssp(1).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/qt_ssp(1).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A31%3A35Z&se=2025-07-17T16%3A44%3A35Z&sr=c&sp=r&sig=UxcDs4NmH85uejbZQjJI%2Fm%2BpgA5QfFVZ6aUY2oUlgdk%3D
+Alt-Text: Enable SSP and SSP settings on Windows and Linux players
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A31%3A35Z&se=2025-07-17T16%3A46%3A35Z&sr=c&sp=r&sig=JThaNxPG5ATqUx0ISSITXlBuBfwHGuEtKNQ09MBf3jE%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A31%3A35Z&se=2025-07-17T16%3A46%3A35Z&sr=c&sp=r&sig=JThaNxPG5ATqUx0ISSITXlBuBfwHGuEtKNQ09MBf3jE%3D
+
+Quelle: https://docs.grassfish.com/docs/configure-winlin-player-ssp

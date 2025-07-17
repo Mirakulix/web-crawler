@@ -1,0 +1,57 @@
+Titel: AdServing API releases
+URL: https://docs.grassfish.com/docs/adserving-api-releases
+Zeitpunkt: 2025-07-17 18:40:45
+==================================================
+
+Get the latest version Please contact your Grassfish account manager to get the latest version. AdServing API Version 1.8 Note This version requires IXM One version 11.12 or later. New features With this version, we’ve implemented the following new features: AiOO integration The AdServing API now supports importing AiOO Basic HTML spot zip files into IXM One. It automatically extracts and saves the necessary content. AiOO is an audience intelligence and programmatic advertising provider (SSP) that integrates AI solutions. Milliseconds in VAST responses Additionally, we’ve enhanced the system to process VAST responses that include time in milliseconds, such as 00:00:30.000, offering more precise timing for ad delivery. Resolved issues We've fixed a problem with parsing media files that occurred when forwarding to another SSP via the VAST wrapper. AdServing API Version 1.7 New features With this version, we’ve implemented the following new features: .NET SDK upgrade We’ve updated the .NET SDK used in the Bitbucket pipeline to the latest version, improving build stability and compatibility with newer .NET features. Additionally, we can now streamline the development process with more efficient build pipelines. Entity Framework and SQL Server updates With this version, we’ve updated Microsoft.EntityFrameworkCore.SqlServer to version 8.0.8 and Grassfish.Framework.EFCore to 3.1.1.3 to ensure compatibility with the latest features and bug fixes. This helps us improve our database management and query performance across all services. AdServing API update We've updated our AdServing API to support .NET 8, bringing it up to date with the latest framework features and optimizations, ensuring longevity and compatibility with future API integrations. Configuration and logging enhancements We've updated Grassfish.Extensions.Configuration.MasterConfig to version 8.0.0 and Grassfish.Extensions.Logging.Serilog.Server to 8.0.0. These updates improve configuration management and logging capabilities and provide better traceability and monitoring of server activities. Overall, this improves system observation and makes troubleshooting easier. Removed unused references To reduce technical debt and improve code maintainability, we’ve cleaned up the codebase by removing unused references from various plugins. Our codebase is now leaner, reducing complexity and potential future issues. Improved tests and builds We have updated xunit.runner.visualstudio to version 2.9.0 and xunit packages to ensure more reliable and up-to-date test execution environments. This ensures higher test reliability and better support for later Visual Studio versions. Additional package upgrades To improve API documentation and coverage reporting, we’ve upgraded Swashbuckle.AspNetCore to version 6.7.3 and coverlet.collector to 6.0.2. This enables better API documentation generation and improved code coverage insights. AdServing API Version 1.6 New features With this version, we’ve implemented the following new features: Viooh integration With this version we’ve extended AdServing API to support querying SSP content from Viooh, another non-VAST compliant SSP provider. This facilitates using SSP content from Viooh and ensures that players can handle both VAST and non-VAST SSP responses. Iterating SSPs We’ve enabled the ability to query multiple SSPs in descending priority order if the highest-priority SSP doesn’t return valid content. Resolved issues We’ve fixed an issue where a high system load caused an error. AdServing API Version 1.5 New features With this version, we’ve implemented the following new features: SSP wildcard for screen number If you have players with multiple screens and your SSP requires this information, you can now use the wildcard {screenNr} in the SSP URL. The system is able to replace the wildcard with the screen number (1 or 2). Example SSP URL with screen number wildcard: https://my.ssp-provider.com/testdata/video.xml?playerid={boxId}_{screenNr} AdServing API Version 1.4 New features With this version, we’ve implemented the following new features: Code refactoring We’ve improved the caching mechanisms in cachedgrassfishrepository . Screen playlist for SSP spots With this version, we’ve introduced managing memory constraints on Tizen players by sending only the required spots to the player. This helps avoid a memory overload. Additional logging We’ve added logging to monitor whether SSP is configured for a single screen or a general playlist. AdServing API Version 1.3 New features With this version, we’ve implemented the following new features: Framen as SSP Provider With this version, we’ve extended the AdServing API to support querying SSP content from Framen, a non-VAST compliant SSP provider. This helps customers who need SSP content from Framen, which uses a custom response model. Multiple SSPs We’ve enabled querying from multiple SSP providers for a single player, including fallback mechanisms if the highest-priority SSP doesn’t return content. AdServing API Version 1.2 New features With this version, we’ve implemented the following new features and fixes: Multiple bug fixes and code improvements With this version of the AdServing API, we’ve resolved issues and implemented improvements for better stability and performance.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/add-ons-and-apis]
+[Next|https://docs.grassfish.com/docs/doohplaybackservice-add-on-releases]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/adserving-api-releases]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A40%3A44Z&se=2025-07-17T16%3A55%3A44Z&sr=c&sp=r&sig=QnjDYrnHbkaOc2uqcXJ6jkjmnWo62C65HNUb6yY6fyg%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A40%3A44Z&se=2025-07-17T16%3A55%3A44Z&sr=c&sp=r&sig=QnjDYrnHbkaOc2uqcXJ6jkjmnWo62C65HNUb6yY6fyg%3D
+
+Quelle: https://docs.grassfish.com/docs/adserving-api-releases

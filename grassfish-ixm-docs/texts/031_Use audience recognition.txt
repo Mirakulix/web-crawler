@@ -1,0 +1,67 @@
+Titel: Use audience recognition
+URL: https://docs.grassfish.com/docs/ssp-audience-recognition
+Zeitpunkt: 2025-07-17 18:31:45
+==================================================
+
+With audience recognition, you no longer have to to preset live tags in the IXM One . Windows or Linux Players can now pass live tag information to an SSP provider through the AdServing API. What are live tags? Live tags are special tags that affect the spot playout at runtime. They’re activated and deactivated through (local) web services. This process is triggered by an attached external system that calls the player's web services. Such external systems are, for example, sensors, camera images, external dynamic data like weather forecasts, or external events. You can configure the player to display specific spots that have live tags assigned to them which match the current conditions. System requirements Ensure that you meet the following system requirements: Component Version Windows or Linux Player Version 11.13 or later AdServing API Version 1.2.0 or later Player add-on Version 2.7.03 or later Prerequisites Don’t forget to set the live tags that you want to pass to the SSP provider on the player. If you don’t, the add-on fetches a random spot from the AdServing API without passing the live tag information. → To manually set live tags on the player, you can use the API command SetLiveTags . For more information, see the API documentation . Configure the components To use audience recognition, you must configure the AdServing API and the player add-on. Configure the AdServing API For information on how to configure the AdServing API in general, see the SSP installation articles . To configure the AdServing API, perform the following steps: Open your SSP config file. Specify the following settings: Setting Description SspLiveTagsUrl Specify the URL template of the SSP provider to allow passing live tag data. For example, if you’ve set the live tags ac1:1 and a0:5 on the player and want to send them to the SSP provider, you can use the following URL: https://prod.ssp1.eu/ssp1/?key=c762&seg=ac1%3A1%3Ba0%3A5&playerid=123 https://prod.ssp1.eu/ssp1/ is the URL of the SSP provider. key identifies the customer at the SSP server. seg stores the live tag data. playerid specifies the player’s BoxID. Note Note that if you don’t configure this setting, the application uses the value that you specified as the SspUrl instead. SspLiveTagValuesSeparator Optionally, specify a separator for concatenated live tags values. By default, its a semicolon ; Save your changes and close the file. Example configuration of the SSP config file: { "SspConfigurations": [ { "SspPriority": 1, "SspUrl": "https://prod.ssp1.eu/ssp1/?key=c762&boxId={boxId}", "SspLiveTagsUrl": "https://prod.ssp1.eu/ssp1/?key=c762&boxId={boxId}&seg={seg}", "CutMediaUrlBeforeSubString": "?", "SspRequestHeaders": { "api-key": "8618681688" }, "SspCategoryId": 812, "SspPlaylistId": 522, "SspSpotGroupId": 1211, "SspServiceUserId": 844 } ] } Configure the player add-on To configure the player add-on, perform the following steps: Open the config.ini file: On Windows, the config file is located at: C:\GVClient\addonConfigs\gfPlayer\DoohPlaybackService\config.ini Under Linux, the config file is located at: /opt/grassfish/addonConfigs\gfPlayer\DoohPlaybackService\config.ini In the config file, specify the following setting: Setting Description Dooh.SspLiveTagKey If the player has live tag values with this key, all values of this live tag key are passed URL-encoded to the parameter SspLiveTagsUrl . The default value is AdvSegments . Note You can only set one live tag key. Save your changes and close the file. Example communication to the player: [ { "Name": "ADV_SEGMENTS", "Values": { { "Value": "a12:2" }, { "Value": "bx1:1" }, { "Value": "rx1:5" } } } ] Playout of SSP spots By default, there is a look-back time of ten minutes. For example, if you have an airtime ratio of 50%, for example, the SSP spots are played out as follows: If DOOH and SSP spots were played one minute in total within the last ten minutes, the system asks for a new SSP spot. One minute equals 10% which is smaller than 50% airtime ratio. If DOOH and SPP spots were played nine minutes in total within the last ten minutes, the system doesn’t ask for a new SSP spot. Nine minutes equal 90% which is greater than 50% air time ratio. Troubleshooting If you run into trouble using the audience recognition feature, consider the following information. General errors The following errors can occur if your setup doesn’t meet the system requirements: If you receive a 404 error when the add-on is making a request, your AdServing API version is too old. You must install version 1.2.0 or later. If the new feature doesn’t work, your player add-on version is too old. You must install version 2.7.0 or later. If there’s no DOOH calculation in the add-on, your player version is too old. You must install version 11.13 or later. No concatenated strings Only concatenated string are sent to the SSP provider as live tag information. Concatenation means joining strings end-to-end by appending one string to the end of another string. To do so, use the separator that you’ve specified as SspLiveTagValuesSeparator . Example: The following concatenated string works: GET https://prod.ssp1.eu/ssp1/?seg=a12%3A2%3Bbx1%3A1%3Brx1%3A5 The following string is not supported: GET https://prod.ssp1.eu/ssp1/?seg=a12%3A2&seg=bx1%3A1&seg=rx1%3A5 No live tags on the player You must set the live tags on the player. If you don’t, the add-on fetches a random spot from the AdServing API without passing the live tag information. Empty live tags value If the live tags value is null or empty, the system ignores the parameter seg . That means, it passes null to the SSP provider. Example: GET https://prod.ssp1.eu/ssp1/?key=c762&boxId=BOX_ID&seg= Warning logged The system logs a warning if the live tag value contains the same character as the configured separator. For example, if you use value=a12:1 and separator=:
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/specify-ssp-playout]
+[Next|https://docs.grassfish.com/docs/server]
+[IXM One|https://docs.grassfish.com/docs/ixm-platform]
+[Windows|https://docs.grassfish.com/docs/win-player]
+[Linux Players|https://docs.grassfish.com/docs/linux-player]
+[API documentation|https://webhelp.grassfish.tv/ClientWebservices_API/index.html]
+[SSP installation articles|https://docs.grassfish.com/docs/configure-server-ssp]
+[https://prod.ssp1.eu/ssp1/?key=c762&seg=ac1%3A1%3Ba0%3A5&playerid=123|https://prod.ssp1.eu/ssp1/?key=c762&seg=ac1%3A1%3Ba0%3A5&playerid=123]
+[https://prod.ssp1.eu/ssp1/?key=c762&seg=ac1%3A1%3Ba0%3A5&playerid=123|https://prod.ssp1.eu/ssp1/?key=c762&seg=ac1%3A1%3Ba0%3A5&playerid=123]
+[SspUrl|https://docs.grassfish.com/docs/configure-server-ssp]
+[SspLiveTagsUrl|https://docs.grassfish.com/grassfish/docs/ssp-audience-recognition]
+[SspLiveTagValuesSeparator|https://docs.grassfish.com/grassfish/docs/ssp-audience-recognition]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/ssp-audience-recognition]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A31%3A44Z&se=2025-07-17T16%3A46%3A44Z&sr=c&sp=r&sig=ulxo6fWF3TqtYzP%2BvKKXPU%2FXxzwXVRI%2Balp1L66jpVs%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A31%3A44Z&se=2025-07-17T16%3A46%3A44Z&sr=c&sp=r&sig=ulxo6fWF3TqtYzP%2BvKKXPU%2FXxzwXVRI%2Balp1L66jpVs%3D
+
+Quelle: https://docs.grassfish.com/docs/ssp-audience-recognition

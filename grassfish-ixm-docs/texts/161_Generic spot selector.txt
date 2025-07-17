@@ -1,0 +1,63 @@
+Titel: Generic spot selector
+URL: https://docs.grassfish.com/docs/generic-spot-selector
+Zeitpunkt: 2025-07-17 18:40:48
+==================================================
+
+The Spot Selector spot allows you to quickly and easily create your own spot selector and define its overall look using layout, colors, fonts, and other design options. Note If you would like to use this spot or need more information, please contact Grassfish support or sales team. System requirements This spot requires Android Player version 11.18.0 or later. Configure the player To play the spot on the Android Player, you must first configure its settings. To do so, perform the following steps: In IXM One, go to the player configuration or the configuration group: For an individual player, go to Channels > Location . Double-click on your player and select Edit next to Configuration in the Edit player window. For a configuration group, go to Administration > Player > Configuration groups and double-click on the configuration group. In the Edit configuration group window, select Display extended modules . Under Modules , select Spotselector . Select Enable Spotselector mode . Optionally, select Spotselector battery info to display the remaining battery capacity in percent. Under Number of spot rows per playlist , select how many rows with spots you want to display. Upload the Spot Selector spot To use the spot, you must first upload the spot file to IXM One. To do so, perform the following steps: In IXM One, go to Content > Playlist . In the Spot groups pane, select your spot group. In the Selectable spots pane, click on New . Select Upload spots . Upload the spot file in one of the following ways: Drag and drop the skin.asc.zip file into the upload manager window. Click on Add data , select the skin.asc.zip file from your files and click on Open . Click on the Play icon to start the upload. Once the upload has finished, click on Close to close the upload manager. Note You must save the spot as a skin.asc file, otherwise the Android Player can’t recognize it. Configure the Spot Selector spot To configure the spot in the HTML Wizard, perform the following steps: In IXM One, go to Content > Playlist . In the Spot groups pane, select your spot group. In the Selectable spots pane, hover over the spot and select Edit content or double-click on it. This opens the HTML Wizard. Under Spot , configure the following settings: Show Opened Spot Select to see the opened spot view, where the close and arrow buttons appear in the header. Note that the spot is replaced by a placeholder in the HTML Wizard. Since the spot is responsive, we recommend previewing the actual spot directly on the player. Playlist Font Select a playlist font from the dropdown menu. Main Font Select a main font from the dropdown menu. This font is used for all text except playlist titles. Select Page layout and configure the following settings: Orientation Select the screen orientation that matches your screen: Horizontally Vertically Page Padding left/right Specify the left and right side padding of the page in pixels. Header Height Specify the height of the header in pixels. Playlist Section Padding top/bottom Specify the top and bottom padding of the playlist selection in pixels. Spot Item Spacing Specify the space between the spots in pixels. Select Header and configure the following settings: Background Color Set a background color for the header. Click in the color picker to select a color or enter a HEX code. Transparent Overlays Select to enable transparency. In this case, only the Close button and logo are visible. Select Button and configure the following settings: Background Color Set a background color for the button. Click in the color picker to select a color or enter a HEX code. Border Specify the width of the button border in pixels. Border Color Set a color for the button border. Click in the color picker to select a color or enter a HEX code. Close Button Text Enter the text that appears on the button, such as "Close" or "Exit". Close Button Style Style the button text using font size, color, and more options. Position Top Specify the distance between the button and the top edge of the page in pixels. Height Specify the height of the button in pixels. Padding Left/Right Specify the left and right side padding of the button in pixels. Radius Specify the radius of the button corners. 0 means square and 100 means round. Select Time & Date and configure the following settings: Time/Date Alignment Select an alignment for the date and time: Left Right Show Time Select to display the current time in the header. Time Format Select a time format: 24-hour clock 12-hour clock Time Style Style the time text using font size, color, and more options. Show Date Select to display the current date in the header. Date Format Select a date format: DD.MM.YYYY DD/MM/YYYY MM/DD/YYYY Date Style Style the date text using font size, color, and more options. Select Hero and configure the following settings: Image Select an image for the hero section. You can use a JPG, PNG, GIF file. Height/Width Specify the height or width of the image in pixels. The value applies to the height if your layout is horizontal and to the width if your layout is vertical. Select Logo and configure the following settings: Image Select a logo image. You can use a JPG, PNG, GIF file. Logo Height Specify the height of the logo in pixels. Position Top Specify the distance between the logo and the top edge of the page in pixels. Position Left Specify the distance between the logo and the left edge of the page in pixels. Select Playlist section and configure the following settings: Show Playlist Titles Select to display playlist titles, which is the name of the playlists in IXM One. Playlist Title Style Style the playlist titles using font size, color, and more options. Playlist Title Bottom Padding Specify the bottom padding of the playlist titles in pixels. Show Spot Title Select to display spot titles, which is the name of the spots in IXM One. Spot Title Style Style the spot titles using font size, color, and more options. Select Color and configure the following settings: Even Background Color Set a background color for even playlist sections. That is, the second, fourth, sixth section, etc. Click the color picker to select a color or enter a HEX code. Even Playlist Title Color Set a playlist title color for even playlists. Click the color picker to select a color or enter a HEX code. Even Spot Title Color Set a spot title color for even spots. Click the color picker to select a color or enter a HEX code. Odd Background Color Set a background color for odd playlist sections. That is, the first, third, fifth section, etc. Click the color picker to select a color or enter a HEX code. Odd Playlist Color Set a title color for odd playlists. Click the color picker to select a color or enter a HEX code. Odd Spot Title Color Set a spot title color for odd spots. Click the color picker to select a color or enter a HEX code. To finish the spot configuration, click Save and Close .
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/disable-f-keys]
+[Next|https://docs.grassfish.com/docs/use-surface-app-switch]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/generic-spot-selector]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/spot_selector_player_configuration(1).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/spot_selector_player_configuration(1).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A40%3A46Z&se=2025-07-17T16%3A55%3A46Z&sr=c&sp=r&sig=nd3kMBV%2Bb9jXlxWpjI9AvJe5McRZl4JFjfBkVH7qNYM%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/spot_selector_configuration.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/spot_selector_configuration.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A40%3A46Z&se=2025-07-17T16%3A55%3A46Z&sr=c&sp=r&sig=nd3kMBV%2Bb9jXlxWpjI9AvJe5McRZl4JFjfBkVH7qNYM%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A40%3A46Z&se=2025-07-17T16%3A55%3A46Z&sr=c&sp=r&sig=nd3kMBV%2Bb9jXlxWpjI9AvJe5McRZl4JFjfBkVH7qNYM%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A40%3A46Z&se=2025-07-17T16%3A55%3A46Z&sr=c&sp=r&sig=nd3kMBV%2Bb9jXlxWpjI9AvJe5McRZl4JFjfBkVH7qNYM%3D
+
+Quelle: https://docs.grassfish.com/docs/generic-spot-selector

@@ -1,0 +1,63 @@
+Titel: API glossary
+URL: https://docs.grassfish.com/apidocs/api-glossary
+Zeitpunkt: 2025-07-17 18:35:22
+==================================================
+
+A API API means application programming interface. An API consist of multiple definitions and protocols for developing and integrating application software. An API is an interface that allows independent applications to communicate with each other and exchange data. API call An API call or API request is a message to a server that requests an API to provide a service or information. API key The API key is a unique identifier to authenticate a user. In IXM One, you can create an API key to perform tests with your personal user. When you use the key for authorization, you have the same rights and permissions that this user has in IXM One. Application GUID A standalone application, such as IXM One, can be identified by a globally unique identifier (GUID). If you are unsure, ask your administrator whether your application requires an application GUID upon login. Authorization Authorization is the process of verifying whether a user is allowed to perform a certain action. Our IXM One API offers two options for authorization: the session ID and the API key. ASC ASC means Advanced Spot Configurator. The ASC content of a spot refers to all editable elements of an HTML Wizard spot . B Binary payload Binary payload refers to the binary content of the message payload. This is content that is anything other than text, such as an image or an XML file. Booking ID Each DOOH booking is automatically assigned an ID upon creation. This ID helps to uniquely identify each booking. You can check the ID when you access the booking in IXM One or in your browser. Learn how to get the ID … Box-ID Every player has a unique Box-ID that identifies it, for example, during the initialization . You can check the Box-ID when you access the player in IXM One. C Category ID To provide tailored content, you can assign specific categories to your locations and spots. Each category has a unique ID which you can check in your browser. Learn how to get the ID ... Client The client is the application that sends the request to the server who sends a response. CRC CRC means cyclic redundancy check. This is an error detection code that can be used to detect accidental changes to digital data. D Data calculator Data calculator is a service that recalculates XML playlist files. It registers each relevant modification by a user in IXM One and recalculates the corresponding playlists. Depth parameter The search depth parameter determines how simple or complex the search is. This means how many levels it covers. For example, 1 means the search includes direct child elements of the search term. The depth parameter is usually optional. If it is omitted, there is no level restriction for the search. E Edition code The edition is the type of player such as Android or Tizen. Endpoint An API endpoint is a unique URL of a server or service that points to a specific resource. API endpoints are the final touchpoints in the API communication system, where API and server interact. The API uses endpoints to perform specific tasks such as requesting data or starting a process. Entity ID The entity ID is the unique identifier of an entity like a spot or media file. Learn how to get the ID … F FAST With FAST, you can send commands from the server to the Linux and Windows (Qt) Player very quickly. This allows you to control the players remotely via a fastBroker add-on. G GUID GUID means globally unique identifier. It’s a unique ID that can identify, for example, an IXM One application module, a player edition, or an upload. H HTTP HTTP stands for Hypertext Transfer Protocol. This is a standardized protocol for transmitting data between clients and servers on the internet. The client sends an HTTP request to the server using a standard set of methods such as GET to specify the action it wants to perform on a specific resource. J JWT JWT means JSON Web Token. It’s a JSON-based access token that is typically used to exchange a user's identity between an identity provider and a service provider in a third-party system. L Location ID In IXM One, your entire player network can be depicted geographically via locations. Each location has a unique ID which you can check in your browser. Learn how to get the ID … P Parameters Parameters are variables that provide specific information or instructions to an API endpoint. There are different types of parameters that are included in different parts of an API request: header parameters, path parameters, query parameters, and request body parameters. S Screen number You can assign up to two displays to a player in IXM One. The screen number indicates which of the two displays is relevant if, for example, you want to change or delete a player's screen. Server The server is the application that sends a response to the client who sends the request. Session ID When you're logged into IXM One, you get a session ID that you can use for authorization . The session ID is connected to a user including their rights and permissions. Session hash The session hash is the session ID converted into a hash value. The hash value consists of exactly 40 characters of numbers or letters. Spot ID Spots are the content that you put on your playlist to play on your screens. Each spot has a unique ID which you can check when you access the spot in IXM One or in your browser. Learn how to get the ID … Status code API status codes are HTTP status codes . The API returns an HTTP status code to indicate the status of a client request. The code informs the user of the result of their request, such as “200 OK” for a successful operation. Swagger Swagger is a collection of open source tools for designing, building, documenting, and consuming APIs. You can enable the Swagger site in IXM One configuration. T TPID TPID means temporary provisioning identifier. It’s used for initializing players . U UDC UDC means Universal Data Controller. This is a service for importing external, customer-specific data via plug-ins. UTC UTC means coordinated universal time. This is a standard for determining all time zones in the world with a uniform calculation. Using UTC as the reference time, each time zone can be determined in deviation from another time zone. The differences between a time zone and universal time are given in UTC +/- x hours. V Version Version refers to the version of the API. A new API version is released with each IXM One release. We are constantly improving our API, which means that later versions generally contain more API calls and options than previous versions.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[Documentation|https://docs.grassfish.com]
+[Player MQTT API|https://webhelp.grassfish.tv/pluginIPC/]
+[Player REST API|https://webhelp.grassfish.tv/ClientWebservices_API/]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish-api/en|https://docs.grassfish.com/grassfish-api/en]
+[Prev|https://docs.grassfish.com/apidocs/get-started]
+[Next|https://docs.grassfish.com/apidocs/api-reference-119]
+[HTML Wizard spot|https://docs.grassfish.com/docs/html-wizard-spots]
+[Learn how to get the ID …|https://docs.grassfish.com/grassfish-api/apidocs/en/get-ids]
+[initialization|https://docs.grassfish.com/docs/player-provisioning-website]
+[Learn how to get the ID ...|https://docs.grassfish.com/grassfish-api/apidocs/en/get-ids]
+[server|https://docs.grassfish.com/grassfish-api/apidocs/api-glossary]
+[Learn how to get the ID …|https://docs.grassfish.com/grassfish-api/apidocs/en/get-ids]
+[HTTP request|https://docs.grassfish.com/apidocs/http-requests]
+[Learn how to get the ID …|https://docs.grassfish.com/grassfish-api/apidocs/en/get-ids]
+[client|https://docs.grassfish.com/grassfish-api/apidocs/api-glossary]
+[authorization|https://docs.grassfish.com/grassfish-api/apidocs/api-glossary]
+[Learn how to get the ID …|https://docs.grassfish.com/grassfish-api/apidocs/en/get-ids]
+[HTTP status codes|https://docs.grassfish.com/apidocs/http-status-codes]
+[enable the Swagger site|https://docs.grassfish.com/grassfish/docs/en/enable-swagger]
+[initializing players|https://docs.grassfish.com/docs/player-provisioning-website]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/apidocs/api-glossary]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A21Z&se=2025-07-17T16%3A50%3A21Z&sr=c&sp=r&sig=Qdyu1ZSzGlfr2ZDsikV09g9IvAZGnFccTQ%2BkxPPfsi0%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A21Z&se=2025-07-17T16%3A50%3A21Z&sr=c&sp=r&sig=Qdyu1ZSzGlfr2ZDsikV09g9IvAZGnFccTQ%2BkxPPfsi0%3D
+
+Quelle: https://docs.grassfish.com/apidocs/api-glossary

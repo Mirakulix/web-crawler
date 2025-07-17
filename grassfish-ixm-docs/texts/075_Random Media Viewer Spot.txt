@@ -1,0 +1,67 @@
+Titel: Random Media Viewer Spot
+URL: https://docs.grassfish.com/docs/random-media-viewer-spot
+Zeitpunkt: 2025-07-17 18:36:53
+==================================================
+
+The Random Media Viewer spot allows you to randomly display media content of your choice. Multiple videos or images : the versatile template allows you to create a spot consisting of multiple videos or images. Random selection : each time the spot is viewed, one of the pre-selected videos or images is randomly chosen and displayed. Note Please contact Grassfish if you want to use this spot template. Upload the spot Upload the Random Media Viewer spot to IXM One. To do so, perform the following steps: In IXM One, go to Content > Playlist . In the Spot groups pane, select your spot group. In the Selectable spots pane, click on New . Select Upload spots . Upload the Random Media Viewer spot in one of the following ways: Drag and drop the ZIP file into the upload manager window. Click on Add data , select the ZIP file from your files and click on Open . Click to start the upload. Once the upload has finished, click Close to close the upload manager. Configure the spot To configure your spot in the HTML Wizard, perform the following steps: In IXM One, go to Content > Playlist . In the Spot groups pane, select your spot group. In the Selectable spots pane, hover over the Random Media Viewer spot and select Edit content . Alternatively, double-click on it. Configure the spot with the following options: Resolution : select a resolution from the dropdown menu. Spot duration : specify how long the spot should play. Make sure that the spot duration of the spot, booking item, and media match. Background : select and choose a background color (optional). Player : select a player that should play the spot. Media : edit, delete, or move your media files. Add medium : select to add another media file. Configure the following options (available from spot version 1.0.2): Sequential playback : select to play videos in the saved order. That means, not randomly. Playback duration for images [sec] : specify how many seconds each image should be displayed. Enable reporting : select to include data about this spot in your DOOH playback reports. Once you’ve finished creating your spot, click Save and Close . Use the spot for advertisement You must create a DOOH booking item that contains the spot to play it. To do so, perform the following steps: In IXM One, go to DOOH > Booking . In the Bookings panel, click on New . In the Create new booking dialog, click on New . In the Edit booking item for product dialog, select your product and specify the booking details as needed. In the Spot section, click on Select from spot group . In the Select spot dialog, select your Random Media Viewer spot and click Select . Configure all other booking settings as needed. Click Save and Close .
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/planned-media-viewer-spot]
+[Next|https://docs.grassfish.com/docs/weekday-media-viewer-spot]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/random-media-viewer-spot]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/play_plannedmediaviewer.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/play_plannedmediaviewer.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A51Z&se=2025-07-17T16%3A48%3A51Z&sr=c&sp=r&sig=fCcmvBkO52WIURVTG3vpRUgwegBIJxhG1xUYGsfvBCI%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/upload_wizard_spot.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/upload_wizard_spot.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A51Z&se=2025-07-17T16%3A48%3A51Z&sr=c&sp=r&sig=fCcmvBkO52WIURVTG3vpRUgwegBIJxhG1xUYGsfvBCI%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/random_media_viewer.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/random_media_viewer.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A51Z&se=2025-07-17T16%3A48%3A51Z&sr=c&sp=r&sig=fCcmvBkO52WIURVTG3vpRUgwegBIJxhG1xUYGsfvBCI%3D
+Alt-Text: Configuration of the Random Media Viewer in the HTML Wizard
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A51Z&se=2025-07-17T16%3A51%3A51Z&sr=c&sp=r&sig=MCPz%2F7GgX156hh0pTwkqwRbeOCxxU%2F3nR7ojB4Ti9rg%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A51Z&se=2025-07-17T16%3A51%3A51Z&sr=c&sp=r&sig=MCPz%2F7GgX156hh0pTwkqwRbeOCxxU%2F3nR7ojB4Ti9rg%3D
+
+Quelle: https://docs.grassfish.com/docs/random-media-viewer-spot

@@ -1,0 +1,69 @@
+Titel: IXM One releases
+URL: https://docs.grassfish.com/docs/ixm-one-releases
+Zeitpunkt: 2025-07-17 18:36:50
+==================================================
+
+Get the latest version Please contact your Grassfish account manager to get the latest version. IXM Version 12.0 11.07.2025 Update to 12.0 New name “IXM One” As of this version, IXM One replaces the previous name IXM Platform. API updates This version includes the following updates: Optional name parameter for playlists : the name parameter in the GET/Playlist endpoint is now optional. Permission to assign spot tags : starting with this version, users must have write permissions for the spot group to assign spot tags via PUT/Spots/Tags . Permission to copy spots : starting with this version, users must have write permissions for the spot group to copy spots via POST/Spots/CreateCopy . New features With this version we've implemented the following features: Create time-based event playlists Starting with this release, you can schedule event playlists to start at regular intervals or specific times. This is especially useful when working with recurring or time-sensitive campaigns like promotions or announcements. For example, make sure your important announcement runs every 30 minutes, or run a meal voucher promotion at breakfast, lunch, and dinner times. Learn more in our webhelp … Details panel always visible The details panel in IXM One is now always visible to give you immediate access to important details of spots and media. However, you can change the configuration, so the panel is hidden and must be opened manually. Learn more ... . Cleanup of empty directories With this release, we're introducing a new empty directory cleanup process alongside the existing file cleanup. After cleaning up the files, the resulting empty directories are now also identified and deleted. This ensures a cleaner and better organized directory structure and reduces unnecessary clutter. Learn more … Optional name parameter for playlists in API The name parameter is now optional in the GET /Playlists API request. When you leave the name empty, the API returns all available playlists. However, you can still send API calls with a name like GET /Playlists?name=DOOH to get only playlists that match the specified name. Learn more about using the API … Download all player logs You can now download all log files from a player module in a single, compressed ZIP archive. This improvement makes it faster and more efficient to gather logs for analysis with one simple click. The ZIP format consolidates multiple logs into one file, making it easier to store and share. Learn more in our webhelp … Automatically improve video uploads We’re introducing a new feature to automatically enhance video uploads. When you upload a video file, the system can now automatically analyze and convert the video into the optimal target codec for the best possible quality and compatibility. This enhancement eliminates the need for manual file conversion, saving valuable time and effort while ensuring your videos are compatible across various devices and platforms. The video conversion process is tied to spot groups, meaning that if you upload a video to a specific spot group, the system automatically converts it if necessary. Learn more … Clean up spot playtimes We’ve implemented a new cleanup mechanism to address the accumulation of imported spot play times in the reporting database. Spot play times are now automatically deleted after 12 months to ensure optimal disk space usage and prevent server issues caused by full disk space. Resolved issues We’ve fixed an issue where filtering dashboard messages for a specific range of days wasn’t working. After the installer is finished and the services restarted, the webservices now stay up and running. After removing a player from the list, waiting list values are now updated in the DOOH chart. We’ve fixed the tooltip of the “Edit” icon that appears on a selectable media tile. We’ve fixed an issue where resetting the box and Box-ID wasn’t working correctly. Filtering media is now possible when using the filter function in the “Select media file” dialog. We’ve fixed an issue with inconsistent behavior in LinkedList dependencies. We’ve fixed a typo and missing label text in the German version of the “Ticker” widget. After uploading a new video to IXM One, the metadata is now displayed in the spot details. The “Include not installed“ setting in the “Player Online Offline” dashboard widget now works as expected. We’ve fixed the tooltip of the the pie chart in the “Users Currently Logged In” dashboard widget to include all user types. We’ve added German translations for "on schedule" and "overdue" in the “Tasks Overview Per Plugin” dashboard widget. We’ve fixed a typo in the GET/Spots query parameter description. We’ve added a missing translation in the “Player licences” widget. We’ve fixed an issue where the response of GET {{host}}/v1.18/Fast/player/{{playerId}}/{{messageId}} was missing information. We’ve fixed an issue where some logs were created even though all existing LogToFile keys were set to false in the master.config file. We’ve fixed an issue where unnecessary media preloading in the HTML Composer caused performance issues. The English version of the “Users login history” dashboard widget no longer loads the user count list values in German. We’ve fixed an API issue with POST/Locations where location users received a 403 forbidden message but the location was created correctly. We’ve fixed an API issue with PUT/Spots where the response was 200 instead of 400 when ValidFrom was greater than ValidTo. We’ve fixed an API issue with PUT/Spots where the response was 200 instead of 400 when ValidFrom was a different type than ValidTo. We’ve fixed an API issue with DELETE/Spots where it was not possible to delete a wizard spot uploaded via API. We’ve fixed an API issue with POST/Spots/CreateCopy where a spot was copied even though the user only had read permissions for the spot group. We’ve fixed an API issue with PUT/Spots/Tags where tags were assigned even though the user only had read permissions for the spot group. We’ve fixed an API issue with PUT/Spots/Tags where an existing tag was neither removed nor overwritten. We’ve fixed an API issue with POST/Spots/CreateCopy where the response was 200 even though the properties PlayerId and LocationId are mutually exclusive. We’ve fixed an API issue with GET/Spots where the response was 200 when the type value was valid, but no spots found for this type. We’ve fixed an issue where the spot pool preview was not available for website spots. For clarity, we’ve updated the descriptions of categories in GET/Spots . When creating a news item in IXM One, the visibility can no longer be set to a past date. We’ve fixed an API issue with GET/Spots where the response was 200 even though MinWidth value was negative. We’ve fixed an API issue with GET/Spots where the response was 200 even though MinHeigth value was negative. The online help icon now opens the correct pages from all areas of IXM One. We’ve fixed an issue where it was possible to edit the categories of multiple selected spots without selecting "Edit categories" but the changes were not saved. We’ve fixed an issue where the Player API couldn’t detect its network settings and thus the server. We’ve fixed an API issue with GET/Spots/AscContent where ASC content was returned even though the user had no rights for the spot. The Player API endpoint GET​/api​/v1.X/Updates no longer fails, preventing players from receiving and installing updates. We’ve fixed an API issue where GET/Spots/Preview returned 200 OK even though the user had no rights for the spot or spot group. We’ve fixed an API issue where GET/Spots/Thumbnail returned 200 OK even though the user had no rights for the spot or spot group. We’ve fixed an API issue where GET/Spots/Preview returned 500 internal server error instead of 404 when the spot ID didn’t exist. We’ve fixed an API issue with POST/Spots/CreateCopy where trying to delete a wizard spot that has copy caused a conflict. LinkedLists now support relative URLs. We’ve fixed an issue where a server with version 11.17 was unable to cleanup staging data with more than two million rows. We’ve fixed an issue where the provisioning UI would hang if the player detected an unsupported server version or other critical error during initialization, and the player was incorrectly shown as online in IXM One. We’ve fixed an issue where an incorrect message appeared when re-initializing an already initialized player. We fixed an issue where the Player API and the Internet Broadcaster would fail when the file version of a spot changed. Links to webhelp English German Administrator manual Administratorenhandbuch Standard user manual Standardbenutzerhandbuch Location user manual Locationbenutzerhandbuch Every player has a unique Box-ID that identifies it, for example, during the initialization. You can check the Box-ID when you access the player in IXM. ASC means Advanced Spot Configurator. The ASC content of a spot refers to all editable elements of an HTML Wizard spot.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/release-notes]
+[Next|https://docs.grassfish.com/docs/release-notes-dooh-and-ssp]
+[Learn more in our webhelp …|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/programmedplaylistproperties_event.html]
+[Learn more ...|https://docs.grassfish.com/docs/configure-details-panel]
+[Learn more …|https://docs.grassfish.com/docs/enable-file-cleaner]
+[Learn more about using the API …|https://docs.grassfish.com/apidocs/overview]
+[Learn more in our webhelp …|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/download-player-data.html]
+[Learn more …|https://docs.grassfish.com/enable-video-conversion]
+[Administrator manual|https://webhelp.grassfish.tv/gv2/gf/help//12.0/ADMIN_en/index.html]
+[Administratorenhandbuch|https://webhelp.grassfish.tv/gv2/gf/help//12.0/ADMIN_de/index.html]
+[Standard user manual|https://webhelp.grassfish.tv/gv2/gf/help/12.0/Standard_en/index.html]
+[Standardbenutzerhandbuch|https://webhelp.grassfish.tv/gv2/gf/help//12.0/Standard_de/index.html]
+[Location user manual|https://webhelp.grassfish.tv/gv2/gf/help/12.0/Location_en/index.html]
+[Locationbenutzerhandbuch|https://webhelp.grassfish.tv/gv2/gf/help/12.0/Location_de/index.html]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/ixm-one-releases]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A49Z&se=2025-07-17T16%3A51%3A49Z&sr=c&sp=r&sig=j9DZWuBd7qBMfTgFqlSQbBfz3E41ZrijvAIsIby44fg%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A49Z&se=2025-07-17T16%3A51%3A49Z&sr=c&sp=r&sig=j9DZWuBd7qBMfTgFqlSQbBfz3E41ZrijvAIsIby44fg%3D
+
+Quelle: https://docs.grassfish.com/docs/ixm-one-releases

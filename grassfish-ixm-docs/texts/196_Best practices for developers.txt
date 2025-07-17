@@ -1,0 +1,57 @@
+Titel: Best practices for developers
+URL: https://docs.grassfish.com/docs/best-practices-spot-development
+Zeitpunkt: 2025-07-17 18:42:32
+==================================================
+
+In this article, you’ll gain an understanding of the key requirements and best practices when working with HTML spots. By keeping these recommendations in mind during the development process, you can ensure that your HTML Basic and HTML Wizard spots are properly optimized for performance, display, and compatibility with target hardware and browsers. Check resolution and color When creating HTML Basic and HTML Wizard spots, it’s essential to design them according to the resolution in which they will be displayed. This ensures optimal performance and user experience across different devices and platforms. 1:1 playback for media Ensure that media is designed for 1:1 playback. This is especially important for HTML Basic spots, as they are not automatically scaled by the player. Any content that exceeds the designated resolution will be truncated, leading to display issues. To avoid this, make sure that media elements are optimized for the desired resolution. Background color consistency The background color of the website should match the background color of the playlist in the player to avoid flickering. A mismatch in background colors can lead to visual issues during transitions or content loading. Test your HTML spots Testing is an important part of spot development to make sure that your spots look and work as desired. Target device tests We recommend to test each HTML spot directly on the target device to ensure it displays correctly. This helps identify and resolve any device-specific issues before deployment. Testing on the actual hardware is critical to ensure the correct resolution, media quality, and performance. Consider player performance and stability It’s important to consider the performance and stability of your player(s) when developing HTML spots. Performance considerations Your HTML spots should be optimized for performance, particularly in relation to memory management. Note that poorly programmed HTML spots can negatively impact the stability of the player. The performance of your player depends on the device's hardware and performance issues can vary across devices. To maintain a stable and smooth user experience, be mindful of the impact that HTML spots have on memory usage, CPU load, and other system resources. Choose media and animations Media and animations are an integral part of most HTML spots. However, consider the following points when choosing media and animations. Media formats Videos: we recommend using MP4 format with H.264 encoding for video content. This format ensures broad compatibility and efficient playback across various devices and browsers. Images: we support PNG and JPG. Both formats are widely supported and offer good quality with optimized file sizes for web use. Hardware and browser considerations Consider the hardware and browser that the player uses when choosing media and animations. More complex media or animations may cause performance issues, so it’s essential to test your HTML spots on the target hardware and browser. Early testing also helps identify and mitigate performance issues before they affect the user experience. Animation optimization While animations can enhance the user experience, we recommend to implement them carefully to avoid excessive resource consumption. Use lightweight animation techniques and consider the performance limitations of the player hardware and browser. Choose data formats Note that data files are not uploaded as spots in IXM One and must be stored on the server as external data files. Ensure that the data files are properly linked to the HTML spots for correct functionality. JSON and XML We recommend using JSON or XML formats. These formats are well-suited for structured data and widely supported across platforms. Consider the browser The browser on both Windows and Linux players is Chromium Embedded Framework (CEF). It’s crucial to optimize your website for compatibility with CEF and test it there.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/html-spot-development]
+[Next|https://docs.grassfish.com/docs/html-basic-spots-1]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/best-practices-spot-development]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A31Z&se=2025-07-17T16%3A57%3A31Z&sr=c&sp=r&sig=MSnt%2BgAcsAVy5yArdc0bnj6fVjIKdNAtyv5CaWTVPQU%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A31Z&se=2025-07-17T16%3A57%3A31Z&sr=c&sp=r&sig=MSnt%2BgAcsAVy5yArdc0bnj6fVjIKdNAtyv5CaWTVPQU%3D
+
+Quelle: https://docs.grassfish.com/docs/best-practices-spot-development

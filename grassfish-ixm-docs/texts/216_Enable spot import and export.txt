@@ -1,0 +1,57 @@
+Titel: Enable spot import and export
+URL: https://docs.grassfish.com/docs/enable-spot-export
+Zeitpunkt: 2025-07-17 18:43:35
+==================================================
+
+You can enable the import and export of spots and the download of spot files like videos and images for specific user types in IXM One. Enable spot import and export To enable the import and export of spots for user types, perform the following steps: Navigate to the configuration files on the server at: GVServer2\www\gv2\gf\GFWebHtmlCustomer\ Open one of the following folders: 00000 : edit configurations for the entire server, which means for all customers. 000xxx : edit customer-specific settings. xxx is the customer ID. Open the config.json file in your folder with a text editor like Notepad++. Set cms > enableExportImportOfSpotsForUserType to one or more of the following options: Admin : admin users can import and export spots. StandardUser : standard users can import and export spots. LocationUser : location users can import and export spots. Save your changes and close the file. "cms": { "enableExportImportOfSpotsForUserType": [ "Admin", "StandardUser", "LocationUser" ], } Enable export of spot types To enable the export of specific spot types, perform the following steps: Navigate to the configuration files on the server at: GVServer2\www\gv2\gf\GFWebHtmlCustomer\ Open one of the following the folders: 00000 : edit configurations for the entire server, which means for all customers. 000xxx : edit customer-specific settings. xxx is the customer ID. Open the config.json file in your folder with a text editor like Notepad++. Go to cms > export . Set the following settings to true to enable the export: composerSpots : specified users can export HTML Composer spots. playlistToVideo : specified users can export playlists as a video. spotpoolToVideo : specified users can export spot pools as a video. Save your changes and close the file. "cms": { "export": { "composerSpots": true, "playlistToVideo": false, "spotpoolToVideo": false }, Enable spot file download To enable the download of spot files such as videos and images for specific user types, perform the following steps: Navigate to the configuration files on the server at: GVServer2\www\gv2\gf\GFWebHtmlCustomer\ Open one of the following the folders: 00000 : edit configurations for the entire server, which means for all customers. 000xxx : edit customer-specific settings. xxx is the customer ID. Open the config.json file in your folder with a text editor like Notepad++. Set cms > allowDownloadableSpotFilesForUserType to one or more of the following options: Admin : admin users can download spot files. StandardUser : standard users can download spot files. LocationUser : location users can download spot files. Save your changes and close the file. { "cms":{ "allowDownloadableSpotFilesForUserType": [ "Admin", "StandardUser", "LocationUser" ], }
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/spot-configuration]
+[Next|https://docs.grassfish.com/docs/enable-spot-variants]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/enable-spot-export]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A43%3A34Z&se=2025-07-17T16%3A58%3A34Z&sr=c&sp=r&sig=cAULhMjB1qavhyew6pf0gRfZprh9nkNjBBeIy3Q0HD8%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A43%3A34Z&se=2025-07-17T16%3A58%3A34Z&sr=c&sp=r&sig=cAULhMjB1qavhyew6pf0gRfZprh9nkNjBBeIy3Q0HD8%3D
+
+Quelle: https://docs.grassfish.com/docs/enable-spot-export

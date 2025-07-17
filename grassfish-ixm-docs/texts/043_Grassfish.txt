@@ -1,0 +1,99 @@
+Titel: Grassfish
+URL: https://docs.grassfish.com/grassfish/en
+Zeitpunkt: 2025-07-17 18:35:28
+==================================================
+
+News Get the latest news from Grassfish to stay up to date on our products and developments. Read more Knowledge Base Get to know our products, read our how to guides, explore developer docs, and more. Browse articles API Documentation Discover the API documentation and references for IXM One and our players. Learn more
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[Read more|https://docs.grassfish.com/docs]
+[Browse articles|https://docs.grassfish.com/docs/ixm-platform]
+[Learn more|https://docs.grassfish.com/grassfish-api]
+[Release notesDiscover new releases, features, and more.|https://docs.grassfish.com/docs/en/release-notes]
+[End of supportStay up to date on the end of support.|https://docs.grassfish.com/docs/en/end-of-support]
+[IXM OneGet to know Grassfish IXM One.|https://docs.grassfish.com/docs/en/ixm-one]
+[HostingLearn more about our backend services.|https://docs.grassfish.com/docs/en/server]
+[PlayersDiscover the Grassfish players.|https://docs.grassfish.com/docs/en/players]
+[TroubleshootingGet tips and step-by-step instructions.|https://docs.grassfish.com/docs/en/troubleshooting]
+[Players|https://docs.grassfish.com/docs/players]
+[IXM One|https://docs.grassfish.com/docs/ixm-one]
+[Initialize players|https://docs.grassfish.com/docs/player-provisioning-website]
+[Install the player software|https://docs.grassfish.com/docs/install-the-player-software]
+[Install the Windows Player|https://docs.grassfish.com/docs/windows-player-install]
+[11.07.2025 - IXM One release|https://docs.grassfish.com/docs/11072025-ixm-platform-release]
+[11.07.2025 - DoohPlaybackService Add-on|https://docs.grassfish.com/docs/11072025-doohplaybackservice-add-on]
+[IXM One releases|https://docs.grassfish.com/docs/ixm-one-releases]
+[Composer has performance issues|https://docs.grassfish.com/docs/composer-has-performance-issues]
+[Enable video conversion|https://docs.grassfish.com/docs/enable-video-conversion]
+[Troubleshooting|https://docs.grassfish.com/docs/troubleshooting]
+[IXM One releases|https://docs.grassfish.com/docs/ixm-one-releases]
+[11.07.2025 - IXM One release|https://docs.grassfish.com/docs/11072025-ixm-platform-release]
+[DOOH and SSP releases|https://docs.grassfish.com/docs/release-notes-dooh-and-ssp]
+[11.07.2025 - DoohPlaybackService Add-on|https://docs.grassfish.com/docs/11072025-doohplaybackservice-add-on]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/grassfish/en]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/megaphone-thin.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/megaphone-thin.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A26Z&se=2025-07-17T16%3A50%3A26Z&sr=c&sp=r&sig=nT147%2BpdE0B%2Frw8FAY3I7Yenu%2BIEfck4tALkBvZ7occ%3D
+Alt-Text: This logo has megaphone-thin
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/book-open-text-thin.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/book-open-text-thin.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A26Z&se=2025-07-17T16%3A50%3A26Z&sr=c&sp=r&sig=nT147%2BpdE0B%2Frw8FAY3I7Yenu%2BIEfck4tALkBvZ7occ%3D
+Alt-Text: This logo has book-open-text-thin
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/file-code-thin.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/file-code-thin.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A26Z&se=2025-07-17T16%3A50%3A26Z&sr=c&sp=r&sig=nT147%2BpdE0B%2Frw8FAY3I7Yenu%2BIEfck4tALkBvZ7occ%3D
+Alt-Text: This logo has file-code-thin
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/rocket-launch-thin.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/rocket-launch-thin.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A26Z&se=2025-07-17T16%3A50%3A26Z&sr=c&sp=r&sig=nT147%2BpdE0B%2Frw8FAY3I7Yenu%2BIEfck4tALkBvZ7occ%3D
+Alt-Text: This logo has rocket-launch-thin
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/clock-countdown-thin.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/clock-countdown-thin.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A26Z&se=2025-07-17T16%3A50%3A26Z&sr=c&sp=r&sig=nT147%2BpdE0B%2Frw8FAY3I7Yenu%2BIEfck4tALkBvZ7occ%3D
+Alt-Text: This logo has clock-countdown-thin
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/app-window-thin.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/app-window-thin.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A26Z&se=2025-07-17T16%3A50%3A26Z&sr=c&sp=r&sig=nT147%2BpdE0B%2Frw8FAY3I7Yenu%2BIEfck4tALkBvZ7occ%3D
+Alt-Text: This logo has app-window-thin
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/hard-drives-thin.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/hard-drives-thin.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A26Z&se=2025-07-17T16%3A50%3A26Z&sr=c&sp=r&sig=nT147%2BpdE0B%2Frw8FAY3I7Yenu%2BIEfck4tALkBvZ7occ%3D
+Alt-Text: This logo has hard-drives-thin
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/monitor-play-thin.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/monitor-play-thin.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A26Z&se=2025-07-17T16%3A50%3A26Z&sr=c&sp=r&sig=nT147%2BpdE0B%2Frw8FAY3I7Yenu%2BIEfck4tALkBvZ7occ%3D
+Alt-Text: This logo has monitor-play-thin
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/wrench-thin.svg
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/wrench-thin.svg?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A26Z&se=2025-07-17T16%3A50%3A26Z&sr=c&sp=r&sig=nT147%2BpdE0B%2Frw8FAY3I7Yenu%2BIEfck4tALkBvZ7occ%3D
+Alt-Text: This logo has wrench-thin
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A26Z&se=2025-07-17T16%3A50%3A26Z&sr=c&sp=r&sig=nT147%2BpdE0B%2Frw8FAY3I7Yenu%2BIEfck4tALkBvZ7occ%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A26Z&se=2025-07-17T16%3A50%3A26Z&sr=c&sp=r&sig=nT147%2BpdE0B%2Frw8FAY3I7Yenu%2BIEfck4tALkBvZ7occ%3D
+
+Quelle: https://docs.grassfish.com/grassfish/en

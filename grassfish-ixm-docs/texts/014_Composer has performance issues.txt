@@ -1,0 +1,59 @@
+Titel: Composer has performance issues
+URL: https://docs.grassfish.com/docs/composer-has-performance-issues
+Zeitpunkt: 2025-07-17 18:30:46
+==================================================
+
+Symptoms When editing a spot in the HTML Composer, performance slows down due to media preloading. Resolution The following explanation and steps can help you identify and solve the issue. Understand media retrieval In the spot, the getElementWrapper function from the gfWizardBase library is used to get media data from the ascData field. This function calls another function called wrap . When it handles a media element, it creates a DOM element called clippedMediaHtml using the getMediaElements function. This causes all related images and videos to load. Loading all this media can slow down performance. Switch functions To avoid performance issues, you can use the getElementValue function instead. It lets you access media data through getMediaData , without creating the wrapper. This prevents the media from loading unnecessarily and helps improve performance. const mediaElement = window.gfWizardBase.getElementValue('Media'); const mediaDataObject = window.gfWizardBase.getMediaData(mediaElement[0]?.SpotId); const mediaUrl = mediaDataObject?.FullFilePath || null; Note To learn more, see our articles on HTML spot development .
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/screen-controller-doesnt-work]
+[Next|https://docs.grassfish.com/docs/end-of-support]
+[gfWizardBase library|https://docs.grassfish.com/docs/integrate-the-gfwizardbase]
+[HTML spot development|https://docs.grassfish.com/docs/html-spot-development]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/composer-has-performance-issues]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A30%3A45Z&se=2025-07-17T16%3A45%3A45Z&sr=c&sp=r&sig=vnFQ6%2BJnNdm06%2F78EjXzZNAd%2FB7SxE0Rg3Gg7J6Zymc%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A30%3A45Z&se=2025-07-17T16%3A45%3A45Z&sr=c&sp=r&sig=vnFQ6%2BJnNdm06%2F78EjXzZNAd%2FB7SxE0Rg3Gg7J6Zymc%3D
+
+Quelle: https://docs.grassfish.com/docs/composer-has-performance-issues

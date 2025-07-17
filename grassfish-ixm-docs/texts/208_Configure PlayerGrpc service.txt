@@ -1,0 +1,61 @@
+Titel: Configure PlayerGrpc service
+URL: https://docs.grassfish.com/docs/configure-playergrpc-service
+Zeitpunkt: 2025-07-17 18:43:11
+==================================================
+
+The PlayerGrpc service enables communication between the server and the player via remote procedure call (RPC) framework. The service must be installed on all web servers that the players communicate with. Prerequisites: HTTP vs. HTTPS You can decide during installation whether you want to use an HTTP or HTTPS connection. We recommend HTTPS. HTTPS We recommend to use HTTPS for enhanced security. If you do so, you need to provide a GRPC port and an HTTPS certificate that must be installed in Local Computer\Personal\Certificates. Example HTTPS configuration in the master.config file: <appSettings type="PlayerGrpcService"> <add key="Kestrel:Endpoints:Https:Url" value="https://*:50118" /> HTTP HTTP doesn’t require a certificate or any further configuration. You only need to provide a GRPC port. Example HTTP configuration in the master.config file: <appSettings type="PlayerGrpcService"> <add key="Kestrel:Endpoints:Http:Url" value="http://*:50118" /> Install PlayerGrpc service The PlayerGrpc service is part of the IXM One installation and installed by default. You must configure it during the installation. To install the PlayerGrpc service, perform the following steps: Start the IXM One installer and follow the instructions. When you’ve reached the installer’s Grpc window, enter your GRPC port. This information is mandatory, you must specify it. Optionally, select HTTPS and enter the HTTPS certificate subject. That is, the certificate’s name or identifier, such as: *.grassfish.com Click on Next and finish the installation. Configure PlayerGrpc service If your need to further adjust the GRPC port and HTTPS certificate, you can do so in the master.config file. This is necessary, for example, if you don’t use the standard certificate store or if the certificate is stored locally in your file system. The PlayerGrpc section is added to the master.config file during the IXM One installation. To configure it, perform the following steps: Open to the master.config file on the server with a text editor like Notepad++. Go to the PlayerGrpcService section. The value of Kestrel:Endpoints:Https:Url is the port that you specified during the installation. You can change it here if needed. If you don’t use the standard certificate store, specify the following values under Windows Certificate Store : For Kestrel:Endpoints:Https:Url enter the URL of the certificate store as value. For Kestrel:Endpoints:Https:Certificate:Store enter the certificate store’s name as value. For Kestrel:Endpoints:Https:Certificate:Location enter the certificate’s location as value. For Kestrel:Endpoints:Https:Certificate:Subject enter the certificate’s subject (name, identifier) as value. If your certificate is stored locally, specify the following values under Local Certificate File : For Kestrel:Endpoints:Https:Url enter the URL of the certificate’s location as value. For Kestrel:Endpoints:Https:Certificate:Path enter the file path to the certificate as value. For Kestrel:Endpoints:Https:Certificate:Password enter the certificate’s password as value. Save your changes and close the file. <appSettings type="PlayerGrpcService"> <add key="Kestrel:Endpoints:Http:Url" value="http://*:50118" /> <!-- Windows Certificate Store <add key="Kestrel:Endpoints:Https:Url" value="https://*:5000" /> <add key="Kestrel:Endpoints:Https:Certificate:Store" value="My" /> <add key="Kestrel:Endpoints:Https:Certificate:Location" value="LocalMachine" /> <add key="Kestrel:Endpoints:Https:Certificate:Subject" value="*.grassfish.com" /> --> <!-- Local Certificate File <add key="Kestrel:Endpoints:Https:Url" value="https://*:5000" /> <add key="Kestrel:Endpoints:Https:Certificate:Path" value="C:\Grassfish\certificate.pfx" /> <add key="Kestrel:Endpoints:Https:Certificate:Password" value="Password" /> --> </appSettings>
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/player-quick-install]
+[Next|https://docs.grassfish.com/docs/disable-content-download-during-operating-hours]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/configure-playergrpc-service]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/grpc_setup.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/grpc_setup.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A43%3A11Z&se=2025-07-17T16%3A55%3A11Z&sr=c&sp=r&sig=BJ7%2FCGCCdm9X87GwibAVB2MvytSY28r0kGZM4ixZX7M%3D
+Titel: grpc_setup.png
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A43%3A11Z&se=2025-07-17T16%3A58%3A11Z&sr=c&sp=r&sig=JBIxMXAbyJm8TaBYC%2FuqE60mvi3%2B3eY3o%2FZOt1r7V%2Bg%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A43%3A11Z&se=2025-07-17T16%3A58%3A11Z&sr=c&sp=r&sig=JBIxMXAbyJm8TaBYC%2FuqE60mvi3%2B3eY3o%2FZOt1r7V%2Bg%3D
+
+Quelle: https://docs.grassfish.com/docs/configure-playergrpc-service

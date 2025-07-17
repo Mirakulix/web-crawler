@@ -1,0 +1,77 @@
+Titel: Connect player and server
+URL: https://docs.grassfish.com/docs/connect-player-and-server
+Zeitpunkt: 2025-07-17 18:40:22
+==================================================
+
+Note Before you begin the initialization, ensure that the player has been set up on the server and has a valid license. There are two ways to connect the player to the IXM server: Use the generic provisioning service . Use the classic InitBox . Initialize the player via generic provisioning Note the following prerequisites: You need a PC to open the provisioning service website via: yourserver.xy/gv2/gf/provisioning/#/ Note the TPID from the InitBox to connect to the server and load all pre-configured settings and content. Note For step-by-step instructions, click here . If generic provisioning is not enabled on your server, please contact support@grassfish.com . Initialize the player via the classic InitBox To initialize the player using the InitBox, perform the following steps: Click Start classic InitBox . Select your screen orientation using the drop-down menu (1) or the arrows (2). Click Save and continue . On the Configure your system screen, configure your settings and configure a serial device if needed. For more information on the settings, click here . Click Continue . Enter your IXM Server URL and Box-ID . Optionally, use the pre-filled one. If your server uses HTTP , Turn off Use HTTPS connection . Click Initialize player . The player restarts and downloads content and settings from the server. Once the download is complete, the player begins playing your content. Note For more information, see our articles on how to operate the Android Player . Every player has a unique Box-ID that identifies it, for example, during the initialization. You can check the Box-ID when you access the player in IXM. HTTP stands for Hypertext Transfer Protocol. This is a standardized protocol for transmitting data between clients and servers on the internet. The client sends an HTTP request to the server using a standard set of methods such as GET to specify the action it wants to perform on a specific resource.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/post-installation-settings]
+[Next|https://docs.grassfish.com/docs/installation-guides]
+[Use the generic provisioning service|https://docs.grassfish.com/docs/player-provisioning-website]
+[Use the classic InitBox|https://docs.grassfish.com/grassfish/docs/connect-player-and-server]
+[click here|https://docs.grassfish.com/docs/player-provisioning-website]
+[support@grassfish.com|mailto:support@grassfish.com]
+[click here|https://docs.grassfish.com/docs/manage-android-settings]
+[articles on how to operate the Android Player|https://docs.grassfish.com/docs/operate-android-player-20]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/connect-player-and-server]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1729674425603.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1729674425603.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A40%3A20Z&se=2025-07-17T16%3A51%3A20Z&sr=c&sp=r&sig=Laeo4qgKz3Fbi8ZDVf6wbeitukMK7SIten0mMFj1E7A%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1729674586658.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1729674586658.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A40%3A20Z&se=2025-07-17T16%3A51%3A20Z&sr=c&sp=r&sig=Laeo4qgKz3Fbi8ZDVf6wbeitukMK7SIten0mMFj1E7A%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1729674841412.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1729674841412.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A40%3A20Z&se=2025-07-17T16%3A51%3A20Z&sr=c&sp=r&sig=Laeo4qgKz3Fbi8ZDVf6wbeitukMK7SIten0mMFj1E7A%3D
+Alt-Text: Ein Bild, das Text, Screenshot, Schrift, Design enthält.  Automatisch generierte Beschreibung
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1750068516550.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1750068516550.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A40%3A20Z&se=2025-07-17T16%3A51%3A20Z&sr=c&sp=r&sig=Laeo4qgKz3Fbi8ZDVf6wbeitukMK7SIten0mMFj1E7A%3D
+Alt-Text: Ein Bild, das Text, Screenshot, Schrift, Zahl enthält.  KI-generierte Inhalte können fehlerhaft sein.
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A40%3A20Z&se=2025-07-17T16%3A55%3A20Z&sr=c&sp=r&sig=IyQ52iAVzEDmpbgXx%2BtVTE9%2FaThfht6UY815okQ4m28%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A40%3A20Z&se=2025-07-17T16%3A55%3A20Z&sr=c&sp=r&sig=IyQ52iAVzEDmpbgXx%2BtVTE9%2FaThfht6UY815okQ4m28%3D
+
+Quelle: https://docs.grassfish.com/docs/connect-player-and-server

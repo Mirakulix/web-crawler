@@ -1,0 +1,60 @@
+Titel: Configure the server
+URL: https://docs.grassfish.com/docs/configure-server
+Zeitpunkt: 2025-07-17 18:41:23
+==================================================
+
+The DOOHPlayBackImporter UDC plugin transmits booked DOOH spot instances to the player, regardless of which player you use. You must activate and configure the UDC importer to enable the player to play DOOH content. This happens on the server. If you need help finding the UDC importer, please contact your Grassfish account manager. Note For DOOHPlaybackImporter version 2.6 or earlier you must install the file Dapper.dll in addition to the DoohPlaybackImporter.dll. Copy and paste both files from the release folder to \\GVServer2\UdcService\Plugins on the server and restart the UDC service. To activate the UDC importer on the server, perform the following steps: Log in to the server admin account of the IXM One. Go to Administration > Global > Customer management . Double-click on the customer. In the Edit client window, switch to the Data importer tab. Select Assigned for the DOOH Playback Importer. Click Save to save your changes. Configure the UDC importer Configure the UDC importer with the configuration file that is located on the server. Note For the configuration, note that the importer only transmits booked DOOH spot instances to players that have been online. If no player is or was online, the importer generates no result file. To configure the UDC importer, perform the following steps: Open the DoohUdcImporterConfig.json file. Change the following settings according to your requirements: Setting Default value Description BufferPercentage 10 Specify the percentage to add to the target playback count which is transmitted to the player. OfflineIntervalMin 30 Specify the maximum time span from the last access date of a player until it’s considered offline. If a player is offline, it’s not included in the calculation for the distribution of playouts among all players. OfflineIntervalMinSpecialDistributions 4320 (=3 days) Specify the maximum time span from the last access date of a player until it’s considered offline. LogDbQueryResultForAllSiBoxes false Set to true to log all players, online players, and spot instances if the log level is set to debug . ExtendedLogging false Set to true to log additional information if the log level is set to debug. Save your changes and close the config file. Example configuration of the DoohUdcImporterConfig.json file { "BufferPercentage": 10, "OfflineIntervalMin": 360 } UDC stands for Universal Data Controller. The UDC importer imports external data into the IXM system. UDC plugins specify which data should be imported and how it should be transformed for use by spots and players.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/install-dooh]
+[Next|https://docs.grassfish.com/docs/configure-ixm-one]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/configure-server]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1690528821260.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1690528821260.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A22Z&se=2025-07-17T16%3A52%3A22Z&sr=c&sp=r&sig=VrxBpwo2j74CiVhAJjfXnomRdQST4tnQ058NRREG8Pc%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A22Z&se=2025-07-17T16%3A56%3A22Z&sr=c&sp=r&sig=aULtakSAfkju77D0Tt9qWSPTmHnonHiw%2FhBZ7Xd2kvw%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A22Z&se=2025-07-17T16%3A56%3A22Z&sr=c&sp=r&sig=aULtakSAfkju77D0Tt9qWSPTmHnonHiw%2FhBZ7Xd2kvw%3D
+
+Quelle: https://docs.grassfish.com/docs/configure-server

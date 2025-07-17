@@ -1,0 +1,74 @@
+Titel: Configure load balancer or reverse proxy
+URL: https://docs.grassfish.com/docs/configure-load-balancer-or-reverse-proxy
+Zeitpunkt: 2025-07-17 18:30:56
+==================================================
+
+IXM One supports API access through load balancer and/or proxy setups that help manage server systems. Load balancers distribute large amounts of traffic across a pool of available servers. A load balancer allows an application to scale beyond a single server, making processing more efficient. By configuration, a load balancer can also serve as a reverse proxy. A reverse proxy takes a request from a client, forwards it to an available server, and returns the server response to the client. Seamlessly using a load balancer and/or reverse proxy with IXM One requires additional configuration of Internet Information Services (IIS) for Windows Server. Follow the instructions in this article to configure your system. Prerequisites Before you begin configuration, make sure you meet the following prerequisites: You are using IXM One version 11.16.0 or later. The URL Rewrite module is installed on each web server in your system. For more information, see the Microsoft documentation: https://www.iis.net/downloads/microsoft/url-rewrite Note Apply the following settings only if IIS is behind a load balancer. Add allowed server variables You must add allowed server variables to the URL Rewrite module. To do so, perform the following steps: Open IIS Manager. Under Connections , select your server. Open URL Rewrite . Under Actions , select View Server Variables . Click Add and add the following variables: HTTP_HOST HTTPS REMOTE_ADDR REMOTE_HOST SERVER_NAME SERVER_PORT Set environment variable To set the environment variable, perform the following steps: Go to IXM_BASE_DIR\www. Open the web.config file. Add the environment variable ASPNETCORE_FORWARDEDHEADERS_ENABLED and set it to true . Save your changes and close the file. <configuration> <system.webServer> <aspNetCore> <environmentVariables> <environmentVariable name="ASPNETCORE_FORWARDEDHEADERS_ENABLED" value="true" /> </environmentVariables> </aspNetCore> </system.webServer> </configuration> Add rewrite rules There are two scenarios for the IIS binding: The binding is different from the MainServerURL We recommend using this solution because performance is better when SSL is managed solely by the reverse proxy. The IIS binding matches the MainServerURL This solution is simpler because you don’t have to change the binding when adding a reverse proxy to an existing setup. However, it’s slower due to the SSL overhead on the web server. Select your scenario and follow the matching instructions below. IIS binding is different from MainServerURL In this scenario, your external URL and internal IIS binding are different. For example: https://external.domain and http://localhost . To add the required rewrite rules, perform the following steps: Go to IXM_BASE_DIR\www. Open the web.config file. Add the following code for your rewrite rules: <?xml version="1.0" encoding="utf-8"?> <configuration> <system.webServer> <rewrite> <rules> <!-- add rules here --> </rules> </rewrite> </system.webServer> </configuration> Add the following rewrite rules: <rule name="X-Forwarded-Host"> <match url=".*" /> <serverVariables> <set name="HTTP_HOST" value="{C:0}" /> <set name="SERVER_NAME" value="{C:1}" /> <set name="SERVER_PORT" value="{C:3}" /> </serverVariables> <action type="None" /> <conditions> <add input="{REMOTE_ADDR}" pattern="^192\.168\.175\.1$" /> <add input="{HTTP_X_FORWARDED_HOST}" pattern="^([\w\-\.]+)(\:(\d+))?$" /> </conditions> </rule> <rule name="X-Forwarded-Proto-Https"> <match url=".*" /> <serverVariables> <set name="HTTPS" value="on" /> </serverVariables> <action type="None" /> <conditions> <add input="{REMOTE_ADDR}" pattern="^192\.168\.175\.1$" /> <add input="{HTTP_X_FORWARDED_Proto}" pattern="^https$" /> </conditions> </rule> <rule name="X-Forwarded-Proto-Http"> <match url=".*" /> <serverVariables> <set name="HTTPS" value="off" /> </serverVariables> <action type="None" /> <conditions> <add input="{REMOTE_ADDR}" pattern="^192\.168\.175\.1$" /> <add input="{HTTP_X_FORWARDED_Proto}" pattern="^http$" /> </conditions> </rule> <rule name="X-Forwarded-For"> <match url=".*" /> <serverVariables> <set name="REMOTE_ADDR" value="{C:0}" /> <set name="REMOTE_HOST" value="{C:0}" /> </serverVariables> <action type="None" /> <conditions> <add input="{REMOTE_ADDR}" pattern="^192\.168\.175\.1$" /> <add input="{HTTP_X_FORWARDED_FOR}" pattern=".+" /> </conditions> </rule> Replace each occurrence of ^192\.168\.175\.1$ with the load balancer's IP address. You must precede special characters such as a period ( . ) with a backslash ( \ ) because this pattern is a regular expression. Save your changes and close the file. IIS binding matches MainServerURL In this scenario, your external URL and the internal IIS binding match. For example: https://external.domain and https://external.domain. Note Because of the HTTPS binding, you must install the SSL certificate on the web server. HTTPS encryption creates additional CPU load on the web server. To add the required rewrite rule, perform the following steps: Go to IXM_BASE_DIR\www. Open the web.config file. Add the following code for your rewrite rule: <?xml version="1.0" encoding="utf-8"?> <configuration> <system.webServer> <rewrite> <rules> <!-- add rules here --> </rules> </rewrite> </system.webServer> </configuration> Add the following rewrite rule: <rule name="X-Forwarded-For"> <match url=".*" /> <serverVariables> <set name="REMOTE_ADDR" value="{C:0}" /> <set name="REMOTE_HOST" value="{C:0}" /> </serverVariables> <action type="None" /> <conditions> <add input="{REMOTE_ADDR}" pattern="^192\.168\.175\.1$" /> <add input="{HTTP_X_FORWARDED_FOR}" pattern=".+" /> </conditions> </rule> Replace each occurrence of ^192\.168\.175\.1$ with the load balancer's IP address. You must precede special characters such as a period ( . ) with a backslash ( \ ) because this pattern is a regular expression. Save your changes and close the file.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/deploy-legacy-webservices-as-any-cpu]
+[Next|https://docs.grassfish.com/docs/configure-player-selection]
+[https://www.iis.net/downloads/microsoft/url-rewrite|https://www.iis.net/downloads/microsoft/url-rewrite]
+[https://external.domain|https://external.domain]
+[http://localhost|http://localhost]
+[https://external.domain|https://external.domain]
+[https://external.domain.|https://external.domain.]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/configure-load-balancer-or-reverse-proxy]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/iis_variables.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/iis_variables.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A30%3A55Z&se=2025-07-17T16%3A44%3A55Z&sr=c&sp=r&sig=NV18LxGcpCoxGu06Qz1RqLly5Ro2sOfeMmWV%2FA3v710%3D
+Titel: iis_variables.png
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/iis_binding-different.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/iis_binding-different.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A30%3A55Z&se=2025-07-17T16%3A44%3A55Z&sr=c&sp=r&sig=NV18LxGcpCoxGu06Qz1RqLly5Ro2sOfeMmWV%2FA3v710%3D
+Alt-Text: null
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/iis_binding-same.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/iis_binding-same.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A30%3A55Z&se=2025-07-17T16%3A44%3A55Z&sr=c&sp=r&sig=NV18LxGcpCoxGu06Qz1RqLly5Ro2sOfeMmWV%2FA3v710%3D
+Alt-Text: null
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A30%3A55Z&se=2025-07-17T16%3A45%3A55Z&sr=c&sp=r&sig=r75cpatN7fjCtQkW5y4IJv0I8Ful5xLWnY3PI29nv58%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A30%3A55Z&se=2025-07-17T16%3A45%3A55Z&sr=c&sp=r&sig=r75cpatN7fjCtQkW5y4IJv0I8Ful5xLWnY3PI29nv58%3D
+
+Quelle: https://docs.grassfish.com/docs/configure-load-balancer-or-reverse-proxy

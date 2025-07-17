@@ -1,0 +1,57 @@
+Titel: Checklist: SSP preparation
+URL: https://docs.grassfish.com/docs/ssp-checklist-preparation
+Zeitpunkt: 2025-07-17 18:41:43
+==================================================
+
+Use the following checklist to prepare for setting up SSP. General information and requirements You’ve clarified the objective of the SSP connection (e.g., increase reach, monetize remaining spaces). You’ve identified specific requirements (e.g., reporting, tracking, data protection). You’ve identified target regions or restrictions. You’ve examined alternatives (e.g., DOOH booking function in IXM One). You’ve identified suitable SSPs (e.g., Framen, VIOOH, SSP1). You’ve checked which SSPs or standards (e.g., VAST) are currently supported and suitable. You’re aware that the contract with the SSP provider must be concluded by the customer. Considerations for IXM configuration Is IXM One already in use? If no , a basic setup of IXM One is required. You’ve specified an existing or new spot group for SSP assignment. You’ve determined a playlist to be populated programmatically. You know which category should be used for SSP assignment. You’ve documented all IDs relevant for technical configuration. Optional inventory synchronization You’ve clarified whether player or location inventory must be synchronized: If yes : You’ve clarified the synchronization method (SSP retrieves / provisioned by Grassfish). You’ve clarified the format or interface. If no : You’ve clarified that the customer manages inventory manually via SSP. Technical information from the SSP provider The SSP endpoint is available (e.g., VAST URL, API endpoint). You’ve clarified authentication (token, API key, basic auth, etc.). You’ve checked other technical parameters (if relevant): LiveTag URLs are available. Custom header is defined. SspType is identified (e.g., Framen, VIOOH). You have access to technical documentation/specifications.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/how-dooh-ssp-works]
+[Next|https://docs.grassfish.com/docs/ssp-checklist]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/ssp-checklist-preparation]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A43Z&se=2025-07-17T16%3A56%3A43Z&sr=c&sp=r&sig=07EgwFYz50edmc7%2BIol4kdT6ojc8%2FQPvNrZz8pS1weM%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A43Z&se=2025-07-17T16%3A56%3A43Z&sr=c&sp=r&sig=07EgwFYz50edmc7%2BIol4kdT6ojc8%2FQPvNrZz8pS1weM%3D
+
+Quelle: https://docs.grassfish.com/docs/ssp-checklist-preparation

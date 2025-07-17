@@ -1,0 +1,15 @@
+# Text and PDF Generation
+beautifulsoup4
+# reportlab
+requests
+pillow
+weasyprint
+PyPDF2
+# Video
+yt-dlp
+selenium
+opencv-python
+pillow
+pyautogui
+psutil
+

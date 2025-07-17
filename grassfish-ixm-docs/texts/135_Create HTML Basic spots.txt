@@ -1,0 +1,61 @@
+Titel: Create HTML Basic spots
+URL: https://docs.grassfish.com/docs/html-basic-spots
+Zeitpunkt: 2025-07-17 18:39:33
+==================================================
+
+HTML Basic spots are locally stored websites that can be integrated into IXM One with limited configuration options. This article covers the structure, invocation, and configuration of HTML Basic spots in the Grassfish system, as well as tips for efficient development and troubleshooting. File structure When creating an HTML Basic spot, apply the following file structure: Main entry point : The HTML Basic spot must contain a file named index.html, which acts as the entry point for the website. Additionally, the website can contain subdirectories, which must be referenced relatively. File packaging : Before uploading to IXM One, the HTML website should be zipped. The ZIP file must have the .html.zip extension. Once uploaded, the system will create a spot, which will be displayed with a thumbnail in IXM One. ZIP file content : The ZIP file should include: index.html Optionally, subdirectories and other assets necessary for the site. Upload to IXM One When your HTML Basic spot is ready, perform the following steps: Compress the entire website including the index.html and any subdirectories into a ZIP file. Ensure the file extension is .html.zip . Upload the .html.zip file to IXM One. Upon successful upload, the system creates a spot for the website with a default thumbnail. Player file system and invocation HTML Basic spots are invoked differently depending on the player (Windows, Linux, Android). Windows Player On Windows players, the file system and invocation works as follows: Web server The website is hosted by IISExpress, and the HTML Basic spot is invoked through Internet Explorer. Invocation example The URL for invoking the HTML Basic spot on Windows is: http://localhost:XXXX/ZipSpots/[FileName]/index.html?width=1368&height=768&bgcolor=ff00ff&siID=54165&udcWsPath=http%3A%2F%2Flocalhost%3A8080%2FUdcWs&usePreload=true XXXX The port configured on the player (default: 9090). [FileName] A dynamic subdirectory path that varies for each spot. width, height, bgcolor Configuration parameters for the spot’s display. siID The spot instance ID used for retrieving UDC data. udcWsPath URL-encoded path to the UDC web service. usePreload A Boolean that specifies whether the player supports preloading the website. Default Media Directory On Windows players, the default root directory for the website is: C:\GVClient\data\media\ Linux Player On Linux players, the file system and invocation works as follows: Web server On Linux players, the website is hosted by lighttpd and played using the Chromium Embedded Framework (CEF). Invocation example The URL for invoking the HTML Basic spot on Linux is: http://localhost/ZipSpots/[FileName]/index.html Default media directory On Linux players, the default root directory for the website is: /apps/grassfish/media/ Composer Media Subdirectory Linux players also have a subdirectory media/media/ , used exclusively for Composer media. Android Player On Android players, the file system and invocation works as follows: WebView hosting On Android players, the website is displayed in a WebView (android.webkit.WebView). Invocation example The invocation URL on Android is: http://localhost:9090/zipSpots/[FileName]/index.html?usePreload=true Default media directory On Android players, the default media directory is: /storage/emulated/0/Download/GF/media/ HTML Basic spot configuration The array DynamicItems allows you to specify configuration settings for the spot. These settings help fine-tune the spot's behavior, appearance, and functionality, both during the upload process and when called on the player. In IXM One, you can specify these spot properties before adding the spot to the playlist. Once added to the playlist, these values are copied to the spot and can be adjusted for each playlist independently of the original spot. Invocation on the player When invoked on the player, the settings are passed to the spot as URL parameters, with all values being URL-encoded. It's important to keep this in mind when developing the spot. The configuration feature is transferred as follows via the URL on the player: …index.html?otherParams=otherValues&someBoolean=true Sample configuration With this sample code, the spot value true can be edited in IXM One. <Object> <ID>someBoolean</ID> <DataType>boolean</DataType> <Value>true</Value> <DisplayName>Some boolean</DisplayName> </Object> Example configuration of DynamicItems Here’s a sample configuration of DynamicItems in the settings.xml file: <?xml version="1.0" encoding="utf-8"?> <settings> <uploadSettings> <usePreload>true</usePreload> <thumbnails> <cms>thumbnailSmall.jpg</cms> <preview>thumbnailBig.jpg</preview> </thumbnails> <dynamicItems> <Array> <Object> <ID>someInt</ID> <DataType>int</DataType> <Value>1</Value> <DisplayName>Some int</DisplayName> </Object> <Object> <ID>someString</ID> <DataType>string</DataType> <Value>none</Value> <DisplayName>Some string</DisplayName> </Object> <Object> <ID>someList</ID> <DataType>list</DataType> <Sources> <Value>Entry 1</Value> <Value>Entry 2</Value> <Value>Entry 3</Value> </Sources> <Value>Entry 2</Value> <DisplayName>Some list entry</DisplayName> </Object> <Object> <ID>someBoolean</ID> <DataType>boolean</DataType> <Value>true</Value> <DisplayName>Some boolean</DisplayName> </Object> <Object> <ID>someColor</ID> <DataType>color</DataType> <Value>0xFF0000</Value> <DisplayName>Some color</DisplayName> </Object> </Array> </dynamicItems> </uploadSettings> </settings> Here is a breakdown of the key settings and their functionality: Setting Description usePreload Determines whether the HTML application should be preloaded during the upload process. If enabled, the spot will be preloaded to optimize loading times. Location: settings > uploadSettings > usePreload Note: If the player doesn’t support preloading, the animations or content within the spot must be started immediately upon invocation. thumbnails > IXM One Specifies a custom thumbnail (80x60 pixels) that is displayed for the spot in IXM One. Location : settings > uploadSettings > thumbnails > IXM One Note : If you don’t specify a thumbnail, the HTML5 default thumbnail appears in IXM One. thumbnails > preview Specifies the image that will appear in the preview section within the I XM Platform. Location : settings > uploadSettings > thumbnails > preview Note : If no image is specified, the preview will remain empty in IXM One. dynamicItems Specifies spot properties: Use dynamic items for properties such as filters for data sources or visual attributes like colors that modify the appearance of the spot. The server reads dynamic items during the upload of the zipped spot files and transfers them to the player as URL parameters. These values are URL-encoded during transfer, which is important to remember during development. Example: …index.html?otherParams=otherValues&someBoolean=true Location : settings > uploadSettings > dynamicItems Note : Avoid excessive use of dynamic items, as it may impact performance or result in overly complex URL parameters. Troubleshooting with log files To troubleshoot or monitor the HTML Basic spot development process, log files provide useful information. Windows Player log files The Windows Player stores two types of log files: General log located at C:\GVClient\log\Player First screen log located at C:\GVClient\log\Player1 Linux Player log files On the Linux Player, all spot files, including .html.zip, are located in the media directory on Linux players. After downloading, the files are unzipped into a subdirectory with the spot's name. Development files can be swapped directly in this directory, and pressing F5 on the player will restart the spot for preview. General log located at /opt/grassfish/logs/gfPlayer Tips The following tips can help you develop Basic HTML spots efiiciently. Distribute earlier versions of the spot to a test player via IXM One. Transfer the data via WinSCP to the Linux Player for real-time previewing of the spot.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/html-basic-spots-1]
+[Next|https://docs.grassfish.com/docs/html-wizard-spots]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/html-basic-spots]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/htmlbasic_thumbnail.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/htmlbasic_thumbnail.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A39%3A33Z&se=2025-07-17T16%3A53%3A33Z&sr=c&sp=r&sig=HKB2nws7snIuWWV03sL6irfT0xdEtwCYK0rF%2FZHqOiY%3D
+Alt-Text: IXM One default thumbnail of an HTML Basic spot
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A39%3A33Z&se=2025-07-17T16%3A54%3A33Z&sr=c&sp=r&sig=Oxg7vbMezDYHGG4IaZt%2Fkg9ZrxsPgKIAmp4j%2Fcay8Gg%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A39%3A33Z&se=2025-07-17T16%3A54%3A33Z&sr=c&sp=r&sig=Oxg7vbMezDYHGG4IaZt%2Fkg9ZrxsPgKIAmp4j%2Fcay8Gg%3D
+
+Quelle: https://docs.grassfish.com/docs/html-basic-spots

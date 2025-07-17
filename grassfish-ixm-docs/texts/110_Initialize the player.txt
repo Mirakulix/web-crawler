@@ -1,0 +1,62 @@
+Titel: Initialize the player
+URL: https://docs.grassfish.com/docs/initialize-the-player
+Zeitpunkt: 2025-07-17 18:38:35
+==================================================
+
+Note This article explains how to use the InitBox. For information on how to initialize your player with the provisioning website, click here . The Grassfish InitBox registers the player on the server. Depending on the installation type, the InitBox opens in one of the following ways: Automatically after the installation or a reboot Manually from the Start menu To initialize the player in the InitBox, perform the following steps: In the InitBox window, specify the server connection: Server address : enter the server address without https://. Box ID : enter the Box-ID of the player. Use HTTPS connection : enable/disable HTTPS. Optionally, select Settings to edit the following player settings: Setting Description Language Select the language for your player. When you’re done, click OK to confirm. Orientation Change the screen orientation if required. When you’re done, click OK to confirm. Keyboard Select your keyboard layout from the list. When you’re done, click OK to confirm. Alternatively, start the keyboard wizard to automatically detect your layout. Network Specify the interface mode, IP configuration, and proxy settings as required. When you’re done, click OK to confirm. Audio Edit the player’s network and audio settings if required. When you’re done, click OK to confirm. Start terminal Select to open a terminal window. That is, a command prompt. Once you’ve configured all relevant player settings, click Back . In the InitBox window, click on Initialize Player to restart the player and apply your changes. Once the initialization has finished, the Grassfish Player is fully installed and ready for use. Previously configured data is now transmitted from IXM One.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/install-the-player-software]
+[Next|https://docs.grassfish.com/docs/use-player-functions]
+[click here|https://docs.grassfish.com/docs/player-provisioning-website]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/initialize-the-player]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/initialize-the-player-image-cbr2z7ea.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/initialize-the-player-image-cbr2z7ea.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A38%3A34Z&se=2025-07-17T16%3A49%3A34Z&sr=c&sp=r&sig=KB7FOhraubUmuUbkAyhBK%2B0L7A2ZWhw7HLzQzL6ZZDw%3D
+Alt-Text: Ein Bild, das Text enthält.  Automatisch generierte Beschreibung
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A38%3A34Z&se=2025-07-17T16%3A53%3A34Z&sr=c&sp=r&sig=VV4StPF7liwX4ykrwpNI8nTnon%2F6la6Ik4F8i1Lfzo8%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A38%3A34Z&se=2025-07-17T16%3A53%3A34Z&sr=c&sp=r&sig=VV4StPF7liwX4ykrwpNI8nTnon%2F6la6Ik4F8i1Lfzo8%3D
+
+Quelle: https://docs.grassfish.com/docs/initialize-the-player

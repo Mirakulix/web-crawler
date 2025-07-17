@@ -1,0 +1,65 @@
+Titel: Daytime Media Viewer Spot
+URL: https://docs.grassfish.com/docs/daytime-media-viewer-spot
+Zeitpunkt: 2025-07-17 18:41:10
+==================================================
+
+With the Daytime Media Viewer spot, you can display multiple spots at different times of the day. For example, one spot can play until 12:00 PM, the next until 03:00 PM, and so on. You can configure a maximum of four spots with multiple media elements to play during the day and a fallback media file in case a time of day isn’t covered. Note Please contact Grassfish for information on how to get this solution. Upload the spot Upload the Daytime Media Viewer spot to IXM One. To do so, perform the following steps: In IXM One, go to Content > Playlist . In the Spot groups pane, select your spot group. In the Selectable spots pane, click on New . Select Upload spots . Upload the Daytime Media Viewer spot in one of the following ways: Drag and drop the ZIP file into the upload manager window. Click on Add data , select the ZIP file from your files and click on Open . Click on the Play icon to start the upload. Once the upload has finished, click on Close to close the upload manager. Configure the spot To configure your spot in the HTML Wizard, perform the following steps: In IXM One, go to Content > Playlist . In the Spot groups pane, select your spot group. In the Selectable spots pane, hover over the Daytime Media Viewer spot and select Edit content . Alternatively, double-click on it. Click on Media elements . Click on the + to add a media element. Next to the new media element, click on Edit . Click on Add medium . In the Select media file dialog, select a media group. In the Selectable media pane, perform one of the following actions: Select an available media file and click Select . Click on Upload to upload a new media file to select. Under Play until , specify the time of day until which to display the media. For example, enter 12:00 to play it until noon. Repeat steps 4 through 10 to create all media elements you need. In the Elements pane, select Fallback media . Click on Add medium to add a fallback media file to display if there’s no other media for a time of day. In the Select media file dialog, select a media group. In the Selectable media pane, perform one of the following actions: Select an available media file and click Select . Click on Upload to upload a new media file to select. Click on Options . Under Playback duration for images [sec] , specify how long each image is displayed in seconds. Note that videos are displayed for their duration. Under Player , click Select to select the player that you want to display the spot. Optionally, click on Preview to test the playout in the HTML Wizard: Select Enabled to enable the preview. Specify a Mock time to test the playout at this time of day. To finish the spot configuration, click Save and Close . Use the spot for advertisement To create an advertisement with the Daytime Media Viewer spot, you must create a DOOH booking item. To do so, perform the following steps: In IXM One, go to DOOH > Booking . In the Bookings panel, click on New . In the Edit booking item for product window, specify the booking details. In the Spot section, click on Select from spot group . Select your Daytime Media Viewer spot. This opens the HTML Wizard. In the HTML Wizard, configure the spot further if needed. Once you’ve finished, click Save and Close to close the HTML Wizard. To save the booking item, click Save .
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/spot-templates]
+[Next|https://docs.grassfish.com/docs/live-tag-media-viewer-spot]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/daytime-media-viewer-spot]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/upload_DMV_spot.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/upload_DMV_spot.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A09Z&se=2025-07-17T16%3A53%3A09Z&sr=c&sp=r&sig=S4wcq6RIyUIx29NB9yvLonnn5xxxtxQ7uGguKaKlCrQ%3D
+Titel: upload_DMV_spot.png
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/edit_media.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/edit_media.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A09Z&se=2025-07-17T16%3A53%3A09Z&sr=c&sp=r&sig=S4wcq6RIyUIx29NB9yvLonnn5xxxtxQ7uGguKaKlCrQ%3D
+Titel: edit_media.png
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A09Z&se=2025-07-17T16%3A56%3A09Z&sr=c&sp=r&sig=SqKjfb9feY5jnhJ%2Fh%2FMZyeiPudMJaFHRuvT3XOkvJQI%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A09Z&se=2025-07-17T16%3A56%3A09Z&sr=c&sp=r&sig=SqKjfb9feY5jnhJ%2Fh%2FMZyeiPudMJaFHRuvT3XOkvJQI%3D
+
+Quelle: https://docs.grassfish.com/docs/daytime-media-viewer-spot

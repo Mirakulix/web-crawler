@@ -1,0 +1,69 @@
+Titel: Server
+URL: https://extranet.grassfish.tv/site/index.php/server
+Zeitpunkt: 2025-07-17 16:19:17
+==================================================
+
+
+
+LINKS:
+----------
+[Customer portal|https://extranet.grassfish.tv/site/]
+[News|https://extranet.grassfish.tv/site/index.php/ct-menu-item-1]
+[IXM One|https://docs.grassfish.com/docs/ixm-one]
+[IXM - Basic module|https://docs.grassfish.com/docs/ixm-one-releases]
+[IXM - DOOH & SSP module|https://docs.grassfish.com/docs/release-notes-dooh-and-ssp]
+[Solutions & Widgets|https://extranet.grassfish.tv/site/index.php/content]
+[DEV - spot development|https://extranet.grassfish.tv/site/index.php/content/dev-spot-development]
+[Solution - phidgetboard integration|https://docs.grassfish.com/docs/phidgetboard-integration]
+[Solution - player synchronisation|https://docs.grassfish.com/docs/synchronize-players]
+[Solution - second screen add-on|https://docs.grassfish.com/docs/install-second-screen-add-on]
+[Simple widgets|https://extranet.grassfish.tv/site/index.php/content/solutions]
+[Advanced widgets|https://docs.grassfish.com/docs/widgets]
+[Player|https://docs.grassfish.com/docs/players]
+[Player - Linux & Windows|https://extranet.grassfish.tv/site/index.php/player/player-qt]
+[Player - Android|https://docs.grassfish.com/docs/release-notes-android-player]
+[Player - JavaScript (Tizen, WebOS)|https://extranet.grassfish.tv/site/index.php/player/player-javascript]
+[Player - Windows Vintage|https://extranet.grassfish.tv/site/index.php/player/player-windows-vintage]
+[Server|https://extranet.grassfish.tv/site/index.php/server]
+[Password List|https://extranet.grassfish.tv/site/index.php/password-list-new]
+[Hardware|https://docs.grassfish.com/docs/hardware-1]
+[End of Life|https://docs.grassfish.com/docs/check-end-of-support]
+[Edit User profile|https://extranet.grassfish.tv/site/index.php/edit-user-profile]
+[Home|https://extranet.grassfish.tv/site/index.php]
+[Customize colors, logo, background|https://docs.grassfish.com/docs/customize-colors-logo-background]
+[Customize fonts|https://docs.grassfish.com/docs/customize-fonts]
+[Download standard fonts (ZIP)|https://extranet.grassfish.tv/site/extranet_files/DS%20Manager%20Pro/DS%20Manager%20Pro%20-%20Standard%20Fonts/Standard_fonts_19_04_2018.zip]
+[Grassfish backend server services|https://docs.grassfish.com/docs/grassfish-backend-server-services]
+[Note that all available hotfixes mustbe installed in the correct order startingwith hotifx 1.|https://docs.grassfish.com/docs/grassfish-backend-server-services]
+[Download 12.0.0 server version|https://supportdata.grassfish.tv/software/server/Grassfish%20IXM%20Server%2012.0.0.zip]
+[Download 11.18.1 server version|https://supportdata.grassfish.tv/software/server/Grassfish%20IXM%20Server%2011.18.1.zip]
+[https://docs.grassfish.com/docs/grassfish-backend-server-services|https://docs.grassfish.com/docs/grassfish-backend-server-services]
+[Download 11.17.2 server version|https://supportdata.grassfish.tv/software/server/Grassfish%20IXM%20Server%2011.17.2.zip]
+[https://docs.grassfish.com/docs/grassfish-backend-server-services|https://docs.grassfish.com/docs/grassfish-backend-server-services]
+[Download 11.16.2 server version|https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.16.2.zip]
+[https://docs.grassfish.com/docs/grassfish-backend-server-services|https://docs.grassfish.com/docs/grassfish-backend-server-services]
+[Download 11.16.1 server version|https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.16.1.zip]
+[https://docs.grassfish.com/docs/grassfish-backend-server-services|https://docs.grassfish.com/docs/grassfish-backend-server-services]
+[Download 11.15.3 server version|https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.15.3.zip]
+[Download 11.15.2 server version|https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.15.2.zip]
+[Download 11.15.1 server version|https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.15.1.zip]
+[Download 11.15.0 server version|https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.15.0.zip]
+[Download 11.15.0 Hotfix 1|https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.15.0%20Hotfix%201.zip]
+[Download 11.15.0 Hotfix 2|https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.15.0%20Hotfix%202.zip]
+[Download 11.14.2 server version|https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.14.2.zip]
+[Download 11.14.2 Hotfix 1|https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.14.2%20Hotfix%201.zip]
+[Download 11.14.2 Hotfix 2|https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.14.2%20Hotfix%202.zip]
+[GFServer_11.14.1|https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.14.1%20incl.%20Hotfix%202.zip]
+[https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.14.1%20incl.%20Hotfix%201_2.zip|https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.14.1%20incl.%20Hotfix%201_2.zip]
+[GFServer_11.13.x|https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.13.4.zip]
+[GFServer_11.12.x|https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.12.5.zip]
+[GFServer_11.11.0|https://supportdata.grassfish.tv/software/server/Grassfish%20DS%20Server%2011.11.0.zip]
+[Global UDC Plugins (12/2021) (ZIP)|https://supportdata.grassfish.tv/software/server/udc/GrassfishUDC_2112.zip]
+[Server Timezone Settings (12/2021) (ZIP)|https://supportdata.grassfish.tv/software/server/serverenhancements/gblTimezones_2021e.zip]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/collection/https_extranet_grassfish_tv_site_index_php_content/images/arrow.png
+URL: https://extranet.grassfish.tv/site/media/system/images/arrow.png
+
+Quelle: https://extranet.grassfish.tv/site/index.php/server

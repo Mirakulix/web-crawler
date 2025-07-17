@@ -1,0 +1,30 @@
+SITEMAP für https://extranet.grassfish.tv/site/index.php/content
+==================================================
+
+site/
+  index.php/
+    content/
+      → https://extranet.grassfish.tv/site/index.php/content
+      dev-spot-development/
+        → https://extranet.grassfish.tv/site/index.php/content/dev-spot-development
+      solutions/
+        → https://extranet.grassfish.tv/site/index.php/content/solutions
+    ct-menu-item-1/
+      → https://extranet.grassfish.tv/site/index.php/ct-menu-item-1
+    edit-user-profile/
+      → https://extranet.grassfish.tv/site/index.php/edit-user-profile
+    password-list-new/
+      → https://extranet.grassfish.tv/site/index.php/password-list-new
+    server/
+      → https://extranet.grassfish.tv/site/index.php/server
+
+
+Alle URLs:
+--------------------
+https://extranet.grassfish.tv/site/index.php/content
+https://extranet.grassfish.tv/site/index.php/ct-menu-item-1
+https://extranet.grassfish.tv/site/index.php/content/dev-spot-development
+https://extranet.grassfish.tv/site/index.php/content/solutions
+https://extranet.grassfish.tv/site/index.php/server
+https://extranet.grassfish.tv/site/index.php/password-list-new
+https://extranet.grassfish.tv/site/index.php/edit-user-profile

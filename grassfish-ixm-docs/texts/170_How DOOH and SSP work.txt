@@ -1,0 +1,61 @@
+Titel: How DOOH and SSP work
+URL: https://docs.grassfish.com/docs/how-dooh-and-ssp-work
+Zeitpunkt: 2025-07-17 18:41:15
+==================================================
+
+Playing DOOH and SSP content requires the coordination of multiple components like the player, the Grassfish IXM system, the Grassfish Server, the SSP, and their databases. DOOH and SSP management The Grassfish system facilitates the management of DOOH and SSP bookings and playouts in the following way: DOOH content is managed as internal bookings in the Grassfish system. It can be created both directly in the system and programmatically via defined interfaces. The Grassfish system enables the combined delivery of internal DOOH bookings and additional advertising content from external supply-side platforms (SSPs). In this case, DOOH bookings always have priority: The system prioritizes DOOH spots and allocates the remaining time slots for SSP advertising content. The delivery logic ensures that the campaign goals for internal bookings are achieved. For example, in a scenario with 10-second spots, where a spot has a share of voice of 1/6, that spot will be systematically placed in every sixth play interval. If no DOOH or SSP content is planned, the system automatically activates fallback spots from a filler playlist (standard playlist) for continuous content delivery. On Linux- or Windows-based players, the DOOH add-on implements the delivery of digital advertising and enables the control of up to two displays via a server- client architecture. On the Android Player, you can simply enable DOOH and SSP in the player configuration. You don’t need to install an add-on. Workflow The playout of DOOH and SSP spots works in the following way: During the playback of a spot and the simultaneous preloading of the next spot, the player asks the DOOHPlaybackService add-on whether it has valid DOOH or SSP spots to play next. To find out, the player add-on accesses the local UDC database which stores all DOOH spots for this player. DOOH spots, also called bookings, are booked in the IXM DOOH module, stored in a UDC database, and transferred to the player. This enables the player to play DOOH spots without a connection to the server. Based on the saved DOOH bookings, the player add-on now calculates the next playback. For example, if the player still has 60 minutes available play time and the spot lasts one minute, it has to be played ten more times. That means the spot must be played every six minutes. Once the player has calculated the next playback, the following two outcomes are possible: Outcome 1: DOOH flow If the player add-on found and calculated a DOOH spot for playout, it communicates this to the player which then plays the spot. Outcome 2: SSP flow If the player add-on didn’t find a DOOH spot for playout, it starts to look for an SSP spot instead: The add-on on the server asks the SSP connector for valid SSP spots. The SSP connector, also called AdServing API , accesses one or more external SSP providers and asks for valid SSP bookings (SSP spots): No valid SSP spots available : if no SSP spots are available or if no bookings are currently valid, the SSP provider communicates this to the SSP connector. The SSP connector forwards this information to the player add-on which informs the player. The player now plays the next valid spot from its filler playlist. Valid SSP spots available : if the SSP provider finds a valid spot for playout, the SSP connector uses the IXM database to check whether this spot has already been transferred to the player: The spot was transmitted : the SSP connector informs the player add-on which informs player. The player can now play the spot. The spot wasn’t transmitted : the file is queried from the SSP provider and made available for download to the player via IXM playlists. The downloaded SSP spot will be available at the next attempt. In the meantime, the player add-on and thus the player is informed that there is currently no valid SSP spot. The player plays filler content instead. The following diagram shows the communication and data transfer process between the different components required for DOOH and SSP. Reporting to the SSP The external SSP needs to know whether SSP content has been played or not. To let the SSP know, the player communicates when an SSP spot has started and ended. The reporting process works in the following way: When the player starts playing an SSP spot that was scheduled by the AdServing API, it informs the DOOHPlaybackService add-on. In turn, the DOOHPlaybackService add-on sends a ReportSpotStarted request to the AdServing API. The AdServing API now calls the corresponding reporting URL for the external SSP provider. Once the player has finished playing a spot that was scheduled by the AdServing API, it informs the DOOHPlaybackService add-on. In turn, the DOOHPlaybackService add-on sends a ReportSpotEnded request to the AdServing API. The AdServing API now calls the corresponding reporting URL for the external SSP provider. Impression management Impresssions represent the target audience (segments). There is an additional Advertima add-on on the Grassfish Player for impression management: The add-on receives impression data, sorts it by number, and places it on the player accordingly. The DOOHPlayback add-on integrates the impression data into LiveTags and considers it in the delivery decision. Optionally, impression data can be attached to the ad request to an SSP, provided the SSP uses this information for its own decision logic. This allows the actual segments to be considered during programmatic ad booking. An add-on is a software extension or enhancement that adds new features or functionality. The client is the application that sends the request to the server who sends a response. API means application programming interface. An API consist of multiple definitions and protocols for developing and integrating application software. An API is an interface that allows independent applications to communicate with each other and exchange data.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/dooh]
+[Next|https://docs.grassfish.com/docs/install-dooh]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/how-dooh-and-ssp-work]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/DOOH SSP Diagram(2).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/DOOH SSP Diagram(2).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A14Z&se=2025-07-17T16%3A55%3A14Z&sr=c&sp=r&sig=6CFyKMuXcZSrwTai%2FLnsUEqnON8CJ8HK8hek6lyNlEQ%3D
+Alt-Text: The diagram shows how DOOH and SSP communication works.
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A14Z&se=2025-07-17T16%3A56%3A14Z&sr=c&sp=r&sig=%2FJ%2BSAoaI3P0vecG4Av8fTvpnYttP3Z%2Fvadq3SYqZAYY%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A14Z&se=2025-07-17T16%3A56%3A14Z&sr=c&sp=r&sig=%2FJ%2BSAoaI3P0vecG4Av8fTvpnYttP3Z%2Fvadq3SYqZAYY%3D
+
+Quelle: https://docs.grassfish.com/docs/how-dooh-and-ssp-work

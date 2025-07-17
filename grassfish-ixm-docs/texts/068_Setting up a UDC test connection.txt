@@ -1,0 +1,137 @@
+Titel: Setting up a UDC test connection
+URL: https://docs.grassfish.com/docs/setting-up-a-udc-test-connection
+Zeitpunkt: 2025-07-17 18:36:35
+==================================================
+
+In order to test the different web services (server and client) and to improve the stability of the spot via local data, it is possible to set up test connections. The corresponding parameters must be defined correctly and in part, have a limited validity. Note To secure a correct operation of the spot, the spot developer must ensure that the spot is tested against all web services (server and client) is transferred to all corresponding player types and the playback is tested (players have different web engines and therefore exhibit differing behavior). The test connection is set up via the setLocalTestData function (see setLocalTestData). Below, the determination of the parameters as well as the creation of a local data file under the use of the browser developer tools is explained. Using developer tools The required values can be read out via the developer tools of the browser. Note We recommend Google Chrome. However, it's possible to use other browsers. It is recommended, to permanently deactivate the browser cache and to filter the display of the requests as specified in the following image: Testing of web services Parameters for the server web service Note In order to allow for all required parameters to be read out, a corresponding spot with a UDC data source must be available in IXM One. IXM One: Log in and open the Edit spot properties window of the spot which should be tested under Content > Playlist> Selectable spots > in the tile view of the spot. Developer tools: Open the developer tools of the browser via the keyboard shortcut CTRL+SHIFT+I (for Windows operating systems only). Developer tools: Switch to the Network tab. Developer tools: Delete existing requests by clicking on the icon as illustrated in the image below. IXM One: In the Edit spot properties window select the Data sources tab. Developer tools: Click on the displayed number (Id), in order to display the corresponding details on the right. Developer tools: In the pane Details switch to the Headers tab. Developer tools: Select the request URL shown including „api/” and copy the highlighted value to the clipboard with CRTL+C. Code: Replace the value of DebugServer.url with the value saved to the clipboard. locationId IXM One: Open the Edit player window of the player which should be tested under Channels > Location > [Name of the location] > Edit player . Developer tools: Open the developer tools via the keyboard shortcut CRTL+SHIFT+I, switch to the Network tab and delete the existing requests. IXM One: Click on the Data sources tab. Developer tools: Identify the displayed value (Id). Code: Use the value for DebugServer.locationId (see DebugServer). spotId IXM One: Open the spot properties. Developer tools: Open the developer tools via the keyboard shortcut CRTL+SHIFT+I, switch to the Network tab and delete the existing requests. IXM One: In the Edit spot properties window click on the Data sources tab. Developer tools: Identify the displayed value (Id). Code: Use the above value for DebugServer.spotId (see DebugServer). sessionId IXM One: Open IXM One or if there is already one instance of IXM One running, close the current session via the log out icon in the top right. The login window is shown. Developer tools: Open the developer tools of the browser. Developer tools: Switch to the Console . Developer tools: Delete the existing values (see image): IXM One: Log in to IXM One. Developer tools: Highlight the session key and copy it to the clipboard. Code: Replace the value of DebugServer.sessionId with the value copied to the clipboard. Note The value for DebugServer.sessionId is only valid for the current session. For this reason, the window should be not closed during testing. The value must be renewed for every additional login as well as the above described process must be repeated. Parameters for the client web service Note In order to allow for all required parameters to be read out, a corresponding spot with a UDC data source must be available in IXM One. It must be also be available in a playlist which has been transferred to a player. Ip Player: Identify the IP address by pressing the F8 key. Code: Use the displayed value for DebugClient.ip. siid IXM One: Log in and open the Edit display properties window of the spot instance which should be tested under Content > Playlist > General playlists > [Name of the playlist] Playlist content > in the tile view of the spot. Developer tools: Open the developer tools of the browser via the keyboard shortcut CRTL+SHIFT+I (for Windows operating systems only). Developer tools: Switch to the Network tab. Developer tools: Delete the existing request by clicking on the icon as shown in the image below. IXM One: In the Edit display properties window click on the Data sources tab. Developer tools: Identify the displayed value (Id). Code: Use the above value for DebugClient.siid. Creating local test data In order to test the spot against local data, establish an initial test connection to the web services, optionally via server or client. For this, the corresponding data sources are accessed. Following this, complete the steps below: Browser: Open the spot in the browser via the ascInterface. Developer tools: Open the developer tools via the keyboard shortcut CRTL+SHIFT+I. Developer tools: Switch to the Network tab. Developer tools: Identify the UDC request: It starts with a distinct description (e.g. "News"). If there are two entries available, select the entry with the larger file size (it contains the data). Developer tools: Click on the request in order to show the Details pane on the right. Developer tools: Switch to the Response tab and copy its entire content to the clipboard. Code: Create a new JSON file in the spot project (e.g. udc.json). Code: Insert the content of the clipboard in the previously created file and save it. Linking local test data The JSON file created with local test data in the spot project can now be used as follows: var udc = new GFUdcConnector(); var connection = { url: "./udc.json"}; udc.setLocalTestData(connection); // fetch some data... Using local test data allows for a simple and convenient way to develop the spot against a static server and client solution. Further, it is possible to quickly modify the data and simulate various scenarios.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/requesting-udc-data]
+[Next|https://docs.grassfish.com/docs/configurations]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/setting-up-a-udc-test-connection]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/setting-up-a-udc-test-connection-image-ndy6noge.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/setting-up-a-udc-test-connection-image-ndy6noge.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A32Z&se=2025-07-17T16%3A50%3A32Z&sr=c&sp=r&sig=5EK7VCOaBBQr0r6P3OhhdAcamDQUb%2BAMX95A4Cmw8vM%3D
+Alt-Text: A screenshot of a computer  Description automatically generated with medium confidence
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/setting-up-a-udc-test-connection-image-rt3fwkn4.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/setting-up-a-udc-test-connection-image-rt3fwkn4.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A32Z&se=2025-07-17T16%3A50%3A32Z&sr=c&sp=r&sig=5EK7VCOaBBQr0r6P3OhhdAcamDQUb%2BAMX95A4Cmw8vM%3D
+Alt-Text: C:\Users\andreasm\AppData\Local\Microsoft\Windows\INetCache\Content.Word\eigenschaften-bearbeiten.png
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/setting-up-a-udc-test-connection-image-2hdzgfs0.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/setting-up-a-udc-test-connection-image-2hdzgfs0.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A32Z&se=2025-07-17T16%3A50%3A32Z&sr=c&sp=r&sig=5EK7VCOaBBQr0r6P3OhhdAcamDQUb%2BAMX95A4Cmw8vM%3D
+Alt-Text: A screenshot of a computer  Description automatically generated with low confidence
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/setting-up-a-udc-test-connection-image-n9x28qq1.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/setting-up-a-udc-test-connection-image-n9x28qq1.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A32Z&se=2025-07-17T16%3A50%3A32Z&sr=c&sp=r&sig=5EK7VCOaBBQr0r6P3OhhdAcamDQUb%2BAMX95A4Cmw8vM%3D
+Alt-Text: A screenshot of a video call  Description automatically generated with medium confidence
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/setting-up-a-udc-test-connection-image-68sjt53g.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/setting-up-a-udc-test-connection-image-68sjt53g.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A32Z&se=2025-07-17T16%3A50%3A32Z&sr=c&sp=r&sig=5EK7VCOaBBQr0r6P3OhhdAcamDQUb%2BAMX95A4Cmw8vM%3D
+Alt-Text: A screenshot of a computer  Description automatically generated with medium confidence
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/setting-up-a-udc-test-connection-image-b9je3gja.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/setting-up-a-udc-test-connection-image-b9je3gja.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A32Z&se=2025-07-17T16%3A50%3A32Z&sr=c&sp=r&sig=5EK7VCOaBBQr0r6P3OhhdAcamDQUb%2BAMX95A4Cmw8vM%3D
+Alt-Text: A screenshot of a computer  Description automatically generated
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/setting-up-a-udc-test-connection-image-rgzyoimc.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/setting-up-a-udc-test-connection-image-rgzyoimc.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A32Z&se=2025-07-17T16%3A50%3A32Z&sr=c&sp=r&sig=5EK7VCOaBBQr0r6P3OhhdAcamDQUb%2BAMX95A4Cmw8vM%3D
+Alt-Text: A screenshot of a computer  Description automatically generated with medium confidence
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/setting-up-a-udc-test-connection-image-y0xzu4r4.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/setting-up-a-udc-test-connection-image-y0xzu4r4.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A32Z&se=2025-07-17T16%3A50%3A32Z&sr=c&sp=r&sig=5EK7VCOaBBQr0r6P3OhhdAcamDQUb%2BAMX95A4Cmw8vM%3D
+Alt-Text: A screenshot of a computer  Description automatically generated with medium confidence
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/setting-up-a-udc-test-connection-image-3wtllv2m.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/setting-up-a-udc-test-connection-image-3wtllv2m.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A32Z&se=2025-07-17T16%3A50%3A32Z&sr=c&sp=r&sig=5EK7VCOaBBQr0r6P3OhhdAcamDQUb%2BAMX95A4Cmw8vM%3D
+Alt-Text: A screenshot of a computer  Description automatically generated with medium confidence
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/setting-up-a-udc-test-connection-image-yic6wv5d.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/setting-up-a-udc-test-connection-image-yic6wv5d.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A32Z&se=2025-07-17T16%3A50%3A32Z&sr=c&sp=r&sig=5EK7VCOaBBQr0r6P3OhhdAcamDQUb%2BAMX95A4Cmw8vM%3D
+Alt-Text: A screenshot of a computer  Description automatically generated with medium confidence
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/setting-up-a-udc-test-connection-image-7ijviufb.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/setting-up-a-udc-test-connection-image-7ijviufb.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A32Z&se=2025-07-17T16%3A50%3A32Z&sr=c&sp=r&sig=5EK7VCOaBBQr0r6P3OhhdAcamDQUb%2BAMX95A4Cmw8vM%3D
+Alt-Text: A screenshot of a computer  Description automatically generated
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/setting-up-a-udc-test-connection-image-2hw0sbx1.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/setting-up-a-udc-test-connection-image-2hw0sbx1.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A32Z&se=2025-07-17T16%3A50%3A32Z&sr=c&sp=r&sig=5EK7VCOaBBQr0r6P3OhhdAcamDQUb%2BAMX95A4Cmw8vM%3D
+Alt-Text: A screenshot of a computer  Description automatically generated with medium confidence
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/setting-up-a-udc-test-connection-image-ayggcaca.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/setting-up-a-udc-test-connection-image-ayggcaca.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A32Z&se=2025-07-17T16%3A50%3A32Z&sr=c&sp=r&sig=5EK7VCOaBBQr0r6P3OhhdAcamDQUb%2BAMX95A4Cmw8vM%3D
+Alt-Text: A screenshot of a computer  Description automatically generated with medium confidence
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/setting-up-a-udc-test-connection-image-i3kbf5js.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/setting-up-a-udc-test-connection-image-i3kbf5js.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A32Z&se=2025-07-17T16%3A50%3A32Z&sr=c&sp=r&sig=5EK7VCOaBBQr0r6P3OhhdAcamDQUb%2BAMX95A4Cmw8vM%3D
+Alt-Text: C:\Users\andreasm\AppData\Local\Microsoft\Windows\INetCache\Content.Word\eigenschaften-bearbeiten.png
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/setting-up-a-udc-test-connection-image-z9nyub0k.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/setting-up-a-udc-test-connection-image-z9nyub0k.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A32Z&se=2025-07-17T16%3A50%3A32Z&sr=c&sp=r&sig=5EK7VCOaBBQr0r6P3OhhdAcamDQUb%2BAMX95A4Cmw8vM%3D
+Alt-Text: A screenshot of a computer  Description automatically generated with low confidence
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/setting-up-a-udc-test-connection-image-3tfdnr6b.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/setting-up-a-udc-test-connection-image-3tfdnr6b.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A32Z&se=2025-07-17T16%3A50%3A32Z&sr=c&sp=r&sig=5EK7VCOaBBQr0r6P3OhhdAcamDQUb%2BAMX95A4Cmw8vM%3D
+Alt-Text: A screenshot of a video call  Description automatically generated with medium confidence
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/setting-up-a-udc-test-connection-image-e913ry2o.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/setting-up-a-udc-test-connection-image-e913ry2o.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A32Z&se=2025-07-17T16%3A50%3A32Z&sr=c&sp=r&sig=5EK7VCOaBBQr0r6P3OhhdAcamDQUb%2BAMX95A4Cmw8vM%3D
+Alt-Text: A screenshot of a computer  Description automatically generated with medium confidence
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/setting-up-a-udc-test-connection-image-fwwy6u9v.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/setting-up-a-udc-test-connection-image-fwwy6u9v.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A32Z&se=2025-07-17T16%3A50%3A32Z&sr=c&sp=r&sig=5EK7VCOaBBQr0r6P3OhhdAcamDQUb%2BAMX95A4Cmw8vM%3D
+Alt-Text: A screenshot of a computer  Description automatically generated
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/setting-up-a-udc-test-connection-image-7kak4oge.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/setting-up-a-udc-test-connection-image-7kak4oge.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A32Z&se=2025-07-17T16%3A50%3A32Z&sr=c&sp=r&sig=5EK7VCOaBBQr0r6P3OhhdAcamDQUb%2BAMX95A4Cmw8vM%3D
+Alt-Text: A screenshot of a computer  Description automatically generated with medium confidence
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/setting-up-a-udc-test-connection-image-xv8xilj0.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/setting-up-a-udc-test-connection-image-xv8xilj0.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A32Z&se=2025-07-17T16%3A50%3A32Z&sr=c&sp=r&sig=5EK7VCOaBBQr0r6P3OhhdAcamDQUb%2BAMX95A4Cmw8vM%3D
+Alt-Text: A screenshot of a computer  Description automatically generated with medium confidence
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A32Z&se=2025-07-17T16%3A51%3A32Z&sr=c&sp=r&sig=kpSUOdVXdF%2BmvU9NOvFPaVT1%2FBnkiPI4dJWG9zWqn6U%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A32Z&se=2025-07-17T16%3A51%3A32Z&sr=c&sp=r&sig=kpSUOdVXdF%2BmvU9NOvFPaVT1%2FBnkiPI4dJWG9zWqn6U%3D
+
+Quelle: https://docs.grassfish.com/docs/setting-up-a-udc-test-connection

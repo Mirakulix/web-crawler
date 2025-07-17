@@ -1,0 +1,79 @@
+Titel: Linking spot to UDC data
+URL: https://docs.grassfish.com/docs/linking-spot-to-udc-data
+Zeitpunkt: 2025-07-17 18:36:27
+==================================================
+
+Adding a data source To link a spot to UDC data, you must initially upload a UDC-capable spot to IXM One. Note The following spot types are suited for the processing of UDC data: HTML Basic spots HTML Wizard spots HTML Composer spots (when using widgets) UDC data sources can be added to spots as well as spot instances. → Open the Data sources tab in the spot properties under Content > Playlist > Selectable Spots > in the tile view of the spot. → Click on the Add data source button and select the desired data source. A new entry is added to the table. Filtering data By default, table data is not filtered and therefore contains all information provided by the data source by definition. → By double-clicking on the displayed entry (except for the Designation column) you can define the filter. Distinct designation of the data source The designation of a data source must be distinct within a spot or a spot instance and therefore can only be assigned once. → Double-click on the entry in the Designation column to change the value directly in the list. Note Please note that the designation is used to identify the data source within the spot as well as to access specific data. If you change the designation in IXM One, this change must also be made in the corresponding spot and vice versa. If not, data is not written correctly and can lead to subsequent errors. Spot vs. Spot instance After an applicable spot is uploaded, it is registered in IXM One and stored in the spot pool. → Dragging a spot to a playlist creates a spot instance (a logical copy of the spot). If UDC data sources are assigned to a spot and this spot is then dragged to a playlist, the data sources are taken over. Note Subsequent changes to the spot have no impact on the spot instance and vice versa. It is therefore recommended to always make general changes relating to UDC data sources to the spot and upgrade via the function Tools > Replace spot (in the lower right area of the Selectable spot pane). This way, the settings are retained and it is not necessary to set up the UDC data again.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/html-spot-udc-connector]
+[Next|https://docs.grassfish.com/docs/requesting-udc-data]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/linking-spot-to-udc-data]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/linking-spot-to-udc-data-image-e9sshsrd.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/linking-spot-to-udc-data-image-e9sshsrd.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A26Z&se=2025-07-17T16%3A47%3A26Z&sr=c&sp=r&sig=LE0jpvkHdHsalUI374r5sY7Ht6n322KUf%2Bo88Q9SUYQ%3D
+Alt-Text: C:\Users\andreasm\AppData\Local\Microsoft\Windows\INetCache\Content.Word\eigenschaften-bearbeiten.png
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/linking-spot-to-udc-data-image-powhond5.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/linking-spot-to-udc-data-image-powhond5.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A26Z&se=2025-07-17T16%3A47%3A26Z&sr=c&sp=r&sig=LE0jpvkHdHsalUI374r5sY7Ht6n322KUf%2Bo88Q9SUYQ%3D
+Alt-Text: A screenshot of a computer  Description automatically generated with low confidence
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/linking-spot-to-udc-data-image-mgcngext.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/linking-spot-to-udc-data-image-mgcngext.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A26Z&se=2025-07-17T16%3A47%3A26Z&sr=c&sp=r&sig=LE0jpvkHdHsalUI374r5sY7Ht6n322KUf%2Bo88Q9SUYQ%3D
+Alt-Text: A screenshot of a computer  Description automatically generated with medium confidence
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/linking-spot-to-udc-data-image-cvls7r08.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/linking-spot-to-udc-data-image-cvls7r08.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A26Z&se=2025-07-17T16%3A47%3A26Z&sr=c&sp=r&sig=LE0jpvkHdHsalUI374r5sY7Ht6n322KUf%2Bo88Q9SUYQ%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/linking-spot-to-udc-data-image-1ubyqpc0.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/linking-spot-to-udc-data-image-1ubyqpc0.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A26Z&se=2025-07-17T16%3A47%3A26Z&sr=c&sp=r&sig=LE0jpvkHdHsalUI374r5sY7Ht6n322KUf%2Bo88Q9SUYQ%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/linking-spot-to-udc-data-image-12vt9isr.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/linking-spot-to-udc-data-image-12vt9isr.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A26Z&se=2025-07-17T16%3A47%3A26Z&sr=c&sp=r&sig=LE0jpvkHdHsalUI374r5sY7Ht6n322KUf%2Bo88Q9SUYQ%3D
+Alt-Text: A picture containing text, screenshot, logo, font  Description automatically generated
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A26Z&se=2025-07-17T16%3A51%3A26Z&sr=c&sp=r&sig=FJGYR2nxitIbCRhxE8mPZEyO%2BSy8UrIA1hm8UHMf90A%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A26Z&se=2025-07-17T16%3A51%3A26Z&sr=c&sp=r&sig=FJGYR2nxitIbCRhxE8mPZEyO%2BSy8UrIA1hm8UHMf90A%3D
+
+Quelle: https://docs.grassfish.com/docs/linking-spot-to-udc-data

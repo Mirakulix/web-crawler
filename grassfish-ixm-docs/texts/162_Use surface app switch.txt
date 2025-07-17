@@ -1,0 +1,61 @@
+Titel: Use surface app switch
+URL: https://docs.grassfish.com/docs/use-surface-app-switch
+Zeitpunkt: 2025-07-17 18:40:53
+==================================================
+
+Use the surface app switch feature on the Android Player to bring a background app to the surface on touch. This feature is especially useful on interactive displays, such as vending machines with built-in touchscreens. How to use it Consider a vending machine with a built-in touchscreen. By default, the player displays dynamic content, such as advertisements or special offers. When a user interacts with the screen, the player pauses and switches to an app, such as a product selection interface. After the user stops interacting with the screen, the player automatically switches back to the original content and resumes the playlist or next advertisement. System requirements Ensure that you meet the following system requirements: Android Player version 11.18.1 or later IXM Server version 11.14.0 or later with the latest player configuration Note You don’t need to change the screen off interval, the player adjusts it automatically to the app switch inactivity delay. Configure the player To use the surface app switch feature on the Android Player, perform the following steps: Open the player configuration or the configuration group: For an individual player, go to Channels > Location . Double-click on your player and select Edit next to Configuration in the Edit player window. For a configuration group, go to Administration > Player > Configuration groups and double-click on the configuration group. In the Edit configuration group window, select Display extended modules . Under Modules , select Player > Surface App Switch . In Settings , select Surface app switch enabled . As Surface app switch package name , enter the package name of the app that you want the player to switch. The package name uniquely identifies your app on a device and looks like this: com.example.myapplication In the Surface app switch inactivity delay field, specify after how many seconds the player switches back to the surface. Click Save to save your changes.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/generic-spot-selector]
+[Next|https://docs.grassfish.com/docs/add-an-overlay-message]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/use-surface-app-switch]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/appswitch.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/appswitch.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A40%3A52Z&se=2025-07-17T16%3A51%3A52Z&sr=c&sp=r&sig=o%2BAhegIB%2FmqIwO7WjotYOqvQ82PDLteaB8eFvx4ZMp8%3D
+Alt-Text: Android player configuration window with surface switch app settings
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A40%3A52Z&se=2025-07-17T16%3A55%3A52Z&sr=c&sp=r&sig=HVhsPUInXkSsGNEE%2FqO4fPuSvQb6QpsBCRzoOepqs7E%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A40%3A52Z&se=2025-07-17T16%3A55%3A52Z&sr=c&sp=r&sig=HVhsPUInXkSsGNEE%2FqO4fPuSvQb6QpsBCRzoOepqs7E%3D
+
+Quelle: https://docs.grassfish.com/docs/use-surface-app-switch

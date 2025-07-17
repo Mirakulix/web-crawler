@@ -1,0 +1,53 @@
+Titel: Use ID parameters
+URL: https://docs.grassfish.com/apidocs/get-ids
+Zeitpunkt: 2025-07-17 18:39:55
+==================================================
+
+For some API operations, you must specify the unique IDs of IXM One items such as categories, playlists, or spots in your request. These unique IDs ensure that the correct object is addressed. Since the names of spots and other items in IXM One can change easily, we use unique IDs to avoid inconsistencies. How to get IDs To find the IDs for your API request, perform the following steps: In IXM One, open the editing window of the category, playlist, spot group, or user whose ID you need. To open the developer tools in your browser, press F12 . Alternatively, open them from the browser menu. In the developer tools window, select the Network tab. Read the ID from the list and write it down.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[Documentation|https://docs.grassfish.com]
+[Player MQTT API|https://webhelp.grassfish.tv/pluginIPC/]
+[Player REST API|https://webhelp.grassfish.tv/ClientWebservices_API/]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish-api/en|https://docs.grassfish.com/grassfish-api/en]
+[Prev|https://docs.grassfish.com/apidocs/http-status-codes]
+[Next|https://docs.grassfish.com/apidocs/get-started]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/apidocs/get-ids]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/spotgroupid(1).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/spotgroupid(1).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A39%3A54Z&se=2025-07-17T16%3A50%3A54Z&sr=c&sp=r&sig=aIaa%2B7H8JnuHx449L0KkS0Q2FNvKYqEy6rbMOrWDlDE%3D
+Alt-Text: Identify spot group ID using Google Chrome Developer Tools
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A39%3A54Z&se=2025-07-17T16%3A54%3A54Z&sr=c&sp=r&sig=pkmpjfMUQx%2FwEGZlP2dXOB6L2XDBbgICJx8aLywLdKg%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A39%3A54Z&se=2025-07-17T16%3A54%3A54Z&sr=c&sp=r&sig=pkmpjfMUQx%2FwEGZlP2dXOB6L2XDBbgICJx8aLywLdKg%3D
+
+Quelle: https://docs.grassfish.com/apidocs/get-ids

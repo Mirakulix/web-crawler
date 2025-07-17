@@ -1,0 +1,61 @@
+Titel: Compare players
+URL: https://docs.grassfish.com/docs/compare-player-features
+Zeitpunkt: 2025-07-17 18:38:15
+==================================================
+
+The feature comparison tables refer to the following players: Player Beschreibung Linux Based on Lubuntu 20.04 and 22.04. Learn more … Windows Windows 10 IoT LTSC 64 bit. Learn more … Android From Android 7.1. Learn more … Tizen Samsung Tizen 4.0. Contact Grassfish Sales for Tizen 6.5. Learn more … General features Features Linux Windows Android Tizen Playback scheduling by time, date, and location ✓ ✓ ✓ ✓ Playback scheduling by player groups and attributes ✓ ✓ ✓ ✓ Spot transition seamless ✓ ✓ ✓ With limitations Spot transitions with different animations ✓ ✓ Interactive content ✓ ✓ ✓ With limitations Monitoring and player self-monitoring ✓ ✓ ✓ ✓ Automatic player software updates from the server ✓ ✓ ✓ ✓ Switching screens on/off ✓ ✓ ✓ ✓ Screenshot function of the player ✓ ✓ ✓ ✓ Playback reports: configurable reporting on proof-of-play, content usage and interactive applications ✓ ✓ ✓ ✓ Remote maintenance ✓ ✓ ✓ Green energy support ✓ ✓ Homogenous OS/Firmware version on all players ✓ ✓ IoT integration of sensors, devices, light, sound, scent and other data sources ✓ ✓ Media formats Features Linux Windows Android Tizen Audio ✓ ✓ ✓ ✓ Video ✓ ✓ ✓ ✓ Images ✓ ✓ ✓ ✓ Websites Websites must be displayable in an iFrame. ✓ ✓ ✓ ✓ Local HTML spots ✓ ✓ ✓ ✓ HTML Composer and HTML Wizard ✓ ✓ ✓ ✓ PDF Large PDFs lead to instabilities in the Android and Tizen Player. PDFs must be tested before rollout. ✓ ✓ ✓ ✓ Video streaming Depends on hardware. Entire setup must be tested extensively. ✓ ✓ Resolution and Display Features Linux Windows Android Tizen Full HD ✓ ✓ ✓ ✓ 4K Depends on hardware. Entire setup must be tested extensively. ✓ ✓ ✓ Video only More than 4K (with multiple display outputs) ✓ ✓ Split screen layouts with multiple media zones on the screen Depends on hardware. Entire setup must be tested extensively. ✓ ✓ With limitations Overlay function ✓ ✓ With limitations Synchronization of content across multiple screens ✓ ✓ Operation of two screens displaying different content ✓ ✓ Playback behavior Features Linux Windows Android Tizen Screensaver ✓ ✓ ✓ Prioritized content ✓ ✓ ✓ ✓ Versioned playlists ✓ ✓ ✓ ✓ Time-triggered content ✓ ✓ ✓ Event-triggered content Triggered by Composer / Wizard spots or Webservice calls (external hardware is project specific). ✓ ✓ ✓ With limitations Randomized playback ✓ ✓ ✓ ✓ Data-driven content and streaming ✓ ✓ Dynamic content delivery - targeted promotions and relevant information ✓ ✓ Playback of a specific number of spots for each cycle ✓ ✓ ✓ ✓ Live tags - Management of spot playback depending on UDC data ✓ ✓ ✓ Live tags - Management of spot playback depending on sensors ✓ ✓ ✓ Live tags - spot playback in accordance with weather forecast* *on request ✓ ✓ ✓ Real-time data collection platform for analytics and business intelligence ✓ ✓ Player API ✓ ✓ ✓ FAST interface for near real-time control of the player ✓ ✓ DOOH playback support (frequency, number of playbacks, share of voice) ✓ ✓ ✓ ✓ SSP gateway integration ✓ ✓ ✓ ✓ Dynamic data Features Linux Windows Android Tizen Transfer and allocation of data in UDC ✓ ✓ ✓ ✓ Local database on the player for the data ✓ ✓ ✓ Simulated Display of data in HTML templates ✓ ✓ ✓ ✓
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/players]
+[Next|https://docs.grassfish.com/docs/installation-guides-1]
+[Learn more …|https://docs.grassfish.com/docs/linux-player]
+[Learn more …|https://docs.grassfish.com/docs/win-player]
+[Learn more …|https://docs.grassfish.com/docs/android-player]
+[Learn more …|https://docs.grassfish.com/docs/tizen-player]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/compare-player-features]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A38%3A15Z&se=2025-07-17T16%3A53%3A15Z&sr=c&sp=r&sig=6DKlMP3fOE7cD2s5NvgvyBQ4z%2F7qmvdosYGN4QZQ%2By8%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A38%3A15Z&se=2025-07-17T16%3A53%3A15Z&sr=c&sp=r&sig=6DKlMP3fOE7cD2s5NvgvyBQ4z%2F7qmvdosYGN4QZQ%2By8%3D
+
+Quelle: https://docs.grassfish.com/docs/compare-player-features

@@ -1,0 +1,57 @@
+Titel: Install the Windows Player
+URL: https://docs.grassfish.com/docs/windows-player-install
+Zeitpunkt: 2025-07-17 18:38:41
+==================================================
+
+The following articles describe how to set up the Grassfish Windows Player. The provide step-by-step instructions for the player software installation and information on the player’s functionality, configuration options, and software components. Before you begin the installation, ensure that you meet the following system requirements. System requirements Before you begin the installation, ensure that you meet the following hardware and software requirements for the player PC. Hardware requirements Player PC Intel-compatible CPU* Windows-compatible graphics card* Memory: min. 8 GB of RAM* SDD* Appropriate video interface to connect the display panel (HDMI, Display Port) * Individual requirements depend on your use case. USB keyboard and mouse Wireless keyboard with touchpad (recommended for the installation) Software requirements Mandatory software Windows 10 LTSC incl. all drivers* You need administrator rights to perform the installation. Grassfish Windows Player software installation package Toget the installation package, please contact your Grassfish partner. Current Grassfish Server installation * We recommend having all Windows updates installed. Optional software TeamViewer or similar software for remote installation and remote support No additional anti-virus software installed on the player This may have unwanted effects and cause performance issues on the player. If required, install anti-virus software centrally on the Grassfish Server.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/win-player]
+[Next|https://docs.grassfish.com/docs/install-the-player-software]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/windows-player-install]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A38%3A40Z&se=2025-07-17T16%3A53%3A40Z&sr=c&sp=r&sig=LL59VE13yPmvSLB0q3qj99%2FhoJD6%2B%2FCKCTmkYXXB6OU%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A38%3A40Z&se=2025-07-17T16%3A53%3A40Z&sr=c&sp=r&sig=LL59VE13yPmvSLB0q3qj99%2FhoJD6%2B%2FCKCTmkYXXB6OU%3D
+
+Quelle: https://docs.grassfish.com/docs/windows-player-install

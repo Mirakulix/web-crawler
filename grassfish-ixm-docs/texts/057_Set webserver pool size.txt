@@ -1,0 +1,57 @@
+Titel: Set webserver pool size
+URL: https://docs.grassfish.com/docs/set-webserver-pool-size
+Zeitpunkt: 2025-07-17 18:36:03
+==================================================
+
+You can specify the pool size of your webservers. For optimal performance, it’s possible to set a different size for each webserver. What is the pool size? The system creates a connection pool for each connection string. The minimum pool size determines how many connection objects must be added to the pool. The maximum pool size determines the maximum number of connections that are added to the pool. Note If the master.config is not located in the default folder, the webservice folder must contain a user.config file, which indicates where the master.config file is located. Specify the pool size To specify the pool size, perform the following steps: Navigate to the master.config file. Locate the entry of the webserver that you want to edit. Change the Max Pool Size to the required value. For example: 500. Change the Min Pool Size to the required value. For example: 300. Save your changes and close the file. <appSettings type="IS.CMS"> <add key="LogSubDir" value="log\IS.CMS" /> </appSettings> <appSettings type="IS.P01"> <add key="DB:default" value="Server=GF-VM-D01;Database=Grassfish_Base;Persist Security Info=False;Integrated Security=SSPI;Encrypt=True;TrustServerCertificate=True;Max Pool Size=500;Min Pool Size=300"/> <add key="LogSubDir" value="log\IS.PL01" /> <add key="MaxLogLevel_File" value="2"/> </appSettings> <appSettings type="IS.P02"> <add key="DB:default" value="Server=GF-VM-D02;Database=Grassfish_Base;Persist Security Info=False;Integrated Security=SSPI;Encrypt=True;TrustServerCertificate=True;Max Pool Size=500;Min Pool Size=300"/> <add key="LogSubDir" value="log\IS.PL02" /> <add key="MaxLogLevel_File" value="2"/> </appSettings> Specify the master.config file path To specify the path to the master.config file, perform the following steps: Create a user.config file. Put the following lines of code in the file: <appSettings> <add key="MasterConfigType" value="IS.CMS" /> <add key="MasterConfigDir" value="\\gf-vm-f01\GVServer2\master.config"/> </appSettings> Set the value of MasterConfigType to the type of the server. It must be the same as in the master.config file. Set the value of MasterConfigDir to the path of the master.config file. Save your changes and close the file. Go to the directory www\gv2\webservices\ on your server and store the file in the folder of the webserver.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/enable-second-tree]
+[Next|https://docs.grassfish.com/docs/enable-swagger]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/set-webserver-pool-size]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A03Z&se=2025-07-17T16%3A51%3A03Z&sr=c&sp=r&sig=OX0B2%2B70boLKc%2FT4LOcJ%2F1NxYwWjVK5fmNZHbCRh7e4%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A36%3A03Z&se=2025-07-17T16%3A51%3A03Z&sr=c&sp=r&sig=OX0B2%2B70boLKc%2FT4LOcJ%2F1NxYwWjVK5fmNZHbCRh7e4%3D
+
+Quelle: https://docs.grassfish.com/docs/set-webserver-pool-size

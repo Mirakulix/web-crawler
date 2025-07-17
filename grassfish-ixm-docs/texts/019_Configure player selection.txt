@@ -1,0 +1,62 @@
+Titel: Configure player selection
+URL: https://docs.grassfish.com/docs/configure-player-selection
+Zeitpunkt: 2025-07-17 18:31:00
+==================================================
+
+The HTML Wizard and HTML Composer provide player-specific previews. This means that users who edit spots in the HTML Wizard or Composer can select a player from a dropdown menu and preview the spot they’re currently working on. By default, the player selection dropdown menu is disabled. You can enable it in the following ways: HTML Composer: You can generally activate the player selection for the Composer. This means that it will always appear when a spot is edited in Composer. HTML Wizard: You can’t activate player selection generally for the HTML Wizard, but in your HTML Wizard spots. This means that the spot decides whether the player selection is available when editing it in the Wizard or not. Configure the HTML Composer To configure player selection in the HTML Composer, perform the following steps: Navigate to the configuration files on the server at: GVServer2\www\gv2\gf\GFWebHtmlCustomer\ Open one of the following folders: 00000 : edit configurations for the entire server, which means for all customers. 000xxx : edit customer-specific settings. xxx is the customer ID. Open the config.json file in your folder with a text editor like Notepad++. Go to cms > showPlayerSelectionAlways and set it to true . Save your changes and close the file. { "cms":{ "showPlayerSelectionAlways": true } Configure HTML Wizard spots To configure player selection in your HTML Wizard spots, perform the following steps: Open the spot’s ascData.json file . Go to Document > Options > EnablePlayerSelection and set it to true . Save your changes and close the file. { "Document": { "SpotIdentifier": "Sample", "SpotVersion": "1.0.0", "ApiVersion": 1, "Width": 1920, "Height": 1080, "Options": { "PossibleResolutions": [], "EnablePlayerSelection": true }, "Elements": [] } }
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/configure-load-balancer-or-reverse-proxy]
+[Next|https://docs.grassfish.com/docs/time-datagateway-maintenance]
+[ascData.json file|https://docs.grassfish.com/docs/html-wizard-spots]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/configure-player-selection]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/player_selection.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/player_selection.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A30%3A59Z&se=2025-07-17T16%3A41%3A59Z&sr=c&sp=r&sig=fpV3WOVKU7UL%2F%2F8z27Z%2FmMH0FNuHXjJz1ScXVPtFnfU%3D
+Titel: player_selection.png
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A30%3A59Z&se=2025-07-17T16%3A45%3A59Z&sr=c&sp=r&sig=QmzCkLmC2mmdTVsR6ZlCLSR6z5YU522UKDENignchWI%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A30%3A59Z&se=2025-07-17T16%3A45%3A59Z&sr=c&sp=r&sig=QmzCkLmC2mmdTVsR6ZlCLSR6z5YU522UKDENignchWI%3D
+
+Quelle: https://docs.grassfish.com/docs/configure-player-selection

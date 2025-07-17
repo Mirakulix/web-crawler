@@ -1,0 +1,57 @@
+Titel: Example: Specify SSP playout
+URL: https://docs.grassfish.com/docs/specify-ssp-playout
+Zeitpunkt: 2025-07-17 18:31:43
+==================================================
+
+What is the share to be sold in digital ad spaces? You can specify the share that you want to sell in digital ad spaces (airtime) in the DOOH system parameters. The share specifies the amount of time when ads are played on all digital ad spaces. The rest of the time is used for standard content. Take a look at the following examples to learn how you can control the playout of SSP content. Example: 100% SSP playout in a day The amount of SSP content is implicitly set by the share to be sold and the percentage of DOOH playout. Once you’ve specified these values, the rest of the time is filled with SSP. However, if you use only SSP, the whole percentage that you specified as share to be sold is filled with SSP spots. This is possible as long as the SSP provider provides enough content. Example: 50% DOOH and 50% SSP in a day If you want to play 50% DOOH and 50% SSP content in a day, you should configure the following: Set the share to be sold in ad spaces to 100%. That is, the airtime reserved for DOOH and SSP. Ensure that your DOOH bookings run half of the day via the content distribution. For example, select share of voice and set it to 50%. As a result, 50% of the 100% airtime are filled with DOOH content and the remaining 50% are filled with SSP content. Example: 50% standard content and 50% DOOH and SSP in a day If you want use half of your airtime for DOOH and SSP and the other half for standard content, configure the following: Set the share to be sold in ad spaces to 50%. That is, the airtime reserved for DOOH and SSP. Ensure that your DOOH bookings run half of the airtime via the content distribution. For example, select share of voice and set it to 50%. As a result, half of the day will be filled with standard content, 25% with DOOH content, and 25% SSP content.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/configure-android-player-ssp]
+[Next|https://docs.grassfish.com/docs/ssp-audience-recognition]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/specify-ssp-playout]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A31%3A42Z&se=2025-07-17T16%3A46%3A42Z&sr=c&sp=r&sig=PHAgdkdYJF%2B8KZxAzVEBQUA7wckI28FxUHsuS2aqJco%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A31%3A42Z&se=2025-07-17T16%3A46%3A42Z&sr=c&sp=r&sig=PHAgdkdYJF%2B8KZxAzVEBQUA7wckI28FxUHsuS2aqJco%3D
+
+Quelle: https://docs.grassfish.com/docs/specify-ssp-playout

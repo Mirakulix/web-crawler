@@ -1,0 +1,63 @@
+Titel: Solutions & Widgets
+URL: https://extranet.grassfish.tv/site/index.php/content
+Zeitpunkt: 2025-07-17 16:19:09
+==================================================
+
+
+
+LINKS:
+----------
+[Customer portal|https://extranet.grassfish.tv/site/]
+[News|https://extranet.grassfish.tv/site/index.php/ct-menu-item-1]
+[IXM One|https://docs.grassfish.com/docs/ixm-one]
+[IXM - Basic module|https://docs.grassfish.com/docs/ixm-one-releases]
+[IXM - DOOH & SSP module|https://docs.grassfish.com/docs/release-notes-dooh-and-ssp]
+[Solutions & Widgets|https://extranet.grassfish.tv/site/index.php/content]
+[DEV - spot development|https://extranet.grassfish.tv/site/index.php/content/dev-spot-development]
+[Solution - phidgetboard integration|https://docs.grassfish.com/docs/phidgetboard-integration]
+[Solution - player synchronisation|https://docs.grassfish.com/docs/synchronize-players]
+[Solution - second screen add-on|https://docs.grassfish.com/docs/install-second-screen-add-on]
+[Simple widgets|https://extranet.grassfish.tv/site/index.php/content/solutions]
+[Advanced widgets|https://docs.grassfish.com/docs/widgets]
+[Player|https://docs.grassfish.com/docs/players]
+[Player - Linux & Windows|https://extranet.grassfish.tv/site/index.php/player/player-qt]
+[Player - Android|https://docs.grassfish.com/docs/release-notes-android-player]
+[Player - JavaScript (Tizen, WebOS)|https://extranet.grassfish.tv/site/index.php/player/player-javascript]
+[Player - Windows Vintage|https://extranet.grassfish.tv/site/index.php/player/player-windows-vintage]
+[Server|https://extranet.grassfish.tv/site/index.php/server]
+[Password List|https://extranet.grassfish.tv/site/index.php/password-list-new]
+[Hardware|https://docs.grassfish.com/docs/hardware-1]
+[End of Life|https://docs.grassfish.com/docs/check-end-of-support]
+[Edit User profile|https://extranet.grassfish.tv/site/index.php/edit-user-profile]
+[Home|https://extranet.grassfish.tv/site/index.php]
+[Documentation|https://docs.grassfish.com/docs/date-time-widget]
+[Download DateTime Spot v1.0.4|https://extranet.grassfish.tv/site/extranet_files/_Software_Spots/Widgets/DateTimeSpot_v1.0.4.asc.zip]
+[Documentation|https://docs.grassfish.com/docs/ticker-widget]
+[Download TickerSpot v1.0.1|https://extranet.grassfish.tv/site/extranet_files/_Software_Spots/Widgets/TickerSpot_v1.0.1.asc.zip]
+[Documentation|https://docs.grassfish.com/docs/image-slider-widget]
+[Download Image Slider Spot v1.0.2|https://extranet.grassfish.tv/site/extranet_files/_Software_Spots/Widgets/ImageSliderSpot_v1.0.2.asc.zip]
+[Documentation|https://docs.grassfish.com/docs/shapes-widget]
+[Shapes Spot|https://extranet.grassfish.tv/site/extranet_files/_Software_Spots/Widgets/gf-shape-spot_v1.0.1.asc.zip]
+[Shapes Spot|https://extranet.grassfish.tv/site/extranet_files/_Software_Spots/Widgets/ShapeSpot_v1.0.1.asc.zip]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/collection/https_extranet_grassfish_tv_site_index_php_content/images/arrow.png
+URL: https://extranet.grassfish.tv/site/media/system/images/arrow.png
+
+Datei: /media/psf/development/web-crawler/collection/https_extranet_grassfish_tv_site_index_php_content/images/DateTime1.png
+URL: https://extranet.grassfish.tv/site/extranet_files/DS%20Manager%20Pro/DS%20Manager%20Pro%20-%20Widgets%20-%20HTML-Wizard-Spots/Images/DateTime1.png
+
+Datei: /media/psf/development/web-crawler/collection/https_extranet_grassfish_tv_site_index_php_content/images/Wizard_Ticker01.png
+URL: https://extranet.grassfish.tv/site/extranet_files/DS%20Manager%20Pro/DS%20Manager%20Pro%20-%20Widgets%20-%20HTML-Wizard-Spots/Images/Wizard_Ticker01.png
+
+Datei: /media/psf/development/web-crawler/collection/https_extranet_grassfish_tv_site_index_php_content/images/ImageSlider_EN.png
+URL: https://extranet.grassfish.tv/site/extranet_files/DS%20Manager%20Pro/DS%20Manager%20Pro%20-%20Widgets%20-%20HTML-Wizard-Spots/Images/ImageSlider_EN.png
+
+Datei: /media/psf/development/web-crawler/collection/https_extranet_grassfish_tv_site_index_php_content/images/Shapes_EN.png
+URL: https://extranet.grassfish.tv/site/extranet_files/DS%20Manager%20Pro/DS%20Manager%20Pro%20-%20Widgets%20-%20HTML-Wizard-Spots/Images/Shapes_EN.png
+
+Datei: /media/psf/development/web-crawler/collection/https_extranet_grassfish_tv_site_index_php_content/images/Shapes_EN_2.png
+URL: https://extranet.grassfish.tv/site/extranet_files/DS%20Manager%20Pro/DS%20Manager%20Pro%20-%20Widgets%20-%20HTML-Wizard-Spots/Images/Shapes_EN_2.png
+
+Quelle: https://extranet.grassfish.tv/site/index.php/content

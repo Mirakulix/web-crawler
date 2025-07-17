@@ -1,0 +1,72 @@
+Titel: Navigate the overlay
+URL: https://docs.grassfish.com/docs/navigate-the-overlay
+Zeitpunkt: 2025-07-17 18:42:44
+==================================================
+
+This article describes how to navigate the Android Player overlay. Open the Info window The player stays in Kiosk mode while it’s playing spots. During Kiosk mode, you can’t access control elements. To exit Kiosk mode and gain access to the controls, you must open the Info window in one of the following ways: If you have a keyboard connected to the player, select F12 . If you have a player with a touch screen, use the following touch combination: Click once on the upper left corner. Click once on the upper right corner. Click three times on the bottom left corner. Click once on the bottom right corner. Note The time between clicks must not exceed three seconds. Display information in the overlay The overlay displays information on the player, the playlists, and all current player downloads. You can open the overlay by selecting the assigned key. Display spot information Use the overlay to get information on the spot that is currently playing. You can check, for example, the content URL, spot ID, and spot type. → To display spot information in the overlay, select F2 . Display playlist information Use the overlay to get information on the playlist. For example, you can check the playlist content. The overlay marks the current spot with the prefix C and the next spot with an N . → To display playlist information in the overlay, select F3 . Display player information Use the overlay to get information on the player. You can check, for example, the player’s IP address, Box-ID, screen layout, and tool status. → To display player information in the overlay, select F8 . The overlay can display additional system information, such as Live Tags or hardware utilization. → To display additional information, select F8 twice. Close the overlay If you’ve seen all information relevant to you, you can close the overlay. To close the overlay, select Esc .
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/initializing-serial-screen-control-rs232v-com]
+[Next|https://docs.grassfish.com/docs/manage-android-settings]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/navigate-the-overlay]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1689851488364.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1689851488364.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A42Z&se=2025-07-17T16%3A53%3A42Z&sr=c&sp=r&sig=JxYl%2BomyhRgJRHlj44MWeuzCru91jf62p2fEeOsy1zk%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1689851646598.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1689851646598.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A42Z&se=2025-07-17T16%3A53%3A42Z&sr=c&sp=r&sig=JxYl%2BomyhRgJRHlj44MWeuzCru91jf62p2fEeOsy1zk%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1689851797430.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1689851797430.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A42Z&se=2025-07-17T16%3A53%3A42Z&sr=c&sp=r&sig=JxYl%2BomyhRgJRHlj44MWeuzCru91jf62p2fEeOsy1zk%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1689851813241.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1689851813241.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A42Z&se=2025-07-17T16%3A53%3A42Z&sr=c&sp=r&sig=JxYl%2BomyhRgJRHlj44MWeuzCru91jf62p2fEeOsy1zk%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1689851829790.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1689851829790.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A42Z&se=2025-07-17T16%3A53%3A42Z&sr=c&sp=r&sig=JxYl%2BomyhRgJRHlj44MWeuzCru91jf62p2fEeOsy1zk%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A42Z&se=2025-07-17T16%3A57%3A42Z&sr=c&sp=r&sig=%2BEsysKT12KytTT%2F5lPOBWY0YPsnM7htT3NP3YTkx8Rs%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A42Z&se=2025-07-17T16%3A57%3A42Z&sr=c&sp=r&sig=%2BEsysKT12KytTT%2F5lPOBWY0YPsnM7htT3NP3YTkx8Rs%3D
+
+Quelle: https://docs.grassfish.com/docs/navigate-the-overlay

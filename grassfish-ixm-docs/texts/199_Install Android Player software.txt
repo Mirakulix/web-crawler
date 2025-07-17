@@ -1,0 +1,64 @@
+Titel: Install Android Player software
+URL: https://docs.grassfish.com/docs/installation
+Zeitpunkt: 2025-07-17 18:42:40
+==================================================
+
+To install the Grassfish Android Player software, you have to access and run a batch file from the installation package. Prerequisites Before you install the Grassfish software, note that the batch file executes the following commands: adb devices 🡪 lists the serial no. of the connected device or IP address if wireless ADB is used. timeout 1 adb shell settings put global package_verifier_enable 0 🡪 disables the Google verifier timeout 1 adb install -r TV-Host15.65.712.apk 🡪 installs the TemViewer Host APK timeout 1 adb install -r Teamviewer_universial_add_on.apk 🡪 installs the add-on for TeamViewer timeout 1 adb install -r player_11.18.1-release.apk 🡪 installs the Grassfish Player APK timeout 1 adb install -r do_11.18.1-release.apk 🡪 installs the Grassfish device owner APK timeout 1 adb install -r -d android-system-webview-130-0-6723-58.apk 🡪 installs the correct WebView APK timeout 1 adb shell settings put global package_verifier_enable 0 🡪 disables the Google verifier (second time) timeout 1 adb shell appops set com.grassfish.player PROJECT_MEDIA allow 🡪 sets permission to take screenshots timeout 1 adb shell settings put global GF_PROJECT_MEDIA_ALLOWED 1 🡪 sets permission to take screenshots timeout 1 adb shell dpm set-device-owner com.grassfish.deviceowner/.receivers.DeviceOwnerReceiver 🡪 defines the Grassfish device owner APK as device owner pause Note TeamViewer apps are optional. If you don’t want to install them, delete the respective lines from the batch file before running it. Install Grassfish software To install the Grassfish software, perform the following steps: Navigate to the unzipped installation package. Double-click the file Install_gf_Tools_from_Android_[version]-on.bat to start the installation. Check the installation log and make sure that all installations complete successfully and no errors are logged.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/prepare-your-device]
+[Next|https://docs.grassfish.com/docs/post-installation-settings]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/installation]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/installation-image-3j2wnyqn.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/installation-image-3j2wnyqn.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A38Z&se=2025-07-17T16%3A53%3A38Z&sr=c&sp=r&sig=Ts%2FbSRwFITEC%2BjX%2F7yTRKr4W9Gb0T7sml%2BaIW%2Fv3944%3D
+Alt-Text: Ein Bild, das Text, Screenshot, Karte Menü, Schrift enthält.  KI-generierte Inhalte können fehlerhaft sein.
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/installation-image-80joatc5.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/installation-image-80joatc5.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A38Z&se=2025-07-17T16%3A53%3A38Z&sr=c&sp=r&sig=Ts%2FbSRwFITEC%2BjX%2F7yTRKr4W9Gb0T7sml%2BaIW%2Fv3944%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A38Z&se=2025-07-17T16%3A57%3A38Z&sr=c&sp=r&sig=n9xeEHGlpIHklODJPxkKVOghIGPXIxuEodGIk48WASI%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A38Z&se=2025-07-17T16%3A57%3A38Z&sr=c&sp=r&sig=n9xeEHGlpIHklODJPxkKVOghIGPXIxuEodGIk48WASI%3D
+
+Quelle: https://docs.grassfish.com/docs/installation

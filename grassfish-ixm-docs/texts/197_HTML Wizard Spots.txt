@@ -1,0 +1,61 @@
+Titel: HTML Wizard Spots
+URL: https://docs.grassfish.com/docs/en/html-wizard-spots
+Zeitpunkt: 2025-07-17 18:42:34
+==================================================
+
+The HTML Wizard allows you to configure HTML spots in IXM One. You can upload an HTML Wizard spot into IXM One as a ZIP file with the file extension .asc.zip . ASC stands for Advanced Spot Configurator. This ZIP file must contain the following files at the top level: index.html : is the entry point into the HTML Wizard spot. Other resources can be accessed relatively, as is common in websites. ascData.json : contains all editable elements of this spot. gfWizardBase.js : instantiate this file in the root scope of the spot. You can also store this file in a sub-directory if you prefer. Note Without the index.html and the ascData.json file, the spot can't play correctly. Use JavaScript libraries With every server update, we deliver the relevant JavaScript libraries. For the best possible compatibility, we recommend downloading the libraries directly from the customer server. gfSpotBase: http://domain/gv2/gf/GFWebHtml/lib/gfSpotBase/src/gfSpotBase.js gfWizardBase: http://domain/gv2/gf/GFWebHtml/lib/gfWizardBase/src/gfWizardBase.js gfUdcConnector: http://domain/gv2/gf/GFWebHtml/lib/gfUdcConnector/src/gfUdcConnector.js ascInterface: http://domain/gv2/gf/GFWebHtml/asc/ascInterface/ascInterface.html
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/html-basic-spots]
+[Next|https://docs.grassfish.com/docs/specify-spot-information]
+[http://domain/gv2/gf/GFWebHtml/lib/gfSpotBase/src/gfSpotBase.js|http://domain/gv2/gf/GFWebHtml/lib/gfSpotBase/src/gfSpotBase.js]
+[http://domain/gv2/gf/GFWebHtml/lib/gfWizardBase/src/gfWizardBase.js|http://domain/gv2/gf/GFWebHtml/lib/gfWizardBase/src/gfWizardBase.js]
+[http://domain/gv2/gf/GFWebHtml/lib/gfUdcConnector/src/gfUdcConnector.js|http://domain/gv2/gf/GFWebHtml/lib/gfUdcConnector/src/gfUdcConnector.js]
+[http://domain/gv2/gf/GFWebHtml/asc/ascInterface/ascInterface.html|http://domain/gv2/gf/GFWebHtml/asc/ascInterface/ascInterface.html]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/en/html-wizard-spots]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A33Z&se=2025-07-17T16%3A57%3A33Z&sr=c&sp=r&sig=Ip6wFK7MVhVNNGKbZd8%2FmpGSrjoTI4s2iVYXKkG9aJk%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A33Z&se=2025-07-17T16%3A57%3A33Z&sr=c&sp=r&sig=Ip6wFK7MVhVNNGKbZd8%2FmpGSrjoTI4s2iVYXKkG9aJk%3D
+
+Quelle: https://docs.grassfish.com/docs/en/html-wizard-spots

@@ -1,0 +1,71 @@
+Titel: Install the Android Player (generic)
+URL: https://docs.grassfish.com/docs/install-the-android-player-generic
+Zeitpunkt: 2025-07-17 18:43:16
+==================================================
+
+These installation instructions are based on a device running Android Player version 11, using a generic Android (AOSP) setup with native root access. Note Your device's firmware might differ due to modifications made by the manufacturer. However, unless there are major changes to how the device works, this guide should still be suitable for installation. What's included in the installation package The Grassfish software package includes the following components: Two APKs Optional third-party APKs : TeamViewer Host and its add-on A version of Google Chrome (for devices running Android 11 or earlier) Android WebView (for devices running Android 11 or later) Note If you don’t want to install certain APKs, you can simply remove them from the installation batch script before running the installer. Learn more … System requirements Ensure that you meet the following system requirements: Grassfish Android Player Version 11.18.1 or later Android OS Version 7.1 or later Currently supported up to Android version 14 Root acces s: Rooted devices are preferred for full functionality. Unrooted devices can be used, but some device management features may be limited. Installation requirements Before installing the Grassfish Android Player, make sure you have the following setup: Windows PC with a USB-A port The ADB (Android Debug Bridge) driver must be installed. ADB allows your PC to communicate with the Android device. You can search online for the correct driver for your specific device model. USB or Wi-Fi connection to the Android device USB cable connecting your PC to the device's USB OTG port. The OTG port is used for ADB communication. Check your device's specifications for the correct port. Alternatively, you can connect your device via Wi-Fi (network ADB) if supported. Android device requirements Minimum 2 GB RAM At least 8 GB eMMC storage Android version 7.1 or later Device must be powered on and connected to the internet. Grassfish Android installation package Request it from support@grassfish.com . Be sure to include the device model you plan to use, so you receive an optimized installation package. Important pre-installation notes Do not sign in to any accounts on the Android device before installing the Grassfish software. This includes Google accounts or any other user accounts. The installation must be performed using ADB (either via USB or over the network). Other installation methods will not work and may cause issues. For easier setup and configuration, we recommend using a keyboard with integrated touchpad. The Logitech K400 series is a great option and works well with most Android devices. Keyboard shortcuts We recommend to use a Logitech K400(+) keyboard. If you do so, note the following keyboard shortcuts before you start the installation: To go home, use the Home key or F2. To go back, right-click with your mouse or press F1. An add-on is a software extension or enhancement that adds new features or functionality.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/android-player]
+[Next|https://docs.grassfish.com/docs/prepare-your-device]
+[Learn more …|https://docs.grassfish.com/docs/installation]
+[support@grassfish.com|mailto:support@grassfish.com]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/install-the-android-player-generic]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image(16).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image(16).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A43%3A15Z&se=2025-07-17T16%3A55%3A15Z&sr=c&sp=r&sig=k5MXNzS7QSqCea6IxCEjdcA%2B17sJYKtOo%2BhIAmK4F3Q%3D
+Titel: image(16).png
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1729668155512.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1729668155512.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A43%3A15Z&se=2025-07-17T16%3A55%3A15Z&sr=c&sp=r&sig=k5MXNzS7QSqCea6IxCEjdcA%2B17sJYKtOo%2BhIAmK4F3Q%3D
+Alt-Text: Ein Bild, das Elektronik, Tastatur, Eingabegerät, Büroausstattung enthält.  Automatisch generierte Beschreibung
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/install-android-player-on-philips-bdl45650d-image-rw67nlcx.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/install-android-player-on-philips-bdl45650d-image-rw67nlcx.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A43%3A15Z&se=2025-07-17T16%3A55%3A15Z&sr=c&sp=r&sig=k5MXNzS7QSqCea6IxCEjdcA%2B17sJYKtOo%2BhIAmK4F3Q%3D
+Alt-Text: Ein Bild, das Elektronik, Eingabegerät, Tastatur, peripher enthält.  Automatisch generierte Beschreibung
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A43%3A15Z&se=2025-07-17T16%3A58%3A15Z&sr=c&sp=r&sig=A21BAO8VRWqDnemphYIq1Kq33nyt2pTI%2Bd%2FtF24wsws%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A43%3A15Z&se=2025-07-17T16%3A58%3A15Z&sr=c&sp=r&sig=A21BAO8VRWqDnemphYIq1Kq33nyt2pTI%2Bd%2FtF24wsws%3D
+
+Quelle: https://docs.grassfish.com/docs/install-the-android-player-generic

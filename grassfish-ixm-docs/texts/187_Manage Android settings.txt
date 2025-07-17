@@ -1,0 +1,76 @@
+Titel: Manage Android settings
+URL: https://docs.grassfish.com/docs/manage-android-settings
+Zeitpunkt: 2025-07-17 18:42:03
+==================================================
+
+Note This article explains how to use the InitBox. For information on how to initialize your player with the provisioning website, click here You’ll find multiple important settings in the InitBox of your player. To open the InitBox, perform the following steps: Select F10 . If necessary, enter the daily password and confirm it in the subsequent dialog. This opens the first window of the InitBox which allows you to check and adjust the screen orientation. Change screen orientation In the Screen orientation window, you can see which screen orientation is selected and whether the orientation is correct. Note that not all devices support all rotation angles. Note For initialized players, you can alternatively change the screen-rotation in the display management of the IXM One. To change the screen orientation, perform the following steps: Rotate the screen in one of the following ways: Select your screen orientation from the dropdown menu. Click Rotate Left or Rotate Right to adjust the screen. Once your screen orientation is correct, click Save and continue or select the spacebar. Configure your system In the subsequent Configure your system window, you’ll find shortcuts to the system settings. For example, you can jump to the network settings, time zone settings, or the configuration tool for serial devices. Note The system automatically syncs changes that you make in the player system settings with the player configuration in the IXM One. Reset the player If you need to, you can reset your player from here. This restarts the initialization of the player. → To reset the player, click Box Reset . Configure serial device settings Use the serial device settings to configure supported devices. For example, you can configure RS232 device settings for monitor steering here. To do so, you must perform the following steps: Link your device to the screen controller. Setup RS232 control in the IXM One. Link your device to the ScreenController You can control your monitor via an RS232 interface. To do so, you must link the RS232 device, which connects via USB to an RS232 adapter, with the player software’s ScreenController. To do so, perform the following steps: In the Configure your system window, click Serial Devices . You can now see all supported serial devices. Connect your serial device to the player. After a few seconds, the GF Player dialog appears. In this dialog, select Always open GF Player when USB-Serial Controller is connected . To confirm, click OK . This dialog appears twice. Select and confirm both times. In the subsequent window, click Screen Controller . You can now see a list of all connected serial adapters. If you only have one adapter for the connected monitor, there’s only one list entry. To select the device, click on it. In the subsequent window, click Back . This takes you back to the Configure your system window. To finish the configuration, click Continue or select the spacebar. Once you’ve configured your settings, you must restart or reboot the player depending on the changes. To do so, click on the screen or select any key. Setup RS232 control in the IXM One To control your monitor via RS232, you also need set it up in the IXM One. To do so, perform the following steps: In the IXM One, go to the Edit player window. Select the tab Display 1 . As Display control , select RS232 . From the dropdown menu, select the correct steering scheme for the player.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/navigate-the-overlay]
+[Next|https://docs.grassfish.com/docs/connect-wi-fi-hw02200]
+[click here|https://docs.grassfish.com/docs/player-provisioning-website]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/manage-android-settings]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1689852273887.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1689852273887.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A02Z&se=2025-07-17T16%3A54%3A02Z&sr=c&sp=r&sig=OGfrN2IaVVgUGHao24OG642UDTVppZRucIBy%2BILjrOg%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1689852324955.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1689852324955.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A02Z&se=2025-07-17T16%3A54%3A02Z&sr=c&sp=r&sig=OGfrN2IaVVgUGHao24OG642UDTVppZRucIBy%2BILjrOg%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1689852495668.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1689852495668.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A02Z&se=2025-07-17T16%3A54%3A02Z&sr=c&sp=r&sig=OGfrN2IaVVgUGHao24OG642UDTVppZRucIBy%2BILjrOg%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1689852505778.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1689852505778.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A02Z&se=2025-07-17T16%3A54%3A02Z&sr=c&sp=r&sig=OGfrN2IaVVgUGHao24OG642UDTVppZRucIBy%2BILjrOg%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1689852521363.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1689852521363.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A02Z&se=2025-07-17T16%3A54%3A02Z&sr=c&sp=r&sig=OGfrN2IaVVgUGHao24OG642UDTVppZRucIBy%2BILjrOg%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1689852601658.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1689852601658.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A02Z&se=2025-07-17T16%3A54%3A02Z&sr=c&sp=r&sig=OGfrN2IaVVgUGHao24OG642UDTVppZRucIBy%2BILjrOg%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A02Z&se=2025-07-17T16%3A57%3A02Z&sr=c&sp=r&sig=rm1uP6RKUJE0Y8A%2Bh1fphigOSV1DqQXd%2FGgv6J4o6sQ%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A02Z&se=2025-07-17T16%3A57%3A02Z&sr=c&sp=r&sig=rm1uP6RKUJE0Y8A%2Bh1fphigOSV1DqQXd%2FGgv6J4o6sQ%3D
+
+Quelle: https://docs.grassfish.com/docs/manage-android-settings

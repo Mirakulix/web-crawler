@@ -1,0 +1,69 @@
+Titel: API Documentation
+URL: https://docs.grassfish.com/grassfish-api
+Zeitpunkt: 2025-07-17 18:35:19
+==================================================
+
+IXM One API Get data from IXM One and perform actions like creating playlists or deleting spots. Learn more Player MQTT API Start event-driven real-time communication with the Windows and Linux Player via MQTT. Learn more Player REST API Get player information and control the Android, Windows, and Linux players using web services. Learn more
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[Documentation|https://docs.grassfish.com]
+[Learn more|https://docs.grassfish.com/apidocs/overview]
+[Learn more|https://webhelp.grassfish.tv/pluginIPC/]
+[Learn more|https://webhelp.grassfish.tv/ClientWebservices_API/]
+[Get startedFollow our quick tutorial to make your first API call.|https://docs.grassfish.com/apidocs/get-started]
+[OverviewGet an overview of the IXM One API.|https://docs.grassfish.com/apidocs/overview]
+[API glossaryLearn more about frequently used API terms.|https://docs.grassfish.com/apidocs/api-glossary]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/grassfish-api]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/code-simple-thin.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/code-simple-thin.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A18Z&se=2025-07-17T16%3A50%3A18Z&sr=c&sp=r&sig=4aGwyOBgBFTnlR3vG42Ejtl91PmqMoqn%2BbUmZUdGlQo%3D
+Alt-Text: This logo has code-simple-thin
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/plugs-thin.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/plugs-thin.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A18Z&se=2025-07-17T16%3A50%3A18Z&sr=c&sp=r&sig=4aGwyOBgBFTnlR3vG42Ejtl91PmqMoqn%2BbUmZUdGlQo%3D
+Alt-Text: This logo has plugs-thin
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/play-pause-thin.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/play-pause-thin.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A18Z&se=2025-07-17T16%3A50%3A18Z&sr=c&sp=r&sig=4aGwyOBgBFTnlR3vG42Ejtl91PmqMoqn%2BbUmZUdGlQo%3D
+Alt-Text: This logo has play-pause-thin
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/power-thin.svg
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/power-thin.svg?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A18Z&se=2025-07-17T16%3A50%3A18Z&sr=c&sp=r&sig=4aGwyOBgBFTnlR3vG42Ejtl91PmqMoqn%2BbUmZUdGlQo%3D
+Alt-Text: This logo has power-thin
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/compass-thin%20(1).svg
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/compass-thin%20(1).svg?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A18Z&se=2025-07-17T16%3A50%3A18Z&sr=c&sp=r&sig=4aGwyOBgBFTnlR3vG42Ejtl91PmqMoqn%2BbUmZUdGlQo%3D
+Alt-Text: This logo has compass-thin%20(1)
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/text-a-underline-thin%20(1).svg
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/text-a-underline-thin%20(1).svg?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A18Z&se=2025-07-17T16%3A50%3A18Z&sr=c&sp=r&sig=4aGwyOBgBFTnlR3vG42Ejtl91PmqMoqn%2BbUmZUdGlQo%3D
+Alt-Text: This logo has text-a-underline-thin%20(1)
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A18Z&se=2025-07-17T16%3A50%3A18Z&sr=c&sp=r&sig=4aGwyOBgBFTnlR3vG42Ejtl91PmqMoqn%2BbUmZUdGlQo%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A35%3A18Z&se=2025-07-17T16%3A50%3A18Z&sr=c&sp=r&sig=4aGwyOBgBFTnlR3vG42Ejtl91PmqMoqn%2BbUmZUdGlQo%3D
+
+Quelle: https://docs.grassfish.com/grassfish-api

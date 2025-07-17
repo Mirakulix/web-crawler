@@ -1,0 +1,64 @@
+Titel: Configure IXM One
+URL: https://docs.grassfish.com/docs/configure-ixm-one-ssp
+Zeitpunkt: 2025-07-17 18:31:31
+==================================================
+
+To enable playing SSP content on any player, you must configure IXM One. Adjust the config file You must enable SSP in the IXM One configuration. To do so, perform the following steps: Navigate to the configuration files on the server at: GVServer2\www\gv2\gf\GFWebHtmlCustomer\ Open one of the following the folders: 00000 : edit configurations for the entire server, which means for all customers. 000xxx : edit customer-specific settings. xxx is the customer ID. Open the config.json file in your folder with a text editor like Notepad++. Change the following settings: Set enableDooh to true (this setting enables SSP) Set enableCategoriesPerScreen to true Set enableLiveTags to true Set enableSpotPropertyInheritanceForUserType to Admin Save your changes and close the config file. Example: configuration of the config.json file "enableDooh": true, "enableCategoriesPerScreen": true, "enableLiveTags": true, "enableSpotPropertyInheritanceForUserType": [ "Admin" ] Set up the data importer Note You need to set up the data importer if you use DOOH add-on versions earlier than 2.5.1. If you use add-on version 2.5.1 or later, you can skip this chapter. To ensure that the data from the UDC Importer is imported into IXM One, you must create and configure the data importer in IXM One. Create the data importer To create the data importer, perform the following steps: In IXM One, go to Administration > Content > Data importer . Click on New . From the Data importer dropdown, select the DOOH Playback Importer. Specify a Designation and Display name for your data importer. Switch to the Feeds tab and select a Feeds definition from the dropdown menu. Click on the + and add a feed. In the Path field, enter the file path to your feed definition config file. Specify all other settings as required. Click Save to save your changes. Assign the data importer Now, you must assign the data importer to the player. To do so, perform the following steps in IXM One: Go to Channels > Location and double-click on the player. In the Edit player window, click on the Data sources tab. Click Add data source . This opens the Add data source window. Select the DOOH Playback Importer from the dropdown menu and click Save . In the Edit player window, select Global for the DOOH Playback Importer . Click Save to save your changes.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/set-up-the-ssp-provider]
+[Next|https://docs.grassfish.com/docs/configure-winlin-player-ssp]
+[UDC Importer|https://docs.grassfish.com/docs/en/configure-server-ssp]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/configure-ixm-one-ssp]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/data_importer_create.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/data_importer_create.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A31%3A30Z&se=2025-07-17T16%3A42%3A30Z&sr=c&sp=r&sig=m44a%2FaAzIKHvE5opoY%2F9joHb5IpngcmE45lSiUxjSK0%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/data_importer_source.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/data_importer_source.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A31%3A30Z&se=2025-07-17T16%3A42%3A30Z&sr=c&sp=r&sig=m44a%2FaAzIKHvE5opoY%2F9joHb5IpngcmE45lSiUxjSK0%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A31%3A31Z&se=2025-07-17T16%3A46%3A31Z&sr=c&sp=r&sig=podBvJkU8KGWORs98vriIDn0pPA7M22KHWwsHrPoHVE%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A31%3A31Z&se=2025-07-17T16%3A46%3A31Z&sr=c&sp=r&sig=podBvJkU8KGWORs98vriIDn0pPA7M22KHWwsHrPoHVE%3D
+
+Quelle: https://docs.grassfish.com/docs/configure-ixm-one-ssp

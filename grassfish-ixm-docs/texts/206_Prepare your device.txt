@@ -1,0 +1,100 @@
+Titel: Prepare your device
+URL: https://docs.grassfish.com/docs/prepare-your-device
+Zeitpunkt: 2025-07-17 18:43:03
+==================================================
+
+To install the Android Player, you first need to prepare your Windows PC. The following instructions will guide you step by step through this process. Prerequisites Ensure that you meet the following prerequisites: You’ve installed the ADB driver for USB. You’ve unzipped the Grassfish Android installation package. Prepare the device Perform the following steps to prepare your device for the Android Player: If the Google Play Store app is available on your device, disable its updates. Click on the app drawer to open it. Open the Play Store app. Open the menu in the top right corner and click Settings . Click Network preferences Click Auto-update apps . Select Don’t auto update apps . To enable developer options and turn on ADB, open the Settings . Navigate to About device and double-click it. Find the Build number and click it seven times until you see the message: You are now a developer! Return to Settings and open System . Click Advanced . Click Developer options . Scroll down and turn on USB debugging . Optionally, turn on Wireless debugging . If a dialog appears, confirm by selecting Always allow on this network and Allow . If USB debugging is already enabled, disable and re-enable it now. Return to Settings . To configure time and time zone settings, click Date & time . Select your date and time. You can modify this later in the IXM One location settings if needed. Ensure that Use network provided time is turned on. Turn off Use network provided time zone . Select your time zone. You can modify this later in the IXM One location settings if needed. Exit Settings . To establish and check your ADB connection, open a terminal on your Windows PC and change the directory to the unzipped installation package. Type adb devices to get a list of connected devices. To run the installation, decide which device to use and disconnect the other one. Only one connected device is allowed. For example, the screenshot below shows one device connected via USB, and one via wireless debugging. If a dialog appears when your PC is connected to the Android device the first time, select Always allow from this computer and click Allow . Your device is now prepared for the Android Player installation.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/install-the-android-player-generic]
+[Next|https://docs.grassfish.com/docs/installation]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/prepare-your-device]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/prepare-your-device-image-d4p8tyfe.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/prepare-your-device-image-d4p8tyfe.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A58Z&se=2025-07-17T16%3A53%3A58Z&sr=c&sp=r&sig=60LsWJdLR8kuzmy%2BTdHd8tB0G5kyig0yBnWqrV1RJrY%3D
+Alt-Text: Ein Bild, das Screenshot, Text, Logo, Grafiken enthält.  KI-generierte Inhalte können fehlerhaft sein.
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1750064583724.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1750064583724.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A58Z&se=2025-07-17T16%3A53%3A58Z&sr=c&sp=r&sig=60LsWJdLR8kuzmy%2BTdHd8tB0G5kyig0yBnWqrV1RJrY%3D
+Alt-Text: Ein Bild, das Text, Screenshot, Diagramm, Schrift enthält.  KI-generierte Inhalte können fehlerhaft sein.
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/prepare-your-device-image-cs0sf026.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/prepare-your-device-image-cs0sf026.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A58Z&se=2025-07-17T16%3A53%3A58Z&sr=c&sp=r&sig=60LsWJdLR8kuzmy%2BTdHd8tB0G5kyig0yBnWqrV1RJrY%3D
+Alt-Text: Ein Bild, das Text, Betriebssystem, Software, Screenshot enthält.  KI-generierte Inhalte können fehlerhaft sein.
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/prepare-your-device-image-g4w5sh2r.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/prepare-your-device-image-g4w5sh2r.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A58Z&se=2025-07-17T16%3A53%3A58Z&sr=c&sp=r&sig=60LsWJdLR8kuzmy%2BTdHd8tB0G5kyig0yBnWqrV1RJrY%3D
+Alt-Text: Ein Bild, das Text, Quittung, Schrift, Algebra enthält.  KI-generierte Inhalte können fehlerhaft sein.
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/prepare-your-device-image-0cvft4sj.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/prepare-your-device-image-0cvft4sj.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A58Z&se=2025-07-17T16%3A53%3A58Z&sr=c&sp=r&sig=60LsWJdLR8kuzmy%2BTdHd8tB0G5kyig0yBnWqrV1RJrY%3D
+Alt-Text: Ein Bild, das Screenshot, Text, Grafiken, Schrift enthält.  KI-generierte Inhalte können fehlerhaft sein.
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/prepare-your-device-image-pqa4f43o.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/prepare-your-device-image-pqa4f43o.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A58Z&se=2025-07-17T16%3A53%3A58Z&sr=c&sp=r&sig=60LsWJdLR8kuzmy%2BTdHd8tB0G5kyig0yBnWqrV1RJrY%3D
+Alt-Text: Ein Bild, das Text, Screenshot enthält.  KI-generierte Inhalte können fehlerhaft sein.
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/prepare-your-device-image-35giwgen.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/prepare-your-device-image-35giwgen.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A58Z&se=2025-07-17T16%3A53%3A58Z&sr=c&sp=r&sig=60LsWJdLR8kuzmy%2BTdHd8tB0G5kyig0yBnWqrV1RJrY%3D
+Alt-Text: Ein Bild, das Text, Screenshot, Schrift enthält.  KI-generierte Inhalte können fehlerhaft sein.
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1750065866378.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1750065866378.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A58Z&se=2025-07-17T16%3A53%3A58Z&sr=c&sp=r&sig=60LsWJdLR8kuzmy%2BTdHd8tB0G5kyig0yBnWqrV1RJrY%3D
+Alt-Text: Ein Bild, das Text, Screenshot, Schrift, Zahl enthält.  KI-generierte Inhalte können fehlerhaft sein.
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/prepare-your-device-image-kfrildl3.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/prepare-your-device-image-kfrildl3.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A58Z&se=2025-07-17T16%3A53%3A58Z&sr=c&sp=r&sig=60LsWJdLR8kuzmy%2BTdHd8tB0G5kyig0yBnWqrV1RJrY%3D
+Alt-Text: Ein Bild, das Screenshot, Reihe, Diagramm enthält.  KI-generierte Inhalte können fehlerhaft sein.
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/prepare-your-device-image-pky74iga.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/prepare-your-device-image-pky74iga.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A58Z&se=2025-07-17T16%3A53%3A58Z&sr=c&sp=r&sig=60LsWJdLR8kuzmy%2BTdHd8tB0G5kyig0yBnWqrV1RJrY%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1750066242189.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1750066242189.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A58Z&se=2025-07-17T16%3A53%3A58Z&sr=c&sp=r&sig=60LsWJdLR8kuzmy%2BTdHd8tB0G5kyig0yBnWqrV1RJrY%3D
+Alt-Text: Ein Bild, das Text, Visitenkarte, Screenshot, Schrift enthält.  Automatisch generierte Beschreibung
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A58Z&se=2025-07-17T16%3A57%3A58Z&sr=c&sp=r&sig=f4tAYDGTO32JYaLNpnA7%2BB5kOOf8cKO8n6qFLn0RO28%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A58Z&se=2025-07-17T16%3A57%3A58Z&sr=c&sp=r&sig=f4tAYDGTO32JYaLNpnA7%2BB5kOOf8cKO8n6qFLn0RO28%3D
+
+Quelle: https://docs.grassfish.com/docs/prepare-your-device

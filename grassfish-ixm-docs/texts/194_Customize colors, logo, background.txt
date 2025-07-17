@@ -1,0 +1,82 @@
+Titel: Customize colors, logo, background
+URL: https://docs.grassfish.com/grassfish/docs/customize-colors-logo-background
+Zeitpunkt: 2025-07-17 18:42:26
+==================================================
+
+You can change the colors, background image, customer logo, and other elements of IXM One to match a custom corporate identity. Access the configuration files To adapt the layout to your custom requirements, you must edit the config.json file. To access the file, perform the following steps: Navigate to the configuration files on the server at: \GVServer2\www\gv2\gf\GFWebHtmlCustomer\ Open one of the following folders: 00000 : contains the configurations for the entire server, which means for all customers. This also applies to the login area which appears before the user has logged in to IXM One. 000xxx : contains customer-specific settings. xxx is the customer ID. You can determine the ID using your browser’s developer tools . The values specified here override the 00000 folder, except for the login area. If there’s no folder yet, create it. Open the config.json file in your folder with a text editor like Notepad++. If the file doesn’t exist yet, create it with the following content: JSON JSON { "common": { "theme": { "colors": { "accent": "#00838F", "accentLightContrastFrom": "300", "background": "#efefef", "backgroundLightContrastFrom": "9999", "button": "#F0F0F0", "buttonLightContrastFrom": "800", "primary": "#ffffff", "primaryLightContrastFrom": "9999", "warn": "#E94944", "warnLightContrastFrom": "400" }, "backgroundImage": "../common/assets/images/grassfish_background.jpg", "disableGF": false, "favIcon": "../common/assets/images/favIcon.png", "loginHeader": "../common/assets/images/GF_LoginHeader.jpg", "logo": {} } } } Note Ensure that your custom config.json file is valid. Otherwise, the system uses the general template file that doesn't contain your modifications. You can now configure the colors, logo and background in the config.json file. To do this, follow the instructions below. Don't forget to save your changes to the file. Change primary color and accent color To change the primary color and accent color of IXM One, perform the following steps: In the config.json file, find the attributes accent and primary . To specify a new color value for accent and primary , enter a Hex color code that begins with a pound sign or hashtag (#) followed by six letters and/or numbers. "theme": { "colors": { "accent": "#00838F", "accentLightContrastFrom": "300", "background": "#efefef", "backgroundLightContrastFrom": "9999", "button": "#F0F0F0", "buttonLightContrastFrom": "800", "primary": "#ffffff", "primaryLightContrastFrom": "9999", "warn": "#E94944", "warnLightContrastFrom": "400" }, Change background and buttons To change the background and button color of IXM One, perform the following steps: In the config.json file, find the attributes background and button . To specify a new color value for background and button , enter a Hex color code that begins with a pound sign or hashtag (#) followed by six letters and/or numbers. "theme": { "colors": { "accent": "#00838F", "accentLightContrastFrom": "300", "background": "#efefef", "backgroundLightContrastFrom": "9999", "button": "#F0F0F0", "buttonLightContrastFrom": "800", "primary": "#ffffff", "primaryLightContrastFrom": "9999", "warn": "#E94944", "warnLightContrastFrom": "400" }, Change the font contrast IXM One uses each color value in gradations. To maintain the contrast of a color with the font color, you can set a threshold to indicate when the font color should change from black to white. To do so, perform the following steps: In the config.json file, find the attribute AccentLightContrastFrom . To specify a new threshold value for the attribute AccentLightContrastFrom , enter a number. Change the background image Note Use a 1920x1080 pixels SVG, JPG, or PNG image. If you don't want a background image, enter empty quotation marks ( "" ). To change the background image of IXM One, perform the following steps: In the config.json file, find the attribute backgroundImage . To specify a new value for backgroundImage , enter the file path where you saved your image. "theme": { "backgroundImage": "../Path_to_image/background.jpg" } Change the favicon Note Use a 16x16 pixels SVG, JPG, or PNG image. To change the favicon which appears in the browser tab, perform the following steps: In the config.json file, find the attribute favIcon . To specify a new value for favIcon , enter the file path where you saved your image. "theme": { "favIcon": "../Path_to_image/favicon.ico" } Change the login header Note Use a 496 × 110 pixels SVG, JPG, or PNG image. To change the login header at the top of IXM One login window, perform the following steps: In the config.json file, find the attribute loginHeader . To specify a new value for loginHeader , enter the file path where you saved your image. "theme": { loginHeader": "../Path_to_image/favicon.jpg” } Add a custom logo Note Use a SVG, JPG, or PNG image. The maximum height is 34 pixels. To add a custom logo to IXM One, perform the following steps: In the config.json file, find the attribute logo . To specify a new value for logo , enter the file path where you saved your image. Optionally, specify the display properties: height : specify the height of the logo in percent. paddingBottom : specify the padding at the bottom of the logo in pixel. paddingLeft : specify the padding on the left side of the logo in pixel. paddingRight : specify the padding on the right side of the logo in pixel. paddingTop : specify the padding at the bottom of the logo in pixel. width : specify the width of the logo in percent. "theme": { "logo": { "height": "100%", "paddingBottom": "", "paddingLeft": "5px", "paddingRight": "", "paddingTop": "2px", "path": "../Path_to_image/favicon.jpg” "width": "100%" } } Determine the customer ID You can determine the customer ID with the help of your browser. The instructions below are for the following browsers: Google Chrome Mozilla Firefox Get customer ID in Google Chrome To determine the customer ID in Google Chrome, perform the following steps: Go to the URL of your IXM One. Open the Chrome Menu in the upper right corner of the browser window and select More Tools > Developer Tools . Open the Network tab. Log-in to IXM One with application, username, and password. After the page has loaded correctly, look for the entry login in the developer tools. Select the entry login . Check the CustomerID in the Preview tab on the right side. Get customer ID in Firefox To determine the customer ID in Mozilla Firefox, perform the following steps: Go to the URL of your IXM One. Open the Firefox menu and select Tools > Web Developer > Web Developer Tools . In the developer tools, switch to the Netw ork tab. Log-in to IXM One with application, username, and password. After the page has loaded correctly, look for the entry log in in the developer tools. Select the entry login . Check the CustomerID in the Response tab on the right side.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/enable-news-center]
+[Next|https://docs.grassfish.com/docs/customize-terms-of-use]
+[determine the ID using your browser’s developer tools|https://docs.grassfish.com/grassfish/docs/customize-colors-logo-background]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/grassfish/docs/customize-colors-logo-background]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/color.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/color.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A24Z&se=2025-07-17T16%3A57%3A24Z&sr=c&sp=r&sig=1b7BNX1vck4ivTqxhXci5lxYXsO2AwRoHBhjZKgkefE%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/button.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/button.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A24Z&se=2025-07-17T16%3A57%3A24Z&sr=c&sp=r&sig=1b7BNX1vck4ivTqxhXci5lxYXsO2AwRoHBhjZKgkefE%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/font.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/font.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A24Z&se=2025-07-17T16%3A57%3A24Z&sr=c&sp=r&sig=1b7BNX1vck4ivTqxhXci5lxYXsO2AwRoHBhjZKgkefE%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1689746453346.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1689746453346.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A24Z&se=2025-07-17T16%3A57%3A24Z&sr=c&sp=r&sig=1b7BNX1vck4ivTqxhXci5lxYXsO2AwRoHBhjZKgkefE%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1689746530487.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1689746530487.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A24Z&se=2025-07-17T16%3A57%3A24Z&sr=c&sp=r&sig=1b7BNX1vck4ivTqxhXci5lxYXsO2AwRoHBhjZKgkefE%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1689746569650.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1689746569650.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A24Z&se=2025-07-17T16%3A57%3A24Z&sr=c&sp=r&sig=1b7BNX1vck4ivTqxhXci5lxYXsO2AwRoHBhjZKgkefE%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1689746739036.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1689746739036.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A24Z&se=2025-07-17T16%3A57%3A24Z&sr=c&sp=r&sig=1b7BNX1vck4ivTqxhXci5lxYXsO2AwRoHBhjZKgkefE%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/image-1689746785249.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/image-1689746785249.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A24Z&se=2025-07-17T16%3A57%3A24Z&sr=c&sp=r&sig=1b7BNX1vck4ivTqxhXci5lxYXsO2AwRoHBhjZKgkefE%3D
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A24Z&se=2025-07-17T16%3A57%3A24Z&sr=c&sp=r&sig=1b7BNX1vck4ivTqxhXci5lxYXsO2AwRoHBhjZKgkefE%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A42%3A24Z&se=2025-07-17T16%3A57%3A24Z&sr=c&sp=r&sig=1b7BNX1vck4ivTqxhXci5lxYXsO2AwRoHBhjZKgkefE%3D
+
+Quelle: https://docs.grassfish.com/grassfish/docs/customize-colors-logo-background

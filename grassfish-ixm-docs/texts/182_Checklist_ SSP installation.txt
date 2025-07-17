@@ -1,0 +1,64 @@
+Titel: Checklist: SSP installation
+URL: https://docs.grassfish.com/docs/ssp-checklist
+Zeitpunkt: 2025-07-17 18:41:45
+==================================================
+
+Use the following checklist to review the key steps of the SSP installation and ensure that you have completed all relevant tasks. System requirements You are using at least IXM One version 11.11.0 and Grassfish Server version 11.11.0. You have the .NET 6 Hosting Bundle installed on the server if you are using a version prior to 11.18. Read more about the system requirements here . Installation You have installed and connected the AdServing API on IIS. You have correctly set the path to the user.config and master.config files in the AdServing API. You have configured the IIS Application Pool for the AdServing API and set the idle timeout to 0. You have configured the config.json file. You have made general settings for the AdServing API in the master.config file. You have defined the SSP provider in a separate SSP configuration file. Read more about the installation steps here . IXM One setup You have created an SSP-specific spot group. You have created and configured an SSP playlist. You have created a standard playlist with filler content. You have configured the standard playlist so that it can be interrupted by programmatic advertising. You have created an empty DOOH playlist. You have created a program scheme and assigned the playlists to it. You have created a category for SSP and assigned it to locations and players. Read more about setting up the IXM One here . Special setup for Windows and Linux Player You have installed the DOOHPlayback add-on. You have installed MQTT. You have installed and configured the UDC Importer if you are using DOOHPlayback add-on version 2.5.1 or earlier. Read more about setting up the Windows and Linux Player here . Setup for all players You have adjusted the player configuration or configuration group. You have activated SSP on the player or in the configuration group. You have set the airtime ratio for SSP. You have made a /GetNextSpot API call via Swagger for testing and received a correct SSP response. You have tested whether an SSP spot is being played correctly on the player. You have verified proof of play and tracking. You have enabled monitoring of player logs and AdServing API logs. Read more about setting up the Android Player or the Windows and Linux Player . Definition of the SSP provider Ensure that you have specified at least the following information for each provider: SspPriority (request order) SspUrl (SSP endpoint) SspCategoryId (category ID in the IXM One) SspPlaylistId (playlist ID for spot assignment) SspSpotGroupId (spot group ID for uploads) SspServiceUserId (user for SSP uploads) Optional: LiveTag URLs, custom headers, SspType (e.g., Framen or Viooh) Read more about configuring the SSP provider in the AdServing API . An API call or API request is a message to a server that requests an API to provide a service or information.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/ssp-checklist-preparation]
+[Next|https://docs.grassfish.com/docs/install-ssp]
+[Read more about the system requirements here|https://docs.grassfish.com/docs/install-ssp]
+[Read more about the installation steps here|https://docs.grassfish.com/docs/configure-server-ssp]
+[Read more about setting up the IXM One here|https://docs.grassfish.com/docs/ixm-platform-setup]
+[Read more about setting up the Windows and Linux Player here|https://docs.grassfish.com/docs/configure-winlin-player-ssp]
+[Android Player|https://docs.grassfish.com/docs/configure-android-player-ssp]
+[Windows and Linux Player|https://docs.grassfish.com/docs/configure-winlin-player-ssp]
+[Read more about configuring the SSP provider in the AdServing API|https://docs.grassfish.com/docs/configure-server-ssp]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/ssp-checklist]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A45Z&se=2025-07-17T16%3A56%3A45Z&sr=c&sp=r&sig=pzWnlhqewsca1ymOHs2LlArgmzKq2wCLBEF6Tq1pufw%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A45Z&se=2025-07-17T16%3A56%3A45Z&sr=c&sp=r&sig=pzWnlhqewsca1ymOHs2LlArgmzKq2wCLBEF6Tq1pufw%3D
+
+Quelle: https://docs.grassfish.com/docs/ssp-checklist

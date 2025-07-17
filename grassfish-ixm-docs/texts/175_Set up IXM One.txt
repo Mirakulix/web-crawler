@@ -1,0 +1,65 @@
+Titel: Set up IXM One
+URL: https://docs.grassfish.com/docs/set-up-the-ixm-one
+Zeitpunkt: 2025-07-17 18:41:29
+==================================================
+
+To play DOOH content, you must set up playlists, a program scheme, and spots in IXM One. Create playlists You must create a playlist for your DOOH spots and a playlist that contains standard content. Usually, the DOOH playlist will not take up the entire playlist playback time, so the system inserts standard spots in-between as fillers. Create the DOOH playlist To create a playlist for your DOOH spots, perform the following steps: Go to Channels > Programm scheme . In the Available playlists pane, click New . In the Create playlist window, enter a name for your playlist. As Playlist logic , select DOOH . Specify all other settings as needed. Click Save to save your changes. Note You can only have one DOOH playlist per network and you don't have to fill it. When you add a spot to a DOOH booking item, it's automatically added to the DOOH playlist. Create a standard playlist To create the standard playlist that contains filler spots, perform the following steps: In IXM One, go to Channels > Program scheme . To create the standard playlist, click New . In the Create playlist window, enter a name for your standard playlist. As Playlist logic , select Default . Specify all other playlist settings as required. Click Save to save your changes. Add spots to the standard playlist To play standard spots as fillers, you must add them to the standard playlist. To do so, perform the following steps: In IXM One, go to Content > Playlist . Select the standard playlist. Drag and drop your standard spots from the Selectable spots pane onto the Content of playlist pane. Assign the playlists to a program scheme To play any of your playlists, you must assign them to the program scheme. To do so, perform the following steps: In IXM One, go to Channels > Program scheme . To create a new program scheme, click on the + button. In the Create program scheme window, enter a name for your program scheme. Select Event playlists . Specify all other program scheme settings as required. Click Save to save your changes. To assign the standard playlist to the program scheme, drag and drop it onto the Standard playlists panel. To assign the DOOH playlist, drag and drop it onto the Event playlists panel. Configure playlist properties You must configure the standard playlist to play DOOH spots in-between standard filler spots. Otherwise, the standard playlist will be played through in one go. To do so, perform the following steps: In IXM One, go to Channels > Program scheme . In the Standard playlists panel, hover over the standard playlist and select the menu icon. Alternatively, double-click on it. In the Edit playlist properties window, switch to the Extras tab. Select Prioritize programmatic advertisements . Configure all other playlist properties as needed. Click Save to save your changes.
+
+LINKS:
+----------
+[Click here to see what's new.|https://docs.grassfish.com/docs/en/ixm-one-releases]
+[Skip to main content|javascript:void(0);]
+[API Documentation|https://docs.grassfish.com/grassfish-api]
+[12.0|https://webhelp.grassfish.tv/gv2/gf/help/12.0/ADMIN_en/index.html]
+[11.17|https://webhelp.grassfish.tv/gv2/gf/help//11.17/ADMIN_en/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/ADMIN_en/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/ADMIN_en/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/ADMIN_en/index.html]
+[12.0|http://webhelp.grassfish.com/gv2/gf/help/12.0/DOOH_Admin_EN/index.html]
+[11.17|http://webhelp.grassfish.com/gv2/gf/help/11.17/DOOH_Admin_EN/index.html]
+[11.16|http://webhelp.grassfish.tv/gv2/gf/help/11.16/DOOH_Admin_EN/index.html]
+[11.15|http://webhelp.grassfish.tv/gv2/gf/help/11.15/DOOH_Admin_EN/index.html]
+[11.14|http://webhelp.grassfish.tv/gv2/gf/help/11.14/DOOH_Admin_EN/index.html]
+[Powered by|https://document360.com/powered-by-document360/?utm_source=docs&utm_medium=footer&utm_campaign=poweredbylogo]
+[/grassfish/en|https://docs.grassfish.com/grassfish/en]
+[Prev|https://docs.grassfish.com/docs/configure-ixm-one]
+[Next|https://docs.grassfish.com/docs/configure-winlin-player]
+[Platform|https://grassfish.com/platform/]
+[Inspiration|https://grassfish.com/inspiration/]
+[About Us|https://grassfish.com/company/]
+[Consulting|https://grassfish.com/consulting/]
+[support@grassfish.com|mailto:support@grassfish.com]
+[+43 1 522 02 70 70|tel:+43 1 522 02 70 70]
+[https://www.instagram.com/grassfish_official|https://www.instagram.com/grassfish_official]
+[https://www.linkedin.com/company/grassfish-marketing-gmbh/|https://www.linkedin.com/company/grassfish-marketing-gmbh/]
+[https://twitter.com/grassfish_com|https://twitter.com/grassfish_com]
+[Terms of Service|https://grassfish.com/terms-of-service/]
+[Privacy Policy|https://grassfish.com/privacy-policy/]
+[#/|https://docs.grassfish.com/docs/set-up-the-ixm-one]
+
+BILDER-VERZEICHNIS:
+--------------------
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+URL: https://cdn.document360.io/logo/e2b87f73-d9f5-43cb-8182-2641762664fd/bc635c927f53486f95bf35271edbcc49-Grassfish-Help-Center-03.png
+Alt-Text: brand logo
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/document360-logo.svg
+URL: https://cdn.document360.io/static/images/document360-logo.svg
+Alt-Text: Document360
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/dooh_playlist-configure.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/dooh_playlist-configure.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A28Z&se=2025-07-17T16%3A53%3A28Z&sr=c&sp=r&sig=jcbWs22XGL4pq0Uct%2BeeubgP9xun1Czv%2FLZ4cKwQing%3D
+Alt-Text: Playlist logic setting set to DOOH
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/ssp_programmatic.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/ssp_programmatic.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A28Z&se=2025-07-17T16%3A53%3A28Z&sr=c&sp=r&sig=jcbWs22XGL4pq0Uct%2BeeubgP9xun1Czv%2FLZ4cKwQing%3D
+Alt-Text: image.png
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/Grassfish_symbol_aqua.png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/Grassfish_symbol_aqua.png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A28Z&se=2025-07-17T16%3A56%3A28Z&sr=c&sp=r&sig=3Ha%2FE92p3yFkCBWczPjny7Xpb7KUwELvzjWkzXCool8%3D
+Alt-Text: Grassfish
+
+Datei: /media/psf/development/web-crawler/grassfish-ixm-docs/images/twitter%20(x).png
+URL: https://cdn.document360.io/e2b87f73-d9f5-43cb-8182-2641762664fd/Images/Documentation/twitter%20(x).png?sv=2022-11-02&spr=https&st=2025-07-17T16%3A41%3A28Z&se=2025-07-17T16%3A56%3A28Z&sr=c&sp=r&sig=3Ha%2FE92p3yFkCBWczPjny7Xpb7KUwELvzjWkzXCool8%3D
+
+Quelle: https://docs.grassfish.com/docs/set-up-the-ixm-one
