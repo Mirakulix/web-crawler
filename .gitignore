@@ -95,3 +95,6 @@ venv.bak/
 Thumbs.db
 ehthumbs.db
 Desktop.ini
+chromedriver_linux64.zip
+crawler.log
+video_downloader.log
