@@ -105,6 +105,9 @@ CREATE INDEX idx_jobs_created_at ON jobs(created_at);
 CREATE INDEX idx_jobs_job_type ON jobs(job_type);
 CREATE INDEX idx_crawled_pages_job_id ON crawled_pages(job_id);
 CREATE INDEX idx_downloaded_videos_job_id ON downloaded_videos(job_id);
+CREATE INDEX idx_downloaded_images_job_id ON downloaded_images(job_id);
+CREATE INDEX idx_downloaded_images_page_id ON downloaded_images(page_id);
+CREATE INDEX idx_downloaded_images_hash ON downloaded_images(image_hash);
 CREATE INDEX idx_email_logs_job_id ON email_logs(job_id);
 CREATE INDEX idx_google_drive_files_job_id ON google_drive_files(job_id);
 
@@ -129,6 +132,9 @@ SELECT
         )
         ELSE 0
     END AS videos_downloaded,
+    (
+        SELECT COUNT(*) FROM downloaded_images di WHERE di.job_id = j.id
+    ) AS images_downloaded,
     (
         SELECT COUNT(*) FROM google_drive_files gdf WHERE gdf.job_id = j.id
     ) AS files_uploaded_to_drive,
