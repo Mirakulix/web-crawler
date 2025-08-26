@@ -1,15 +1,61 @@
-# Text and PDF Generation
-beautifulsoup4
-# reportlab
-requests
-pillow
-weasyprint
-PyPDF2
-# Video
-yt-dlp
-selenium
-opencv-python
-pillow
-pyautogui
-psutil
+# FastAPI und API-Abhängigkeiten
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
 
+# Web Scraping und Crawling
+beautifulsoup4==4.12.2
+requests==2.31.0
+weasyprint==60.2
+
+# PDF-Verarbeitung
+PyPDF2==3.0.1
+
+# Bildverarbeitung
+Pillow==10.1.0
+
+# Video-Downloads (optional)
+yt-dlp==2023.11.16
+
+# Browser-Automation (optional)
+selenium==4.15.2
+
+# Video-Processing (optional)
+opencv-python==4.8.1.78
+numpy==1.25.2
+
+# GUI/Screen Recording (optional - nur für lokale Entwicklung)
+pyautogui==0.9.54
+
+# System-Monitoring (optional)
+psutil==5.9.6
+
+# Data Validation
+pydantic==2.5.0
+
+# Async Support
+aiofiles==23.2.0
+
+# Development Tools
+pytest==7.4.3
+pytest-asyncio==0.21.1
+black==23.11.0
+isort==5.12.0
+flake8==6.1.0
+
+# Logging und Monitoring (optional)
+structlog==23.2.0
+
+# Database
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.23
+alembic==1.13.1
+
+# Google Drive API
+google-api-python-client==2.108.0
+google-auth-httplib2==0.1.1
+google-auth-oauthlib==1.1.0
+
+# Email
+smtplib2==0.2.1
+email-validator==2.1.0

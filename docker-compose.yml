@@ -1,0 +1,81 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15
+    container_name: web_crawler_db
+    environment:
+      POSTGRES_DB: web_crawler
+      POSTGRES_USER: crawler_user
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-crawler_password}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./sql/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U crawler_user -d web_crawler"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  # Web Crawler API
+  web_crawler:
+    build: .
+    container_name: web_crawler_api
+    ports:
+      - "8000:8000"
+    environment:
+      # Database Configuration
+      DATABASE_URL: postgresql://crawler_user:${POSTGRES_PASSWORD:-crawler_password}@postgres:5432/web_crawler
+      
+      # Google Drive Configuration
+      GOOGLE_DRIVE_CREDENTIALS_PATH: /app/credentials/google_drive_credentials.json
+      GOOGLE_DRIVE_FOLDER_NAME: web-crawler
+      
+      # Email Configuration
+      SMTP_HOST: ${SMTP_HOST:-smtp.gmail.com}
+      SMTP_PORT: ${SMTP_PORT:-587}
+      SMTP_USERNAME: ${SMTP_USERNAME}
+      SMTP_PASSWORD: ${SMTP_PASSWORD}
+      EMAIL_FROM: ${EMAIL_FROM:-flo.code.dev@gmail.com}
+      EMAIL_TO: ${EMAIL_TO:-flo.code.dev@gmail.com}
+      
+      # App Configuration
+      ENVIRONMENT: production
+      LOG_LEVEL: info
+    volumes:
+      - ./downloads:/app/downloads
+      - ./temp:/app/temp
+      - ./credentials:/app/credentials:ro
+      - ./logs:/app/logs
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  # Redis für Caching (optional)
+  redis:
+    image: redis:7-alpine
+    container_name: web_crawler_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  redis_data:

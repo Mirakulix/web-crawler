@@ -9,6 +9,7 @@ import os
 import re
 import json
 import requests
+import random
 from urllib.parse import urljoin, urlparse, quote
 from urllib.robotparser import RobotFileParser
 from pathlib import Path
@@ -45,7 +46,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('crawler.log'),
+        logging.FileHandler('logs/crawler.log'),
         logging.StreamHandler()
     ]
 )
@@ -62,6 +63,14 @@ def enable_debug():
     logging.getLogger().setLevel(logging.DEBUG)
     logger.debug("Debug-Modus aktiviert")
 
+def disable_debug():
+    """Deaktiviert Debug-Logging"""
+    global DEBUG_MODE
+    DEBUG_MODE = False
+    logger.setLevel(logging.WARN)
+    logging.getLogger().setLevel(logging.INFO)
+    logger.debug("Debug-Modus deaktiviert")
+
 @dataclass
 class WebPage:
     """Datenklasse für eine Webseite"""
@@ -77,10 +86,12 @@ class WebPage:
 class WebsiteCrawler:
     """Haupt-Crawler-Klasse"""
     
-    def __init__(self, base_url: str, max_urls: int, single_pdf: bool = False, crawl_scope: CrawlScope = CrawlScope.HIERARCHICAL):
+    def __init__(self, base_url: str, url_title: str, max_urls: int, single_pdf: bool = False, delete_individual_pdfs: bool | str = False, crawl_scope: CrawlScope = CrawlScope.HIERARCHICAL):
         self.base_url = base_url.rstrip('/')
+        self.url_title = url_title
         self.max_urls = max_urls
         self.single_pdf = single_pdf
+        self.delete_individual = delete_individual_pdfs
         self.crawl_scope = crawl_scope
         self.visited_urls: Set[str] = set()
         self.pages: List[WebPage] = []
@@ -129,12 +140,11 @@ class WebsiteCrawler:
     def _create_output_directory(self) -> Path:
         """Erstellt den Ausgabeordner mit korrektem Namen"""
         # URL zu gültigem Ordnernamen konvertieren
-        dir_name = self.base_url.replace('https://', '').replace('http://', '').replace('www.','').rstrip('/')
-        dir_name = dir_name.replace('/', '-').replace('.', '_').strip("-")
         
-        dir_name = re.sub(r'[<>:"/\\|?*]', '_', dir_name)
-        output_dir = input(f"Der Ausgabeordner wird {dir_name} benannt, lieber einen eigenen Namen eingeben?\n").strip() or dir_name
-        if output_dir.startswith('/'):
+        output_dir = self.url_title
+        if os.getcwd().endswith("web-crawler"):
+            output_dir = Path(os.path.join(os.getcwd(), 'collection', output_dir))
+        elif output_dir.startswith('/'):
             output_dir = Path(output_dir)
         elif output_dir.startswith('./'):
             output_dir = Path(os.path.join(os.getcwd(), output_dir[2:]))
@@ -143,9 +153,9 @@ class WebsiteCrawler:
         else:
             output_dir = Path(os.path.join(os.getcwd(), output_dir))
         
-        logger.info(f"Erstelle Ausgabeordner: {output_dir}")
+        # logger.(f"Erstelle Ausgabeordner: {output_dir}")
         output_dir.mkdir(exist_ok=True)
-        logger.info(f"Ausgabeordner erstellt: {output_dir}")
+        # logger.(f"Ausgabeordner erstellt: {output_dir}")
         return output_dir
     
     def _is_valid_url(self, url: str) -> bool:
@@ -274,7 +284,7 @@ class WebsiteCrawler:
         # Prüfen ob bereits Credentials für diese Domain vorhanden sind
         domain = urlparse(url).netloc
         if domain in self.login_credentials:
-            logger.info(f"Verwende gespeicherte Credentials für {domain}")
+            # logger.(f"Verwende gespeicherte Credentials für {domain}")
             return self.login_credentials[domain]
         
         print(f"\n🔐 Login erforderlich für {url}")
@@ -368,7 +378,7 @@ class WebsiteCrawler:
                 form_data[token_name] = token_value
                 logger.debug(f"CSRF-Token gefunden: {token_name}")
         
-        logger.info(f"Versuche Login auf {action} mit {len(form_data)} Feldern")
+        logger.debug(f"Versuche Login auf {action} mit {len(form_data)} Feldern")
         
         # POST-Request für Login
         response = self.session.post(
@@ -450,7 +460,7 @@ class WebsiteCrawler:
                     
                     if self._is_valid_url(absolute_url):
                         pagination_urls.append(absolute_url)
-                        logger.info(f"Pagination-Link gefunden: {link_text} -> {absolute_url}")
+                        logger.debug(f"Pagination-Link gefunden: {link_text} -> {absolute_url}")
                     break
         
         # Auch Buttons und andere Elemente prüfen
@@ -469,7 +479,7 @@ class WebsiteCrawler:
                         absolute_url = urljoin(base_url, url_match.group(1))
                         if self._is_valid_url(absolute_url):
                             pagination_urls.append(absolute_url)
-                            logger.info(f"Button-Pagination gefunden: {button_text} -> {absolute_url}")
+                            logger.debug(f"Button-Pagination gefunden: {button_text} -> {absolute_url}")
                     break
         
         return list(set(pagination_urls))  # Duplikate entfernen
@@ -522,7 +532,7 @@ class WebsiteCrawler:
                     
                     if self._is_valid_url(absolute_url):
                         pagination_urls.append(absolute_url)
-                        logger.info(f"Pagination-Link gefunden: {link_text} -> {absolute_url}")
+                        logger.debug(f"Pagination-Link gefunden: {link_text} -> {absolute_url}")
                     break
         
         # Auch Buttons und andere Elemente prüfen
@@ -541,7 +551,7 @@ class WebsiteCrawler:
                         absolute_url = urljoin(base_url, url_match.group(1))
                         if self._is_valid_url(absolute_url):
                             pagination_urls.append(absolute_url)
-                            logger.info(f"Button-Pagination gefunden: {button_text} -> {absolute_url}")
+                            logger.debug(f"Button-Pagination gefunden: {button_text} -> {absolute_url}")
                     break
         
         return list(set(pagination_urls))  # Duplikate entfernen
@@ -571,7 +581,7 @@ class WebsiteCrawler:
             if self._is_valid_url(absolute_url):
                 if absolute_url not in self.visited_urls and absolute_url not in self.queue:
                     new_urls.append(absolute_url)
-                    logger.info(f"Neue gültige URL gefunden: {absolute_url}")
+                    logger.debug(f"Neue gültige URL gefunden: {absolute_url}")
             else:
                 # Statistik für ungültige URLs
                 parsed = urlparse(absolute_url)
@@ -594,15 +604,15 @@ class WebsiteCrawler:
             if page_url not in self.visited_urls and page_url not in self.queue:
                 # Pagination-Links werden am Anfang der Queue eingefügt (höhere Priorität)
                 self.queue.insert(0, page_url)
-                logger.info(f"Pagination-URL zur Queue hinzugefügt: {page_url}")
+                logger.debug(f"Pagination-URL zur Queue hinzugefügt: {page_url}")
         
         # Normale URLs am Ende der Queue hinzufügen
         for url in new_urls:
             if url not in pagination_urls:  # Vermeiden von Duplikaten
                 self.queue.append(url)
-                logger.info(f"Normale URL zur Queue hinzugefügt: {url}")
+                logger.debug(f"Normale URL zur Queue hinzugefügt: {url}")
         
-        logger.info(f"Link-Extraktion abgeschlossen: {len(links)} Links gefunden, {len(new_urls)} neue URLs, {len(pagination_urls)} Pagination-URLs")
+        logger.debug(f"Link-Extraktion abgeschlossen: {len(links)} Links gefunden, {len(new_urls)} neue URLs, {len(pagination_urls)} Pagination-URLs")
         return links
     
     def _download_image(self, img_url: str, img_name: str) -> Optional[str]:
@@ -697,7 +707,7 @@ class WebsiteCrawler:
                     }
                     images.append(img_data_info)
                     
-                    logger.debug(f"Bild als Base64 eingebettet: {img_name}")
+                    # logger.debug(f"Bild als Base64 eingebettet: {img_name}")
                     
                 except Exception as e:
                     logger.error(f"Fehler beim Einbetten von Bild {img_path}: {e}")
@@ -995,7 +1005,7 @@ class WebsiteCrawler:
             # Bilder-Info aktualisieren
             page.images = images
             
-            logger.info(f"PDF mit HTML-Formatting erstellt: {page.pdf_path} ({len(images)} Bilder eingebettet)")
+            logger.debug(f"PDF mit HTML-Formatting erstellt: {page.pdf_path} ({len(images)} Bilder eingebettet)")
             
         except Exception as e:
             logger.error(f"Fehler beim Erstellen des HTML-PDFs für {page.url}: {e}")
@@ -1059,7 +1069,7 @@ class WebsiteCrawler:
             html_doc = HTML(string=simple_html)
             html_doc.write_pdf(page.pdf_path)
             
-            logger.info(f"Fallback-PDF erstellt: {page.pdf_path}")
+            logger.debug(f"Fallback-PDF erstellt: {page.pdf_path}")
             
         except Exception as e:
             logger.error(f"Fallback-PDF fehlgeschlagen: {e}")
@@ -1067,9 +1077,11 @@ class WebsiteCrawler:
     def _process_url(self, url: str) -> Optional[WebPage]:
         """Verarbeitet eine einzelne URL mit Login-Support"""
         try:
-            logger.info(f"Verarbeite URL: {url}")
+            logger.debug(f"Verarbeite URL: {url}")
             
             # Ersten Request machen
+            pause_duration = random.randint(2, 6)
+            time.sleep(pause_duration)
             response = self.session.get(url, timeout=15)
             response.raise_for_status()
             
@@ -1104,7 +1116,7 @@ class WebsiteCrawler:
                 else:
                     # Login bereits versucht - prüfen ob Session noch gültig
                     if domain in self.login_credentials:
-                        logger.info(f"Verwende bestehende Session für {domain}")
+                        logger.debug(f"Verwende bestehende Session für {domain}")
                     else:
                         # Session ungültig oder Login nicht versucht
                         return self._create_login_protected_page(url)
@@ -1198,7 +1210,7 @@ class WebsiteCrawler:
                 self.pdf_paths.append(str(pdf_path))
             
             self.stats['processed'] += 1
-            logger.info(f"Seite erfolgreich verarbeitet: {title} ({len(text_images)} Bilder)")
+            logger.debug(f"Seite erfolgreich verarbeitet: {title} ({len(text_images)} Bilder)")
             
             return page
             
@@ -1243,7 +1255,7 @@ class WebsiteCrawler:
         if self.single_pdf:
             self.pdf_paths.append(str(pdf_path))
         
-        logger.info(f"Login-geschützte Seite erstellt: {title}")
+        logger.debug(f"Login-geschützte Seite erstellt: {title}")
         return page
     
     def _merge_pdfs(self) -> None:
@@ -1262,18 +1274,18 @@ class WebsiteCrawler:
                     logger.debug(f"PDF zur Fusion hinzugefügt: {pdf_path}")
                 else:
                     logger.warning(f"PDF nicht gefunden: {pdf_path}")
-            
+            pdf_filename = f"{self.base_domain}.pdf"
             # Fusioniertes PDF speichern
-            merged_pdf_path = self.output_dir / "Website_Komplett.pdf"
+            merged_pdf_path = self.output_dir / pdf_filename
             merger.write(str(merged_pdf_path))
             merger.close()
             
             logger.info(f"✅ PDFs erfolgreich fusioniert: {merged_pdf_path}")
-            print(f"📖 Einzelne PDFs wurden zu einer Datei zusammengefügt: {merged_pdf_path}")
+            logger.info(f"📖 Einzelne PDFs wurden zu einer Datei zusammengefügt: {merged_pdf_path}")
             
             # Einzelne PDFs optional löschen (User fragen)
-            delete_individual = input("\n🗑️  Einzelne PDF-Dateien löschen? (j/n, Standard: n): ").strip().lower()
-            if delete_individual in ['j', 'ja', 'y', 'yes']:
+            
+            if self.delete_individual in ['j', 'ja', 'y', 'yes', True, 'true']:
                 deleted_count = 0
                 for pdf_path in self.pdf_paths:
                     try:
@@ -1459,16 +1471,20 @@ class WebsiteCrawler:
             
             # Fortschritt anzeigen mit detaillierten Informationen
             progress = len(self.visited_urls)
-            queue_size = len(self.queue)
+            queue_size = len(self.queue) if len(self.queue) <= self.max_urls else self.max_urls
             
-            print(f"\r🔄 Verarbeitet: {progress}/{self.max_urls} URLs | "
-                  f"Warteschlange: {queue_size} | "
-                  f"Pagination: {self.stats['pagination_links_found']} | "
+            print("\n\n")
+            
+            print("=" * 60)
+            print(f"\r🔄 Verarbeitet: {progress} | Queue: {queue_size} URLs | "
                   f"Bilder: {self.stats['images_downloaded']} | "
                   f"Login: {self.stats['login_pages_found']} | "
+                  f"Pagination: {self.stats['pagination_links_found']} | "
                   f"Scope: {self.crawl_scope.value} | "
-                  f"Fehler: {self.stats['errors']}", end="", flush=True)
+                  f"Fehler: {self.stats['errors']}\n", end="", flush=True)
+            print("=" * 60)
             
+            time.sleep(1)
             # Bei bestimmten Meilensteinen zusätzliche Info ausgeben
             if progress % 10 == 0 and progress > 0:
                 print(f"\n📊 Zwischenbericht nach {progress} URLs:")
@@ -1565,17 +1581,30 @@ def main():
     print()
     
     # Debug-Modus abfragen
-    debug_input = input("Debug-Modus aktivieren? (j/n, Standard: n): ").strip().lower()
+    debug_input = input("Debug-Modus aktivieren? (j/n, Standard: n): ").strip().lower() or 'n'
     if debug_input in ['j', 'ja', 'y', 'yes']:
         enable_debug()
         print("🔍 Debug-Modus aktiviert - detaillierte Logs werden angezeigt")
+    else:
+        disable_debug()
+        DEBUG_MODE = False
+        logger.setLevel(logging.INFO)
+        logging.getLogger().setLevel(logging.INFO)
+        print("🔍 Debug-Modus deaktiviert - nur wichtige Logs werden angezeigt")
     
     # Benutzer-Eingaben
     base_url = input("Bitte geben Sie die Basis-URL ein: ").strip()
     if not base_url:
         print("Fehler: Keine URL angegeben!")
         return
-    url_title = base_url.replace(".", "_").replace("/","_").replace("https://", "").replace("http://", "").replace("www.","")
+    
+    dir_name = base_url.replace('https://', '').replace('http://', '').replace('www.','').rstrip('/')
+    dir_name = dir_name.replace('/', '-').replace('.', '_').strip("-")
+    dir_name = re.sub(r'[<>:"/\\|?*]', '_', dir_name)
+    
+    url_title = input(f"Der Ausgabeordner wird {dir_name} benannt, zum Umbenennen Name eingeben:\n").strip()
+    url_title = url_title if url_title else dir_name
+    
     # URL-Format prüfen
     if not base_url.startswith(('http://', 'https://')):
         base_url = 'https://' + base_url
@@ -1621,7 +1650,7 @@ def main():
         if crawl_scope == CrawlScope.ALL_URLS:
             default_max = "20"  # Niedrigere Standard-Anzahl für unbeschränktes Crawling
         else:
-            default_max = "100"
+            default_max = "1000"
         
         max_urls = input(f"Wie viele URLs sollen maximal verarbeitet werden? (Standard: {default_max}): ").strip() or default_max
         max_urls = 999999 if max_urls in ["*", "-1", "0"] else int(max_urls)
@@ -1631,12 +1660,13 @@ def main():
     # PDF-Option abfragen
     print("\n📖 PDF-Ausgabe-Optionen:")
     print("1. Jede Seite als separate PDF-Datei")
-    print("2. Alle Seiten in einem einzelnen PDF fusioniert")
-    pdf_choice = input("Wählen Sie eine Option (1/2, Standard: 1): ").strip()
+    print("2. Alle Seiten in einem einzelnen PDF fusioniert, einzelne PDFs behalten")
+    print("3. Alle Seiten in einem einzelnen PDF fusioniert, einzelne PDFs löschen")
+    pdf_choice = input("Wählen Sie eine Option (1/2/3, Standard: 2): ").strip()
+    # delete_individual = input("\n🗑️  Einzelne PDF-Dateien löschen? (j/n, Standard: n): ").strip().lower()
+    single_pdf = pdf_choice in ["1", "2"]
+    delete_individual = pdf_choice == "3"
     
-    single_pdf = pdf_choice == '2'
-    
-    # Bestätigung
     print(f"\n⚙️  Einstellungen:")
     print(f"📍 Basis-URL: {base_url}")
     print(f"🎯 Crawling-Bereich: {scope_description}")
@@ -1684,9 +1714,10 @@ def main():
         print("🌍 Unbeschränkter Modus: Beobachten Sie die Logs auf unerwartete Domains")
     print()
     
+    
     # Crawler starten
     try:
-        crawler = WebsiteCrawler(base_url, max_urls, single_pdf, crawl_scope)
+        crawler = WebsiteCrawler(base_url, url_title, max_urls, single_pdf, crawl_scope)
         crawler.crawl()
     except KeyboardInterrupt:
         print("\n⏸️  Crawling wurde vom Benutzer abgebrochen.")
