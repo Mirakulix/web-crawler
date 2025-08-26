@@ -106,4 +106,60 @@ grassfish-ixm-docs
 collection
 video_downloads
 
+# Project specific additions for API
+# Downloads und temporäre Dateien
+temp/
+backups/
 
+# Credentials und Secrets
+credentials/
+*.json
+token.json
+
+# IDE additions
+.idea/
+*.swp
+*.swo
+
+# Database files
+*.sqlite
+*.sqlite3
+
+# Video und Media Files (meist zu groß für Git)
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wmv
+*.flv
+*.webm
+
+# PDF Files (meist zu groß für Git)
+*.pdf
+
+# Archive Files
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.tar.bz2
+
+# ChromeDriver und Browser
+chromedriver*
+geckodriver*
+driver/
+browser_data/
+
+# Andere temporäre Dateien
+*.tmp
+*.temp
+*.bak
+*~
+
+# Security scan results
+bandit-report.json
+trivy-results.sarif
+
+# Docker volumes
+postgres_data/
+redis_data/
