@@ -30,6 +30,7 @@ class DatabaseService:
         self.database_url = os.getenv('DATABASE_URL', 'postgresql://crawler_user:crawler_password@localhost:5432/web_crawler')
         self.engine = None
         self.Session = None
+        self.database_available = DATABASE_AVAILABLE
         
         if not DATABASE_AVAILABLE:
             logger.warning("Database libraries not available. Install psycopg2-binary and sqlalchemy")
@@ -54,21 +55,22 @@ class DatabaseService:
             logger.error(f"Database connection failed: {e}")
             return False
     
-    def create_job(self, job_id: str, job_type: str, request_data: dict) -> bool:
+    def create_job(self, job_type: str, request_data: dict) -> str:
         """
         Erstellt neuen Job in der Datenbank
         
         Args:
-            job_id: UUID des Jobs
             job_type: Art des Jobs (crawl/video_download)
             request_data: Request-Daten als Dict
             
         Returns:
-            True wenn erfolgreich, False sonst
+            Job UUID als String
         """
         try:
             if not self.engine:
-                return False
+                return None
+            
+            job_id = str(uuid.uuid4())
             
             with self.engine.connect() as conn:
                 conn.execute(text("""
@@ -83,11 +85,11 @@ class DatabaseService:
                 conn.commit()
             
             logger.info(f"Job created in database: {job_id}")
-            return True
+            return job_id
             
         except Exception as e:
             logger.error(f"Error creating job in database: {e}")
-            return False
+            return None
     
     def update_job_status(
         self, 
@@ -201,6 +203,19 @@ class DatabaseService:
         except Exception as e:
             logger.error(f"Error saving crawled page: {e}")
             return None
+    
+    def store_crawled_page(self, job_id: str, url: str, title: str, content_text: str, html_content: str, pdf_path: str, word_count: int, page_size_kb: float) -> Optional[str]:
+        """Alias for save_crawled_page for compatibility"""
+        return self.save_crawled_page(
+            job_id=job_id,
+            url=url, 
+            title=title,
+            content_text=content_text,
+            html_content=html_content,
+            pdf_path=pdf_path,
+            word_count=word_count,
+            page_size_kb=page_size_kb
+        )
     
     def save_downloaded_video(
         self,

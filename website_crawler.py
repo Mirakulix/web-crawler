@@ -127,6 +127,7 @@ class WebsiteCrawler:
             'processed': 0,
             'errors': 0,
             'images_downloaded': 0,
+            'pdfs_downloaded': 0,
             'pagination_links_found': 0,
             'total_links_found': 0,
             'skipped_external': 0,
@@ -163,11 +164,16 @@ class WebsiteCrawler:
         try:
             parsed = urlparse(url)
             
-            # Bestimmte Dateitypen immer ausschließen
-            excluded_extensions = {'.pdf', '.jpg', '.jpeg', '.png', '.gif', '.zip', '.rar', '.exe', '.doc', '.docx', '.xls', '.xlsx'}
+            # Bestimmte Dateitypen immer ausschließen (PDF-Dateien werden separat behandelt)
+            excluded_extensions = {'.jpg', '.jpeg', '.png', '.gif', '.zip', '.rar', '.exe', '.doc', '.docx', '.xls', '.xlsx'}
             if any(parsed.path.lower().endswith(ext) for ext in excluded_extensions):
                 logger.debug(f"URL {url} ausgeschlossen: Dateierweiterung")
                 return False
+            
+            # PDF-URLs sind gültig und werden speziell behandelt
+            if parsed.path.lower().endswith('.pdf'):
+                logger.debug(f"PDF-URL gefunden: {url}")
+                return True
             
             # Bestimmte URL-Parameter ausschließen (z.B. Logout-Links)
             excluded_params = {'logout', 'signout', 'exit', 'delete', 'remove'}
@@ -646,6 +652,26 @@ class WebsiteCrawler:
             logger.error(f"Fehler beim Herunterladen von {img_url}: {e}")
             return None
     
+    def _download_pdf(self, pdf_url: str, pdf_name: str) -> Optional[str]:
+        """Lädt eine PDF-Datei herunter und speichert sie"""
+        try:
+            response = self.session.get(pdf_url, timeout=30)
+            response.raise_for_status()
+            
+            # PDF im Hauptverzeichnis speichern
+            pdf_path = self.output_dir / pdf_name
+            
+            with open(pdf_path, 'wb') as f:
+                f.write(response.content)
+            
+            logger.debug(f"PDF heruntergeladen: {pdf_name} ({len(response.content)} bytes)")
+            self.stats['pdfs_downloaded'] += 1
+            return str(pdf_path.absolute())
+            
+        except Exception as e:
+            logger.error(f"Fehler beim Herunterladen von PDF {pdf_url}: {e}")
+            return None
+    
     def _extract_images_and_embed(self, soup: BeautifulSoup, base_url: str) -> List[Dict[str, str]]:
         """Extrahiert Bilder und embeddet sie direkt in das HTML als Base64"""
         images = []
@@ -1074,10 +1100,75 @@ class WebsiteCrawler:
         except Exception as e:
             logger.error(f"Fallback-PDF fehlgeschlagen: {e}")
     
+    def _process_pdf_url(self, url: str) -> Optional[WebPage]:
+        """Verarbeitet eine PDF-URL speziell"""
+        try:
+            logger.info(f"📄 PDF-URL gefunden: {url}")
+            
+            # PDF-Dateinamen aus URL extrahieren
+            parsed = urlparse(url)
+            pdf_name = os.path.basename(parsed.path)
+            if not pdf_name or not pdf_name.endswith('.pdf'):
+                pdf_name = f"document_{len(self.pages) + 1:03d}.pdf"
+            
+            # Dateiname bereinigen
+            pdf_name = re.sub(r'[<>:"/\\|?*]', '_', pdf_name)
+            
+            # PDF herunterladen
+            pdf_path = self._download_pdf(url, pdf_name)
+            if not pdf_path:
+                logger.warning(f"PDF konnte nicht heruntergeladen werden: {url}")
+                return None
+            
+            # Titel für PDF-Dokument erstellen
+            title = f"PDF: {pdf_name}"
+            content = f"PDF-Dokument heruntergeladen von {url}"
+            
+            # Textdatei-Namen erstellen
+            safe_title = re.sub(r'[<>:"/\\|?*]', '_', title)[:100]
+            file_name = f"{len(self.pages) + 1:03d}_{safe_title}"
+            
+            text_path = self.texts_dir / f"{file_name}.txt"
+            
+            # WebPage-Objekt für PDF erstellen
+            page = WebPage(
+                url=url,
+                title=title,
+                content=content,
+                images=[],
+                links=[],
+                file_path=str(text_path),
+                pdf_path=pdf_path,  # Hier zeigt pdf_path direkt auf die heruntergeladene PDF
+                timestamp=time.strftime("%Y-%m-%d %H:%M:%S")
+            )
+            
+            # Textdatei für PDF erstellen
+            text_content = self._create_text_content(page)
+            with open(text_path, 'w', encoding='utf-8') as f:
+                f.write(text_content)
+            
+            # Für PDF-Fusion: heruntergeladene PDF zur Liste hinzufügen
+            if self.single_pdf:
+                self.pdf_paths.append(pdf_path)
+            
+            self.stats['processed'] += 1
+            logger.debug(f"PDF erfolgreich verarbeitet: {title}")
+            
+            return page
+            
+        except Exception as e:
+            logger.error(f"Fehler beim Verarbeiten der PDF-URL {url}: {e}")
+            self.stats['errors'] += 1
+            return None
+    
     def _process_url(self, url: str) -> Optional[WebPage]:
         """Verarbeitet eine einzelne URL mit Login-Support"""
         try:
             logger.debug(f"Verarbeite URL: {url}")
+            
+            # PDF-URLs speziell behandeln
+            if url.lower().endswith('.pdf'):
+                return self._process_pdf_url(url)
             
             # Ersten Request machen
             pause_duration = random.randint(2, 6)
@@ -1478,6 +1569,7 @@ class WebsiteCrawler:
             print("=" * 60)
             print(f"\r🔄 Verarbeitet: {progress} | Queue: {queue_size} URLs | "
                   f"Bilder: {self.stats['images_downloaded']} | "
+                  f"PDFs: {self.stats['pdfs_downloaded']} | "
                   f"Login: {self.stats['login_pages_found']} | "
                   f"Pagination: {self.stats['pagination_links_found']} | "
                   f"Scope: {self.crawl_scope.value} | "
@@ -1491,6 +1583,7 @@ class WebsiteCrawler:
                 print(f"   ✅ Erfolgreich: {self.stats['processed']}")
                 print(f"   ❌ Fehler: {self.stats['errors']}")
                 print(f"   🖼️  Bilder: {self.stats['images_downloaded']}")
+                print(f"   📄 PDFs: {self.stats['pdfs_downloaded']}")
                 print(f"   📄 Pagination: {self.stats['pagination_links_found']}")
                 print(f"   🔗 Links: {self.stats['total_links_found']}")
                 print(f"   🔐 Login-Seiten: {self.stats['login_pages_found']}")
@@ -1523,6 +1616,7 @@ class WebsiteCrawler:
         logger.info(f"📊 Verarbeitete URLs: {self.stats['processed']}")
         logger.info(f"❌ Fehler: {self.stats['errors']}")
         logger.info(f"🖼️  Heruntergeladene Bilder: {self.stats['images_downloaded']}")
+        logger.info(f"📄 Heruntergeladene PDFs: {self.stats['pdfs_downloaded']}")
         logger.info(f"📄 Pagination-Links gefunden: {self.stats['pagination_links_found']}")
         logger.info(f"🔗 Gesamte Links gefunden: {self.stats['total_links_found']}")
         logger.info(f"🌐 Externe URLs übersprungen: {self.stats['skipped_external']}")
@@ -1565,6 +1659,7 @@ class WebsiteCrawler:
         print(f"📁 Dateien gespeichert in: {self.output_dir}")
         print(f"📄 Pagination-Links: {self.stats['pagination_links_found']}")
         print(f"🖼️  Bilder: {self.stats['images_downloaded']}")
+        print(f"📄 PDFs: {self.stats['pdfs_downloaded']}")
         print(f"🔗 Links: {self.stats['total_links_found']}")
         print(f"🔐 Login-Seiten: {self.stats['login_pages_found']}")
         print(f"🎯 Crawl-Scope: {self.crawl_scope.value}")
