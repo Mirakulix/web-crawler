@@ -52,6 +52,14 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# Externe Bibliotheken auf WARNING oder höher setzen um verbose Logs zu unterdrücken
+logging.getLogger('fontTools').setLevel(logging.WARNING)
+logging.getLogger('fontTools.subset').setLevel(logging.WARNING)
+logging.getLogger('weasyprint').setLevel(logging.WARNING)
+logging.getLogger('html5lib').setLevel(logging.WARNING)
+logging.getLogger('PIL').setLevel(logging.WARNING)
+logging.getLogger('urllib3').setLevel(logging.WARNING)
+
 # Debug-Modus aktivieren falls gewünscht
 DEBUG_MODE = False
 
@@ -1675,17 +1683,17 @@ def main():
     print("🔥 Mit Login-Support, PDF-Fusion und flexiblen Crawling-Modi")
     print()
     
-    # Debug-Modus abfragen
-    debug_input = input("Debug-Modus aktivieren? (j/n, Standard: n): ").strip().lower() or 'n'
-    if debug_input in ['j', 'ja', 'y', 'yes']:
-        enable_debug()
-        print("🔍 Debug-Modus aktiviert - detaillierte Logs werden angezeigt")
-    else:
-        disable_debug()
-        DEBUG_MODE = False
-        logger.setLevel(logging.INFO)
-        logging.getLogger().setLevel(logging.INFO)
-        print("🔍 Debug-Modus deaktiviert - nur wichtige Logs werden angezeigt")
+    # Debug-Modus automatisch deaktiviert (kann manuell geändert werden)
+    # debug_input = input("Debug-Modus aktivieren? (j/n, Standard: n): ").strip().lower() or 'n'
+    # if debug_input in ['j', 'ja', 'y', 'yes']:
+    #     enable_debug()
+    #     print("🔍 Debug-Modus aktiviert - detaillierte Logs werden angezeigt")
+    # else:
+    disable_debug()
+    DEBUG_MODE = False
+    logger.setLevel(logging.INFO)
+    logging.getLogger().setLevel(logging.INFO)
+    print("🔍 Debug-Modus deaktiviert - nur wichtige Logs werden angezeigt")
     
     # Benutzer-Eingaben
     base_url = input("Bitte geben Sie die Basis-URL ein: ").strip()
@@ -1795,10 +1803,13 @@ def main():
     print("    └── crawler.log           # Detaillierte Logs")
     print()
     
-    confirm = input("🚀 Crawling starten? (j/n): ").strip().lower()
-    if confirm not in ['j', 'ja', 'y', 'yes']:
-        print("❌ Abgebrochen.")
-        return
+    # Automatisch starten ohne User-Bestätigung
+    # confirm = input("🚀 Crawling starten? (j/n): ").strip().lower()
+    # if confirm not in ['j', 'ja', 'y', 'yes']:
+    #     print("❌ Abgebrochen.")
+    #     return
+    
+    print("🚀 Crawling wird automatisch gestartet...")
     
     # Hinweise für Login-geschützte Seiten
     print("\n💡 Hinweise:")

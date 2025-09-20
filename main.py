@@ -1,416 +1,258 @@
 #!/usr/bin/env python3
 """
-FastAPI Web Crawler Service
-Bietet Video-Download und Website-Crawling als REST API
+Zentrale Download-Schnittstelle
+Ermöglicht Video-Download oder Website-Crawling über eine einheitliche Benutzeroberfläche
 """
 
 import os
-import asyncio
-import tempfile
-import shutil
-from datetime import datetime
+import sys
+import re
+import time
 from pathlib import Path
-from typing import Optional, Dict, Any, List
-import uuid
-import json
-import zipfile
-from concurrent.futures import ThreadPoolExecutor
+from urllib.parse import urlparse
+import logging
 
-from fastapi import FastAPI, HTTPException, BackgroundTasks, File, UploadFile, Response
-from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
-from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel, HttpUrl, Field
-import uvicorn
-
-# Import unserer Module
-from video_downloader import VideoDownloader, integrate_with_crawler
-from website_crawler import WebsiteCrawler, CrawlScope
-
-# FastAPI App initialisieren
-app = FastAPI(
-    title="Web Crawler & Video Downloader API",
-    description="REST API für Website-Crawling und Video-Downloads",
-    version="1.0.0",
-    docs_url="/docs",
-    redoc_url="/redoc"
+# Logging Setup
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('download_service.log'),
+        logging.StreamHandler()
+    ]
 )
+logger = logging.getLogger(__name__)
 
-# CORS Middleware hinzufügen
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-# Globaler Thread Pool
-executor = ThreadPoolExecutor(max_workers=4)
-
-# Globale Dictionaries für Job-Tracking
-jobs: Dict[str, Dict[str, Any]] = {}
-job_results: Dict[str, Dict[str, Any]] = {}
-
-# Pydantic Models
-class CrawlRequest(BaseModel):
-    base_url: HttpUrl
-    url_title: Optional[str] = None
-    max_urls: int = Field(default=100, ge=1, le=10000)
-    single_pdf: bool = False
-    delete_individual_pdfs: bool = False
-    crawl_scope: str = Field(default="hierarchical", regex="^(hierarchical|domain_only|all_urls)$")
-
-class VideoDownloadRequest(BaseModel):
-    url: HttpUrl
-    output_dir: Optional[str] = None
-
-class JobStatus(BaseModel):
-    job_id: str
-    status: str  # pending, running, completed, error
-    progress: Optional[str] = None
-    start_time: Optional[str] = None
-    end_time: Optional[str] = None
-    error_message: Optional[str] = None
-    result_path: Optional[str] = None
-
-class CrawlResponse(BaseModel):
-    job_id: str
-    status: str
-    message: str
-
-# Hilfsfunktionen
-def create_job_id() -> str:
-    return str(uuid.uuid4())
-
-def get_output_directory(job_id: str, prefix: str = "job") -> Path:
-    """Erstellt temporäres Ausgabeverzeichnis für Job"""
-    temp_dir = Path(tempfile.gettempdir()) / f"{prefix}_{job_id}"
-    temp_dir.mkdir(exist_ok=True)
-    return temp_dir
-
-def create_zip_from_directory(directory: Path, zip_path: Path) -> None:
-    """Erstellt ZIP-Archiv aus Verzeichnis"""
-    with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
-        for file_path in directory.rglob('*'):
-            if file_path.is_file():
-                arcname = file_path.relative_to(directory)
-                zipf.write(file_path, arcname)
-
-async def run_in_executor(func, *args):
-    """Führt Funktion im Thread-Pool aus"""
-    loop = asyncio.get_event_loop()
-    return await loop.run_in_executor(executor, func, *args)
-
-def crawl_website_sync(job_id: str, request: CrawlRequest) -> None:
-    """Synchrone Website-Crawling-Funktion"""
+def validate_url(url: str) -> str:
+    """Validiert und normalisiert eine URL"""
+    if not url:
+        raise ValueError("Keine URL angegeben")
+    
+    # URL-Format prüfen und korrigieren
+    if not url.startswith(('http://', 'https://')):
+        url = 'https://' + url
+    
+    # Basis-Validierung
     try:
-        jobs[job_id]["status"] = "running"
-        jobs[job_id]["start_time"] = datetime.now().isoformat()
-        
-        # Scope konvertieren
-        scope_map = {
-            "hierarchical": CrawlScope.HIERARCHICAL,
-            "domain_only": CrawlScope.DOMAIN_ONLY,
-            "all_urls": CrawlScope.ALL_URLS
-        }
-        crawl_scope = scope_map[request.crawl_scope]
-        
-        # Output-Directory
-        output_dir = get_output_directory(job_id, "crawl")
-        
-        # URL-Titel generieren wenn nicht angegeben
-        url_title = request.url_title
-        if not url_title:
-            url_title = str(request.base_url).replace('https://', '').replace('http://', '').replace('www.','').rstrip('/')
-            url_title = url_title.replace('/', '-').replace('.', '_').strip("-")
-        
-        # Crawler initialisieren und starten
-        crawler = WebsiteCrawler(
-            base_url=str(request.base_url),
-            url_title=str(output_dir / url_title),
-            max_urls=request.max_urls,
-            single_pdf=request.single_pdf,
-            delete_individual_pdfs=request.delete_individual_pdfs,
-            crawl_scope=crawl_scope
-        )
-        
-        # Crawling starten
-        crawler.crawl()
-        
-        # Ergebnis-ZIP erstellen
-        zip_path = output_dir.parent / f"crawl_result_{job_id}.zip"
-        create_zip_from_directory(crawler.output_dir, zip_path)
-        
-        # Job als abgeschlossen markieren
-        jobs[job_id]["status"] = "completed"
-        jobs[job_id]["end_time"] = datetime.now().isoformat()
-        jobs[job_id]["result_path"] = str(zip_path)
-        
-        # Ergebnis-Statistiken speichern
-        job_results[job_id] = {
-            "type": "crawl",
-            "statistics": crawler.stats,
-            "output_directory": str(crawler.output_dir),
-            "zip_path": str(zip_path),
-            "pages_processed": len(crawler.pages)
-        }
-        
+        parsed = urlparse(url)
+        if not parsed.netloc:
+            raise ValueError("Ungültiges URL-Format")
     except Exception as e:
-        jobs[job_id]["status"] = "error"
-        jobs[job_id]["error_message"] = str(e)
-        jobs[job_id]["end_time"] = datetime.now().isoformat()
+        raise ValueError(f"URL-Validierung fehlgeschlagen: {e}")
+    
+    return url
 
-def download_video_sync(job_id: str, request: VideoDownloadRequest) -> None:
-    """Synchrone Video-Download-Funktion"""
+def create_safe_filename(url: str) -> str:
+    """Erstellt einen sicheren Dateinamen aus einer URL"""
+    # Domain extrahieren und bereinigen
+    domain = urlparse(url).netloc
+    safe_name = domain.replace('www.', '').replace('.', '_').replace(':', '_')
+    safe_name = re.sub(r'[<>:"/\\|?*]', '_', safe_name)
+    return safe_name.strip('_')
+
+def get_output_directory(base_name: str, service_type: str) -> Path:
+    """Erstellt und gibt den Ausgabeordner zurück"""
+    timestamp = time.strftime("%Y%m%d_%H%M%S")
+    dir_name = f"{base_name}_{service_type}_{timestamp}"
+    
+    # Standardmäßig im 'collection' Ordner wenn wir im web-crawler Verzeichnis sind
+    if os.getcwd().endswith("web-crawler"):
+        output_dir = Path(os.getcwd()) / 'collection' / dir_name
+    else:
+        output_dir = Path(os.getcwd()) / dir_name
+    
+    output_dir.mkdir(parents=True, exist_ok=True)
+    return output_dir
+
+def show_welcome():
+    """Zeigt Willkommensnachricht"""
+    print("=" * 70)
+    print("🚀 DOWNLOAD SERVICE - Zentrale Schnittstelle")
+    print("=" * 70)
+    print("Wählen Sie zwischen Website-Crawling und Video-Download")
+    print("Beide Services nutzen spezialisierte, getestete Module")
+    print()
+
+def get_user_choice() -> str:
+    """Fragt den User nach dem gewünschten Service"""
+    print("📋 Verfügbare Services:")
+    print("1. 🌐 Website-Crawling (PDF-Erstellung, Bild-Download, Login-Support)")
+    print("2. 🎬 Video-Download (YouTube, Vimeo, direkte Videos, Screen-Recording)")
+    print("3. ❓ Hilfe anzeigen")
+    print("4. 🚪 Beenden")
+    print()
+    
+    while True:
+        choice = input("Ihre Wahl (1-4): ").strip()
+        if choice in ['1', '2', '3', '4']:
+            return choice
+        print("❌ Ungültige Eingabe. Bitte wählen Sie 1, 2, 3 oder 4.")
+
+def show_help():
+    """Zeigt Hilfe-Informationen"""
+    print("\n" + "=" * 70)
+    print("📚 HILFE - Download Service")
+    print("=" * 70)
+    print()
+    print("🌐 WEBSITE-CRAWLING:")
+    print("   • Lädt komplette Websites als PDF und Text herunter")
+    print("   • Extrahiert und speichert alle Bilder")
+    print("   • Unterstützt verschiedene Crawling-Modi (hierarchisch, domain-weit, unbeschränkt)")
+    print("   • Login-Support für geschützte Bereiche")
+    print("   • PDF-Fusion aller Seiten möglich")
+    print("   • Erstellt detaillierte Sitemaps und JSON-Berichte")
+    print()
+    print("🎬 VIDEO-DOWNLOAD:")
+    print("   • Unterstützt YouTube, Vimeo und viele andere Plattformen")
+    print("   • Direkte Video-Downloads von Websites")
+    print("   • Browser-basierte Screen-Aufnahmen als Fallback")
+    print("   • Automatische Video-Erkennung auf Webseiten")
+    print("   • Parallele Downloads für Effizienz")
+    print("   • Detaillierte Download-Statistiken")
+    print()
+    print("📁 AUSGABE-STRUKTUR:")
+    print("   • Alle Downloads werden in 'collection/' gespeichert")
+    print("   • Eindeutige Ordnernamen mit Zeitstempel")
+    print("   • Separate Unterordner für verschiedene Dateitypen")
+    print("   • JSON-Berichte für detaillierte Metadaten")
+    print()
+    print("⚙️  SYSTEMANFORDERUNGEN:")
+    print("   • Python 3.8+ mit erforderlichen Bibliotheken")
+    print("   • Für Video-Downloads: yt-dlp, selenium (optional)")
+    print("   • Für GUI-Features: Display-Umgebung erforderlich")
+    print("   • ChromeDriver für Browser-Automation (optional)")
+    print()
+
+def run_website_crawler(url: str):
+    """Führt Website-Crawling durch"""
     try:
-        jobs[job_id]["status"] = "running"
-        jobs[job_id]["start_time"] = datetime.now().isoformat()
+        # Import nur wenn benötigt
+        from website_crawler import WebsiteCrawler, CrawlScope, main as crawler_main
         
-        # Output-Directory
-        output_dir = get_output_directory(job_id, "video")
+        print(f"\n🌐 Starte Website-Crawling für: {url}")
+        print("=" * 50)
         
-        # Video-Downloader initialisieren
-        downloader = VideoDownloader(
-            base_url=str(request.url),
-            output_dir=str(output_dir)
-        )
+        # Website-Crawler mit seinen eigenen Parametern starten
+        # Der Crawler hat seine eigene interaktive Konfiguration
+        crawler_main()
         
-        # Video herunterladen
-        videos = downloader.process_url(str(request.url))
-        
-        # Zusammenfassung erstellen
-        downloader.create_video_summary()
-        
-        # Ergebnis-ZIP erstellen
-        zip_path = output_dir.parent / f"video_result_{job_id}.zip"
-        create_zip_from_directory(output_dir, zip_path)
-        
-        # Job als abgeschlossen markieren
-        jobs[job_id]["status"] = "completed"
-        jobs[job_id]["end_time"] = datetime.now().isoformat()
-        jobs[job_id]["result_path"] = str(zip_path)
-        
-        # Ergebnis-Statistiken speichern
-        job_results[job_id] = {
-            "type": "video_download",
-            "statistics": downloader.stats,
-            "output_directory": str(output_dir),
-            "zip_path": str(zip_path),
-            "videos_downloaded": len(videos)
-        }
-        
+    except ImportError as e:
+        logger.error(f"Website-Crawler konnte nicht importiert werden: {e}")
+        print("❌ Website-Crawler-Modul nicht verfügbar!")
+        print("Stellen Sie sicher, dass website_crawler.py vorhanden ist.")
     except Exception as e:
-        jobs[job_id]["status"] = "error"
-        jobs[job_id]["error_message"] = str(e)
-        jobs[job_id]["end_time"] = datetime.now().isoformat()
+        logger.error(f"Fehler beim Website-Crawling: {e}")
+        print(f"❌ Fehler beim Website-Crawling: {e}")
 
-# API Endpunkte
-
-@app.get("/", response_model=dict)
-async def root():
-    """API Info"""
-    return {
-        "service": "Web Crawler & Video Downloader API",
-        "version": "1.0.0",
-        "endpoints": {
-            "crawl": "POST /crawl - Website crawlen",
-            "download_video": "POST /download-video - Video herunterladen", 
-            "status": "GET /status/{job_id} - Job-Status abfragen",
-            "result": "GET /result/{job_id} - Ergebnis herunterladen",
-            "jobs": "GET /jobs - Alle Jobs auflisten",
-            "docs": "GET /docs - API-Dokumentation"
-        }
-    }
-
-@app.post("/crawl", response_model=CrawlResponse)
-async def crawl_website(request: CrawlRequest, background_tasks: BackgroundTasks):
-    """Website crawlen"""
-    job_id = create_job_id()
-    
-    # Job registrieren
-    jobs[job_id] = {
-        "type": "crawl",
-        "status": "pending",
-        "request": request.dict(),
-        "created_time": datetime.now().isoformat()
-    }
-    
-    # Background-Task starten
-    background_tasks.add_task(crawl_website_sync, job_id, request)
-    
-    return CrawlResponse(
-        job_id=job_id,
-        status="pending",
-        message=f"Website-Crawling gestartet für {request.base_url}"
-    )
-
-@app.post("/download-video", response_model=CrawlResponse)
-async def download_video(request: VideoDownloadRequest, background_tasks: BackgroundTasks):
-    """Video herunterladen"""
-    job_id = create_job_id()
-    
-    # Job registrieren
-    jobs[job_id] = {
-        "type": "video_download",
-        "status": "pending", 
-        "request": request.dict(),
-        "created_time": datetime.now().isoformat()
-    }
-    
-    # Background-Task starten
-    background_tasks.add_task(download_video_sync, job_id, request)
-    
-    return CrawlResponse(
-        job_id=job_id,
-        status="pending",
-        message=f"Video-Download gestartet für {request.url}"
-    )
-
-@app.get("/status/{job_id}", response_model=JobStatus)
-async def get_job_status(job_id: str):
-    """Job-Status abfragen"""
-    if job_id not in jobs:
-        raise HTTPException(status_code=404, detail="Job nicht gefunden")
-    
-    job = jobs[job_id]
-    return JobStatus(
-        job_id=job_id,
-        status=job["status"],
-        progress=job.get("progress"),
-        start_time=job.get("start_time"),
-        end_time=job.get("end_time"),
-        error_message=job.get("error_message"),
-        result_path=job.get("result_path")
-    )
-
-@app.get("/result/{job_id}")
-async def download_result(job_id: str):
-    """Ergebnis-ZIP herunterladen"""
-    if job_id not in jobs:
-        raise HTTPException(status_code=404, detail="Job nicht gefunden")
-    
-    job = jobs[job_id]
-    if job["status"] != "completed":
-        raise HTTPException(status_code=400, detail="Job noch nicht abgeschlossen")
-    
-    result_path = job.get("result_path")
-    if not result_path or not os.path.exists(result_path):
-        raise HTTPException(status_code=404, detail="Ergebnis-Datei nicht gefunden")
-    
-    # Dateiname für Download
-    job_type = job["type"]
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"{job_type}_result_{timestamp}.zip"
-    
-    return FileResponse(
-        path=result_path,
-        filename=filename,
-        media_type="application/zip"
-    )
-
-@app.get("/jobs", response_model=List[dict])
-async def list_jobs():
-    """Alle Jobs auflisten"""
-    job_list = []
-    for job_id, job_info in jobs.items():
-        job_summary = {
-            "job_id": job_id,
-            "type": job_info["type"],
-            "status": job_info["status"],
-            "created_time": job_info["created_time"],
-            "start_time": job_info.get("start_time"),
-            "end_time": job_info.get("end_time")
-        }
+def run_video_downloader(url: str):
+    """Führt Video-Download durch"""
+    try:
+        # Import nur wenn benötigt
+        from video_downloader import VideoDownloader, main as downloader_main
         
-        # Zusätzliche Info je nach Job-Typ
-        if job_id in job_results:
-            result = job_results[job_id]
-            if result["type"] == "crawl":
-                job_summary["pages_processed"] = result.get("pages_processed", 0)
-            elif result["type"] == "video_download":
-                job_summary["videos_downloaded"] = result.get("videos_downloaded", 0)
+        print(f"\n🎬 Starte Video-Download für: {url}")
+        print("=" * 50)
         
-        job_list.append(job_summary)
-    
-    return job_list
+        # Video-Downloader mit seinen eigenen Parametern starten
+        # Der Downloader hat seine eigene interaktive Konfiguration
+        downloader_main()
+        
+    except ImportError as e:
+        logger.error(f"Video-Downloader konnte nicht importiert werden: {e}")
+        print("❌ Video-Downloader-Modul nicht verfügbar!")
+        print("Stellen Sie sicher, dass video_downloader.py vorhanden ist.")
+    except Exception as e:
+        logger.error(f"Fehler beim Video-Download: {e}")
+        print(f"❌ Fehler beim Video-Download: {e}")
 
-@app.get("/job/{job_id}/details")
-async def get_job_details(job_id: str):
-    """Detaillierte Job-Informationen"""
-    if job_id not in jobs:
-        raise HTTPException(status_code=404, detail="Job nicht gefunden")
+def check_dependencies():
+    """Prüft grundlegende Abhängigkeiten"""
+    missing_modules = []
     
-    job_info = jobs[job_id]
-    response = {
-        "job_id": job_id,
-        "job_info": job_info
-    }
+    # Grundlegende Module prüfen
+    try:
+        import requests
+        import urllib.parse
+    except ImportError as e:
+        missing_modules.append(f"requests: {e}")
     
-    # Ergebnis-Details hinzufügen falls verfügbar
-    if job_id in job_results:
-        response["results"] = job_results[job_id]
+    # Website-Crawler Module prüfen
+    try:
+        import bs4
+        import weasyprint
+    except ImportError:
+        print("⚠️  Website-Crawler: Einige optionale Module fehlen (bs4, weasyprint)")
     
-    return response
+    # Video-Downloader Module prüfen
+    try:
+        import yt_dlp
+    except ImportError:
+        print("⚠️  Video-Downloader: yt-dlp nicht verfügbar (optional)")
+    
+    if missing_modules:
+        print("❌ Kritische Module fehlen:")
+        for module in missing_modules:
+            print(f"   • {module}")
+        print("\nInstallieren Sie fehlende Module mit:")
+        print("pip install -r requirements.txt")
+        return False
+    
+    return True
 
-@app.delete("/job/{job_id}")
-async def delete_job(job_id: str):
-    """Job und Ergebnisse löschen"""
-    if job_id not in jobs:
-        raise HTTPException(status_code=404, detail="Job nicht gefunden")
+def main():
+    """Hauptfunktion - Zentrale Benutzeroberfläche"""
+    try:
+        # System-Check
+        if not check_dependencies():
+            print("\n❌ Bitte installieren Sie die fehlenden Abhängigkeiten.")
+            return
+        
+        # Willkommensnachricht
+        show_welcome()
+        
+        while True:
+            choice = get_user_choice()
+            
+            if choice == '1':
+                # Website-Crawling
+                print("\n🌐 Website-Crawling ausgewählt")
+                print("Sie werden nun zum Website-Crawler weitergeleitet...")
+                print("Der Crawler hat seine eigene Benutzeroberfläche für detaillierte Konfiguration.")
+                input("\nDrücken Sie Enter um fortzufahren...")
+                run_website_crawler("")
+                
+            elif choice == '2':
+                # Video-Download
+                print("\n🎬 Video-Download ausgewählt")
+                print("Sie werden nun zum Video-Downloader weitergeleitet...")
+                print("Der Downloader hat seine eigene Benutzeroberfläche für detaillierte Konfiguration.")
+                input("\nDrücken Sie Enter um fortzufahren...")
+                run_video_downloader("")
+                
+            elif choice == '3':
+                # Hilfe
+                show_help()
+                input("\nDrücken Sie Enter um zum Hauptmenü zurückzukehren...")
+                
+            elif choice == '4':
+                # Beenden
+                print("\n👋 Auf Wiedersehen!")
+                break
+            
+            # Zurück zum Hauptmenü
+            print("\n" + "=" * 50)
+            print("Zurück zum Hauptmenü")
+            print("=" * 50)
     
-    # Ergebnis-Dateien löschen
-    job = jobs[job_id]
-    result_path = job.get("result_path")
-    if result_path and os.path.exists(result_path):
-        try:
-            os.remove(result_path)
-        except Exception as e:
-            pass  # Ignorieren falls bereits gelöscht
-    
-    # Job aus Dictionaries entfernen
-    del jobs[job_id]
-    if job_id in job_results:
-        del job_results[job_id]
-    
-    return {"message": f"Job {job_id} wurde gelöscht"}
-
-@app.get("/health")
-async def health_check():
-    """Health Check Endpunkt"""
-    return {
-        "status": "healthy",
-        "timestamp": datetime.now().isoformat(),
-        "active_jobs": len([j for j in jobs.values() if j["status"] in ["pending", "running"]]),
-        "total_jobs": len(jobs)
-    }
-
-# Cleanup-Funktion für alte Jobs
-@app.on_event("startup")
-async def startup_event():
-    """Startup-Logik"""
-    print("🚀 Web Crawler & Video Downloader API gestartet")
-    print("📚 Dokumentation: http://localhost:8000/docs")
-
-@app.on_event("shutdown")
-async def shutdown_event():
-    """Cleanup beim Shutdown"""
-    print("🛑 API wird heruntergefahren...")
-    executor.shutdown(wait=True)
-    
-    # Temporäre Dateien aufräumen
-    temp_dir = Path(tempfile.gettempdir())
-    for job_dir in temp_dir.glob("*_*-*-*-*-*"):
-        try:
-            if job_dir.is_dir():
-                shutil.rmtree(job_dir)
-        except Exception:
-            pass  # Ignorieren falls Zugriffsfehler
+    except KeyboardInterrupt:
+        print("\n\n⏸️  Programm wurde durch Benutzer abgebrochen.")
+        print("👋 Auf Wiedersehen!")
+    except Exception as e:
+        logger.error(f"Unerwarteter Fehler in main(): {e}")
+        print(f"\n❌ Unerwarteter Fehler: {e}")
+        if '--debug' in sys.argv:
+            import traceback
+            traceback.print_exc()
 
 if __name__ == "__main__":
-    uvicorn.run(
-        "main:app",
-        host="0.0.0.0",
-        port=8000,
-        reload=True,
-        log_level="info"
-    )
+    main()

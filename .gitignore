@@ -163,3 +163,5 @@ trivy-results.sarif
 # Docker volumes
 postgres_data/
 redis_data/
+
+.claude/
